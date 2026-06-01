@@ -51,6 +51,12 @@ export default function Home() {
       <section className="border-b hairline">
         <div className="max-w-content mx-auto px-6 py-24 md:py-32 grid md:grid-cols-12 gap-12 items-start">
           <div className="md:col-span-8">
+            <div className="inline-flex items-center gap-2.5 rounded-full border hairline bg-card px-3.5 py-1.5 text-sm text-ink mb-8">
+              <span className="live-dot" />
+              <span>
+                Disponible <span className="text-muted">·</span> mission freelance ou CDI <span className="text-muted">·</span> juillet 2026
+              </span>
+            </div>
             <h1 className="serif text-5xl md:text-7xl leading-[1.02] tracking-tight">
               Vendre. Former.
               <br />
@@ -59,7 +65,7 @@ export default function Home() {
               <span className="text-accent">ce qui manque</span> entre les deux.
             </h1>
             <p className="mt-8 text-lg md:text-xl text-muted max-w-xl leading-relaxed">
-              Sales depuis 10 ans. Head of Sales freelance chez Exoteach et Avelor Spirits, intervenant à Euridis Business School, et créateur d&apos;outils IA pour les équipes qui veulent vendre mieux et transmettre ce qui marche.
+              10 ans en vente B2B. Head of Sales freelance avec un portefeuille de missions (Exoteach, Avelor Spirits), intervenant à Euridis Business School, et créateur d&apos;outils IA pour les équipes qui veulent vendre mieux et transmettre ce qui marche.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <a
@@ -124,6 +130,9 @@ export default function Home() {
                   </span>
                 </li>
               </ul>
+              <div className="mt-6 pt-5 border-t hairline text-sm text-muted leading-relaxed">
+                Ces missions sont en phase de transmission. Je suis disponible dès juillet 2026 pour une nouvelle mission freelance ou un poste de Head of Sales en CDI.
+              </div>
             </div>
           </aside>
         </div>
@@ -214,7 +223,10 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-card border hairline rounded-2xl p-8">
-              <div className="serif text-5xl text-accent mb-4 leading-none">Le besoin</div>
+              <div className="flex items-baseline gap-4 mb-4">
+                <span className="serif text-sm text-accent">01</span>
+                <span className="serif text-5xl text-accent leading-none">Besoin</span>
+              </div>
               <h3 className="serif text-xl mb-3">
                 Toute entreprise est une solution à un problème.
               </h3>
@@ -223,14 +235,20 @@ export default function Home() {
               </p>
             </div>
             <div className="bg-card border hairline rounded-2xl p-8">
-              <div className="serif text-7xl text-accent mb-4 leading-none">3C</div>
+              <div className="flex items-baseline gap-4 mb-4">
+                <span className="serif text-sm text-accent">02</span>
+                <span className="serif text-5xl text-accent leading-none">3C</span>
+              </div>
               <h3 className="serif text-xl mb-3">Comprendre. Creuser. Conclure.</h3>
               <p className="text-muted leading-relaxed">
                 Le cycle de toute conversation de vente. Pas de pitch avant d&apos;avoir compris. Pas de closing avant d&apos;avoir creusé.
               </p>
             </div>
             <div className="bg-card border hairline rounded-2xl p-8">
-              <div className="serif text-7xl text-accent mb-4 leading-none">ROI</div>
+              <div className="flex items-baseline gap-4 mb-4">
+                <span className="serif text-sm text-accent">03</span>
+                <span className="serif text-5xl text-accent leading-none">ROI</span>
+              </div>
               <h3 className="serif text-xl mb-3">
                 Ce que le client gagne sur ce qu&apos;il dépense.
               </h3>
@@ -239,8 +257,11 @@ export default function Home() {
               </p>
             </div>
             <div className="bg-card border hairline rounded-2xl p-8">
-              <div className="serif text-7xl text-accent mb-4 leading-none">
-                70<span className="text-accent-soft text-4xl align-top">/30</span>
+              <div className="flex items-baseline gap-4 mb-4">
+                <span className="serif text-sm text-accent">04</span>
+                <span className="serif text-5xl text-accent leading-none">
+                  70<span className="text-accent-soft text-3xl align-top">/30</span>
+                </span>
               </div>
               <h3 className="serif text-xl mb-3">Le client parle 70%. Toi, 30%.</h3>
               <p className="text-muted leading-relaxed">
@@ -340,16 +361,14 @@ export default function Home() {
                 <br />4 ans en SaaS B2B hypercroissance.
               </h2>
               <p className="text-muted leading-relaxed mb-4">
-                SDR puis BDR puis AE Full Cycle et Sales Ops chez{" "}
-                <strong className="text-ink">HappyPal</strong> (2021-2025). Team Lead Sales freelance chez{" "}
-                <strong className="text-ink">ValueCo</strong> depuis avril 2025. Co-fondateur de{" "}
-                <strong className="text-ink">Growth Factory</strong> début 2021.
+                Parcours continu chez <strong className="text-ink">HappyPal</strong>{" "}
+                (2021-2025) : SDR, BDR, AE Full Cycle, puis management et recrutement de l&apos;équipe Sales et Sales Ops. Mission freelance Team Lead Sales chez{" "}
+                <strong className="text-ink">ValueCo</strong> en 2025. Avant ça, création de plusieurs structures et accompagnement de start-ups dans leur structuration commerciale.
               </p>
               <p className="text-muted leading-relaxed">
-                Aujourd&apos;hui : Head of Sales freelance chez{" "}
-                <strong className="text-ink">Exoteach</strong> et{" "}
-                <strong className="text-ink">Avelor Spirits</strong>, intervenant à{" "}
-                <strong className="text-ink">Euridis Business School</strong>. Je remets ce que j&apos;ai appris dans les mains des autres : DC freelance, coach, intervenant.
+                Aujourd&apos;hui : Head of Sales freelance avec un portefeuille de missions (<strong className="text-ink">Exoteach</strong>,{" "}
+                <strong className="text-ink">Avelor Spirits</strong>) et intervenant à{" "}
+                <strong className="text-ink">Euridis Business School</strong>. Ces missions sont en transmission : je suis disponible dès juillet 2026 pour une mission freelance ou un CDI.
               </p>
             </div>
             <div className="md:col-span-7 grid grid-cols-2 gap-px bg-border border hairline rounded-2xl overflow-hidden">
@@ -441,6 +460,12 @@ export default function Home() {
                 <br />
                 <span className="text-accent">qu&apos;on build un truc ensemble ?</span>
               </h2>
+              <p className="mt-8 text-lg text-muted max-w-xl leading-relaxed">
+                <span className="inline-flex items-center gap-2 align-middle mr-1">
+                  <span className="live-dot" />
+                </span>
+                Disponible dès juillet 2026. Recruteurs : je suis ouvert à un poste de Head of Sales en CDI. Clients : je prends de nouvelles missions freelance. Le plus simple reste 30 minutes en visio.
+              </p>
             </div>
             <div className="md:col-span-4 space-y-3">
               <ContactCard href={CALENDLY} tag="Calendly" label="Prendre 30 minutes" primary />
