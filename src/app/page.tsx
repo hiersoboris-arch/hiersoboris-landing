@@ -98,10 +98,10 @@ export default function Home() {
               <div className="absolute -inset-5 bg-accent-tint blobby-2" aria-hidden="true" />
               <div className="relative blobby overflow-hidden shadow-warm">
                 <Image
-                  src="/portrait.png"
+                  src="/portrait.jpg"
                   alt="Portrait de Boris Hierso Alphandéry"
-                  width={650}
-                  height={668}
+                  width={1000}
+                  height={1000}
                   priority
                   className="w-full h-auto object-cover"
                 />
