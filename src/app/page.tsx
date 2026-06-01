@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 
 function LinkedinIcon({ className }: { className?: string }) {
@@ -19,28 +20,32 @@ const CALENDLY = "https://calendly.com/hierso-boris/echange";
 const LINKEDIN = "https://www.linkedin.com/in/boris-hierso-alphandery";
 const EMAIL = "hierso.boris@gmail.com";
 
+const LOGOS = [
+  { src: "/logos/happypal.png", name: "HappyPal" },
+  { src: "/logos/exoteach.png", name: "Exoteach" },
+  { src: "/logos/valuecometrics.png", name: "ValueCometrics" },
+  { src: "/logos/euridis.png", name: "Euridis" },
+];
+
 export default function Home() {
   return (
     <>
       {/* Top bar */}
-      <header className="border-b hairline">
+      <header className="sticky top-0 z-40 backdrop-blur-md bg-bg/80 border-b hairline">
         <div className="max-w-content mx-auto px-6 h-16 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="serif text-xl font-semibold tracking-tight">
-              Boris Hierso Alphandéry
-            </span>
+          <Link href="/" className="serif text-xl font-semibold tracking-tight">
+            Boris Hierso Alphandéry
           </Link>
           <nav className="hidden md:flex items-center gap-8 text-sm text-muted">
-            <a href="#methode" className="hover:text-ink transition">Méthode</a>
-            <a href="#projets" className="hover:text-ink transition">Projets</a>
-            <a href="#linkedin" className="hover:text-ink transition">LinkedIn</a>
+            <a href="#approche" className="hover:text-ink transition">Approche</a>
+            <a href="#preuves" className="hover:text-ink transition">Preuves</a>
             <a href="#contact" className="hover:text-ink transition">Contact</a>
           </nav>
           <a
             href={CALENDLY}
             className="inline-flex items-center gap-2 bg-ink text-bg px-4 py-2 rounded-full text-sm font-medium hover:bg-accent transition"
           >
-            <span className="hidden sm:inline">Réserver un échange</span>
+            <span className="hidden sm:inline">Prendre 30 minutes</span>
             <span className="sm:hidden">Échange</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </a>
@@ -48,24 +53,28 @@ export default function Home() {
       </header>
 
       {/* Hero */}
-      <section className="border-b hairline">
-        <div className="max-w-content mx-auto px-6 py-24 md:py-32 grid md:grid-cols-12 gap-12 items-start">
-          <div className="md:col-span-8">
+      <section className="relative overflow-hidden border-b hairline grain">
+        <div className="max-w-content mx-auto px-6 py-16 md:py-24 grid md:grid-cols-12 gap-12 md:gap-8 items-center">
+          <div className="md:col-span-7">
             <div className="inline-flex items-center gap-2.5 rounded-full border hairline bg-card px-3.5 py-1.5 text-sm text-ink mb-8">
               <span className="live-dot" />
               <span>
-                Disponible <span className="text-muted">·</span> mission freelance ou CDI <span className="text-muted">·</span> juillet 2026
+                Disponible <span className="text-muted">·</span> juillet 2026
               </span>
             </div>
-            <h1 className="serif text-5xl md:text-7xl leading-[1.02] tracking-tight">
+            <h1 className="serif text-5xl md:text-[5.25rem] leading-[0.98] tracking-tight">
               Vendre. Former.
               <br />
-              Et coder
+              Et coder{" "}
+              <span className="relative inline-block text-accent">
+                ce qui manque
+                <Squiggle />
+              </span>
               <br />
-              <span className="text-accent">ce qui manque</span> entre les deux.
+              entre les deux.
             </h1>
             <p className="mt-8 text-lg md:text-xl text-muted max-w-xl leading-relaxed">
-              10 ans en vente B2B. Head of Sales freelance avec un portefeuille de missions (Exoteach, Avelor Spirits), intervenant à Euridis Business School, et créateur d&apos;outils IA pour les équipes qui veulent vendre mieux et transmettre ce qui marche.
+              Head of Sales freelance depuis 10 ans, coach en négociation et créateur d&apos;outils IA. J&apos;aide les équipes à vendre mieux, et je transmets ce qui marche.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <a
@@ -76,218 +85,181 @@ export default function Home() {
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a
-                href="#projets"
+                href="#approche"
                 className="inline-flex items-center gap-2 text-ink px-6 py-3.5 rounded-full text-sm font-medium border hairline hover:bg-accent-tint transition"
               >
-                Voir mes projets
+                Découvrir mon approche
               </a>
             </div>
           </div>
-          <aside className="md:col-span-4 md:pt-4">
-            <div className="rounded-2xl border hairline bg-card p-6">
-              <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
-                En ce moment
-              </div>
-              <ul className="space-y-4 text-sm">
-                <li className="flex gap-3">
-                  <span className="serif text-accent font-semibold w-5">01</span>
-                  <span>
-                    Head of Sales freelance chez <strong>Exoteach</strong> et{" "}
-                    <strong>Avelor Spirits</strong>.
-                  </span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="serif text-accent font-semibold w-5">02</span>
-                  <span>
-                    Coach principal Paris pour <strong>Les Négociales 2026</strong>.
-                  </span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="serif text-accent font-semibold w-5">03</span>
-                  <span>
-                    Cours prospection · IA · social selling à{" "}
-                    <strong>Euridis Business School</strong>.
-                  </span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="serif text-accent font-semibold w-5">04</span>
-                  <span>
-                    Je build{" "}
-                    <a
-                      href="https://coaching.hiersoboris.fr"
-                      className="underline decoration-accent underline-offset-4"
-                    >
-                      coaching.hiersoboris.fr
-                    </a>
-                    ,{" "}
-                    <a
-                      href="https://toolsbox.hiersoboris.fr"
-                      className="underline decoration-accent underline-offset-4"
-                    >
-                      toolsbox.hiersoboris.fr
-                    </a>{" "}
-                    et d&apos;autres outils.
-                  </span>
-                </li>
-              </ul>
-              <div className="mt-6 pt-5 border-t hairline text-sm text-muted leading-relaxed">
-                Ces missions sont en phase de transmission. Je suis disponible dès juillet 2026 pour une nouvelle mission freelance ou un poste de Head of Sales en CDI.
-              </div>
-            </div>
-          </aside>
-        </div>
-      </section>
 
-      {/* Casquettes */}
-      <section id="casquettes" className="border-b hairline">
-        <div className="max-w-content mx-auto px-6 py-20 md:py-28">
-          <div className="grid md:grid-cols-12 gap-12 mb-16">
-            <div className="md:col-span-4">
-              <div className="text-xs uppercase tracking-[0.18em] text-muted mb-3">
-                <span className="dot" />
-                Ce que je fais
+          <div className="md:col-span-5 flex justify-center md:justify-end">
+            <div className="relative w-[280px] md:w-[340px]">
+              <div className="absolute -inset-5 bg-accent-tint blobby-2" aria-hidden="true" />
+              <div className="relative blobby overflow-hidden shadow-warm">
+                <Image
+                  src="/portrait.png"
+                  alt="Portrait de Boris Hierso Alphandéry"
+                  width={650}
+                  height={668}
+                  priority
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-3 -left-3 md:-left-6 bg-card border hairline rounded-2xl px-4 py-3 shadow-warm">
+                <div className="serif text-2xl leading-none">10 ans</div>
+                <div className="text-xs text-muted mt-1">en vente B2B</div>
               </div>
             </div>
-            <div className="md:col-span-8">
-              <h2 className="serif text-3xl md:text-5xl leading-[1.05] tracking-tight">
-                Quatre métiers, une obsession :
-                <br />
-                <span className="text-muted">faire que ça vende vraiment.</span>
-              </h2>
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-px bg-border rounded-2xl overflow-hidden border hairline">
-            <article className="bg-card p-8 md:p-10">
-              <div className="serif text-accent text-sm mb-3">01 · Direction commerciale</div>
-              <h3 className="serif text-2xl mb-3">Head of Sales freelance</h3>
-              <p className="text-muted leading-relaxed mb-5">
-                Je prends la fonction commerciale d&apos;une PME ou d&apos;une boîte en croissance : pipeline, équipe, process, outillage. Full cycle (prospection -&gt; closing), combinaison de l&apos;outbound automatisé et du terrain.
-              </p>
-              <div className="text-sm text-ink">
-                Actuels : Exoteach (EdTech SaaS B2B) · Avelor Spirits (spiritueux premium).
-              </div>
-            </article>
-            <article className="bg-card p-8 md:p-10">
-              <div className="serif text-accent text-sm mb-3">02 · Coaching négociation</div>
-              <h3 className="serif text-2xl mb-3">Coach pour étudiants et commerciaux</h3>
-              <p className="text-muted leading-relaxed mb-5">
-                Méthode Besoin -&gt; 3C -&gt; ROI -&gt; 70/30. Je coache des étudiants en compétitions de négo (Négociales) et des commerciaux en poste qui veulent durcir leur entonnoir.
-              </p>
-              <div className="text-sm text-ink">
-                Négociales 2026 : coach principal Paris, juré qualif + quarts. 40h de coaching · ~50 étudiants sur la saison.
-              </div>
-            </article>
-            <article className="bg-card p-8 md:p-10">
-              <div className="serif text-accent text-sm mb-3">03 · Intervenant école</div>
-              <h3 className="serif text-2xl mb-3">Cours à Euridis Business School</h3>
-              <p className="text-muted leading-relaxed mb-5">
-                Prospection, automatisation, IA appliquée à la vente, social selling. Cours pensés pour des étudiants qui veulent un métier, pas un titre. Mises en situation réelles : pitch, closing, prospection.
-              </p>
-              <div className="text-sm text-ink">
-                9 classes accompagnées · ~225 étudiants · 14,2/20 de moyenne sur les interventions.
-              </div>
-            </article>
-            <article className="bg-card p-8 md:p-10">
-              <div className="serif text-accent text-sm mb-3">04 · Maker IA</div>
-              <h3 className="serif text-2xl mb-3">J&apos;écris les outils qui manquent</h3>
-              <p className="text-muted leading-relaxed mb-5">
-                Quand un client a besoin d&apos;un outil qu&apos;aucun SaaS ne fait correctement, je le code. Stack : Next.js, Supabase, Vercel, Gemini. Petits outils, vrais usages.
-              </p>
-              <div className="text-sm text-ink">
-                coaching.hiersoboris.fr · toolsbox.hiersoboris.fr · linkedin-optimizer · à venir.
-              </div>
-            </article>
           </div>
         </div>
       </section>
 
-      {/* Méthode */}
-      <section id="methode" className="border-b hairline grain">
-        <div className="max-w-content mx-auto px-6 py-20 md:py-28">
-          <div className="grid md:grid-cols-12 gap-12 mb-16">
-            <div className="md:col-span-4">
-              <div className="text-xs uppercase tracking-[0.18em] text-muted mb-3">
-                <span className="dot" />
-                La méthode
+      {/* Trust strip */}
+      <section className="border-b hairline">
+        <div className="max-w-content mx-auto px-6 py-8 flex flex-col md:flex-row md:items-center gap-6 md:gap-10">
+          <div className="text-xs uppercase tracking-[0.18em] text-muted whitespace-nowrap">
+            Ils m&apos;ont fait confiance
+          </div>
+          <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
+            {LOGOS.map((l) => (
+              <div key={l.name} className="group flex items-center gap-2.5">
+                <span className="w-9 h-9 rounded-xl bg-white border hairline flex items-center justify-center overflow-hidden">
+                  <Image
+                    src={l.src}
+                    alt={l.name}
+                    width={36}
+                    height={36}
+                    className="w-6 h-6 object-contain grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition"
+                  />
+                </span>
+                <span className="text-sm font-medium text-ink">{l.name}</span>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Approche / Ce que je fais */}
+      <section id="approche" className="border-b hairline">
+        <div className="max-w-content mx-auto px-6 py-20 md:py-28">
+          <div className="max-w-2xl mb-14">
+            <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
+              <span className="dot" />
+              Ce que je fais
             </div>
-            <div className="md:col-span-8">
-              <h2 className="serif text-3xl md:text-5xl leading-[1.05] tracking-tight">
-                Quatre principes que je transmets
-                <br />
-                <span className="text-muted">à tous mes clients et étudiants.</span>
-              </h2>
-            </div>
+            <h2 className="serif text-3xl md:text-5xl leading-[1.05] tracking-tight">
+              Quatre métiers, une obsession :{" "}
+              <span className="text-muted">faire que ça vende vraiment.</span>
+            </h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-card border hairline rounded-2xl p-8">
-              <div className="flex items-baseline gap-4 mb-4">
-                <span className="serif text-sm text-accent">01</span>
-                <span className="serif text-5xl text-accent leading-none">Besoin</span>
+            <RoleCard
+              index="01"
+              title="Head of Sales freelance"
+              status="transmission"
+              statusLabel="Exoteach, Avelor · en transmission"
+              desc="Je prends la direction commerciale d'une boîte en croissance : pipeline, équipe, process, outillage. Full cycle, de la prospection au closing, outbound automatisé + terrain."
+            />
+            <RoleCard
+              index="02"
+              title="Coach en négociation"
+              status="actif"
+              statusLabel="En cours"
+              desc="Méthode Besoin → 3C → ROI → 70/30. J'entraîne des étudiants en compétition (Les Négociales) et des commerciaux en poste qui veulent durcir leur entonnoir."
+            />
+            <RoleCard
+              index="03"
+              title="Intervenant à Euridis Business School"
+              status="actif"
+              statusLabel="En cours · années à venir"
+              desc="Prospection, automatisation, IA appliquée à la vente, social selling. Des cours pour des étudiants qui veulent un métier, pas un titre. Mises en situation réelles."
+            />
+            <RoleCard
+              index="04"
+              title="Créateur d'outils IA"
+              status="actif"
+              statusLabel="Actif"
+              desc="Quand l'outil n'existe pas, je le code. Next.js, Supabase, Vercel, Gemini. Petits outils, vrais usages : coaching.hiersoboris.fr, toolsbox.hiersoboris.fr."
+            />
+          </div>
+
+          <p className="mt-8 text-muted leading-relaxed max-w-2xl">
+            J&apos;accompagne aussi des startups et des associations dans leur structuration commerciale et des phases de coaching.
+          </p>
+
+          {/* Disponibilité */}
+          <div className="mt-12 rounded-2xl border hairline bg-accent-tint p-8 md:p-10 flex flex-col md:flex-row md:items-center gap-6 md:justify-between">
+            <div className="max-w-2xl">
+              <div className="flex items-center gap-2.5 mb-3">
+                <span className="live-dot" />
+                <span className="text-sm font-medium text-ink">Disponible dès juillet 2026</span>
               </div>
-              <h3 className="serif text-xl mb-3">
-                Toute entreprise est une solution à un problème.
-              </h3>
-              <p className="text-muted leading-relaxed">
-                Tant que je n&apos;ai pas identifié le problème, je ne propose rien. Idem pour un étudiant qui cherche une alternance : il est lui-même la réponse à un besoin, encore faut-il savoir lequel. C&apos;est là que tout commence.
+              <p className="serif text-xl md:text-2xl leading-snug">
+                Mes missions de Head of Sales arrivent à leur terme. Je suis ouvert à un poste de Head of Sales en CDI ou à une nouvelle mission freelance.
               </p>
             </div>
-            <div className="bg-card border hairline rounded-2xl p-8">
-              <div className="flex items-baseline gap-4 mb-4">
-                <span className="serif text-sm text-accent">02</span>
-                <span className="serif text-5xl text-accent leading-none">3C</span>
-              </div>
-              <h3 className="serif text-xl mb-3">Comprendre. Creuser. Conclure.</h3>
-              <p className="text-muted leading-relaxed">
-                Le cycle de toute conversation de vente. Pas de pitch avant d&apos;avoir compris. Pas de closing avant d&apos;avoir creusé.
-              </p>
-            </div>
-            <div className="bg-card border hairline rounded-2xl p-8">
-              <div className="flex items-baseline gap-4 mb-4">
-                <span className="serif text-sm text-accent">03</span>
-                <span className="serif text-5xl text-accent leading-none">ROI</span>
-              </div>
-              <h3 className="serif text-xl mb-3">
-                Ce que le client gagne sur ce qu&apos;il dépense.
-              </h3>
-              <p className="text-muted leading-relaxed">
-                Tant qu&apos;on ne sait pas chiffrer ça, on ne vend pas, on espère. La méthode commence par l&apos;arithmétique.
-              </p>
-            </div>
-            <div className="bg-card border hairline rounded-2xl p-8">
-              <div className="flex items-baseline gap-4 mb-4">
-                <span className="serif text-sm text-accent">04</span>
-                <span className="serif text-5xl text-accent leading-none">
-                  70<span className="text-accent-soft text-3xl align-top">/30</span>
-                </span>
-              </div>
-              <h3 className="serif text-xl mb-3">Le client parle 70%. Toi, 30%.</h3>
-              <p className="text-muted leading-relaxed">
-                Si tu parles plus, tu vends moins. La règle qui sauve les commerciaux qui pitchent trop tôt.
-              </p>
-            </div>
+            <a
+              href={CALENDLY}
+              className="inline-flex items-center gap-2 bg-ink text-bg px-6 py-3.5 rounded-full text-sm font-medium hover:bg-accent transition whitespace-nowrap self-start md:self-auto"
+            >
+              En parler
+              <ArrowRight className="w-4 h-4" />
+            </a>
           </div>
         </div>
       </section>
 
-      {/* Projets */}
-      <section id="projets" className="border-b hairline">
+      {/* Méthode (bande) */}
+      <section className="border-b hairline grain">
+        <div className="max-w-content mx-auto px-6 py-20 md:py-28">
+          <div className="max-w-2xl mb-14">
+            <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
+              <span className="dot" />
+              La méthode
+            </div>
+            <h2 className="serif text-3xl md:text-5xl leading-[1.05] tracking-tight">
+              Quatre principes,{" "}
+              <span className="text-muted">que je transmets à tout le monde.</span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-border rounded-2xl overflow-hidden border hairline">
+            <Principle token="Besoin" line="Toute boîte est une solution à un problème. Tant que je n'ai pas le problème, je ne propose rien." />
+            <Principle token="3C" line="Comprendre. Creuser. Conclure. Pas de pitch avant d'avoir compris, pas de closing avant d'avoir creusé." />
+            <Principle token="ROI" line="Ce que le client gagne sur ce qu'il dépense. Sans ce chiffre, on ne vend pas, on espère." />
+            <Principle token={<>70<span className="text-accent-soft text-2xl align-top">/30</span></>} line="Le client parle 70%, toi 30%. Si tu parles plus, tu vends moins." />
+          </div>
+        </div>
+      </section>
+
+      {/* Preuves : stats + projets */}
+      <section id="preuves" className="border-b hairline">
         <div className="max-w-content mx-auto px-6 py-20 md:py-28">
           <div className="grid md:grid-cols-12 gap-12 mb-16">
-            <div className="md:col-span-4">
-              <div className="text-xs uppercase tracking-[0.18em] text-muted mb-3">
+            <div className="md:col-span-5">
+              <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
                 <span className="dot" />
-                Projets
+                Preuves
               </div>
-            </div>
-            <div className="md:col-span-8">
-              <h2 className="serif text-3xl md:text-5xl leading-[1.05] tracking-tight">
-                Ce que je livre,
+              <h2 className="serif text-3xl md:text-5xl leading-[1.05] tracking-tight mb-6">
+                Des chiffres,
                 <br />
-                <span className="text-muted">en clair.</span>
+                <span className="text-muted">et des choses qui tournent.</span>
               </h2>
+              <p className="text-muted leading-relaxed">
+                Parcours continu chez <strong className="text-ink">HappyPal</strong> (2021-2025) : SDR, BDR, AE Full Cycle, puis management et recrutement de l&apos;équipe Sales et Sales Ops. Mission freelance Team Lead chez <strong className="text-ink">ValueCo</strong> en 2025. Avant : création de plusieurs structures et accompagnement de startups.
+              </p>
+            </div>
+            <div className="md:col-span-7 grid grid-cols-2 gap-px bg-border border hairline rounded-2xl overflow-hidden">
+              <Stat value="10 ans" caption="en vente B2B." />
+              <Stat value="1,7M€" caption="d'ARR généré chez HappyPal." />
+              <Stat value="~225" caption="étudiants accompagnés à Euridis." />
+              <Stat
+                value={<>14,2<span className="text-2xl text-muted">/20</span></>}
+                caption="de moyenne sur les interventions."
+              />
             </div>
           </div>
 
@@ -296,180 +268,59 @@ export default function Home() {
               href="https://coaching.hiersoboris.fr"
               tag="App · Production"
               title="Coaching Alternance"
-              desc="App web qui aide les étudiants en alternance à structurer leur recherche d'entreprise. Magic link Supabase, suivi candidatures, relances IA."
+              desc="L'app qui aide les étudiants en alternance à structurer leur recherche d'entreprise. Magic link, suivi candidatures, relances IA."
               footer="coaching.hiersoboris.fr"
             />
             <ProjectCard
               href="https://toolsbox.hiersoboris.fr"
               tag="App · Production"
               title="The Tools Box"
-              desc="Annuaire d'outils que j'utilise au quotidien en sales, sales ops et build : prospection, enrichissement, automatisation, IA. Filtrable, mis à jour en continu."
+              desc="L'annuaire des outils que j'utilise en sales, sales ops et build : prospection, enrichissement, automatisation, IA. Filtrable."
               footer="toolsbox.hiersoboris.fr"
             />
             <ProjectCard
               href="https://formation-boris-ha.notion.site/les-n-gociales"
               tag="Ressource · Public"
               title="Préparer Les Négociales"
-              desc="Méthode complète + 30 cas pratiques tirés des éditions passées. Page Notion publique, mise à jour à chaque édition."
+              desc="Méthode complète + cas pratiques tirés des éditions passées. Mise à jour à chaque édition."
               footer="formation-boris-ha.notion.site"
             />
-            <ProjectCard
-              href={CALENDLY}
-              tag="Mission · Head of Sales freelance"
-              title="Exoteach"
-              desc="Plateforme EdTech SaaS B2B (LMS, IA, adaptive learning). Pilotage full cycle, scaling de l'équipe (1 -> 4 + apporteurs + freelances), écosystème commercial hybride."
-              footer="Dec 2025 · 90k€ ARR · objectif 500k€ d'ici fin 2026"
-            />
-            <ProjectCard
-              href={CALENDLY}
-              tag="Mission · Head of Sales freelance"
-              title="Avelor Spirits"
-              desc="Groupe de spiritueux premium (création -> distribution). Stratégie commerciale, réseau de freelances et apporteurs, déploiement multi-marchés : CHR, cavistes, hôtels/palaces, export."
-              footer="Janv 2026 · 450k€ générés · objectif 1,5M€"
-            />
-            <a
-              href={CALENDLY}
-              className="group bg-accent-tint border-2 border-dashed border-accent-soft rounded-2xl p-8 hover:bg-accent hover:text-bg transition"
-            >
-              <div className="flex items-start justify-between mb-6">
-                <div className="text-xs uppercase tracking-[0.18em] text-accent group-hover:text-bg">
-                  Ton projet ?
-                </div>
-                <ArrowRight className="w-5 h-5 text-accent group-hover:text-bg transition" />
-              </div>
-              <h3 className="serif text-2xl mb-2">Le prochain peut être le tien.</h3>
-              <p className="text-muted group-hover:text-bg/80 leading-relaxed mb-6">
-                DC freelance, coaching d&apos;équipe, formation, ou un outil sur mesure. Si ça a du sens, on en parle 30 minutes.
-              </p>
-              <div className="text-sm font-medium">Réserver un échange -&gt;</div>
-            </a>
           </div>
-        </div>
-      </section>
-
-      {/* Parcours */}
-      <section className="border-b hairline">
-        <div className="max-w-content mx-auto px-6 py-20 md:py-28">
-          <div className="grid md:grid-cols-12 gap-12">
-            <div className="md:col-span-5">
-              <div className="text-xs uppercase tracking-[0.18em] text-muted mb-3">
-                <span className="dot" />
-                Parcours
-              </div>
-              <h2 className="serif text-3xl md:text-5xl leading-[1.05] tracking-tight mb-6">
-                10 ans en sales.
-                <br />4 ans en SaaS B2B hypercroissance.
-              </h2>
-              <p className="text-muted leading-relaxed mb-4">
-                Parcours continu chez <strong className="text-ink">HappyPal</strong>{" "}
-                (2021-2025) : SDR, BDR, AE Full Cycle, puis management et recrutement de l&apos;équipe Sales et Sales Ops. Mission freelance Team Lead Sales chez{" "}
-                <strong className="text-ink">ValueCo</strong> en 2025. Avant ça, création de plusieurs structures et accompagnement de start-ups dans leur structuration commerciale.
-              </p>
-              <p className="text-muted leading-relaxed">
-                Aujourd&apos;hui : Head of Sales freelance avec un portefeuille de missions (<strong className="text-ink">Exoteach</strong>,{" "}
-                <strong className="text-ink">Avelor Spirits</strong>) et intervenant à{" "}
-                <strong className="text-ink">Euridis Business School</strong>. Ces missions sont en transmission : je suis disponible dès juillet 2026 pour une mission freelance ou un CDI.
-              </p>
-            </div>
-            <div className="md:col-span-7 grid grid-cols-2 gap-px bg-border border hairline rounded-2xl overflow-hidden">
-              <Stat value="10 ans" caption="en vente B2B." />
-              <Stat value="1,7M€" caption="ARR généré chez HappyPal (SDR + BDR)." />
-              <Stat value="~225" caption="étudiants accompagnés à Euridis." />
-              <Stat
-                value={
-                  <>
-                    14,2<span className="text-2xl text-muted">/20</span>
-                  </>
-                }
-                caption="note moyenne sur les interventions."
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Sur LinkedIn */}
-      <section id="linkedin" className="border-b hairline">
-        <div className="max-w-content mx-auto px-6 py-20 md:py-28">
-          <div className="grid md:grid-cols-12 gap-12 mb-16">
-            <div className="md:col-span-4">
-              <div className="text-xs uppercase tracking-[0.18em] text-muted mb-3">
-                <span className="dot" />
-                Sur LinkedIn
-              </div>
-            </div>
-            <div className="md:col-span-8">
-              <h2 className="serif text-3xl md:text-5xl leading-[1.05] tracking-tight">
-                Ce que je raconte
-                <br />
-                <span className="text-muted">en public.</span>
-              </h2>
-              <p className="text-muted text-lg mt-6 max-w-2xl leading-relaxed">
-                Tout est sur LinkedIn, mis à jour en temps réel : posts, prises de parole, retours d&apos;expérience sur la vente, la négo, l&apos;IA appliquée au commercial.
-              </p>
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
-            <LinkedInCard
-              tag="Post · 20 mai 2026"
-              title="Ce que j'ai appris à coacher 50 étudiants pour Les Négociales 2026."
-              desc="Retour sur la méthode 3C, le ROI, la règle 70/30, et pourquoi le carcan « 10 minutes » est une fausse contrainte. 200 entreprises, 7 000 candidats, 2 finalistes Euridis."
-              href="https://www.linkedin.com/posts/boris-hierso-alphandery_n%C3%A9gociales-savoir-n%C3%A9gocier-ugcPost-7462752165711867904-WwM9"
-              cta="Lire le post"
-            />
-            <LinkedInCard
-              tag="Ressource · 2026"
-              title="Préparer Les Négociales : méthode + 30 cas pratiques."
-              desc="Page Notion publique, structurée en 2 parties (la méthode pour toute négociation · préparer Les Négociales). Mise à jour à chaque édition."
-              href="https://formation-boris-ha.notion.site/les-n-gociales"
-              cta="Voir le guide"
-            />
-            <LinkedInCard
-              tag="Profil · Mai 2026"
-              title="Profil LinkedIn refait : positionnement Head of Sales + coach + maker."
-              desc="Bandeau, à propos, services, recommandations. Refonte complète pour clarifier le triple positionnement vente, formation, outils IA."
-              href={LINKEDIN}
-              cta="Voir le profil"
-            />
-          </div>
-
-          <a
-            href={LINKEDIN}
-            className="inline-flex items-center gap-3 bg-ink text-bg px-6 py-4 rounded-full text-sm font-medium hover:bg-accent transition"
-          >
-            <LinkedinIcon className="w-4 h-4" />
-            Tout suivre sur LinkedIn
-          </a>
         </div>
       </section>
 
       {/* Contact */}
-      <section id="contact">
+      <section id="contact" className="grain">
         <div className="max-w-content mx-auto px-6 py-24 md:py-32">
-          <div className="grid md:grid-cols-12 gap-12 items-end">
-            <div className="md:col-span-8">
-              <div className="text-xs uppercase tracking-[0.18em] text-muted mb-3">
+          <div className="grid md:grid-cols-12 gap-12 items-start">
+            <div className="md:col-span-7">
+              <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
                 <span className="dot" />
                 Parlons
               </div>
-              <h2 className="serif text-4xl md:text-6xl leading-[1.05] tracking-tight">
-                Tu as un sujet commercial,
+              <h2 className="serif text-4xl md:text-6xl leading-[1.02] tracking-tight">
+                Un sujet commercial,
                 <br />
-                de coaching, ou tu veux
-                <br />
-                <span className="text-accent">qu&apos;on build un truc ensemble ?</span>
+                de coaching, ou{" "}
+                <span className="text-accent">un poste à pourvoir ?</span>
               </h2>
               <p className="mt-8 text-lg text-muted max-w-xl leading-relaxed">
-                <span className="inline-flex items-center gap-2 align-middle mr-1">
-                  <span className="live-dot" />
-                </span>
-                Disponible dès juillet 2026. Recruteurs : je suis ouvert à un poste de Head of Sales en CDI. Clients : je prends de nouvelles missions freelance. Le plus simple reste 30 minutes en visio.
+                Recruteurs : je suis ouvert à un poste de Head of Sales en CDI. Clients : je prends de nouvelles missions freelance. Le plus simple reste 30 minutes en visio.
               </p>
+              <div className="mt-10">
+                <Image
+                  src="/signature.png"
+                  alt="Signature de Boris Hierso Alphandéry"
+                  width={420}
+                  height={145}
+                  className="sig h-16 w-auto"
+                />
+              </div>
             </div>
-            <div className="md:col-span-4 space-y-3">
+
+            <div className="md:col-span-5 space-y-3">
               <ContactCard href={CALENDLY} tag="Calendly" label="Prendre 30 minutes" primary />
-              <ContactCard href={LINKEDIN} tag="LinkedIn" label="in/boris-hierso-alphandery" />
+              <ContactCard href={LINKEDIN} tag="LinkedIn" label="Suivre · échanger" icon />
               <ContactCard href={`mailto:${EMAIL}`} tag="Email" label={EMAIL} />
             </div>
           </div>
@@ -483,19 +334,83 @@ export default function Home() {
             Boris Hierso Alphandéry · {new Date().getFullYear()}
           </div>
           <div className="flex items-center gap-6">
-            <Link href="/mentions-legales" className="hover:text-ink">
-              Mentions légales
-            </Link>
-            <Link href="/rgpd" className="hover:text-ink">
-              RGPD
-            </Link>
-            <a href={LINKEDIN} className="hover:text-ink">
+            <Link href="/mentions-legales" className="hover:text-ink">Mentions légales</Link>
+            <Link href="/rgpd" className="hover:text-ink">RGPD</Link>
+            <a href={LINKEDIN} className="hover:text-ink inline-flex items-center gap-1.5">
+              <LinkedinIcon className="w-3.5 h-3.5" />
               LinkedIn
             </a>
           </div>
         </div>
       </footer>
     </>
+  );
+}
+
+function Squiggle() {
+  return (
+    <svg
+      className="absolute left-0 -bottom-2 w-full"
+      height="12"
+      viewBox="0 0 200 12"
+      preserveAspectRatio="none"
+      fill="none"
+      aria-hidden="true"
+    >
+      <path
+        d="M2 8C40 3 70 3 100 6C130 9 160 9 198 4"
+        stroke="#A8442C"
+        strokeWidth="3"
+        strokeLinecap="round"
+        opacity="0.55"
+      />
+    </svg>
+  );
+}
+
+function RoleCard({
+  index,
+  title,
+  desc,
+  status,
+  statusLabel,
+}: {
+  index: string;
+  title: string;
+  desc: string;
+  status: "transmission" | "actif";
+  statusLabel: string;
+}) {
+  return (
+    <article className="bg-card border hairline rounded-2xl p-8 md:p-10 hover:border-accent transition">
+      <div className="flex items-center justify-between mb-4">
+        <span className="serif text-sm text-accent">{index}</span>
+        <span className="inline-flex items-center gap-2 text-xs text-muted">
+          <span
+            className="w-1.5 h-1.5 rounded-full"
+            style={{ background: status === "actif" ? "#1F9D55" : "#C56A4F" }}
+          />
+          {statusLabel}
+        </span>
+      </div>
+      <h3 className="serif text-2xl mb-3">{title}</h3>
+      <p className="text-muted leading-relaxed">{desc}</p>
+    </article>
+  );
+}
+
+function Principle({
+  token,
+  line,
+}: {
+  token: React.ReactNode;
+  line: string;
+}) {
+  return (
+    <div className="bg-card p-8 md:p-10">
+      <div className="serif text-5xl text-accent leading-none mb-4">{token}</div>
+      <p className="text-muted text-sm leading-relaxed">{line}</p>
+    </div>
   );
 }
 
@@ -543,49 +458,26 @@ function Stat({
   );
 }
 
-function LinkedInCard({
-  tag,
-  title,
-  desc,
-  href,
-  cta,
-}: {
-  tag: string;
-  title: string;
-  desc: string;
-  href: string;
-  cta: string;
-}) {
-  return (
-    <article className="bg-card border hairline rounded-2xl p-8">
-      <div className="text-xs uppercase tracking-[0.18em] text-accent mb-4">{tag}</div>
-      <h3 className="serif text-xl mb-3">{title}</h3>
-      <p className="text-muted text-sm leading-relaxed mb-6">{desc}</p>
-      <a href={href} className="text-sm text-ink font-medium hover:text-accent">
-        {cta} -&gt;
-      </a>
-    </article>
-  );
-}
-
 function ContactCard({
   href,
   tag,
   label,
   primary,
+  icon,
 }: {
   href: string;
   tag: string;
   label: string;
   primary?: boolean;
+  icon?: boolean;
 }) {
   return (
     <a
       href={href}
       className={
         primary
-          ? "flex items-center justify-between bg-ink text-bg px-6 py-5 rounded-2xl hover:bg-accent transition group"
-          : "flex items-center justify-between border hairline px-6 py-5 rounded-2xl hover:border-accent transition"
+          ? "flex items-center justify-between bg-ink text-bg px-6 py-5 rounded-2xl hover:bg-accent transition"
+          : "flex items-center justify-between border hairline bg-card px-6 py-5 rounded-2xl hover:border-accent transition"
       }
     >
       <span>
@@ -598,7 +490,10 @@ function ContactCard({
         >
           {tag}
         </div>
-        <div className="serif text-lg mt-1">{label}</div>
+        <div className="serif text-lg mt-1 inline-flex items-center gap-2">
+          {icon && <LinkedinIcon className="w-4 h-4" />}
+          {label}
+        </div>
       </span>
       <ArrowUpRight className={primary ? "w-5 h-5" : "w-5 h-5 text-muted"} />
     </a>
