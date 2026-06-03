@@ -112,7 +112,7 @@ export default function Home() {
             <div className="inline-flex items-center gap-2.5 rounded-full border hairline bg-card px-3.5 py-1.5 text-sm text-ink mb-8">
               <span className="live-dot" />
               <span>
-                Disponible <span className="text-muted">·</span> freelance maintenant <span className="text-muted">·</span> CDI juillet 2026
+                Disponible dès maintenant
               </span>
             </div>
             <h1 className="serif text-5xl md:text-[5.25rem] leading-[0.98] tracking-tight">
