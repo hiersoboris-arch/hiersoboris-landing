@@ -21,7 +21,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Boris Hierso Alphandéry · Head of Sales, coach négo, créateur d'outils IA",
+    default: "Boris Hierso Alphandéry · Head of Sales, coach & maker IA",
     template: "%s · Boris Hierso Alphandéry",
   },
   description:
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     locale: "fr_FR",
     url: SITE_URL,
     siteName: "Boris Hierso Alphandéry",
-    title: "Boris Hierso Alphandéry · Head of Sales, coach négo, créateur d'outils IA",
+    title: "Boris Hierso Alphandéry · Head of Sales, coach & maker IA",
     description:
       "Head of Sales freelance, coach en négociation et créateur d'outils IA. 10 ans de vente B2B. Disponible pour missions, CDI, formations et conférences. Basé à Paris.",
   },

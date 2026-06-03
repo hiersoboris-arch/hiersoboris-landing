@@ -453,7 +453,7 @@ export default function Home() {
               <ContactCard href={CALENDLY} tag="Calendly" label="Prendre 30 minutes" primary />
               <ContactCard href={LINKEDIN} tag="LinkedIn" label="Suivre · échanger" icon />
               <ContactCard href={`mailto:${EMAIL}`} tag="Email" label={EMAIL} />
-              <ContactCard href="/CV-Boris-Hierso-Alphandery.pdf" tag="Recruteurs" label="Télécharger mon CV" download />
+              <ContactCard href="/cv" tag="Recruteurs" label="Voir mon CV" />
             </div>
           </div>
         </div>
@@ -466,6 +466,7 @@ export default function Home() {
             Boris Hierso Alphandéry · {new Date().getFullYear()}
           </div>
           <div className="flex items-center gap-6">
+            <Link href="/cv" className="hover:text-ink">CV</Link>
             <Link href="/mentions-legales" className="hover:text-ink">Mentions légales</Link>
             <Link href="/rgpd" className="hover:text-ink">RGPD</Link>
             <a href={LINKEDIN} className="hover:text-ink inline-flex items-center gap-1.5">
