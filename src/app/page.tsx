@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { FAQ } from "@/lib/faq";
 
 function LinkedinIcon({ className }: { className?: string }) {
   return (
@@ -392,6 +393,29 @@ export default function Home() {
               desc="L'app que j'ai codée pour aider les étudiants en alternance à structurer leur recherche d'entreprise. Suivi, relances IA."
               footer="coaching.hiersoboris.fr"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section id="faq" className="border-b hairline">
+        <div className="max-w-content mx-auto px-6 py-20 md:py-28 grid md:grid-cols-12 gap-12">
+          <div className="md:col-span-4">
+            <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
+              <span className="dot" />
+              Questions fréquentes
+            </div>
+            <h2 className="serif text-3xl md:text-5xl leading-[1.05] tracking-tight">
+              En bref.
+            </h2>
+          </div>
+          <div className="md:col-span-8 divide-y divide-border border-t hairline">
+            {FAQ.map((f) => (
+              <div key={f.q} className="py-6">
+                <h3 className="serif text-xl mb-2">{f.q}</h3>
+                <p className="text-muted leading-relaxed">{f.a}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
