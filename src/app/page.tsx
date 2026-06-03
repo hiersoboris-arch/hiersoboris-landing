@@ -148,8 +148,8 @@ export default function Home() {
             Boris Hierso Alphandéry
           </Link>
           <nav className="hidden md:flex items-center gap-8 text-sm text-muted">
-            <a href="#approche" className="hover:text-ink transition">Approche</a>
             <a href="#preuves" className="hover:text-ink transition">Preuves</a>
+            <a href="#recommandations" className="hover:text-ink transition">Recommandations</a>
             <a href="#contact" className="hover:text-ink transition">Contact</a>
           </nav>
           <a
@@ -193,10 +193,10 @@ export default function Home() {
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a
-                href="#approche"
+                href="#preuves"
                 className="inline-flex items-center gap-2 text-ink px-6 py-3.5 rounded-full text-sm font-medium border hairline hover:bg-accent-tint transition"
               >
-                Découvrir mon approche
+                Voir mes résultats
               </a>
             </div>
           </div>
@@ -236,100 +236,6 @@ export default function Home() {
             {[...COMPANIES, ...COMPANIES].map((c, i) => (
               <CompanyPill key={i} name={c.name} logo={c.logo} />
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Approche / Ce que je fais */}
-      <section id="approche" className="border-b hairline">
-        <div className="max-w-content mx-auto px-6 py-20 md:py-28">
-          <div className="max-w-2xl mb-14">
-            <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
-              <span className="dot" />
-              Ce que je fais
-            </div>
-            <h2 className="serif text-3xl md:text-5xl leading-[1.05] tracking-tight">
-              Quatre métiers, une obsession :{" "}
-              <span className="text-muted">faire que ça vende vraiment.</span>
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            <RoleCard
-              index="01"
-              title="Head of Sales freelance"
-              status="transmission"
-              statusLabel="Exoteach, Avelor · en transmission"
-              desc="Je prends la direction commerciale d'une boîte en croissance : pipeline, équipe, process, outillage. Full cycle, de la prospection au closing, outbound automatisé + terrain."
-            />
-            <RoleCard
-              index="02"
-              title="Coach en négociation"
-              status="actif"
-              statusLabel="En cours"
-              desc="Méthode Besoin → 3C → ROI → 70/30. J'entraîne des étudiants en compétition (Les Négociales) et des commerciaux en poste qui veulent durcir leur entonnoir."
-            />
-            <RoleCard
-              index="03"
-              title="Intervenant à Euridis Business School"
-              status="actif"
-              statusLabel="En cours · années à venir"
-              desc="Prospection, automatisation, IA appliquée à la vente, social selling. Des cours pour des étudiants qui veulent un métier, pas un titre. Mises en situation réelles."
-            />
-            <RoleCard
-              index="04"
-              title="Créateur d'outils IA"
-              status="actif"
-              statusLabel="Actif"
-              desc="Quand l'outil n'existe pas, je le code. Next.js, Supabase, Vercel, Gemini. Petits outils, vrais usages : coaching.hiersoboris.fr, toolsbox.hiersoboris.fr."
-            />
-          </div>
-
-          <p className="mt-8 text-muted leading-relaxed max-w-2xl">
-            J&apos;accompagne aussi des startups et des associations dans leur structuration commerciale et des phases de coaching.
-          </p>
-
-          {/* Disponibilité */}
-          <div className="mt-12 rounded-2xl border hairline bg-accent-tint p-8 md:p-10 flex flex-col md:flex-row md:items-center gap-6 md:justify-between">
-            <div className="max-w-2xl">
-              <div className="flex items-center gap-2.5 mb-3">
-                <span className="live-dot" />
-                <span className="text-sm font-medium text-ink">Disponible maintenant en freelance</span>
-              </div>
-              <p className="serif text-xl md:text-2xl leading-snug">
-                Je prends de nouvelles missions freelance dès maintenant. Et à partir de juillet 2026, le temps de transmettre mes missions actuelles, je suis ouvert à un poste de Head of Sales en CDI.
-              </p>
-            </div>
-            <a
-              href={CALENDLY}
-              className="inline-flex items-center gap-2 bg-ink text-bg px-6 py-3.5 rounded-full text-sm font-medium hover:bg-accent transition whitespace-nowrap self-start md:self-auto"
-            >
-              En parler
-              <ArrowRight className="w-4 h-4" />
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Méthode (bande) */}
-      <section className="border-b hairline grain">
-        <div className="max-w-content mx-auto px-6 py-20 md:py-28">
-          <div className="max-w-2xl mb-14">
-            <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
-              <span className="dot" />
-              La méthode
-            </div>
-            <h2 className="serif text-3xl md:text-5xl leading-[1.05] tracking-tight">
-              Quatre principes,{" "}
-              <span className="text-muted">que je transmets à tout le monde.</span>
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-border rounded-2xl overflow-hidden border hairline">
-            <Principle token="Besoin" line="Toute boîte est une solution à un problème. Tant que je n'ai pas le problème, je ne propose rien." />
-            <Principle token="3C" line="Comprendre. Creuser. Conclure. Pas de pitch avant d'avoir compris, pas de closing avant d'avoir creusé." />
-            <Principle token="ROI" line="Ce que le client gagne sur ce qu'il dépense. Sans ce chiffre, on ne vend pas, on espère." />
-            <Principle token={<>70<span className="text-accent-soft text-2xl align-top">/30</span></>} line="Le client parle 70%, toi 30%. Si tu parles plus, tu vends moins." />
           </div>
         </div>
       </section>
@@ -572,52 +478,6 @@ function CompanyPill({ name, logo }: { name: string; logo?: string }) {
       )}
       <span className="serif text-base text-ink whitespace-nowrap">{name}</span>
     </span>
-  );
-}
-
-function RoleCard({
-  index,
-  title,
-  desc,
-  status,
-  statusLabel,
-}: {
-  index: string;
-  title: string;
-  desc: string;
-  status: "transmission" | "actif";
-  statusLabel: string;
-}) {
-  return (
-    <article className="bg-card border hairline rounded-2xl p-8 md:p-10 hover:border-accent transition">
-      <div className="flex items-center justify-between mb-4">
-        <span className="serif text-sm text-accent">{index}</span>
-        <span className="inline-flex items-center gap-2 text-xs text-muted">
-          <span
-            className="w-1.5 h-1.5 rounded-full"
-            style={{ background: status === "actif" ? "#1F9D55" : "#C56A4F" }}
-          />
-          {statusLabel}
-        </span>
-      </div>
-      <h3 className="serif text-2xl mb-3">{title}</h3>
-      <p className="text-muted leading-relaxed">{desc}</p>
-    </article>
-  );
-}
-
-function Principle({
-  token,
-  line,
-}: {
-  token: React.ReactNode;
-  line: string;
-}) {
-  return (
-    <div className="bg-card p-8 md:p-10">
-      <div className="serif text-5xl text-accent leading-none mb-4">{token}</div>
-      <p className="text-muted text-sm leading-relaxed">{line}</p>
-    </div>
   );
 }
 
