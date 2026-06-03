@@ -62,6 +62,15 @@ const RESULTS = [
     ],
   },
   {
+    company: "WoMa",
+    role: "Mission conseil Head of Sales freelance · association, Paris 19e (en cours)",
+    figures: [
+      "Diagnostic commercial et structuration de zéro : pipeline, offre, tarifaire",
+      "Dashboard de pilotage construit (CA attendu, marges, priorités)",
+      "Coaching terrain de l'équipe : scripts, séquences, relances",
+    ],
+  },
+  {
     company: "HappyPal",
     role: "SDR → BDR → AE Full Cycle · scale-up RH / CSE (4 ans)",
     figures: [
@@ -78,6 +87,15 @@ const RESULTS = [
       "301 entreprises cotées rencontrées sur le marché francophone",
       "8 000 calls, 140 rendez-vous physiques, 70 events en 8 mois",
       "8 deals ouverts à +150k€",
+    ],
+  },
+  {
+    company: "Euridis & Les Négociales",
+    role: "Intervenant et coach · la transmission (en cours)",
+    figures: [
+      "Euridis : 9 classes, ~225 étudiants, 14,2/20 de moyenne",
+      "Les Négociales 2026 : coach principal Paris et juré, 40h de coaching",
+      "Prospection, social selling et IA appliquée à la vente",
     ],
   },
 ];
