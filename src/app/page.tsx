@@ -30,7 +30,6 @@ const COMPANIES: { name: string; logo?: string }[] = [
   { name: "ValueCo", logo: "/logos/valueco.png" },
   { name: "HappyPal", logo: "/logos/happypal.png" },
   { name: "Growth & Scale Factory", logo: "/logos/gsf.png" },
-  { name: "À la carte" },
   { name: "Bouygues Télécom", logo: "/logos/bouygues.png" },
   { name: "Deliche", logo: "/logos/deliche.png" },
   { name: "Sindup", logo: "/logos/sindup.png" },
