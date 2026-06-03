@@ -40,6 +40,29 @@ const COMPANIES: { name: string; logo?: string }[] = [
   { name: "Orée", logo: "/logos/oree.png" },
 ];
 
+const OFFERS = [
+  {
+    title: "Structurer & piloter la vente",
+    audience: "Dirigeants · startups · associations",
+    desc: "Je prends la direction commerciale, en mission ou en conseil : go-to-market, pipeline, process, outils, équipe. De 0 à 1, puis le passage à l'échelle.",
+  },
+  {
+    title: "Former & coacher les équipes",
+    audience: "Managers Sales · écoles · étudiants",
+    desc: "Montée en compétences des commerciaux, coaching terrain, interventions. Méthode concrète et mises en situation réelles, jamais de théorie hors-sol.",
+  },
+  {
+    title: "Intervenir & prendre la parole",
+    audience: "CCI · conférences · tables rondes · événements",
+    desc: "Talks et ateliers sur l'IA appliquée à la vente, la prospection, la négociation et la structuration commerciale. Format court, concret, sans bullshit.",
+  },
+  {
+    title: "Outiller la vente",
+    audience: "Équipes qui veulent automatiser",
+    desc: "Outils IA et automation sur mesure (n8n, Make, Claude), CRM, sales ops. Quand l'outil n'existe pas pour le bon usage, je le code.",
+  },
+];
+
 const RESULTS = [
   {
     company: "Exoteach",
@@ -148,8 +171,9 @@ export default function Home() {
             Boris Hierso Alphandéry
           </Link>
           <nav className="hidden md:flex items-center gap-8 text-sm text-muted">
+            <a href="#aider" className="hover:text-ink transition">Aider</a>
             <a href="#preuves" className="hover:text-ink transition">Preuves</a>
-            <a href="#recommandations" className="hover:text-ink transition">Recommandations</a>
+            <a href="#ressources" className="hover:text-ink transition">Ressources</a>
             <a href="#contact" className="hover:text-ink transition">Contact</a>
           </nav>
           <a
@@ -240,7 +264,28 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Preuves : stats + projets */}
+      {/* Comment je peux aider */}
+      <section id="aider" className="border-b hairline">
+        <div className="max-w-content mx-auto px-6 py-20 md:py-28">
+          <div className="max-w-2xl mb-14">
+            <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
+              <span className="dot" />
+              Travailler ensemble
+            </div>
+            <h2 className="serif text-3xl md:text-5xl leading-[1.05] tracking-tight">
+              Comment je peux{" "}
+              <span className="text-muted">aider.</span>
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            {OFFERS.map((o) => (
+              <OfferCard key={o.title} {...o} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Preuves : portfolio par mission */}
       <section id="preuves" className="border-b hairline">
         <div className="max-w-content mx-auto px-6 py-20 md:py-28">
           <div className="grid md:grid-cols-12 gap-12 mb-16">
@@ -277,30 +322,6 @@ export default function Home() {
               ))}
             </div>
           </div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            <ProjectCard
-              href="https://coaching.hiersoboris.fr"
-              tag="App · Production"
-              title="Coaching Alternance"
-              desc="L'app qui aide les étudiants en alternance à structurer leur recherche d'entreprise. Magic link, suivi candidatures, relances IA."
-              footer="coaching.hiersoboris.fr"
-            />
-            <ProjectCard
-              href="https://toolsbox.hiersoboris.fr"
-              tag="App · Production"
-              title="The Tools Box"
-              desc="L'annuaire des outils que j'utilise en sales, sales ops et build : prospection, enrichissement, automatisation, IA. Filtrable."
-              footer="toolsbox.hiersoboris.fr"
-            />
-            <ProjectCard
-              href="https://formation-boris-ha.notion.site/les-n-gociales"
-              tag="Ressource · Public"
-              title="Préparer Les Négociales"
-              desc="Méthode complète + cas pratiques tirés des éditions passées. Mise à jour à chaque édition."
-              footer="formation-boris-ha.notion.site"
-            />
-          </div>
         </div>
       </section>
 
@@ -332,6 +353,46 @@ export default function Home() {
             Voir toutes les recommandations
             <ArrowUpRight className="w-4 h-4" />
           </a>
+        </div>
+      </section>
+
+      {/* Ressources & transmission */}
+      <section id="ressources" className="border-b hairline">
+        <div className="max-w-content mx-auto px-6 py-20 md:py-28">
+          <div className="max-w-2xl mb-14">
+            <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
+              <span className="dot" />
+              Ressources &amp; transmission
+            </div>
+            <h2 className="serif text-3xl md:text-5xl leading-[1.05] tracking-tight">
+              En accès libre,{" "}
+              <span className="text-muted">pour celles et ceux qui apprennent.</span>
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <ProjectCard
+              href="https://formation-boris-ha.notion.site/les-n-gociales"
+              tag="Guide · Public"
+              title="Préparer Les Négociales"
+              desc="Ma méthode complète de négociation + des cas pratiques tirés des éditions passées. Pour les étudiants qui préparent le concours."
+              footer="formation-boris-ha.notion.site"
+            />
+            <ProjectCard
+              href="https://toolsbox.hiersoboris.fr"
+              tag="Outil · En ligne"
+              title="The Tools Box"
+              desc="L'annuaire des outils que j'utilise en sales, sales ops et build : prospection, enrichissement, automatisation, IA. Filtrable."
+              footer="toolsbox.hiersoboris.fr"
+            />
+            <ProjectCard
+              href="https://coaching.hiersoboris.fr"
+              tag="App · En ligne"
+              title="Coaching Alternance"
+              desc="L'app que j'ai codée pour aider les étudiants en alternance à structurer leur recherche d'entreprise. Suivi, relances IA."
+              footer="coaching.hiersoboris.fr"
+            />
+          </div>
         </div>
       </section>
 
@@ -368,6 +429,7 @@ export default function Home() {
               <ContactCard href={CALENDLY} tag="Calendly" label="Prendre 30 minutes" primary />
               <ContactCard href={LINKEDIN} tag="LinkedIn" label="Suivre · échanger" icon />
               <ContactCard href={`mailto:${EMAIL}`} tag="Email" label={EMAIL} />
+              <ContactCard href="/CV-Boris-Hierso-Alphandery.pdf" tag="Recruteurs" label="Télécharger mon CV" download />
             </div>
           </div>
         </div>
@@ -411,6 +473,24 @@ function Squiggle() {
         opacity="0.55"
       />
     </svg>
+  );
+}
+
+function OfferCard({
+  title,
+  audience,
+  desc,
+}: {
+  title: string;
+  audience: string;
+  desc: string;
+}) {
+  return (
+    <article className="bg-card border hairline rounded-2xl p-8 md:p-10 hover:border-accent transition">
+      <div className="text-xs uppercase tracking-[0.18em] text-accent mb-3">{audience}</div>
+      <h3 className="serif text-2xl mb-3">{title}</h3>
+      <p className="text-muted leading-relaxed">{desc}</p>
+    </article>
   );
 }
 
@@ -531,16 +611,19 @@ function ContactCard({
   label,
   primary,
   icon,
+  download,
 }: {
   href: string;
   tag: string;
   label: string;
   primary?: boolean;
   icon?: boolean;
+  download?: boolean;
 }) {
   return (
     <a
       href={href}
+      {...(download ? { download: true, target: "_blank", rel: "noopener" } : {})}
       className={
         primary
           ? "flex items-center justify-between bg-ink text-bg px-6 py-5 rounded-2xl hover:bg-accent transition"
