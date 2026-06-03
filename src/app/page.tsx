@@ -41,6 +41,47 @@ const COMPANIES: { name: string; logo?: string }[] = [
   { name: "Orée", logo: "/logos/oree.png" },
 ];
 
+const RESULTS = [
+  {
+    company: "Exoteach",
+    role: "Head of Sales freelance · EdTech SaaS B2B (en cours)",
+    figures: [
+      "290k€ de pipe qualifié construit de zéro",
+      "73 RDV commerciaux menés, 91% de taux d'avancement",
+      "150 calls par semaine, 5 apporteurs d'affaires pilotés",
+      "Objectif 500k€ d'ARR d'ici fin 2026 · 15 000 étudiants utilisent la solution",
+    ],
+  },
+  {
+    company: "Avelor Spirits",
+    role: "Head of Sales freelance · spiritueux premium (en cours)",
+    figures: [
+      "450k€ générés, objectif 1,5M€ d'ici fin 2026",
+      "6 freelances et 8 apporteurs internationaux managés",
+      "Déploiement multi-marchés : CHR, cavistes, hôtels et palaces, export",
+    ],
+  },
+  {
+    company: "HappyPal",
+    role: "SDR → BDR → AE Full Cycle · scale-up RH / CSE (4 ans)",
+    figures: [
+      "1,7M€ d'ARR généré en prospection (SDR & BDR)",
+      "Jusqu'à 317% d'atteinte en prospection",
+      "100 deals signés en AE Full Cycle, 116% du quota annuel",
+      "452k€ d'ARR signé en propre, cycles longs multi-interlocuteurs",
+    ],
+  },
+  {
+    company: "ValueCo",
+    role: "First Sales → Team Lead freelance · finance durable / ESG",
+    figures: [
+      "301 entreprises cotées rencontrées sur le marché francophone",
+      "8 000 calls, 140 rendez-vous physiques, 70 events en 8 mois",
+      "8 deals ouverts à +150k€",
+    ],
+  },
+];
+
 const TESTIMONIALS = [
   {
     quote:
@@ -295,13 +336,22 @@ export default function Home() {
               </p>
             </div>
             <div className="md:col-span-7 grid grid-cols-2 gap-px bg-border border hairline rounded-2xl overflow-hidden">
-              <Stat value="10 ans" caption="en vente B2B." />
-              <Stat value="1,7M€" caption="d'ARR généré chez HappyPal." />
-              <Stat value="~225" caption="étudiants accompagnés à Euridis." />
-              <Stat
-                value={<>14,2<span className="text-2xl text-muted">/20</span></>}
-                caption="de moyenne sur les interventions."
-              />
+              <Stat value="1,7M€" caption="d'ARR généré en prospection (HappyPal)." />
+              <Stat value="317%" caption="d'atteinte max en prospection." />
+              <Stat value="100" caption="deals signés en AE Full Cycle." />
+              <Stat value="~225" caption="étudiants formés à Euridis (14,2/20)." />
+            </div>
+          </div>
+
+          {/* Détail par mission */}
+          <div className="mb-16">
+            <div className="text-xs uppercase tracking-[0.18em] text-muted mb-6">
+              Le détail, par mission
+            </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              {RESULTS.map((r) => (
+                <ResultCard key={r.company} {...r} />
+              ))}
             </div>
           </div>
 
@@ -438,6 +488,31 @@ function Squiggle() {
         opacity="0.55"
       />
     </svg>
+  );
+}
+
+function ResultCard({
+  company,
+  role,
+  figures,
+}: {
+  company: string;
+  role: string;
+  figures: string[];
+}) {
+  return (
+    <article className="bg-card border hairline rounded-2xl p-8 md:p-10">
+      <h3 className="serif text-2xl">{company}</h3>
+      <div className="text-sm text-muted mb-6">{role}</div>
+      <ul className="space-y-3">
+        {figures.map((f, i) => (
+          <li key={i} className="flex gap-3 text-ink leading-relaxed">
+            <span className="mt-2 w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
+            <span>{f}</span>
+          </li>
+        ))}
+      </ul>
+    </article>
   );
 }
 
