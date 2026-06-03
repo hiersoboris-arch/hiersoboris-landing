@@ -22,23 +22,62 @@ const EMAIL = "hierso.boris@gmail.com";
 
 const COMPANIES: { name: string; logo?: string }[] = [
   { name: "Exoteach", logo: "/logos/exoteach.png" },
-  { name: "Avelor" },
+  { name: "Avelor", logo: "/logos/avelor.png" },
   { name: "Euridis", logo: "/logos/euridis.png" },
   { name: "Les Négociales", logo: "/logos/negociales.png" },
   { name: "NanoBacterie", logo: "/logos/nanobacterie.png" },
-  { name: "Ellipse Bike" },
+  { name: "Ellipse Bike", logo: "/logos/ellipsebike.png" },
   { name: "ValueCo", logo: "/logos/valueco.png" },
   { name: "HappyPal", logo: "/logos/happypal.png" },
-  { name: "Growth & Scale Factory" },
+  { name: "Growth & Scale Factory", logo: "/logos/gsf.png" },
   { name: "À la carte" },
   { name: "Bouygues Télécom", logo: "/logos/bouygues.png" },
-  { name: "Deliche" },
+  { name: "Deliche", logo: "/logos/deliche.png" },
   { name: "Sindup", logo: "/logos/sindup.png" },
   { name: "BETC Digital", logo: "/logos/betc.png" },
-  { name: "Valeurs Vertes" },
+  { name: "Valeurs Vertes", logo: "/logos/valeursvertes.png" },
   { name: "Rampazzo Associés", logo: "/logos/rampazzo.png" },
   { name: "Sidiese", logo: "/logos/sidiese.png" },
   { name: "Orée", logo: "/logos/oree.png" },
+];
+
+const TESTIMONIALS = [
+  {
+    quote:
+      "Il a posé les bases de toute notre approche commerciale, de la définition des cibles jusqu'au closing. Je le recommande sans hésiter à toute structure qui veut structurer son commerce.",
+    name: "Sylvain Petit",
+    role: "CTO et cofondateur, Exoteach",
+  },
+  {
+    quote:
+      "Un de ces profils rares capables d'une vision globale tout en gardant une rigueur d'exécution irréprochable. Son implication dans le développement d'Avelor a été précieuse.",
+    name: "Valentin Haeck",
+    role: "Fondateur, Avelor Spirits Group",
+  },
+  {
+    quote:
+      "Un sales enthousiaste et chevronné, qui a su bâtir une stratégie de prospection très structurée. Ses qualités humaines feront de lui un leader apprécié.",
+    name: "Aude Debard",
+    role: "Chief Growth Officer, ex-BNP Paribas CIB",
+  },
+  {
+    quote:
+      "Un intervenant qui transforme la pédagogie en véritable levier de performance.",
+    name: "Christelle Roy",
+    role: "MBA Ingénieur d'Affaires, Euridis",
+  },
+  {
+    quote:
+      "Son soutien est un véritable accélérateur. Ses conseils structurants et son expérience terrain m'aident à monter en puissance.",
+    name: "Lesly Lobal",
+    role: "Sales Engineer, accompagnée par Boris",
+  },
+  {
+    quote:
+      "Boris est ce genre de collègue qu'on n'oublie pas. Si vous avez l'opportunité de bosser avec lui, foncez.",
+    name: "Yohann Simeau",
+    role: "Ancien responsable, HappyPal",
+  },
 ];
 
 export default function Home() {
@@ -77,18 +116,15 @@ export default function Home() {
               </span>
             </div>
             <h1 className="serif text-5xl md:text-[5.25rem] leading-[0.98] tracking-tight">
-              Vendre. Former.
+              Vendre. Structurer.
               <br />
-              Et coder{" "}
               <span className="relative inline-block text-accent">
-                ce qui manque
+                Transmettre.
                 <Squiggle />
               </span>
-              <br />
-              entre les deux.
             </h1>
             <p className="mt-8 text-lg md:text-xl text-muted max-w-xl leading-relaxed">
-              Head of Sales freelance depuis 10 ans, coach en négociation et créateur d&apos;outils IA. J&apos;aide les équipes à vendre mieux, et je transmets ce qui marche.
+              Head of Sales, coach en négociation et créateur d&apos;outils. Je fais vendre, et je transmets ce qui marche.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <a
@@ -255,7 +291,7 @@ export default function Home() {
                 <span className="text-muted">et des choses qui tournent.</span>
               </h2>
               <p className="text-muted leading-relaxed">
-                Parcours continu chez <strong className="text-ink">HappyPal</strong> (2021-2025) : SDR, BDR, AE Full Cycle, puis management et recrutement de l&apos;équipe Sales et Sales Ops. Mission freelance Team Lead chez <strong className="text-ink">ValueCo</strong> en 2025. Avant : création de plusieurs structures et accompagnement de startups.
+                Aujourd&apos;hui, Head of Sales en mission chez <strong className="text-ink">Exoteach</strong> et <strong className="text-ink">Avelor Spirits</strong>. Avant : 10 ans de terrain B2B, dont 4 ans chez <strong className="text-ink">HappyPal</strong> (de SDR au management de l&apos;équipe Sales) et une mission chez <strong className="text-ink">ValueCo</strong> en 2025.
               </p>
             </div>
             <div className="md:col-span-7 grid grid-cols-2 gap-px bg-border border hairline rounded-2xl overflow-hidden">
@@ -292,6 +328,37 @@ export default function Home() {
               footer="formation-boris-ha.notion.site"
             />
           </div>
+        </div>
+      </section>
+
+      {/* Recommandations */}
+      <section id="recommandations" className="border-b hairline grain">
+        <div className="max-w-content mx-auto px-6 py-20 md:py-28">
+          <div className="max-w-2xl mb-14">
+            <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
+              <span className="dot" />
+              Recommandations
+            </div>
+            <h2 className="serif text-3xl md:text-5xl leading-[1.05] tracking-tight">
+              Ce qu&apos;ils en disent,{" "}
+              <span className="text-muted">de Exoteach à Euridis.</span>
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {TESTIMONIALS.map((t) => (
+              <TestimonialCard key={t.name} {...t} />
+            ))}
+          </div>
+
+          <a
+            href="https://www.linkedin.com/in/boris-hierso-alphandery/details/recommendations/"
+            className="mt-10 inline-flex items-center gap-3 text-ink font-medium hover:text-accent transition"
+          >
+            <LinkedinIcon className="w-4 h-4" />
+            Voir toutes les recommandations
+            <ArrowUpRight className="w-4 h-4" />
+          </a>
         </div>
       </section>
 
@@ -371,6 +438,28 @@ function Squiggle() {
         opacity="0.55"
       />
     </svg>
+  );
+}
+
+function TestimonialCard({
+  quote,
+  name,
+  role,
+}: {
+  quote: string;
+  name: string;
+  role: string;
+}) {
+  return (
+    <figure className="bg-card border hairline rounded-2xl p-8 flex flex-col">
+      <blockquote className="text-ink leading-relaxed mb-6">
+        &laquo; {quote} &raquo;
+      </blockquote>
+      <figcaption className="mt-auto pt-2">
+        <div className="serif text-lg">{name}</div>
+        <div className="text-sm text-muted">{role}</div>
+      </figcaption>
+    </figure>
   );
 }
 
