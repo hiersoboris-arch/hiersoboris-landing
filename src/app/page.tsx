@@ -112,7 +112,7 @@ export default function Home() {
             <div className="inline-flex items-center gap-2.5 rounded-full border hairline bg-card px-3.5 py-1.5 text-sm text-ink mb-8">
               <span className="live-dot" />
               <span>
-                Disponible <span className="text-muted">·</span> juillet 2026
+                Disponible <span className="text-muted">·</span> freelance maintenant <span className="text-muted">·</span> CDI juillet 2026
               </span>
             </div>
             <h1 className="serif text-5xl md:text-[5.25rem] leading-[0.98] tracking-tight">
@@ -236,10 +236,10 @@ export default function Home() {
             <div className="max-w-2xl">
               <div className="flex items-center gap-2.5 mb-3">
                 <span className="live-dot" />
-                <span className="text-sm font-medium text-ink">Disponible dès juillet 2026</span>
+                <span className="text-sm font-medium text-ink">Disponible maintenant en freelance</span>
               </div>
               <p className="serif text-xl md:text-2xl leading-snug">
-                Mes missions de Head of Sales arrivent à leur terme. Je suis ouvert à un poste de Head of Sales en CDI ou à une nouvelle mission freelance.
+                Je prends de nouvelles missions freelance dès maintenant. Et à partir de juillet 2026, le temps de transmettre mes missions actuelles, je suis ouvert à un poste de Head of Sales en CDI.
               </p>
             </div>
             <a
@@ -378,7 +378,7 @@ export default function Home() {
                 <span className="text-accent">un poste à pourvoir ?</span>
               </h2>
               <p className="mt-8 text-lg text-muted max-w-xl leading-relaxed">
-                Recruteurs : je suis ouvert à un poste de Head of Sales en CDI. Clients : je prends de nouvelles missions freelance. Le plus simple reste 30 minutes en visio.
+                Clients : je prends de nouvelles missions freelance dès maintenant. Recruteurs : je suis ouvert à un poste de Head of Sales en CDI à partir de juillet 2026. Le plus simple reste 30 minutes en visio.
               </p>
               <div className="mt-10">
                 <Image
