@@ -20,11 +20,25 @@ const CALENDLY = "https://calendly.com/hierso-boris/echange";
 const LINKEDIN = "https://www.linkedin.com/in/boris-hierso-alphandery";
 const EMAIL = "hierso.boris@gmail.com";
 
-const LOGOS = [
-  { src: "/logos/happypal.png", name: "HappyPal" },
-  { src: "/logos/exoteach.png", name: "Exoteach" },
-  { src: "/logos/valuecometrics.png", name: "ValueCometrics" },
-  { src: "/logos/euridis.png", name: "Euridis" },
+const COMPANIES: { name: string; logo?: string }[] = [
+  { name: "Exoteach", logo: "/logos/exoteach.png" },
+  { name: "Avelor" },
+  { name: "Euridis", logo: "/logos/euridis.png" },
+  { name: "Les Négociales", logo: "/logos/negociales.png" },
+  { name: "NanoBacterie", logo: "/logos/nanobacterie.png" },
+  { name: "Ellipse Bike" },
+  { name: "ValueCo", logo: "/logos/valueco.png" },
+  { name: "HappyPal", logo: "/logos/happypal.png" },
+  { name: "Growth & Scale Factory" },
+  { name: "À la carte" },
+  { name: "Bouygues Télécom", logo: "/logos/bouygues.png" },
+  { name: "Deliche" },
+  { name: "Sindup", logo: "/logos/sindup.png" },
+  { name: "BETC Digital", logo: "/logos/betc.png" },
+  { name: "Valeurs Vertes" },
+  { name: "Rampazzo Associés", logo: "/logos/rampazzo.png" },
+  { name: "Sidiese", logo: "/logos/sidiese.png" },
+  { name: "Orée", logo: "/logos/oree.png" },
 ];
 
 export default function Home() {
@@ -115,26 +129,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trust strip */}
-      <section className="border-b hairline">
-        <div className="max-w-content mx-auto px-6 py-8 flex flex-col md:flex-row md:items-center gap-6 md:gap-10">
-          <div className="text-xs uppercase tracking-[0.18em] text-muted whitespace-nowrap">
+      {/* Trust strip (marquee) */}
+      <section id="confiance" className="border-b hairline py-10 overflow-hidden">
+        <div className="max-w-content mx-auto px-6 mb-6">
+          <div className="text-xs uppercase tracking-[0.18em] text-muted">
+            <span className="dot" />
             Ils m&apos;ont fait confiance
           </div>
-          <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
-            {LOGOS.map((l) => (
-              <div key={l.name} className="group flex items-center gap-2.5">
-                <span className="w-9 h-9 rounded-xl bg-white border hairline flex items-center justify-center overflow-hidden">
-                  <Image
-                    src={l.src}
-                    alt={l.name}
-                    width={36}
-                    height={36}
-                    className="w-6 h-6 object-contain grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition"
-                  />
-                </span>
-                <span className="text-sm font-medium text-ink">{l.name}</span>
-              </div>
+        </div>
+        <div className="marquee">
+          <div className="marquee__track">
+            {[...COMPANIES, ...COMPANIES].map((c, i) => (
+              <CompanyPill key={i} name={c.name} logo={c.logo} />
             ))}
           </div>
         </div>
@@ -365,6 +371,26 @@ function Squiggle() {
         opacity="0.55"
       />
     </svg>
+  );
+}
+
+function CompanyPill({ name, logo }: { name: string; logo?: string }) {
+  return (
+    <span className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full border hairline bg-card mx-2 shrink-0">
+      {logo && (
+        <Image
+          src={logo}
+          alt=""
+          width={20}
+          height={20}
+          aria-hidden="true"
+          loading="eager"
+          unoptimized
+          className="w-5 h-5 object-contain grayscale opacity-80"
+        />
+      )}
+      <span className="serif text-base text-ink whitespace-nowrap">{name}</span>
+    </span>
   );
 }
 

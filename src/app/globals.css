@@ -53,6 +53,36 @@ body {
   }
 }
 
+/* Marquee logos (defilement infini) */
+.marquee {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+}
+.marquee__track {
+  display: flex;
+  width: max-content;
+  animation: marquee-x 55s linear infinite;
+}
+.marquee:hover .marquee__track {
+  animation-play-state: paused;
+}
+@keyframes marquee-x {
+  to {
+    transform: translateX(-50%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee {
+    -webkit-mask-image: none;
+    mask-image: none;
+    overflow-x: auto;
+  }
+  .marquee__track {
+    animation: none;
+  }
+}
+
 @layer utilities {
   /* Cadre portrait organique (blob doux) */
   .blobby {
