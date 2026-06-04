@@ -190,15 +190,17 @@ export default function Home() {
 
       {/* Hero */}
       <section className="relative overflow-hidden border-b hairline grain">
-        <div className="max-w-content mx-auto px-6 py-16 md:py-24 grid md:grid-cols-12 gap-12 md:gap-8 items-center">
+        <div className="glow w-[520px] h-[520px] -top-40 -right-32 bg-accent/15" aria-hidden="true" />
+        <div className="glow w-[420px] h-[420px] top-40 -left-40 bg-accent-soft/10" aria-hidden="true" />
+        <div className="relative z-10 max-w-content mx-auto px-6 py-16 md:py-24 grid md:grid-cols-12 gap-12 md:gap-8 items-center">
           <div className="md:col-span-7">
-            <div className="inline-flex items-center gap-2.5 rounded-full border hairline bg-card px-3.5 py-1.5 text-sm text-ink mb-8">
+            <div className="rise rise-1 inline-flex items-center gap-2.5 rounded-full border hairline bg-card px-3.5 py-1.5 text-sm text-ink mb-8">
               <span className="live-dot" />
               <span>
                 Disponible dès maintenant
               </span>
             </div>
-            <h1 className="serif text-5xl md:text-[5.25rem] leading-[0.98] tracking-tight">
+            <h1 className="rise rise-2 serif text-5xl md:text-[5.25rem] leading-[0.98] tracking-tight">
               Vendre. Structurer.
               <br />
               <span className="relative inline-block text-accent">
@@ -206,10 +208,10 @@ export default function Home() {
                 <Squiggle />
               </span>
             </h1>
-            <p className="mt-8 text-lg md:text-xl text-muted max-w-xl leading-relaxed">
+            <p className="rise rise-3 mt-8 text-lg md:text-xl text-muted max-w-xl leading-relaxed">
               Head of Sales, coach en négociation et créateur d&apos;outils. Je fais vendre, et je transmets ce qui marche.
             </p>
-            <div className="mt-10 flex flex-wrap items-center gap-4">
+            <div className="rise rise-4 mt-10 flex flex-wrap items-center gap-4">
               <a
                 href={CALENDLY}
                 className="inline-flex items-center gap-2 bg-ink text-bg px-6 py-3.5 rounded-full text-sm font-medium hover:bg-accent transition"
@@ -227,7 +229,7 @@ export default function Home() {
           </div>
 
           <div className="md:col-span-5 flex justify-center md:justify-end">
-            <div className="relative w-[280px] md:w-[340px]">
+            <div className="rise rise-3 relative w-[280px] md:w-[340px]">
               <div className="absolute -inset-5 bg-accent-tint blobby-2" aria-hidden="true" />
               <div className="relative blobby overflow-hidden shadow-warm">
                 <Image
@@ -267,7 +269,7 @@ export default function Home() {
 
       {/* Comment je peux aider */}
       <section id="aider" className="border-b hairline">
-        <div className="max-w-content mx-auto px-6 py-20 md:py-28">
+        <div className="reveal max-w-content mx-auto px-6 py-20 md:py-28">
           <div className="max-w-2xl mb-14">
             <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
               <span className="dot" />
@@ -288,7 +290,7 @@ export default function Home() {
 
       {/* Preuves : portfolio par mission */}
       <section id="preuves" className="border-b hairline">
-        <div className="max-w-content mx-auto px-6 py-20 md:py-28">
+        <div className="reveal max-w-content mx-auto px-6 py-20 md:py-28">
           <div className="grid md:grid-cols-12 gap-12 mb-16">
             <div className="md:col-span-5">
               <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
@@ -328,7 +330,7 @@ export default function Home() {
 
       {/* Recommandations */}
       <section id="recommandations" className="border-b hairline grain">
-        <div className="max-w-content mx-auto px-6 py-20 md:py-28">
+        <div className="reveal max-w-content mx-auto px-6 py-20 md:py-28">
           <div className="max-w-2xl mb-14">
             <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
               <span className="dot" />
@@ -359,7 +361,7 @@ export default function Home() {
 
       {/* Ressources & transmission */}
       <section id="ressources" className="border-b hairline">
-        <div className="max-w-content mx-auto px-6 py-20 md:py-28">
+        <div className="reveal max-w-content mx-auto px-6 py-20 md:py-28">
           <div className="max-w-2xl mb-14">
             <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
               <span className="dot" />
@@ -399,7 +401,7 @@ export default function Home() {
 
       {/* FAQ */}
       <section id="faq" className="border-b hairline">
-        <div className="max-w-content mx-auto px-6 py-20 md:py-28 grid md:grid-cols-12 gap-12">
+        <div className="reveal max-w-content mx-auto px-6 py-20 md:py-28 grid md:grid-cols-12 gap-12">
           <div className="md:col-span-4">
             <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
               <span className="dot" />
@@ -421,8 +423,9 @@ export default function Home() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="grain">
-        <div className="max-w-content mx-auto px-6 py-24 md:py-32">
+      <section id="contact" className="relative overflow-hidden grain">
+        <div className="glow w-[460px] h-[460px] -bottom-40 -right-32 bg-accent/12" aria-hidden="true" />
+        <div className="reveal relative z-10 max-w-content mx-auto px-6 py-24 md:py-32">
           <div className="grid md:grid-cols-12 gap-12 items-start">
             <div className="md:col-span-7">
               <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
@@ -511,7 +514,7 @@ function OfferCard({
   desc: string;
 }) {
   return (
-    <article className="bg-card border hairline rounded-2xl p-8 md:p-10 hover:border-accent transition">
+    <article className="lift bg-card border hairline rounded-2xl p-8 md:p-10 hover:border-accent transition">
       <div className="text-xs uppercase tracking-[0.18em] text-accent mb-3">{audience}</div>
       <h3 className="serif text-2xl mb-3">{title}</h3>
       <p className="text-muted leading-relaxed">{desc}</p>
@@ -554,7 +557,7 @@ function TestimonialCard({
   role: string;
 }) {
   return (
-    <figure className="bg-card border hairline rounded-2xl p-8 flex flex-col">
+    <figure className="lift bg-card border hairline rounded-2xl p-8 flex flex-col">
       <blockquote className="text-ink leading-relaxed mb-6">
         &laquo; {quote} &raquo;
       </blockquote>
@@ -602,7 +605,7 @@ function ProjectCard({
   return (
     <a
       href={href}
-      className="group bg-card border hairline rounded-2xl p-8 hover:border-accent transition"
+      className="lift group bg-card border hairline rounded-2xl p-8 hover:border-accent transition"
     >
       <div className="flex items-start justify-between mb-6">
         <div className="text-xs uppercase tracking-[0.18em] text-accent">{tag}</div>
