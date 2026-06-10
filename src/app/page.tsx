@@ -445,9 +445,9 @@ export default function Home() {
                 <Image
                   src="/signature.png"
                   alt="Signature de Boris Hierso Alphandéry"
-                  width={420}
-                  height={145}
-                  className="sig h-16 w-auto"
+                  width={2770}
+                  height={764}
+                  className="h-16 w-auto opacity-80"
                 />
               </div>
             </div>
