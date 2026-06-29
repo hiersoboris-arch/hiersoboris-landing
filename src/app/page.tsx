@@ -21,24 +21,28 @@ const CALENDLY = "https://calendly.com/hierso-boris/echange";
 const LINKEDIN = "https://www.linkedin.com/in/boris-hierso-alphandery";
 const EMAIL = "hierso.boris@gmail.com";
 
-const COMPANIES: { name: string; logo?: string }[] = [
-  { name: "Exoteach", logo: "/logos/exoteach.png" },
-  { name: "Avelor", logo: "/logos/avelor.png" },
-  { name: "Euridis", logo: "/logos/euridis.png" },
-  { name: "Les Négociales", logo: "/logos/negociales.png" },
-  { name: "NanoBacterie", logo: "/logos/nanobacterie.png" },
-  { name: "Ellipse Bike", logo: "/logos/ellipsebike.png" },
-  { name: "ValueCo", logo: "/logos/valueco.png" },
-  { name: "HappyPal", logo: "/logos/happypal.png" },
-  { name: "Growth & Scale Factory", logo: "/logos/gsf.png" },
-  { name: "Bouygues Télécom", logo: "/logos/bouygues.png" },
-  { name: "Deliche", logo: "/logos/deliche.png" },
-  { name: "Sindup", logo: "/logos/sindup.png" },
-  { name: "BETC Digital", logo: "/logos/betc.png" },
-  { name: "Valeurs Vertes", logo: "/logos/valeursvertes.png" },
-  { name: "Rampazzo Associés", logo: "/logos/rampazzo.png" },
-  { name: "Sidiese", logo: "/logos/sidiese.png" },
-  { name: "Orée", logo: "/logos/oree.png" },
+const COMPANIES: { name: string; logo: string }[] = [
+  { name: "Exoteach", logo: "/logos/tile-exoteach.png" },
+  { name: "Avelor Spirits", logo: "/logos/tile-avelor.png" },
+  { name: "HappyPal", logo: "/logos/tile-happypal.png" },
+  { name: "Euridis Business School", logo: "/logos/tile-euridis.png" },
+  { name: "Les Négociales", logo: "/logos/tile-negociales.png" },
+  { name: "ValueCo", logo: "/logos/tile-valueco.png" },
+  { name: "WoMa", logo: "/logos/tile-woma.png" },
+  { name: "Bouygues Télécom", logo: "/logos/tile-bouygues.png" },
+  { name: "BETC Fullsix", logo: "/logos/tile-betc.png" },
+  { name: "Growth & Scale Factory", logo: "/logos/tile-gsf.png" },
+  { name: "NanoBacterie", logo: "/logos/tile-nanobacterie.png" },
+  { name: "Ellipse Bike", logo: "/logos/tile-ellipsebike.png" },
+  { name: "Deliche", logo: "/logos/tile-deliche.png" },
+  { name: "Sindup", logo: "/logos/tile-sindup.png" },
+  { name: "Sidiese", logo: "/logos/tile-sidiese.png" },
+  { name: "Valeurs Vertes", logo: "/logos/tile-valeursvertes.png" },
+  { name: "Rampazzo Associés", logo: "/logos/tile-rampazzo.png" },
+  { name: "Orée", logo: "/logos/tile-oree.png" },
+  { name: "Parrains Par Mille", logo: "/logos/tile-parrainsparmille.png" },
+  { name: "Centre des Professions Financières", logo: "/logos/tile-cpf.png" },
+  { name: "Azimuto", logo: "/logos/tile-azimuto.png" },
 ];
 
 const OFFERS = [
@@ -537,23 +541,17 @@ function TestimonialCard({
   );
 }
 
-function CompanyPill({ name, logo }: { name: string; logo?: string }) {
+function CompanyPill({ name, logo }: { name: string; logo: string }) {
   return (
-    <span className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full border hairline bg-card mx-2 shrink-0">
-      {logo && (
-        <Image
-          src={logo}
-          alt=""
-          width={20}
-          height={20}
-          aria-hidden="true"
-          loading="eager"
-          unoptimized
-          className="w-5 h-5 object-contain logo-white"
-        />
-      )}
-      <span className="serif text-base text-ink whitespace-nowrap">{name}</span>
-    </span>
+    <Image
+      src={logo}
+      alt={name}
+      width={440}
+      height={240}
+      loading="eager"
+      unoptimized
+      className="h-16 md:h-[4.5rem] w-auto mx-3 shrink-0"
+    />
   );
 }
 
