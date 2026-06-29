@@ -24,6 +24,15 @@ const config: Config = {
           soft: "#C56A4F",
           tint: "#F2E3DC",
         },
+        night: {
+          DEFAULT: "#0A0907",
+          soft: "#141009",
+        },
+        cream: "#F4EFE6",
+        gold: {
+          DEFAULT: "#C9A24B",
+          soft: "#D9BC7A",
+        },
       },
       fontFamily: {
         serif: ["var(--font-fraunces)", "ui-serif", "Georgia", "serif"],

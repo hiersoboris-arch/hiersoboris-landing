@@ -165,86 +165,75 @@ const TESTIMONIALS = [
 export default function Home() {
   return (
     <>
-      {/* Top bar */}
-      <header className="sticky top-0 z-40 backdrop-blur-md bg-bg/80 border-b hairline">
-        <div className="max-w-content mx-auto px-6 h-16 flex items-center justify-between">
-          <Link href="/" className="serif text-xl font-semibold tracking-tight">
+      {/* Hero dark, cinématique (action painting) */}
+      <section className="relative isolate flex min-h-[88vh] flex-col overflow-hidden bg-night text-cream">
+        <Image
+          src="/hero/portrait-dark.jpg"
+          alt="Boris Hierso Alphandéry, visage en body-painting, fond noir"
+          fill
+          priority
+          sizes="100vw"
+          className="-z-20 object-cover object-[center_42%]"
+        />
+        <div
+          className="absolute inset-0 -z-10 bg-gradient-to-t from-night via-night/55 to-night/25"
+          aria-hidden="true"
+        />
+        <div
+          className="absolute inset-0 -z-10 bg-gradient-to-r from-night/90 via-night/35 to-transparent"
+          aria-hidden="true"
+        />
+
+        {/* Top bar, posé sur le hero */}
+        <div className="relative z-10 max-w-content mx-auto w-full px-6 h-20 flex items-center justify-between">
+          <Link href="/" className="serif text-lg md:text-xl tracking-tight text-cream">
             Boris Hierso Alphandéry
           </Link>
-          <nav className="hidden md:flex items-center gap-8 text-sm text-muted">
-            <a href="#aider" className="hover:text-ink transition">Aider</a>
-            <a href="#preuves" className="hover:text-ink transition">Preuves</a>
-            <a href="#ressources" className="hover:text-ink transition">Ressources</a>
-            <a href="#contact" className="hover:text-ink transition">Contact</a>
+          <nav className="hidden md:flex items-center gap-8 text-sm text-cream/70">
+            <a href="#aider" className="hover:text-cream transition">Aider</a>
+            <a href="#preuves" className="hover:text-cream transition">Preuves</a>
+            <a href="#ressources" className="hover:text-cream transition">Ressources</a>
+            <a href="#contact" className="hover:text-cream transition">Contact</a>
           </nav>
           <a
             href={CALENDLY}
-            className="inline-flex items-center gap-2 bg-ink text-bg px-4 py-2 rounded-full text-sm font-medium hover:bg-accent transition"
+            className="inline-flex items-center gap-2 bg-gold text-night px-4 py-2 rounded-full text-sm font-medium hover:bg-gold-soft transition"
           >
             <span className="hidden sm:inline">Prendre 30 minutes</span>
             <span className="sm:hidden">Échange</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </a>
         </div>
-      </header>
 
-      {/* Hero */}
-      <section className="relative overflow-hidden border-b hairline grain">
-        <div className="glow w-[520px] h-[520px] -top-40 -right-32 bg-accent/15" aria-hidden="true" />
-        <div className="glow w-[420px] h-[420px] top-40 -left-40 bg-accent-soft/10" aria-hidden="true" />
-        <div className="relative z-10 max-w-content mx-auto px-6 py-16 md:py-24 grid md:grid-cols-12 gap-12 md:gap-8 items-center">
-          <div className="md:col-span-7">
-            <div className="rise rise-1 inline-flex items-center gap-2.5 rounded-full border hairline bg-card px-3.5 py-1.5 text-sm text-ink mb-8">
+        {/* Contenu hero, ancré en bas */}
+        <div className="relative z-10 mt-auto max-w-content mx-auto w-full px-6 pb-16 md:pb-24">
+          <div className="max-w-3xl">
+            <div className="rise rise-1 inline-flex items-center gap-2.5 text-xs md:text-sm tracking-[0.2em] uppercase text-gold mb-7">
               <span className="live-dot" />
-              <span>
-                Disponible dès maintenant
-              </span>
+              <span>Disponible · Head of Sales · Coach · Maker</span>
             </div>
-            <h1 className="rise rise-2 serif text-5xl md:text-[5.25rem] leading-[0.98] tracking-tight">
+            <h1 className="rise rise-2 serif text-5xl md:text-[5.5rem] leading-[0.96] tracking-tight">
               Vendre. Structurer.
               <br />
-              <span className="relative inline-block text-accent">
-                Transmettre.
-                <Squiggle />
-              </span>
+              <span className="italic text-gold">Transmettre.</span>
             </h1>
-            <p className="rise rise-3 mt-8 text-lg md:text-xl text-muted max-w-xl leading-relaxed">
+            <p className="rise rise-3 mt-7 text-lg md:text-xl text-cream/75 max-w-xl leading-relaxed">
               Head of Sales, coach en négociation et créateur d&apos;outils. Je fais vendre, et je transmets ce qui marche.
             </p>
-            <div className="rise rise-4 mt-10 flex flex-wrap items-center gap-4">
+            <div className="rise rise-4 mt-9 flex flex-wrap items-center gap-4">
               <a
                 href={CALENDLY}
-                className="inline-flex items-center gap-2 bg-ink text-bg px-6 py-3.5 rounded-full text-sm font-medium hover:bg-accent transition"
+                className="inline-flex items-center gap-2 bg-gold text-night px-6 py-3.5 rounded-full text-sm font-medium hover:bg-gold-soft transition"
               >
                 Prendre 30 minutes
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a
                 href="#preuves"
-                className="inline-flex items-center gap-2 text-ink px-6 py-3.5 rounded-full text-sm font-medium border hairline hover:bg-accent-tint transition"
+                className="inline-flex items-center gap-2 text-cream px-6 py-3.5 rounded-full text-sm font-medium border border-cream/25 hover:bg-cream/10 transition"
               >
                 Voir mes résultats
               </a>
-            </div>
-          </div>
-
-          <div className="md:col-span-5 flex justify-center md:justify-end">
-            <div className="rise rise-3 relative w-[280px] md:w-[340px]">
-              <div className="absolute -inset-5 bg-accent-tint blobby-2" aria-hidden="true" />
-              <div className="relative blobby overflow-hidden shadow-warm">
-                <Image
-                  src="/portrait.jpg"
-                  alt="Portrait de Boris Hierso Alphandéry"
-                  width={1000}
-                  height={1000}
-                  priority
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-              <div className="absolute -bottom-3 -left-3 md:-left-6 bg-card border hairline rounded-2xl px-4 py-3 shadow-warm">
-                <div className="serif text-2xl leading-none">10 ans</div>
-                <div className="text-xs text-muted mt-1">en vente B2B</div>
-              </div>
             </div>
           </div>
         </div>
@@ -480,27 +469,6 @@ export default function Home() {
         </div>
       </footer>
     </>
-  );
-}
-
-function Squiggle() {
-  return (
-    <svg
-      className="absolute left-0 -bottom-2 w-full"
-      height="12"
-      viewBox="0 0 200 12"
-      preserveAspectRatio="none"
-      fill="none"
-      aria-hidden="true"
-    >
-      <path
-        d="M2 8C40 3 70 3 100 6C130 9 160 9 198 4"
-        stroke="#A8442C"
-        strokeWidth="3"
-        strokeLinecap="round"
-        opacity="0.55"
-      />
-    </svg>
   );
 }
 
