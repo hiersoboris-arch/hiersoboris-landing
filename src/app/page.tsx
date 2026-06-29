@@ -21,28 +21,28 @@ const CALENDLY = "https://calendly.com/hierso-boris/echange";
 const LINKEDIN = "https://www.linkedin.com/in/boris-hierso-alphandery";
 const EMAIL = "hierso.boris@gmail.com";
 
-const COMPANIES: { name: string; logo: string }[] = [
-  { name: "Exoteach", logo: "/logos/tile-exoteach.png" },
-  { name: "Avelor Spirits", logo: "/logos/tile-avelor.png" },
-  { name: "HappyPal", logo: "/logos/tile-happypal.png" },
-  { name: "Euridis Business School", logo: "/logos/tile-euridis.png" },
-  { name: "Les Négociales", logo: "/logos/tile-negociales.png" },
-  { name: "ValueCo", logo: "/logos/tile-valueco.png" },
-  { name: "WoMa", logo: "/logos/tile-woma.png" },
-  { name: "Bouygues Télécom", logo: "/logos/tile-bouygues.png" },
-  { name: "BETC Fullsix", logo: "/logos/tile-betc.png" },
+const COMPANIES: { name: string; logo: string; url?: string }[] = [
+  { name: "Exoteach", logo: "/logos/tile-exoteach.png", url: "https://www.exoteach.com" },
+  { name: "Avelor Spirits", logo: "/logos/tile-avelor.png", url: "https://avelorspirits.com" },
+  { name: "HappyPal", logo: "/logos/tile-happypal.png", url: "https://www.happypal.fr" },
+  { name: "Euridis Business School", logo: "/logos/tile-euridis.png", url: "https://www.euridis-ecole.com" },
+  { name: "Les Négociales", logo: "/logos/tile-negociales.png", url: "https://www.lesnegociales.com" },
+  { name: "ValueCo", logo: "/logos/tile-valueco.png", url: "https://www.valuecometrics.com" },
+  { name: "WoMa", logo: "/logos/tile-woma.png", url: "https://woma.fr" },
+  { name: "Bouygues Télécom", logo: "/logos/tile-bouygues.png", url: "https://www.bouyguestelecom.fr" },
+  { name: "BETC Fullsix", logo: "/logos/tile-betc.png", url: "https://betcfullsix.com" },
   { name: "Growth & Scale Factory", logo: "/logos/tile-gsf.png" },
-  { name: "NanoBacterie", logo: "/logos/tile-nanobacterie.png" },
-  { name: "Ellipse Bike", logo: "/logos/tile-ellipsebike.png" },
+  { name: "NanoBacterie", logo: "/logos/tile-nanobacterie.png", url: "https://alphaonco.fr" },
+  { name: "Ellipse Bike", logo: "/logos/tile-ellipsebike.png", url: "https://ellipsebikes.com" },
   { name: "Deliche", logo: "/logos/tile-deliche.png" },
-  { name: "Sindup", logo: "/logos/tile-sindup.png" },
-  { name: "Sidiese", logo: "/logos/tile-sidiese.png" },
+  { name: "Sindup", logo: "/logos/tile-sindup.png", url: "https://fr.sindup.com" },
+  { name: "Sidiese", logo: "/logos/tile-sidiese.png", url: "https://www.sidiese.com" },
   { name: "Valeurs Vertes", logo: "/logos/tile-valeursvertes.png" },
-  { name: "Rampazzo Associés", logo: "/logos/tile-rampazzo.png" },
-  { name: "Orée", logo: "/logos/tile-oree.png" },
-  { name: "Parrains Par Mille", logo: "/logos/tile-parrainsparmille.png" },
-  { name: "Centre des Professions Financières", logo: "/logos/tile-cpf.png" },
-  { name: "Azimuto", logo: "/logos/tile-azimuto.png" },
+  { name: "Rampazzo Associés", logo: "/logos/tile-rampazzo.png", url: "https://rampazzo.com" },
+  { name: "Orée", logo: "/logos/tile-oree.png", url: "https://www.oree.org" },
+  { name: "Parrains Par Mille", logo: "/logos/tile-parrainsparmille.png", url: "https://ppm-asso.org" },
+  { name: "Centre des Professions Financières", logo: "/logos/tile-cpf.png", url: "https://professionsfinancieres.com" },
+  { name: "Azimuto", logo: "/logos/tile-azimuto.png", url: "https://azimuto.org" },
 ];
 
 const OFFERS = [
@@ -248,13 +248,13 @@ export default function Home() {
         <div className="max-w-content mx-auto px-6 mb-6">
           <div className="text-xs uppercase tracking-[0.18em] text-muted">
             <span className="dot" />
-            Ils m&apos;ont fait confiance
+            Ils m&apos;ont fait confiance, et me font encore confiance
           </div>
         </div>
         <div className="marquee">
           <div className="marquee__track">
             {[...COMPANIES, ...COMPANIES].map((c, i) => (
-              <CompanyPill key={i} name={c.name} logo={c.logo} />
+              <CompanyPill key={i} name={c.name} logo={c.logo} url={c.url} />
             ))}
           </div>
         </div>
@@ -541,8 +541,16 @@ function TestimonialCard({
   );
 }
 
-function CompanyPill({ name, logo }: { name: string; logo: string }) {
-  return (
+function CompanyPill({
+  name,
+  logo,
+  url,
+}: {
+  name: string;
+  logo: string;
+  url?: string;
+}) {
+  const img = (
     <Image
       src={logo}
       alt={name}
@@ -550,8 +558,22 @@ function CompanyPill({ name, logo }: { name: string; logo: string }) {
       height={240}
       loading="eager"
       unoptimized
-      className="h-16 md:h-[4.5rem] w-auto mx-3 shrink-0"
+      className="h-16 md:h-[4.5rem] w-auto"
     />
+  );
+  if (!url) {
+    return <span className="mx-3 shrink-0">{img}</span>;
+  }
+  return (
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={`Visiter le site de ${name}`}
+      className="mx-3 shrink-0 transition hover:opacity-90 hover:-translate-y-0.5"
+    >
+      {img}
+    </a>
   );
 }
 
