@@ -432,11 +432,11 @@ export default function Home() {
               </p>
               <div className="mt-10">
                 <Image
-                  src="/signature.png"
+                  src="/signature-cream.png"
                   alt="Signature de Boris Hierso Alphandéry"
                   width={2770}
                   height={764}
-                  className="h-16 w-auto opacity-80"
+                  className="h-16 w-auto opacity-90"
                 />
               </div>
             </div>
@@ -549,7 +549,7 @@ function CompanyPill({ name, logo }: { name: string; logo?: string }) {
           aria-hidden="true"
           loading="eager"
           unoptimized
-          className="w-5 h-5 object-contain grayscale opacity-80"
+          className="w-5 h-5 object-contain logo-white"
         />
       )}
       <span className="serif text-base text-ink whitespace-nowrap">{name}</span>
@@ -622,7 +622,7 @@ function ContactCard({
       {...(download ? { download: true, target: "_blank", rel: "noopener" } : {})}
       className={
         primary
-          ? "flex items-center justify-between bg-ink text-bg px-6 py-5 rounded-2xl hover:bg-accent transition"
+          ? "flex items-center justify-between bg-gold text-night px-6 py-5 rounded-2xl hover:bg-gold-soft transition"
           : "flex items-center justify-between border hairline bg-card px-6 py-5 rounded-2xl hover:border-accent transition"
       }
     >

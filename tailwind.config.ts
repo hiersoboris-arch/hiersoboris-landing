@@ -14,19 +14,19 @@ const config: Config = {
     },
     extend: {
       colors: {
-        bg: "#FAF7F2",
-        ink: "#1F1B17",
-        muted: "#6B6055",
-        border: "#E8E0D4",
-        card: "#FFFDF9",
+        bg: "#0A0907",
+        ink: "#F4EFE6",
+        muted: "#A89F8E",
+        border: "#2A241D",
+        card: "#15110B",
         accent: {
-          DEFAULT: "#A8442C",
-          soft: "#C56A4F",
-          tint: "#F2E3DC",
+          DEFAULT: "#C9A24B",
+          soft: "#D9BC7A",
+          tint: "#1E1710",
         },
         night: {
           DEFAULT: "#0A0907",
-          soft: "#141009",
+          soft: "#15110B",
         },
         cream: "#F4EFE6",
         gold: {

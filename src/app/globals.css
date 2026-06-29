@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 html {
-  background: #FAF7F2;
+  background: #0A0907;
   scroll-behavior: smooth;
 }
 
 body {
-  color: #1F1B17;
-  background: #FAF7F2;
+  color: #F4EFE6;
+  background: #0A0907;
   font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }
 
 ::selection {
-  background: rgba(168, 68, 44, 0.16);
-  color: #1F1B17;
+  background: rgba(201, 162, 75, 0.24);
+  color: #F4EFE6;
 }
 
 /* Entrée orchestrée (chargement) + révélation au scroll */
@@ -58,7 +58,7 @@ body {
 }
 .lift:hover {
   transform: translateY(-3px);
-  box-shadow: 0 18px 42px -24px rgba(31, 27, 23, 0.28);
+  box-shadow: 0 18px 42px -24px rgba(0, 0, 0, 0.6);
 }
 
 /* Halo chaud (profondeur d'ambiance) */
@@ -76,10 +76,10 @@ body {
     font-optical-sizing: auto;
   }
   .hairline {
-    border-color: #E8E0D4;
+    border-color: #2A241D;
   }
   .grain {
-    background-image: radial-gradient(rgba(31, 27, 23, 0.04) 1px, transparent 1px);
+    background-image: radial-gradient(rgba(244, 239, 230, 0.035) 1px, transparent 1px);
     background-size: 4px 4px;
   }
   .dot::before {
@@ -88,7 +88,7 @@ body {
     width: 6px;
     height: 6px;
     border-radius: 9999px;
-    background: #A8442C;
+    background: #C9A24B;
     margin-right: 10px;
     vertical-align: 2px;
   }
@@ -155,7 +155,16 @@ body {
   }
   /* Ombre chaude douce */
   .shadow-warm {
-    box-shadow: 0 24px 60px -24px rgba(31, 27, 23, 0.22);
+    box-shadow: 0 24px 60px -24px rgba(0, 0, 0, 0.6);
+  }
+  /* Logos en blanc monochrome (mur de logos sur fond sombre) */
+  .logo-white {
+    filter: brightness(0) invert(1);
+    opacity: 0.62;
+    transition: opacity 0.2s ease;
+  }
+  .logo-white:hover {
+    opacity: 0.95;
   }
 }
 
@@ -168,7 +177,7 @@ body {
 /* Accessibilité : focus clavier visible sur tous les éléments interactifs */
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid #A8442C;
+  outline: 2px solid #C9A24B;
   outline-offset: 3px;
   border-radius: 6px;
 }
