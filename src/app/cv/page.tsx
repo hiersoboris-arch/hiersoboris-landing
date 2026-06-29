@@ -133,7 +133,7 @@ export default function CVPage() {
           download
           target="_blank"
           rel="noopener"
-          className="inline-flex items-center gap-2 bg-ink text-bg px-4 py-2 rounded-full text-sm font-medium hover:bg-accent transition"
+          className="inline-flex items-center gap-2 bg-gold text-night px-4 py-2 rounded-full text-sm font-medium hover:bg-gold-soft transition"
         >
           <Download className="w-3.5 h-3.5" />
           Télécharger en PDF
@@ -223,7 +223,7 @@ export default function CVPage() {
       <section className="border-t hairline pt-10 flex flex-wrap items-center gap-4">
         <a
           href={CALENDLY}
-          className="inline-flex items-center gap-2 bg-ink text-bg px-6 py-3.5 rounded-full text-sm font-medium hover:bg-accent transition"
+          className="inline-flex items-center gap-2 bg-gold text-night px-6 py-3.5 rounded-full text-sm font-medium hover:bg-gold-soft transition"
         >
           Prendre 30 minutes
           <ArrowUpRight className="w-4 h-4" />
