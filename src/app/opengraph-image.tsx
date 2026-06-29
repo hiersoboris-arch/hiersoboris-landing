@@ -10,8 +10,8 @@ export default async function OpengraphImage() {
     (
       <div
         style={{
-          background: "#FAF7F2",
-          color: "#1F1B17",
+          background: "#0A0907",
+          color: "#F4EFE6",
           width: "100%",
           height: "100%",
           display: "flex",
@@ -27,9 +27,9 @@ export default async function OpengraphImage() {
             alignItems: "center",
             gap: 12,
             fontSize: 22,
-            color: "#6B6055",
+            color: "#C9A24B",
             textTransform: "uppercase",
-            letterSpacing: 3,
+            letterSpacing: 4,
           }}
         >
           <div
@@ -37,7 +37,7 @@ export default async function OpengraphImage() {
               width: 12,
               height: 12,
               borderRadius: 9999,
-              background: "#A8442C",
+              background: "#C9A24B",
             }}
           />
           hiersoboris.fr
@@ -47,38 +47,30 @@ export default async function OpengraphImage() {
           style={{
             display: "flex",
             flexDirection: "column",
-            gap: 30,
+            gap: 12,
           }}
         >
           <div
             style={{
-              fontSize: 90,
-              lineHeight: 1,
+              fontSize: 96,
+              lineHeight: 1.02,
               fontWeight: 600,
               letterSpacing: -2,
             }}
           >
-            Vendre. Former.
+            Vendre. Structurer.
           </div>
           <div
             style={{
-              fontSize: 90,
-              lineHeight: 1,
+              fontSize: 96,
+              lineHeight: 1.02,
               fontWeight: 600,
+              fontStyle: "italic",
               letterSpacing: -2,
+              color: "#C9A24B",
             }}
           >
-            Et coder <span style={{ color: "#A8442C" }}>ce qui manque</span>
-          </div>
-          <div
-            style={{
-              fontSize: 90,
-              lineHeight: 1,
-              fontWeight: 600,
-              letterSpacing: -2,
-            }}
-          >
-            entre les deux.
+            Transmettre.
           </div>
         </div>
 
@@ -88,12 +80,12 @@ export default async function OpengraphImage() {
             justifyContent: "space-between",
             alignItems: "flex-end",
             fontSize: 26,
-            color: "#1F1B17",
+            color: "#F4EFE6",
           }}
         >
           <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
             <div style={{ fontWeight: 600 }}>Boris Hierso Alphandéry</div>
-            <div style={{ color: "#6B6055", fontSize: 22 }}>
+            <div style={{ color: "#A89F8E", fontSize: 22 }}>
               Head of Sales freelance · Coach négo · Maker IA
             </div>
           </div>
