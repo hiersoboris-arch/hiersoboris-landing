@@ -63,7 +63,7 @@ const OFFERS = [
   {
     title: "Outiller la vente",
     audience: "Équipes qui veulent automatiser",
-    desc: "Outils IA et automation sur mesure (n8n, Make, Claude), CRM, sales ops. Quand l'outil n'existe pas pour le bon usage, je le code.",
+    desc: "Outils IA et automation sur mesure (n8n, Claude), CRM, sales ops. Quand l'outil n'existe pas pour le bon usage, je le code.",
   },
 ];
 
@@ -88,22 +88,21 @@ const RESULTS = [
     ],
   },
   {
+    company: "Euridis & Les Négociales",
+    role: "Intervenant et coach · la transmission (en cours)",
+    figures: [
+      "Euridis : 9 classes, ~225 étudiants, 14,2/20 de moyenne",
+      "Les Négociales 2026 : coach principal Paris et juré, 40h de coaching",
+      "Prospection, social selling et IA appliquée à la vente",
+    ],
+  },
+  {
     company: "WoMa",
     role: "Mission conseil Head of Sales freelance · association, Paris 19e (en cours)",
     figures: [
       "Diagnostic commercial et structuration de zéro : pipeline, offre, tarifaire",
       "Dashboard de pilotage construit (CA attendu, marges, priorités)",
       "Coaching terrain de l'équipe : scripts, séquences, relances",
-    ],
-  },
-  {
-    company: "HappyPal",
-    role: "SDR → BDR → AE Full Cycle · scale-up RH / CSE (4 ans)",
-    figures: [
-      "1,7M€ d'ARR généré en prospection (SDR & BDR)",
-      "Jusqu'à 317% d'atteinte en prospection",
-      "100 deals signés en AE Full Cycle, 116% du quota annuel",
-      "452k€ d'ARR signé en propre, cycles longs multi-interlocuteurs",
     ],
   },
   {
@@ -116,12 +115,13 @@ const RESULTS = [
     ],
   },
   {
-    company: "Euridis & Les Négociales",
-    role: "Intervenant et coach · la transmission (en cours)",
+    company: "HappyPal",
+    role: "SDR → BDR → AE Full Cycle · scale-up RH / CSE (4 ans)",
     figures: [
-      "Euridis : 9 classes, ~225 étudiants, 14,2/20 de moyenne",
-      "Les Négociales 2026 : coach principal Paris et juré, 40h de coaching",
-      "Prospection, social selling et IA appliquée à la vente",
+      "1,7M€ d'ARR généré en prospection (SDR & BDR)",
+      "Jusqu'à 317% d'atteinte en prospection",
+      "100 deals signés en AE Full Cycle, 116% du quota annuel",
+      "452k€ d'ARR signé en propre, cycles longs multi-interlocuteurs",
     ],
   },
 ];
@@ -303,7 +303,7 @@ export default function Home() {
                 <span className="text-muted">et des choses qui tournent.</span>
               </h2>
               <p className="text-muted leading-relaxed">
-                Aujourd&apos;hui, Head of Sales en mission chez <strong className="text-ink">Exoteach</strong> et <strong className="text-ink">Avelor Spirits</strong>. Avant : 10 ans de terrain B2B, dont 4 ans chez <strong className="text-ink">HappyPal</strong> (de SDR au management de l&apos;équipe Sales) et une mission chez <strong className="text-ink">ValueCo</strong> en 2025.
+                Aujourd&apos;hui, Head of Sales en mission chez <strong className="text-ink">Exoteach</strong> et <strong className="text-ink">Avelor Spirits</strong>. 10 ans de terrain B2B au total, dont 4 ans chez <strong className="text-ink">HappyPal</strong> (de SDR au management de l&apos;équipe Sales) et une mission chez <strong className="text-ink">ValueCo</strong> en 2025.
               </p>
             </div>
             <div className="md:col-span-7 grid grid-cols-2 gap-px bg-border border hairline rounded-2xl overflow-hidden">
@@ -338,7 +338,7 @@ export default function Home() {
             </div>
             <h2 className="serif text-3xl md:text-5xl leading-[1.05] tracking-tight">
               Ce qu&apos;ils en disent,{" "}
-              <span className="text-muted">de Exoteach à Euridis.</span>
+              <span className="text-muted">de Exoteach à HappyPal.</span>
             </h2>
           </div>
 
