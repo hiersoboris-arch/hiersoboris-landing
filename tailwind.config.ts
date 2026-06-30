@@ -14,24 +14,25 @@ const config: Config = {
     },
     extend: {
       colors: {
-        bg: "#0A0907",
-        ink: "#F4EFE6",
-        muted: "#A89F8E",
-        border: "#2A241D",
-        card: "#15110B",
+        bg: "#FAF7F2",
+        ink: "#1F1B17",
+        muted: "#6B6055",
+        border: "#E7E1D7",
+        card: "#FFFDF9",
         accent: {
-          DEFAULT: "#C9A24B",
-          soft: "#D9BC7A",
-          tint: "#1E1710",
+          DEFAULT: "#7C2A38",
+          soft: "#9B3A48",
+          tint: "#F4E8EA",
         },
         night: {
           DEFAULT: "#0A0907",
           soft: "#15110B",
         },
         cream: "#F4EFE6",
-        gold: {
-          DEFAULT: "#C9A24B",
-          soft: "#D9BC7A",
+        bordeaux: {
+          DEFAULT: "#7C2A38",
+          soft: "#9B3A48",
+          deep: "#5C1A26",
         },
       },
       fontFamily: {

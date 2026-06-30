@@ -22,27 +22,26 @@ const LINKEDIN = "https://www.linkedin.com/in/boris-hierso-alphandery";
 const EMAIL = "hierso.boris@gmail.com";
 
 const COMPANIES: { name: string; logo: string; url?: string }[] = [
-  { name: "Exoteach", logo: "/logos/tile-exoteach.png", url: "https://www.exoteach.com" },
-  { name: "Avelor Spirits", logo: "/logos/tile-avelor.png", url: "https://avelorspirits.com" },
-  { name: "HappyPal", logo: "/logos/tile-happypal.png", url: "https://www.happypal.fr" },
-  { name: "Euridis Business School", logo: "/logos/tile-euridis.png", url: "https://www.euridis-ecole.com" },
-  { name: "Les Négociales", logo: "/logos/tile-negociales.png", url: "https://www.lesnegociales.com" },
-  { name: "ValueCo", logo: "/logos/tile-valueco.png", url: "https://www.valuecometrics.com" },
-  { name: "WoMa", logo: "/logos/tile-woma.png", url: "https://woma.fr" },
-  { name: "Bouygues Télécom", logo: "/logos/tile-bouygues.png", url: "https://www.bouyguestelecom.fr" },
-  { name: "BETC Fullsix", logo: "/logos/tile-betc.png", url: "https://betcfullsix.com" },
-  { name: "Growth & Scale Factory", logo: "/logos/tile-gsf.png" },
-  { name: "NanoBacterie", logo: "/logos/tile-nanobacterie.png", url: "https://alphaonco.fr" },
-  { name: "Ellipse Bike", logo: "/logos/tile-ellipsebike.png", url: "https://ellipsebikes.com" },
-  { name: "Deliche", logo: "/logos/tile-deliche.png" },
-  { name: "Sindup", logo: "/logos/tile-sindup.png", url: "https://fr.sindup.com" },
-  { name: "Sidiese", logo: "/logos/tile-sidiese.png", url: "https://www.sidiese.com" },
-  { name: "Valeurs Vertes", logo: "/logos/tile-valeursvertes.png" },
-  { name: "Rampazzo Associés", logo: "/logos/tile-rampazzo.png", url: "https://rampazzo.com" },
-  { name: "Orée", logo: "/logos/tile-oree.png", url: "https://www.oree.org" },
-  { name: "Parrains Par Mille", logo: "/logos/tile-parrainsparmille.png", url: "https://ppm-asso.org" },
-  { name: "Centre des Professions Financières", logo: "/logos/tile-cpf.png", url: "https://professionsfinancieres.com" },
-  { name: "Azimuto", logo: "/logos/tile-azimuto.png", url: "https://azimuto.org" },
+  { name: "Exoteach", logo: "/logos/logo-l-exoteach.png", url: "https://www.exoteach.com" },
+  { name: "Avelor Spirits", logo: "/logos/logo-l-avelor.png", url: "https://avelorspirits.com" },
+  { name: "HappyPal", logo: "/logos/logo-l-happypal.png", url: "https://www.happypal.fr" },
+  { name: "Euridis Business School", logo: "/logos/logo-l-euridis.png", url: "https://www.euridis-ecole.com" },
+  { name: "Les Négociales", logo: "/logos/logo-l-negociales.png", url: "https://www.lesnegociales.com" },
+  { name: "ValueCo", logo: "/logos/logo-l-valueco.png", url: "https://www.valuecometrics.com" },
+  { name: "WoMa", logo: "/logos/logo-l-woma.png", url: "https://woma.fr" },
+  { name: "Bouygues Télécom", logo: "/logos/logo-l-bouygues.png", url: "https://www.bouyguestelecom.fr" },
+  { name: "BETC Fullsix", logo: "/logos/logo-l-betc.png", url: "https://betcfullsix.com" },
+  { name: "Growth & Scale Factory", logo: "/logos/logo-l-gsf.png", url: "https://gsf.digital" },
+  { name: "NanoBacterie", logo: "/logos/logo-l-nanobacterie.png", url: "https://alphaonco.fr" },
+  { name: "Ellipse Bike", logo: "/logos/logo-l-ellipsebike.png", url: "https://ellipsebikes.com" },
+  { name: "Deliche", logo: "/logos/logo-l-deliche.png" },
+  { name: "Sindup", logo: "/logos/logo-l-sindup.png", url: "https://fr.sindup.com" },
+  { name: "Sidiese", logo: "/logos/logo-l-sidiese.png", url: "https://www.sidiese.com" },
+  { name: "Rampazzo Associés", logo: "/logos/logo-l-rampazzo.png", url: "https://rampazzo.com" },
+  { name: "Orée", logo: "/logos/logo-l-oree.png", url: "https://www.oree.org" },
+  { name: "Parrains Par Mille", logo: "/logos/logo-l-parrainsparmille.png", url: "https://ppm-asso.org" },
+  { name: "Centre des Professions Financières", logo: "/logos/logo-l-cpf.png", url: "https://professionsfinancieres.com" },
+  { name: "Azimuto", logo: "/logos/logo-l-azimuto.png", url: "https://azimuto.org" },
 ];
 
 const OFFERS = [
@@ -169,76 +168,105 @@ const TESTIMONIALS = [
 export default function Home() {
   return (
     <>
-      {/* Hero dark, cinématique (action painting) */}
-      <section className="relative isolate flex min-h-[88vh] flex-col overflow-hidden bg-night text-cream">
-        <Image
-          src="/hero/portrait-dark.jpg"
-          alt="Boris Hierso Alphandéry, visage en body-painting, fond noir"
-          fill
-          priority
-          sizes="100vw"
-          className="-z-20 object-cover object-[center_42%]"
-        />
-        <div
-          className="absolute inset-0 -z-10 bg-gradient-to-t from-night via-night/55 to-night/25"
-          aria-hidden="true"
-        />
-        <div
-          className="absolute inset-0 -z-10 bg-gradient-to-r from-night/90 via-night/35 to-transparent"
-          aria-hidden="true"
-        />
-
-        {/* Top bar, posé sur le hero */}
-        <div className="relative z-10 max-w-content mx-auto w-full px-6 h-20 flex items-center justify-between">
-          <Link href="/" className="serif text-lg md:text-xl tracking-tight text-cream">
-            Boris Hierso Alphandéry
-          </Link>
-          <nav className="hidden md:flex items-center gap-8 text-sm text-cream/70">
-            <a href="#aider" className="hover:text-cream transition">Aider</a>
-            <a href="#preuves" className="hover:text-cream transition">Preuves</a>
-            <a href="#ressources" className="hover:text-cream transition">Ressources</a>
-            <a href="#contact" className="hover:text-cream transition">Contact</a>
-          </nav>
-          <a
-            href={CALENDLY}
-            className="inline-flex items-center gap-2 bg-gold text-night px-4 py-2 rounded-full text-sm font-medium hover:bg-gold-soft transition"
-          >
-            <span className="hidden sm:inline">Prendre 30 minutes</span>
-            <span className="sm:hidden">Échange</span>
-            <ArrowRight className="w-3.5 h-3.5" />
-          </a>
-        </div>
-
-        {/* Contenu hero, ancré en bas */}
-        <div className="relative z-10 mt-auto max-w-content mx-auto w-full px-6 pb-16 md:pb-24">
-          <div className="max-w-3xl">
-            <div className="rise rise-1 inline-flex items-center gap-2.5 text-xs md:text-sm tracking-[0.2em] uppercase text-gold mb-7">
-              <span className="live-dot" />
-              <span>Disponible · Head of Sales · Coach · Maker</span>
+      {/* Bandeau dark (handoff) : yeux peints */}
+      <header className="relative isolate bg-night text-cream">
+        <div className="relative h-[44vh] min-h-[320px] md:h-[54vh] w-full overflow-hidden">
+          <Image
+            src="/hero/portrait-dark.jpg"
+            alt="Boris Hierso Alphandéry, visage en body-painting, fond noir"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-[center_38%]"
+          />
+          <div
+            className="absolute inset-0 bg-gradient-to-t from-night/90 via-night/15 to-night/40"
+            aria-hidden="true"
+          />
+          {/* Nav posée sur le bandeau */}
+          <div className="absolute inset-x-0 top-0 z-10 max-w-content mx-auto w-full px-6 h-20 flex items-center justify-between">
+            <Link href="/" className="serif text-lg md:text-xl tracking-tight text-cream">
+              Boris Hierso Alphandéry
+            </Link>
+            <nav className="hidden md:flex items-center gap-8 text-sm text-cream/75">
+              <a href="#aider" className="hover:text-cream transition">Aider</a>
+              <a href="#preuves" className="hover:text-cream transition">Preuves</a>
+              <a href="#ressources" className="hover:text-cream transition">Ressources</a>
+              <a href="#contact" className="hover:text-cream transition">Contact</a>
+            </nav>
+            <a
+              href={CALENDLY}
+              className="inline-flex items-center gap-2 bg-bordeaux-soft text-cream px-4 py-2 rounded-full text-sm font-medium hover:bg-bordeaux transition"
+            >
+              <span className="hidden sm:inline">Prendre 30 minutes</span>
+              <span className="sm:hidden">Échange</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </a>
+          </div>
+          {/* Label bas de bandeau */}
+          <div className="absolute inset-x-0 bottom-0 z-10 max-w-content mx-auto w-full px-6 pb-6">
+            <div className="text-xs md:text-sm tracking-[0.22em] uppercase text-cream/85">
+              Head of Sales · Coach · Créateur d&apos;outils
             </div>
-            <h1 className="rise rise-2 serif text-5xl md:text-[5.5rem] leading-[0.96] tracking-tight">
+          </div>
+        </div>
+      </header>
+
+      {/* Hero clair */}
+      <section className="relative max-w-content mx-auto px-6 pt-14 md:pt-20 pb-14 md:pb-20">
+        <div className="grid md:grid-cols-12 gap-10 md:gap-12 items-start">
+          <div className="md:col-span-8">
+            <div className="rise rise-1 inline-flex items-center gap-2.5 text-xs md:text-sm tracking-[0.2em] uppercase text-bordeaux mb-6">
+              <span className="live-dot" />
+              <span>Disponible dès maintenant</span>
+            </div>
+            <h1 className="rise rise-2 serif text-5xl md:text-[5.25rem] leading-[0.98] tracking-tight">
               Vendre. Structurer.
               <br />
-              <span className="italic text-gold">Transmettre.</span>
+              <span className="italic text-bordeaux">Transmettre.</span>
             </h1>
-            <p className="rise rise-3 mt-7 text-lg md:text-xl text-cream/75 max-w-xl leading-relaxed">
+            <p className="rise rise-3 mt-7 text-lg md:text-xl text-muted max-w-xl leading-relaxed">
               Head of Sales, coach en négociation et créateur d&apos;outils. Je fais vendre, et je transmets ce qui marche.
             </p>
             <div className="rise rise-4 mt-9 flex flex-wrap items-center gap-4">
               <a
                 href={CALENDLY}
-                className="inline-flex items-center gap-2 bg-gold text-night px-6 py-3.5 rounded-full text-sm font-medium hover:bg-gold-soft transition"
+                className="inline-flex items-center gap-2 bg-bordeaux text-cream px-6 py-3.5 rounded-full text-sm font-medium hover:bg-bordeaux-soft transition"
               >
                 Prendre 30 minutes
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a
                 href="#preuves"
-                className="inline-flex items-center gap-2 text-cream px-6 py-3.5 rounded-full text-sm font-medium border border-cream/25 hover:bg-cream/10 transition"
+                className="inline-flex items-center gap-2 text-ink px-6 py-3.5 rounded-full text-sm font-medium border hairline hover:bg-accent-tint transition"
               >
                 Voir mes résultats
               </a>
             </div>
+            <div className="rise rise-5 mt-12 flex flex-wrap gap-x-10 gap-y-6">
+              <HeroStat value="1,7M€" label="ARR généré" accent />
+              <HeroStat value="317%" label="d'atteinte" />
+              <HeroStat value="100" label="deals signés" />
+              <HeroStat value="~225" label="formés" />
+            </div>
+          </div>
+
+          {/* Toile encadrée (accent matière) */}
+          <div className="hidden md:block md:col-span-4">
+            <figure className="rise rise-3">
+              <div className="overflow-hidden rounded-md border-[6px] border-ink shadow-warm">
+                <Image
+                  src="/art/toile-1.jpg"
+                  alt="Toile de Boris Hierso Alphandéry, ancien artiste peintre"
+                  width={900}
+                  height={1200}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <figcaption className="mt-3 text-xs text-muted">
+                Matière. Ancien artiste peintre et bodypainter, 10 ans.
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>
@@ -436,11 +464,11 @@ export default function Home() {
               </p>
               <div className="mt-10">
                 <Image
-                  src="/signature-cream.png"
+                  src="/signature.png"
                   alt="Signature de Boris Hierso Alphandéry"
                   width={2770}
                   height={764}
-                  className="h-16 w-auto opacity-90"
+                  className="h-16 w-auto opacity-80"
                 />
               </div>
             </div>
@@ -473,6 +501,31 @@ export default function Home() {
         </div>
       </footer>
     </>
+  );
+}
+
+function HeroStat({
+  value,
+  label,
+  accent,
+}: {
+  value: string;
+  label: string;
+  accent?: boolean;
+}) {
+  return (
+    <div>
+      <div
+        className={`serif text-3xl md:text-4xl leading-none ${
+          accent ? "text-bordeaux" : "text-ink"
+        }`}
+      >
+        {value}
+      </div>
+      <div className="mt-1.5 text-xs uppercase tracking-[0.12em] text-muted">
+        {label}
+      </div>
+    </div>
   );
 }
 
@@ -554,15 +607,15 @@ function CompanyPill({
     <Image
       src={logo}
       alt={name}
-      width={440}
-      height={240}
+      width={400}
+      height={200}
       loading="eager"
       unoptimized
-      className="h-16 md:h-[4.5rem] w-auto"
+      className="h-8 md:h-10 w-auto object-contain grayscale opacity-60 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100"
     />
   );
   if (!url) {
-    return <span className="mx-3 shrink-0">{img}</span>;
+    return <span className="group mx-6 shrink-0 flex items-center">{img}</span>;
   }
   return (
     <a
@@ -570,7 +623,7 @@ function CompanyPill({
       target="_blank"
       rel="noopener noreferrer"
       aria-label={`Visiter le site de ${name}`}
-      className="mx-3 shrink-0 transition hover:opacity-90 hover:-translate-y-0.5"
+      className="group mx-6 shrink-0 flex items-center transition hover:-translate-y-0.5"
     >
       {img}
     </a>
@@ -642,7 +695,7 @@ function ContactCard({
       {...(download ? { download: true, target: "_blank", rel: "noopener" } : {})}
       className={
         primary
-          ? "flex items-center justify-between bg-gold text-night px-6 py-5 rounded-2xl hover:bg-gold-soft transition"
+          ? "flex items-center justify-between bg-bordeaux text-cream px-6 py-5 rounded-2xl hover:bg-bordeaux-soft transition"
           : "flex items-center justify-between border hairline bg-card px-6 py-5 rounded-2xl hover:border-accent transition"
       }
     >
