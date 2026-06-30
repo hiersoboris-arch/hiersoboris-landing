@@ -172,12 +172,12 @@ export default function Home() {
       <header className="relative isolate bg-night text-cream">
         <div className="relative h-[44vh] min-h-[320px] md:h-[54vh] w-full overflow-hidden">
           <Image
-            src="/hero/portrait-dark.jpg"
-            alt="Boris Hierso Alphandéry, visage en body-painting, fond noir"
+            src="/hero/destruction.jpg"
+            alt="Boris Hierso Alphandéry, visage en body-painting (Destruction), fond noir"
             fill
             priority
             sizes="100vw"
-            className="object-cover object-[center_38%]"
+            className="object-cover object-center"
           />
           <div
             className="absolute inset-0 bg-gradient-to-t from-night/90 via-night/15 to-night/40"
@@ -214,59 +214,39 @@ export default function Home() {
 
       {/* Hero clair */}
       <section className="relative max-w-content mx-auto px-6 pt-14 md:pt-20 pb-14 md:pb-20">
-        <div className="grid md:grid-cols-12 gap-10 md:gap-12 items-start">
-          <div className="md:col-span-8">
-            <div className="rise rise-1 inline-flex items-center gap-2.5 text-xs md:text-sm tracking-[0.2em] uppercase text-bordeaux mb-6">
-              <span className="live-dot" />
-              <span>Disponible dès maintenant</span>
-            </div>
-            <h1 className="rise rise-2 serif text-5xl md:text-[5.25rem] leading-[0.98] tracking-tight">
-              Vendre. Structurer.
-              <br />
-              <span className="italic text-bordeaux">Transmettre.</span>
-            </h1>
-            <p className="rise rise-3 mt-7 text-lg md:text-xl text-muted max-w-xl leading-relaxed">
-              Head of Sales, coach en négociation et créateur d&apos;outils. Je fais vendre, et je transmets ce qui marche.
-            </p>
-            <div className="rise rise-4 mt-9 flex flex-wrap items-center gap-4">
-              <a
-                href={CALENDLY}
-                className="inline-flex items-center gap-2 bg-bordeaux text-cream px-6 py-3.5 rounded-full text-sm font-medium hover:bg-bordeaux-soft transition"
-              >
-                Prendre 30 minutes
-                <ArrowRight className="w-4 h-4" />
-              </a>
-              <a
-                href="#preuves"
-                className="inline-flex items-center gap-2 text-ink px-6 py-3.5 rounded-full text-sm font-medium border hairline hover:bg-accent-tint transition"
-              >
-                Voir mes résultats
-              </a>
-            </div>
-            <div className="rise rise-5 mt-12 flex flex-wrap gap-x-10 gap-y-6">
-              <HeroStat value="1,7M€" label="ARR généré" accent />
-              <HeroStat value="317%" label="d'atteinte" />
-              <HeroStat value="100" label="deals signés" />
-              <HeroStat value="~225" label="formés" />
-            </div>
+        <div className="max-w-3xl">
+          <div className="rise rise-1 inline-flex items-center gap-2.5 text-xs md:text-sm tracking-[0.2em] uppercase text-bordeaux mb-6">
+            <span className="live-dot" />
+            <span>Disponible dès maintenant</span>
           </div>
-
-          {/* Toile encadrée (accent matière) */}
-          <div className="hidden md:block md:col-span-4">
-            <figure className="rise rise-3">
-              <div className="overflow-hidden rounded-md border-[6px] border-ink shadow-warm">
-                <Image
-                  src="/art/toile-1.jpg"
-                  alt="Toile de Boris Hierso Alphandéry, ancien artiste peintre"
-                  width={900}
-                  height={1200}
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-              <figcaption className="mt-3 text-xs text-muted">
-                Matière. Ancien artiste peintre et bodypainter, 10 ans.
-              </figcaption>
-            </figure>
+          <h1 className="rise rise-2 serif text-5xl md:text-[5.25rem] leading-[0.98] tracking-tight">
+            Vendre. Structurer.
+            <br />
+            <span className="italic text-bordeaux">Transmettre.</span>
+          </h1>
+          <p className="rise rise-3 mt-7 text-lg md:text-xl text-muted max-w-xl leading-relaxed">
+            Head of Sales, coach en négociation et créateur d&apos;outils. Je fais vendre, et je transmets ce qui marche.
+          </p>
+          <div className="rise rise-4 mt-9 flex flex-wrap items-center gap-4">
+            <a
+              href={CALENDLY}
+              className="inline-flex items-center gap-2 bg-bordeaux text-cream px-6 py-3.5 rounded-full text-sm font-medium hover:bg-bordeaux-soft transition"
+            >
+              Prendre 30 minutes
+              <ArrowRight className="w-4 h-4" />
+            </a>
+            <a
+              href="#preuves"
+              className="inline-flex items-center gap-2 text-ink px-6 py-3.5 rounded-full text-sm font-medium border hairline hover:bg-accent-tint transition"
+            >
+              Voir mes résultats
+            </a>
+          </div>
+          <div className="rise rise-5 mt-12 flex flex-wrap gap-x-10 gap-y-6">
+            <HeroStat value="1,7M€" label="ARR généré" accent />
+            <HeroStat value="317%" label="d'atteinte" />
+            <HeroStat value="100" label="deals signés" />
+            <HeroStat value="~225" label="formés" />
           </div>
         </div>
       </section>
