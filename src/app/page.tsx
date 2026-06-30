@@ -310,7 +310,7 @@ export default function Home() {
               <Stat value="3,8M€" caption="d'ARR généré en 10 ans de Sales." />
               <Stat value="387" caption="deals signés." />
               <Stat value="400" caption="étudiants et pros formés." />
-              <Stat value="350/sem" caption="calls pour 9,5 RDV won, 0,3% de no-show par mois." />
+              <Stat value="350 calls" caption="par semaine pour 9,5 RDV won, 0,3% de no-show par mois." />
             </div>
           </div>
 
