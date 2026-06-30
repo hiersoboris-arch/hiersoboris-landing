@@ -242,11 +242,10 @@ export default function Home() {
               Voir mes résultats
             </a>
           </div>
-          <div className="rise rise-5 mt-12 flex flex-wrap gap-x-10 gap-y-6">
-            <HeroStat value="1,7M€" label="ARR généré" accent />
-            <HeroStat value="317%" label="d'atteinte" />
-            <HeroStat value="100" label="deals signés" />
-            <HeroStat value="~225" label="formés" />
+          <div className="rise rise-5 mt-12 flex flex-wrap gap-x-12 gap-y-6">
+            <HeroStat value="3,8M€" label="ARR généré, 10 ans" accent />
+            <HeroStat value="387" label="deals signés" />
+            <HeroStat value="400" label="formés, étudiants et pros" />
           </div>
         </div>
       </section>
