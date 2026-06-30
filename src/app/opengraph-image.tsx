@@ -10,8 +10,8 @@ export default async function OpengraphImage() {
     (
       <div
         style={{
-          background: "#0A0907",
-          color: "#F4EFE6",
+          background: "#FAF7F2",
+          color: "#1F1B17",
           width: "100%",
           height: "100%",
           display: "flex",
@@ -27,7 +27,7 @@ export default async function OpengraphImage() {
             alignItems: "center",
             gap: 12,
             fontSize: 22,
-            color: "#C9A24B",
+            color: "#7C2A38",
             textTransform: "uppercase",
             letterSpacing: 4,
           }}
@@ -37,7 +37,7 @@ export default async function OpengraphImage() {
               width: 12,
               height: 12,
               borderRadius: 9999,
-              background: "#C9A24B",
+              background: "#7C2A38",
             }}
           />
           hiersoboris.fr
@@ -67,7 +67,7 @@ export default async function OpengraphImage() {
               fontWeight: 600,
               fontStyle: "italic",
               letterSpacing: -2,
-              color: "#C9A24B",
+              color: "#7C2A38",
             }}
           >
             Transmettre.
@@ -80,12 +80,12 @@ export default async function OpengraphImage() {
             justifyContent: "space-between",
             alignItems: "flex-end",
             fontSize: 26,
-            color: "#F4EFE6",
+            color: "#1F1B17",
           }}
         >
           <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
             <div style={{ fontWeight: 600 }}>Boris Hierso Alphandéry</div>
-            <div style={{ color: "#A89F8E", fontSize: 22 }}>
+            <div style={{ color: "#6B6055", fontSize: 22 }}>
               Head of Sales freelance · Coach négo · Maker IA
             </div>
           </div>
