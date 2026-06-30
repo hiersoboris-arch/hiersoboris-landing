@@ -1,0 +1,477 @@
+{
+ "toiles": [
+  {
+   "src": "/art-slash/toiles/etoiles.jpg",
+   "title": "Étoiles électrique",
+   "dims": "130 x 160 cm"
+  },
+  {
+   "src": "/art-slash/toiles/dragon.jpg",
+   "title": "La naissance du dragon",
+   "dims": "100 x 73 cm"
+  },
+  {
+   "src": "/art-slash/toiles/soleil.jpg",
+   "title": "Le soleil de l'ombre",
+   "dims": "91 x 64 cm"
+  },
+  {
+   "src": "/art-slash/toiles/si-jetais.jpg",
+   "title": "Si j'étais...",
+   "dims": "92 x 65 cm"
+  },
+  {
+   "src": "/art-slash/toiles/petit-bourgeois.jpg",
+   "title": "Le petit bourgeois",
+   "dims": "98 x 70 cm"
+  },
+  {
+   "src": "/art-slash/toiles/dune.jpg",
+   "title": "Dune d'or",
+   "dims": "80 x 100 cm"
+  },
+  {
+   "src": "/art-slash/toiles/carnaval.jpg",
+   "title": "Carnaval",
+   "dims": "60 x 60 cm"
+  },
+  {
+   "src": "/art-slash/toiles/cometes.jpg",
+   "title": "Comètes",
+   "dims": "60 x 60 cm"
+  },
+  {
+   "src": "/art-slash/toiles/pensee.jpg",
+   "title": "La pensée d'un Homme",
+   "dims": "50 x 75 cm"
+  },
+  {
+   "src": "/art-slash/toiles/arctique.jpg",
+   "title": "Arctique",
+   "dims": "55 x 45 cm"
+  },
+  {
+   "src": "/art-slash/toiles/autoportrait.jpg",
+   "title": "Autoportrait",
+   "dims": "50 x 30 cm"
+  },
+  {
+   "src": "/art-slash/toiles/incomprehension.jpg",
+   "title": "Incompréhension",
+   "dims": "37 x 28 cm"
+  },
+  {
+   "src": "/art-slash/toiles/street-pop.jpg",
+   "title": "Street pop",
+   "dims": "20 x 15 cm"
+  },
+  {
+   "src": "/art-slash/toiles/pluie-argent.jpg",
+   "title": "Pluie d'argent",
+   "dims": "20 x 15 cm"
+  },
+  {
+   "src": "/art-slash/toiles/massacre.jpg",
+   "title": "Un massacre terrestre",
+   "dims": "10 x 15 cm"
+  },
+  {
+   "src": "/art-slash/toiles/x01.jpg",
+   "title": null,
+   "dims": null
+  },
+  {
+   "src": "/art-slash/toiles/x02.jpg",
+   "title": null,
+   "dims": null
+  },
+  {
+   "src": "/art-slash/toiles/x03.jpg",
+   "title": null,
+   "dims": null
+  },
+  {
+   "src": "/art-slash/toiles/x04.jpg",
+   "title": null,
+   "dims": null
+  },
+  {
+   "src": "/art-slash/toiles/x05.jpg",
+   "title": null,
+   "dims": null
+  },
+  {
+   "src": "/art-slash/toiles/x06.jpg",
+   "title": null,
+   "dims": null
+  },
+  {
+   "src": "/art-slash/toiles/x07.jpg",
+   "title": null,
+   "dims": null
+  },
+  {
+   "src": "/art-slash/toiles/x08.jpg",
+   "title": null,
+   "dims": null
+  },
+  {
+   "src": "/art-slash/toiles/x09.jpg",
+   "title": null,
+   "dims": null
+  },
+  {
+   "src": "/art-slash/toiles/x10.jpg",
+   "title": null,
+   "dims": null
+  },
+  {
+   "src": "/art-slash/toiles/x11.jpg",
+   "title": null,
+   "dims": null
+  },
+  {
+   "src": "/art-slash/toiles/x12.jpg",
+   "title": null,
+   "dims": null
+  },
+  {
+   "src": "/art-slash/toiles/x13.jpg",
+   "title": null,
+   "dims": null
+  },
+  {
+   "src": "/art-slash/toiles/x14.jpg",
+   "title": null,
+   "dims": null
+  },
+  {
+   "src": "/art-slash/toiles/x15.jpg",
+   "title": null,
+   "dims": null
+  },
+  {
+   "src": "/art-slash/toiles/x16.jpg",
+   "title": null,
+   "dims": null
+  },
+  {
+   "src": "/art-slash/toiles/x17.jpg",
+   "title": null,
+   "dims": null
+  },
+  {
+   "src": "/art-slash/toiles/x18.jpg",
+   "title": null,
+   "dims": null
+  }
+ ],
+ "series": [
+  {
+   "slug": "destruction",
+   "title": "Destruction",
+   "meta": "Body painting · visage",
+   "credit": "Photo Pictural1",
+   "images": [
+    "/art-slash/destruction/01.jpg",
+    "/art-slash/destruction/02.jpg",
+    "/art-slash/destruction/03.jpg",
+    "/art-slash/destruction/04.jpg",
+    "/art-slash/destruction/05.jpg",
+    "/art-slash/destruction/06.jpg",
+    "/art-slash/destruction/07.jpg",
+    "/art-slash/destruction/08.jpg",
+    "/art-slash/destruction/09.jpg",
+    "/art-slash/destruction/10.jpg",
+    "/art-slash/destruction/11.jpg",
+    "/art-slash/destruction/12.jpg",
+    "/art-slash/destruction/13.jpg",
+    "/art-slash/destruction/14.jpg",
+    "/art-slash/destruction/15.jpg",
+    "/art-slash/destruction/16.jpg",
+    "/art-slash/destruction/17.jpg",
+    "/art-slash/destruction/18.jpg",
+    "/art-slash/destruction/19.jpg",
+    "/art-slash/destruction/20.jpg",
+    "/art-slash/destruction/21.jpg",
+    "/art-slash/destruction/22.jpg",
+    "/art-slash/destruction/23.jpg",
+    "/art-slash/destruction/24.jpg"
+   ]
+  },
+  {
+   "slug": "dark-angel",
+   "title": "Dark Angel",
+   "meta": "09/05/18",
+   "credit": "Modèle Pauline Ortega · Photo Tristan Dudot",
+   "images": [
+    "/art-slash/dark-angel/01.jpg",
+    "/art-slash/dark-angel/02.jpg",
+    "/art-slash/dark-angel/03.jpg",
+    "/art-slash/dark-angel/04.jpg",
+    "/art-slash/dark-angel/05.jpg"
+   ]
+  },
+  {
+   "slug": "luxe-trash",
+   "title": "Luxe & Trash",
+   "meta": "27/05/18",
+   "credit": "Modèles Mickaël Bokis & Pierre Roumegas · Photo Tristan Dudot · Scénographie Élodie",
+   "images": [
+    "/art-slash/luxe-trash/01.jpg",
+    "/art-slash/luxe-trash/02.jpg",
+    "/art-slash/luxe-trash/03.jpg",
+    "/art-slash/luxe-trash/04.jpg",
+    "/art-slash/luxe-trash/05.jpg",
+    "/art-slash/luxe-trash/06.jpg",
+    "/art-slash/luxe-trash/07.jpg",
+    "/art-slash/luxe-trash/08.jpg"
+   ]
+  },
+  {
+   "slug": "intimite",
+   "title": "Intimité contrastée",
+   "meta": "03/05/18",
+   "credit": "Modèle Joséphine Cordesse · Photo Sami Eddine",
+   "images": [
+    "/art-slash/intimite/01.jpg",
+    "/art-slash/intimite/02.jpg",
+    "/art-slash/intimite/03.jpg",
+    "/art-slash/intimite/04.jpg",
+    "/art-slash/intimite/05.jpg",
+    "/art-slash/intimite/06.jpg",
+    "/art-slash/intimite/07.jpg",
+    "/art-slash/intimite/08.jpg"
+   ]
+  },
+  {
+   "slug": "une-nuit-ouest",
+   "title": "Une Nuit à l'Ouest",
+   "meta": "30/06/18 · Festival des Sables Blancs, Douarnenez",
+   "credit": "Modèle Naphyg · Photo Tristan Dudot · Passage France 3",
+   "images": [
+    "/art-slash/une-nuit-ouest/01.jpg"
+   ]
+  },
+  {
+   "slug": "dark-sensuality",
+   "title": "Dark Sensuality",
+   "meta": "Body painting",
+   "credit": "Body painting Boris Hierso",
+   "images": [
+    "/art-slash/dark-sensuality/01.jpg",
+    "/art-slash/dark-sensuality/02.jpg",
+    "/art-slash/dark-sensuality/03.jpg",
+    "/art-slash/dark-sensuality/04.jpg",
+    "/art-slash/dark-sensuality/05.jpg",
+    "/art-slash/dark-sensuality/06.jpg",
+    "/art-slash/dark-sensuality/07.jpg"
+   ]
+  },
+  {
+   "slug": "art-fact-2",
+   "title": "Art Fact #2",
+   "meta": "Série",
+   "credit": "Body painting Boris Hierso",
+   "images": [
+    "/art-slash/art-fact-2/01.jpg",
+    "/art-slash/art-fact-2/02.jpg",
+    "/art-slash/art-fact-2/03.jpg",
+    "/art-slash/art-fact-2/04.jpg",
+    "/art-slash/art-fact-2/05.jpg",
+    "/art-slash/art-fact-2/06.jpg",
+    "/art-slash/art-fact-2/07.jpg",
+    "/art-slash/art-fact-2/08.jpg",
+    "/art-slash/art-fact-2/09.jpg",
+    "/art-slash/art-fact-2/10.jpg",
+    "/art-slash/art-fact-2/11.jpg",
+    "/art-slash/art-fact-2/12.jpg",
+    "/art-slash/art-fact-2/13.jpg",
+    "/art-slash/art-fact-2/14.jpg",
+    "/art-slash/art-fact-2/15.jpg",
+    "/art-slash/art-fact-2/16.jpg",
+    "/art-slash/art-fact-2/17.jpg",
+    "/art-slash/art-fact-2/18.jpg",
+    "/art-slash/art-fact-2/19.jpg",
+    "/art-slash/art-fact-2/20.jpg",
+    "/art-slash/art-fact-2/21.jpg",
+    "/art-slash/art-fact-2/22.jpg",
+    "/art-slash/art-fact-2/23.jpg",
+    "/art-slash/art-fact-2/24.jpg"
+   ]
+  },
+  {
+   "slug": "art-fact-3",
+   "title": "Art Fact #3",
+   "meta": "Série",
+   "credit": "Body painting Boris Hierso",
+   "images": [
+    "/art-slash/art-fact-3/01.jpg",
+    "/art-slash/art-fact-3/02.jpg",
+    "/art-slash/art-fact-3/03.jpg",
+    "/art-slash/art-fact-3/04.jpg",
+    "/art-slash/art-fact-3/05.jpg",
+    "/art-slash/art-fact-3/06.jpg",
+    "/art-slash/art-fact-3/07.jpg",
+    "/art-slash/art-fact-3/08.jpg",
+    "/art-slash/art-fact-3/09.jpg",
+    "/art-slash/art-fact-3/10.jpg"
+   ]
+  },
+  {
+   "slug": "art-fact-4",
+   "title": "Art Fact #4",
+   "meta": "25/05/19",
+   "credit": "Body painting Boris Hierso",
+   "images": [
+    "/art-slash/art-fact-4/01.jpg",
+    "/art-slash/art-fact-4/02.jpg",
+    "/art-slash/art-fact-4/03.jpg",
+    "/art-slash/art-fact-4/04.jpg",
+    "/art-slash/art-fact-4/05.jpg",
+    "/art-slash/art-fact-4/06.jpg",
+    "/art-slash/art-fact-4/07.jpg",
+    "/art-slash/art-fact-4/08.jpg",
+    "/art-slash/art-fact-4/09.jpg",
+    "/art-slash/art-fact-4/10.jpg",
+    "/art-slash/art-fact-4/11.jpg"
+   ]
+  },
+  {
+   "slug": "vision-trouble",
+   "title": "Vision Trouble",
+   "meta": "Série",
+   "credit": "Body painting Boris Hierso",
+   "images": [
+    "/art-slash/vision-trouble/01.jpg",
+    "/art-slash/vision-trouble/02.jpg",
+    "/art-slash/vision-trouble/03.jpg",
+    "/art-slash/vision-trouble/04.jpg",
+    "/art-slash/vision-trouble/05.jpg",
+    "/art-slash/vision-trouble/06.jpg",
+    "/art-slash/vision-trouble/07.jpg"
+   ]
+  },
+  {
+   "slug": "kleptonus",
+   "title": "Kleptonus greenicus",
+   "meta": "Série",
+   "credit": "Body painting Boris Hierso",
+   "images": [
+    "/art-slash/kleptonus/01.jpg",
+    "/art-slash/kleptonus/02.jpg",
+    "/art-slash/kleptonus/03.jpg",
+    "/art-slash/kleptonus/04.jpg",
+    "/art-slash/kleptonus/05.jpg"
+   ]
+  },
+  {
+   "slug": "excentrique",
+   "title": "L'excentrique",
+   "meta": "Série",
+   "credit": "Body painting Boris Hierso",
+   "images": [
+    "/art-slash/excentrique/01.jpg",
+    "/art-slash/excentrique/02.jpg",
+    "/art-slash/excentrique/03.jpg",
+    "/art-slash/excentrique/04.jpg",
+    "/art-slash/excentrique/05.jpg",
+    "/art-slash/excentrique/06.jpg",
+    "/art-slash/excentrique/07.jpg"
+   ]
+  },
+  {
+   "slug": "adam-eve",
+   "title": "Adam & Eve's",
+   "meta": "Série",
+   "credit": "Body painting Boris Hierso",
+   "images": [
+    "/art-slash/adam-eve/01.jpg",
+    "/art-slash/adam-eve/02.jpg",
+    "/art-slash/adam-eve/03.jpg"
+   ]
+  },
+  {
+   "slug": "muse-incomprehension",
+   "title": "Muse de l'incompréhension",
+   "meta": "Les Muses",
+   "credit": "Body painting Boris Hierso",
+   "images": [
+    "/art-slash/muse-incomprehension/01.jpg",
+    "/art-slash/muse-incomprehension/02.jpg",
+    "/art-slash/muse-incomprehension/03.jpg",
+    "/art-slash/muse-incomprehension/04.jpg",
+    "/art-slash/muse-incomprehension/05.jpg",
+    "/art-slash/muse-incomprehension/06.jpg",
+    "/art-slash/muse-incomprehension/07.jpg",
+    "/art-slash/muse-incomprehension/08.jpg"
+   ]
+  },
+  {
+   "slug": "muse-fecondite",
+   "title": "Muse de la fécondité",
+   "meta": "Les Muses",
+   "credit": "Body painting Boris Hierso",
+   "images": [
+    "/art-slash/muse-fecondite/01.jpg",
+    "/art-slash/muse-fecondite/02.jpg",
+    "/art-slash/muse-fecondite/03.jpg",
+    "/art-slash/muse-fecondite/04.jpg",
+    "/art-slash/muse-fecondite/05.jpg",
+    "/art-slash/muse-fecondite/06.jpg",
+    "/art-slash/muse-fecondite/07.jpg",
+    "/art-slash/muse-fecondite/08.jpg",
+    "/art-slash/muse-fecondite/09.jpg",
+    "/art-slash/muse-fecondite/10.jpg",
+    "/art-slash/muse-fecondite/11.jpg"
+   ]
+  },
+  {
+   "slug": "muse-reve",
+   "title": "Muse du rêve",
+   "meta": "Les Muses",
+   "credit": "Body painting Boris Hierso",
+   "images": [
+    "/art-slash/muse-reve/01.jpg",
+    "/art-slash/muse-reve/02.jpg",
+    "/art-slash/muse-reve/03.jpg"
+   ]
+  }
+ ],
+ "perf": [
+  {
+   "slug": "les-muses",
+   "title": "Les Muses",
+   "meta": "Performance live · 10/03/18",
+   "credit": "Body painting Boris Hierso",
+   "images": [
+    "/art-slash/les-muses/01.jpg",
+    "/art-slash/les-muses/02.jpg",
+    "/art-slash/les-muses/05.jpg",
+    "/art-slash/les-muses/06.jpg",
+    "/art-slash/les-muses/13.jpg",
+    "/art-slash/les-muses/22.jpg"
+   ]
+  },
+  {
+   "slug": "galerie-myriane-2014",
+   "title": "Galerie Myriane",
+   "meta": "Exposition · juin 2014",
+   "credit": "Galerie Myriane, Paris",
+   "images": [
+    "/art-slash/galerie-myriane-2014/01.jpg",
+    "/art-slash/galerie-myriane-2014/02.jpg",
+    "/art-slash/galerie-myriane-2014/03.jpg",
+    "/art-slash/galerie-myriane-2014/04.jpg",
+    "/art-slash/galerie-myriane-2014/05.jpg",
+    "/art-slash/galerie-myriane-2014/06.jpg",
+    "/art-slash/galerie-myriane-2014/07.jpg",
+    "/art-slash/galerie-myriane-2014/08.jpg",
+    "/art-slash/galerie-myriane-2014/09.jpg",
+    "/art-slash/galerie-myriane-2014/10.jpg",
+    "/art-slash/galerie-myriane-2014/11.jpg",
+    "/art-slash/galerie-myriane-2014/12.jpg"
+   ]
+  }
+ ]
+}
