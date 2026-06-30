@@ -192,6 +192,7 @@ export default function Home() {
               <a href="#aider" className="hover:text-cream transition">Aider</a>
               <a href="#preuves" className="hover:text-cream transition">Preuves</a>
               <a href="#ressources" className="hover:text-cream transition">Ressources</a>
+              <Link href="/art-slash" className="hover:text-cream transition">Art Slash</Link>
               <a href="#contact" className="hover:text-cream transition">Contact</a>
             </nav>
             <a
