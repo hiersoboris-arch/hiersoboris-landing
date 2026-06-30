@@ -307,10 +307,10 @@ export default function Home() {
               </p>
             </div>
             <div className="md:col-span-7 grid grid-cols-2 gap-px bg-border border hairline rounded-2xl overflow-hidden">
-              <Stat value="1,7M€" caption="d'ARR généré en prospection (HappyPal)." />
-              <Stat value="317%" caption="d'atteinte max en prospection." />
-              <Stat value="100" caption="deals signés en AE Full Cycle." />
-              <Stat value="~225" caption="étudiants formés à Euridis (14,2/20)." />
+              <Stat value="3,8M€" caption="d'ARR généré en 10 ans de Sales." />
+              <Stat value="387" caption="deals signés." />
+              <Stat value="400" caption="étudiants et pros formés." />
+              <Stat value="350/sem" caption="calls pour 9,5 RDV won, 0,3% de no-show par mois." />
             </div>
           </div>
 
