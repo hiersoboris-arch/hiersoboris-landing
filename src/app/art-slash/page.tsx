@@ -74,9 +74,8 @@ export default function ArtSlashPage() {
         <p className="mt-6 text-lg text-cream/65 leading-relaxed max-w-2xl">
           Art Slash, c&apos;est le nom de ma technique : la projection, le
           geste, la matière. Sur toile d&apos;abord, puis sur les corps, en
-          friches urbaines, en festival, en galerie. Je ne peins plus depuis
-          2018. Cette page est une archive, pour celles et ceux qui veulent voir
-          le travail.
+          friches urbaines et en festival. Je ne peins plus depuis 2018. Cette
+          page est une archive, pour celles et ceux qui veulent voir le travail.
         </p>
       </section>
 
@@ -99,8 +98,8 @@ export default function ArtSlashPage() {
             <div>
               <div className="text-cream/45 mb-2">Photographes</div>
               <p className="text-cream">
-                Tristan Dudot · Clément Ouvrard · Sami Eddine · Pictural1 ·
-                Mariposa.
+                Tristan Dudot · Clément Ouvrard · Sami Eddine · Alexia Vermiglio
+                · Jean-Yves Dana · Picovore · Pictural1.
               </p>
             </div>
             <div>

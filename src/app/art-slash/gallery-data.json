@@ -1,172 +1,199 @@
 {
  "toiles": [
   {
-   "src": "/art-slash/toiles/etoiles.jpg",
-   "title": "Étoiles électrique",
-   "dims": "130 x 160 cm"
-  },
-  {
-   "src": "/art-slash/toiles/dragon.jpg",
-   "title": "La naissance du dragon",
-   "dims": "100 x 73 cm"
-  },
-  {
-   "src": "/art-slash/toiles/soleil.jpg",
-   "title": "Le soleil de l'ombre",
-   "dims": "91 x 64 cm"
-  },
-  {
-   "src": "/art-slash/toiles/si-jetais.jpg",
-   "title": "Si j'étais...",
-   "dims": "92 x 65 cm"
-  },
-  {
-   "src": "/art-slash/toiles/petit-bourgeois.jpg",
-   "title": "Le petit bourgeois",
-   "dims": "98 x 70 cm"
-  },
-  {
-   "src": "/art-slash/toiles/dune.jpg",
-   "title": "Dune d'or",
-   "dims": "80 x 100 cm"
+   "src": "/art-slash/toiles/arctique.jpg",
+   "title": "Arctique"
   },
   {
    "src": "/art-slash/toiles/carnaval.jpg",
-   "title": "Carnaval",
-   "dims": "60 x 60 cm"
+   "title": "Carnaval"
   },
   {
-   "src": "/art-slash/toiles/cometes.jpg",
-   "title": "Comètes",
-   "dims": "60 x 60 cm"
+   "src": "/art-slash/toiles/cauchemar-ou-re-ve-l-irre-alite-sans-fin.jpg",
+   "title": "Cauchemar ou réve l'irréalité sans fin"
   },
   {
-   "src": "/art-slash/toiles/pensee.jpg",
-   "title": "La pensée d'un Homme",
-   "dims": "50 x 75 cm"
+   "src": "/art-slash/toiles/champ-de-vie.jpg",
+   "title": "Champ de Vie"
   },
   {
-   "src": "/art-slash/toiles/arctique.jpg",
-   "title": "Arctique",
-   "dims": "55 x 45 cm"
+   "src": "/art-slash/toiles/chine-imperial.jpg",
+   "title": "Chine Imperial"
   },
   {
-   "src": "/art-slash/toiles/autoportrait.jpg",
-   "title": "Autoportrait",
-   "dims": "50 x 30 cm"
+   "src": "/art-slash/toiles/dune-d-or.jpg",
+   "title": "Dune D'or"
   },
   {
-   "src": "/art-slash/toiles/incomprehension.jpg",
-   "title": "Incompréhension",
-   "dims": "37 x 28 cm"
+   "src": "/art-slash/toiles/eau.jpg",
+   "title": "Eau"
+  },
+  {
+   "src": "/art-slash/toiles/festif.jpg",
+   "title": "Festif"
+  },
+  {
+   "src": "/art-slash/toiles/fore-t-noire.jpg",
+   "title": "Forêt noire"
+  },
+  {
+   "src": "/art-slash/toiles/galaxy.jpg",
+   "title": "Galaxy"
+  },
+  {
+   "src": "/art-slash/toiles/jungle.jpg",
+   "title": "Jungle"
+  },
+  {
+   "src": "/art-slash/toiles/l-inconnu.jpg",
+   "title": "L'inconnu"
+  },
+  {
+   "src": "/art-slash/toiles/la-jouissance-d-un-homme.jpg",
+   "title": "La jouissance d'un homme"
+  },
+  {
+   "src": "/art-slash/toiles/la-naissance-du-dragon.jpg",
+   "title": "La naissance du dragon"
+  },
+  {
+   "src": "/art-slash/toiles/le-chirurgien.jpg",
+   "title": "Le chirurgien"
+  },
+  {
+   "src": "/art-slash/toiles/le-danger.jpg",
+   "title": "Le danger"
+  },
+  {
+   "src": "/art-slash/toiles/le-feu-qui-brule.jpg",
+   "title": "Le feu qui brule"
+  },
+  {
+   "src": "/art-slash/toiles/le-petit-bourgeois.jpg",
+   "title": "Le petit bourgeois"
+  },
+  {
+   "src": "/art-slash/toiles/le-triangle-des-bermude.jpg",
+   "title": "Le triangle des bermude"
+  },
+  {
+   "src": "/art-slash/toiles/le-voyageur.jpg",
+   "title": "Le voyageur"
+  },
+  {
+   "src": "/art-slash/toiles/les-mots-peuvent-tue-e.jpg",
+   "title": "Les mots peuvent tuée"
+  },
+  {
+   "src": "/art-slash/toiles/marchand-de-sable.jpg",
+   "title": "Marchand de sable"
+  },
+  {
+   "src": "/art-slash/toiles/massacre-japonais.jpg",
+   "title": "Massacre japonais"
+  },
+  {
+   "src": "/art-slash/toiles/metal-rocheux.jpg",
+   "title": "Metal rocheux"
+  },
+  {
+   "src": "/art-slash/toiles/me-tropolitane.jpg",
+   "title": "Métropolitane"
+  },
+  {
+   "src": "/art-slash/toiles/new-york-is-time.jpg",
+   "title": "New - York is time"
+  },
+  {
+   "src": "/art-slash/toiles/or-et-argent-sur-le-sang-de-nos-mort.jpg",
+   "title": "Or et argent sur le sang de nos mort"
+  },
+  {
+   "src": "/art-slash/toiles/or-noir.jpg",
+   "title": "Or noir"
+  },
+  {
+   "src": "/art-slash/toiles/paysage-de-chine.jpg",
+   "title": "Paysage de chine"
+  },
+  {
+   "src": "/art-slash/toiles/petit-air-d-automne.jpg",
+   "title": "Petit air d'automne"
+  },
+  {
+   "src": "/art-slash/toiles/pourqu-oi.jpg",
+   "title": "Pourqu'oi"
+  },
+  {
+   "src": "/art-slash/toiles/sang-sable.jpg",
+   "title": "Sang sablé"
   },
   {
    "src": "/art-slash/toiles/street-pop.jpg",
-   "title": "Street pop",
-   "dims": "20 x 15 cm"
+   "title": "Street pop"
   },
   {
-   "src": "/art-slash/toiles/pluie-argent.jpg",
-   "title": "Pluie d'argent",
-   "dims": "20 x 15 cm"
+   "src": "/art-slash/toiles/valle-e.jpg",
+   "title": "Vallée"
   },
   {
-   "src": "/art-slash/toiles/massacre.jpg",
-   "title": "Un massacre terrestre",
-   "dims": "10 x 15 cm"
+   "src": "/art-slash/toiles/vernie-essaie.jpg",
+   "title": "Vernie essaie"
   },
   {
-   "src": "/art-slash/toiles/x01.jpg",
-   "title": null,
-   "dims": null
+   "src": "/art-slash/toiles/volcanique.jpg",
+   "title": "Volcanique"
   },
   {
-   "src": "/art-slash/toiles/x02.jpg",
-   "title": null,
-   "dims": null
+   "src": "/art-slash/toiles/zen.jpg",
+   "title": "Zen"
   },
   {
-   "src": "/art-slash/toiles/x03.jpg",
-   "title": null,
-   "dims": null
+   "src": "/art-slash/toiles/dsc1999.jpg",
+   "title": "_DSC1999"
   },
   {
-   "src": "/art-slash/toiles/x04.jpg",
-   "title": null,
-   "dims": null
+   "src": "/art-slash/toiles/mg-4679.jpg",
+   "title": "_MG_4679"
   },
   {
-   "src": "/art-slash/toiles/x05.jpg",
-   "title": null,
-   "dims": null
+   "src": "/art-slash/toiles/mg-4740.jpg",
+   "title": "_MG_4740"
   },
   {
-   "src": "/art-slash/toiles/x06.jpg",
-   "title": null,
-   "dims": null
+   "src": "/art-slash/toiles/mg-4756.jpg",
+   "title": "_MG_4756"
   },
   {
-   "src": "/art-slash/toiles/x07.jpg",
-   "title": null,
-   "dims": null
+   "src": "/art-slash/toiles/mg-4768.jpg",
+   "title": "_MG_4768"
   },
   {
-   "src": "/art-slash/toiles/x08.jpg",
-   "title": null,
-   "dims": null
+   "src": "/art-slash/toiles/mg-4798.jpg",
+   "title": "_MG_4798"
   },
   {
-   "src": "/art-slash/toiles/x09.jpg",
-   "title": null,
-   "dims": null
+   "src": "/art-slash/toiles/mg-4809.jpg",
+   "title": "_MG_4809"
   },
   {
-   "src": "/art-slash/toiles/x10.jpg",
-   "title": null,
-   "dims": null
+   "src": "/art-slash/toiles/mg-4817.jpg",
+   "title": "_MG_4817"
   },
   {
-   "src": "/art-slash/toiles/x11.jpg",
-   "title": null,
-   "dims": null
+   "src": "/art-slash/toiles/mg-4825.jpg",
+   "title": "_MG_4825"
   },
   {
-   "src": "/art-slash/toiles/x12.jpg",
-   "title": null,
-   "dims": null
+   "src": "/art-slash/toiles/mg-4828.jpg",
+   "title": "_MG_4828"
   },
   {
-   "src": "/art-slash/toiles/x13.jpg",
-   "title": null,
-   "dims": null
-  },
-  {
-   "src": "/art-slash/toiles/x14.jpg",
-   "title": null,
-   "dims": null
-  },
-  {
-   "src": "/art-slash/toiles/x15.jpg",
-   "title": null,
-   "dims": null
-  },
-  {
-   "src": "/art-slash/toiles/x16.jpg",
-   "title": null,
-   "dims": null
-  },
-  {
-   "src": "/art-slash/toiles/x17.jpg",
-   "title": null,
-   "dims": null
-  },
-  {
-   "src": "/art-slash/toiles/x18.jpg",
-   "title": null,
-   "dims": null
+   "src": "/art-slash/toiles/mg-4829.jpg",
+   "title": "_MG_4829"
   }
  ],
- "series": [
+ "pro": [
   {
    "slug": "destruction",
    "title": "Destruction",
@@ -188,15 +215,7 @@
     "/art-slash/destruction/13.jpg",
     "/art-slash/destruction/14.jpg",
     "/art-slash/destruction/15.jpg",
-    "/art-slash/destruction/16.jpg",
-    "/art-slash/destruction/17.jpg",
-    "/art-slash/destruction/18.jpg",
-    "/art-slash/destruction/19.jpg",
-    "/art-slash/destruction/20.jpg",
-    "/art-slash/destruction/21.jpg",
-    "/art-slash/destruction/22.jpg",
-    "/art-slash/destruction/23.jpg",
-    "/art-slash/destruction/24.jpg"
+    "/art-slash/destruction/16.jpg"
    ]
   },
   {
@@ -209,7 +228,13 @@
     "/art-slash/dark-angel/02.jpg",
     "/art-slash/dark-angel/03.jpg",
     "/art-slash/dark-angel/04.jpg",
-    "/art-slash/dark-angel/05.jpg"
+    "/art-slash/dark-angel/05.jpg",
+    "/art-slash/dark-angel/06.jpg",
+    "/art-slash/dark-angel/07.jpg",
+    "/art-slash/dark-angel/08.jpg",
+    "/art-slash/dark-angel/09.jpg",
+    "/art-slash/dark-angel/10.jpg",
+    "/art-slash/dark-angel/11.jpg"
    ]
   },
   {
@@ -225,253 +250,303 @@
     "/art-slash/luxe-trash/05.jpg",
     "/art-slash/luxe-trash/06.jpg",
     "/art-slash/luxe-trash/07.jpg",
-    "/art-slash/luxe-trash/08.jpg"
-   ]
-  },
-  {
-   "slug": "intimite",
-   "title": "Intimité contrastée",
-   "meta": "03/05/18",
-   "credit": "Modèle Joséphine Cordesse · Photo Sami Eddine",
-   "images": [
-    "/art-slash/intimite/01.jpg",
-    "/art-slash/intimite/02.jpg",
-    "/art-slash/intimite/03.jpg",
-    "/art-slash/intimite/04.jpg",
-    "/art-slash/intimite/05.jpg",
-    "/art-slash/intimite/06.jpg",
-    "/art-slash/intimite/07.jpg",
-    "/art-slash/intimite/08.jpg"
+    "/art-slash/luxe-trash/08.jpg",
+    "/art-slash/luxe-trash/09.jpg",
+    "/art-slash/luxe-trash/10.jpg",
+    "/art-slash/luxe-trash/11.jpg",
+    "/art-slash/luxe-trash/12.jpg",
+    "/art-slash/luxe-trash/13.jpg",
+    "/art-slash/luxe-trash/14.jpg"
    ]
   },
   {
    "slug": "une-nuit-ouest",
    "title": "Une Nuit à l'Ouest",
-   "meta": "30/06/18 · Festival des Sables Blancs, Douarnenez",
-   "credit": "Modèle Naphyg · Photo Tristan Dudot · Passage France 3",
+   "meta": "08/05/18",
+   "credit": "Modèle Beurnoir · Photo Tristan Dudot",
    "images": [
-    "/art-slash/une-nuit-ouest/01.jpg"
+    "/art-slash/une-nuit-ouest/01.jpg",
+    "/art-slash/une-nuit-ouest/02.jpg",
+    "/art-slash/une-nuit-ouest/03.jpg",
+    "/art-slash/une-nuit-ouest/04.jpg",
+    "/art-slash/une-nuit-ouest/05.jpg",
+    "/art-slash/une-nuit-ouest/06.jpg",
+    "/art-slash/une-nuit-ouest/07.jpg"
    ]
   },
   {
-   "slug": "dark-sensuality",
-   "title": "Dark Sensuality",
-   "meta": "Body painting",
-   "credit": "Body painting Boris Hierso",
+   "slug": "urban-france",
+   "title": "Urban France",
+   "meta": "14/05/18",
+   "credit": "Modèle Rainbow · Photo Clément Ouvrard",
    "images": [
-    "/art-slash/dark-sensuality/01.jpg",
-    "/art-slash/dark-sensuality/02.jpg",
-    "/art-slash/dark-sensuality/03.jpg",
-    "/art-slash/dark-sensuality/04.jpg",
-    "/art-slash/dark-sensuality/05.jpg",
-    "/art-slash/dark-sensuality/06.jpg",
-    "/art-slash/dark-sensuality/07.jpg"
+    "/art-slash/urban-france/01.jpg",
+    "/art-slash/urban-france/02.jpg",
+    "/art-slash/urban-france/03.jpg",
+    "/art-slash/urban-france/04.jpg",
+    "/art-slash/urban-france/05.jpg",
+    "/art-slash/urban-france/06.jpg",
+    "/art-slash/urban-france/07.jpg",
+    "/art-slash/urban-france/08.jpg",
+    "/art-slash/urban-france/09.jpg",
+    "/art-slash/urban-france/10.jpg",
+    "/art-slash/urban-france/11.jpg",
+    "/art-slash/urban-france/12.jpg",
+    "/art-slash/urban-france/13.jpg",
+    "/art-slash/urban-france/14.jpg"
    ]
   },
   {
-   "slug": "art-fact-2",
-   "title": "Art Fact #2",
-   "meta": "Série",
-   "credit": "Body painting Boris Hierso",
+   "slug": "cameleon",
+   "title": "Caméléon",
+   "meta": "15/07/18",
+   "credit": "Modèle Eleonora Grotto · Photo Clément Ouvrard",
    "images": [
-    "/art-slash/art-fact-2/01.jpg",
-    "/art-slash/art-fact-2/02.jpg",
-    "/art-slash/art-fact-2/03.jpg",
-    "/art-slash/art-fact-2/04.jpg",
-    "/art-slash/art-fact-2/05.jpg",
-    "/art-slash/art-fact-2/06.jpg",
-    "/art-slash/art-fact-2/07.jpg",
-    "/art-slash/art-fact-2/08.jpg",
-    "/art-slash/art-fact-2/09.jpg",
-    "/art-slash/art-fact-2/10.jpg",
-    "/art-slash/art-fact-2/11.jpg",
-    "/art-slash/art-fact-2/12.jpg",
-    "/art-slash/art-fact-2/13.jpg",
-    "/art-slash/art-fact-2/14.jpg",
-    "/art-slash/art-fact-2/15.jpg",
-    "/art-slash/art-fact-2/16.jpg",
-    "/art-slash/art-fact-2/17.jpg",
-    "/art-slash/art-fact-2/18.jpg",
-    "/art-slash/art-fact-2/19.jpg",
-    "/art-slash/art-fact-2/20.jpg",
-    "/art-slash/art-fact-2/21.jpg",
-    "/art-slash/art-fact-2/22.jpg",
-    "/art-slash/art-fact-2/23.jpg",
-    "/art-slash/art-fact-2/24.jpg"
+    "/art-slash/cameleon/01.jpg",
+    "/art-slash/cameleon/02.jpg",
+    "/art-slash/cameleon/03.jpg",
+    "/art-slash/cameleon/04.jpg"
    ]
   },
   {
-   "slug": "art-fact-3",
-   "title": "Art Fact #3",
-   "meta": "Série",
-   "credit": "Body painting Boris Hierso",
+   "slug": "psychedelic",
+   "title": "Psychedelic Elements",
+   "meta": "08/05/18 · Les Grands Voisins",
+   "credit": "Modèles Arnaud Gagnoud, Mary DMN, Isabelle Treiber · Photo Tristan Dudot · Co-paint Espion Graff",
    "images": [
-    "/art-slash/art-fact-3/01.jpg",
-    "/art-slash/art-fact-3/02.jpg",
-    "/art-slash/art-fact-3/03.jpg",
-    "/art-slash/art-fact-3/04.jpg",
-    "/art-slash/art-fact-3/05.jpg",
-    "/art-slash/art-fact-3/06.jpg",
-    "/art-slash/art-fact-3/07.jpg",
-    "/art-slash/art-fact-3/08.jpg",
-    "/art-slash/art-fact-3/09.jpg",
-    "/art-slash/art-fact-3/10.jpg"
+    "/art-slash/psychedelic/01.jpg",
+    "/art-slash/psychedelic/02.jpg",
+    "/art-slash/psychedelic/03.jpg",
+    "/art-slash/psychedelic/04.jpg",
+    "/art-slash/psychedelic/05.jpg"
    ]
   },
   {
-   "slug": "art-fact-4",
-   "title": "Art Fact #4",
-   "meta": "25/05/19",
-   "credit": "Body painting Boris Hierso",
+   "slug": "terre-brulee",
+   "title": "Terre Brûlée",
+   "meta": "05/05/18",
+   "credit": "Modèles Mary DMN & Isabelle Treiber · Photo Tristan Dudot",
    "images": [
-    "/art-slash/art-fact-4/01.jpg",
-    "/art-slash/art-fact-4/02.jpg",
-    "/art-slash/art-fact-4/03.jpg",
-    "/art-slash/art-fact-4/04.jpg",
-    "/art-slash/art-fact-4/05.jpg",
-    "/art-slash/art-fact-4/06.jpg",
-    "/art-slash/art-fact-4/07.jpg",
-    "/art-slash/art-fact-4/08.jpg",
-    "/art-slash/art-fact-4/09.jpg",
-    "/art-slash/art-fact-4/10.jpg",
-    "/art-slash/art-fact-4/11.jpg"
-   ]
-  },
-  {
-   "slug": "vision-trouble",
-   "title": "Vision Trouble",
-   "meta": "Série",
-   "credit": "Body painting Boris Hierso",
-   "images": [
-    "/art-slash/vision-trouble/01.jpg",
-    "/art-slash/vision-trouble/02.jpg",
-    "/art-slash/vision-trouble/03.jpg",
-    "/art-slash/vision-trouble/04.jpg",
-    "/art-slash/vision-trouble/05.jpg",
-    "/art-slash/vision-trouble/06.jpg",
-    "/art-slash/vision-trouble/07.jpg"
-   ]
-  },
-  {
-   "slug": "kleptonus",
-   "title": "Kleptonus greenicus",
-   "meta": "Série",
-   "credit": "Body painting Boris Hierso",
-   "images": [
-    "/art-slash/kleptonus/01.jpg",
-    "/art-slash/kleptonus/02.jpg",
-    "/art-slash/kleptonus/03.jpg",
-    "/art-slash/kleptonus/04.jpg",
-    "/art-slash/kleptonus/05.jpg"
-   ]
-  },
-  {
-   "slug": "excentrique",
-   "title": "L'excentrique",
-   "meta": "Série",
-   "credit": "Body painting Boris Hierso",
-   "images": [
-    "/art-slash/excentrique/01.jpg",
-    "/art-slash/excentrique/02.jpg",
-    "/art-slash/excentrique/03.jpg",
-    "/art-slash/excentrique/04.jpg",
-    "/art-slash/excentrique/05.jpg",
-    "/art-slash/excentrique/06.jpg",
-    "/art-slash/excentrique/07.jpg"
-   ]
-  },
-  {
-   "slug": "adam-eve",
-   "title": "Adam & Eve's",
-   "meta": "Série",
-   "credit": "Body painting Boris Hierso",
-   "images": [
-    "/art-slash/adam-eve/01.jpg",
-    "/art-slash/adam-eve/02.jpg",
-    "/art-slash/adam-eve/03.jpg"
-   ]
-  },
-  {
-   "slug": "muse-incomprehension",
-   "title": "Muse de l'incompréhension",
-   "meta": "Les Muses",
-   "credit": "Body painting Boris Hierso",
-   "images": [
-    "/art-slash/muse-incomprehension/01.jpg",
-    "/art-slash/muse-incomprehension/02.jpg",
-    "/art-slash/muse-incomprehension/03.jpg",
-    "/art-slash/muse-incomprehension/04.jpg",
-    "/art-slash/muse-incomprehension/05.jpg",
-    "/art-slash/muse-incomprehension/06.jpg",
-    "/art-slash/muse-incomprehension/07.jpg",
-    "/art-slash/muse-incomprehension/08.jpg"
-   ]
-  },
-  {
-   "slug": "muse-fecondite",
-   "title": "Muse de la fécondité",
-   "meta": "Les Muses",
-   "credit": "Body painting Boris Hierso",
-   "images": [
-    "/art-slash/muse-fecondite/01.jpg",
-    "/art-slash/muse-fecondite/02.jpg",
-    "/art-slash/muse-fecondite/03.jpg",
-    "/art-slash/muse-fecondite/04.jpg",
-    "/art-slash/muse-fecondite/05.jpg",
-    "/art-slash/muse-fecondite/06.jpg",
-    "/art-slash/muse-fecondite/07.jpg",
-    "/art-slash/muse-fecondite/08.jpg",
-    "/art-slash/muse-fecondite/09.jpg",
-    "/art-slash/muse-fecondite/10.jpg",
-    "/art-slash/muse-fecondite/11.jpg"
-   ]
-  },
-  {
-   "slug": "muse-reve",
-   "title": "Muse du rêve",
-   "meta": "Les Muses",
-   "credit": "Body painting Boris Hierso",
-   "images": [
-    "/art-slash/muse-reve/01.jpg",
-    "/art-slash/muse-reve/02.jpg",
-    "/art-slash/muse-reve/03.jpg"
+    "/art-slash/terre-brulee/01.jpg",
+    "/art-slash/terre-brulee/02.jpg",
+    "/art-slash/terre-brulee/03.jpg",
+    "/art-slash/terre-brulee/04.jpg",
+    "/art-slash/terre-brulee/05.jpg",
+    "/art-slash/terre-brulee/06.jpg",
+    "/art-slash/terre-brulee/07.jpg"
    ]
   }
  ],
- "perf": [
+ "test": [
   {
-   "slug": "les-muses",
-   "title": "Les Muses",
-   "meta": "Performance live · 10/03/18",
-   "credit": "Body painting Boris Hierso",
+   "slug": "t-adam-eve-s",
+   "title": "Adam & Eve's",
    "images": [
-    "/art-slash/les-muses/01.jpg",
-    "/art-slash/les-muses/02.jpg",
-    "/art-slash/les-muses/05.jpg",
-    "/art-slash/les-muses/06.jpg",
-    "/art-slash/les-muses/13.jpg",
-    "/art-slash/les-muses/22.jpg"
+    "/art-slash/t-adam-eve-s/01.jpg",
+    "/art-slash/t-adam-eve-s/02.jpg",
+    "/art-slash/t-adam-eve-s/03.jpg",
+    "/art-slash/t-adam-eve-s/04.jpg",
+    "/art-slash/t-adam-eve-s/05.jpg",
+    "/art-slash/t-adam-eve-s/06.jpg",
+    "/art-slash/t-adam-eve-s/07.jpg"
    ]
   },
   {
-   "slug": "galerie-myriane-2014",
-   "title": "Galerie Myriane",
-   "meta": "Exposition · juin 2014",
-   "credit": "Galerie Myriane, Paris",
+   "slug": "t-amazone",
+   "title": "Amazone",
    "images": [
-    "/art-slash/galerie-myriane-2014/01.jpg",
-    "/art-slash/galerie-myriane-2014/02.jpg",
-    "/art-slash/galerie-myriane-2014/03.jpg",
-    "/art-slash/galerie-myriane-2014/04.jpg",
-    "/art-slash/galerie-myriane-2014/05.jpg",
-    "/art-slash/galerie-myriane-2014/06.jpg",
-    "/art-slash/galerie-myriane-2014/07.jpg",
-    "/art-slash/galerie-myriane-2014/08.jpg",
-    "/art-slash/galerie-myriane-2014/09.jpg",
-    "/art-slash/galerie-myriane-2014/10.jpg",
-    "/art-slash/galerie-myriane-2014/11.jpg",
-    "/art-slash/galerie-myriane-2014/12.jpg"
+    "/art-slash/t-amazone/01.jpg",
+    "/art-slash/t-amazone/02.jpg",
+    "/art-slash/t-amazone/03.jpg",
+    "/art-slash/t-amazone/04.jpg",
+    "/art-slash/t-amazone/05.jpg",
+    "/art-slash/t-amazone/06.jpg",
+    "/art-slash/t-amazone/07.jpg",
+    "/art-slash/t-amazone/08.jpg"
+   ]
+  },
+  {
+   "slug": "t-artfact2",
+   "title": "ArtFact2",
+   "images": [
+    "/art-slash/t-artfact2/01.jpg",
+    "/art-slash/t-artfact2/02.jpg",
+    "/art-slash/t-artfact2/03.jpg",
+    "/art-slash/t-artfact2/04.jpg",
+    "/art-slash/t-artfact2/05.jpg",
+    "/art-slash/t-artfact2/06.jpg",
+    "/art-slash/t-artfact2/07.jpg",
+    "/art-slash/t-artfact2/08.jpg"
+   ]
+  },
+  {
+   "slug": "t-dark-sensuality",
+   "title": "Dark Sensuality",
+   "images": [
+    "/art-slash/t-dark-sensuality/01.jpg",
+    "/art-slash/t-dark-sensuality/02.jpg",
+    "/art-slash/t-dark-sensuality/03.jpg",
+    "/art-slash/t-dark-sensuality/04.jpg",
+    "/art-slash/t-dark-sensuality/05.jpg",
+    "/art-slash/t-dark-sensuality/06.jpg",
+    "/art-slash/t-dark-sensuality/07.jpg",
+    "/art-slash/t-dark-sensuality/08.jpg"
+   ]
+  },
+  {
+   "slug": "t-electric-star",
+   "title": "Electric Star",
+   "images": [
+    "/art-slash/t-electric-star/01.jpg",
+    "/art-slash/t-electric-star/02.jpg",
+    "/art-slash/t-electric-star/03.jpg",
+    "/art-slash/t-electric-star/04.jpg",
+    "/art-slash/t-electric-star/05.jpg",
+    "/art-slash/t-electric-star/06.jpg",
+    "/art-slash/t-electric-star/07.jpg"
+   ]
+  },
+  {
+   "slug": "t-first",
+   "title": "First",
+   "images": [
+    "/art-slash/t-first/01.jpg",
+    "/art-slash/t-first/02.jpg",
+    "/art-slash/t-first/03.jpg",
+    "/art-slash/t-first/04.jpg",
+    "/art-slash/t-first/05.jpg",
+    "/art-slash/t-first/06.jpg",
+    "/art-slash/t-first/07.jpg",
+    "/art-slash/t-first/08.jpg"
+   ]
+  },
+  {
+   "slug": "t-intimite-e-contraste",
+   "title": "Intimitée contrasté",
+   "images": [
+    "/art-slash/t-intimite-e-contraste/01.jpg",
+    "/art-slash/t-intimite-e-contraste/02.jpg",
+    "/art-slash/t-intimite-e-contraste/03.jpg",
+    "/art-slash/t-intimite-e-contraste/04.jpg",
+    "/art-slash/t-intimite-e-contraste/05.jpg",
+    "/art-slash/t-intimite-e-contraste/06.jpg",
+    "/art-slash/t-intimite-e-contraste/07.jpg",
+    "/art-slash/t-intimite-e-contraste/08.jpg"
+   ]
+  },
+  {
+   "slug": "t-kleptonus-greenicus",
+   "title": "Kleptonus Greenicus",
+   "images": [
+    "/art-slash/t-kleptonus-greenicus/01.jpg",
+    "/art-slash/t-kleptonus-greenicus/02.jpg",
+    "/art-slash/t-kleptonus-greenicus/03.jpg",
+    "/art-slash/t-kleptonus-greenicus/04.jpg",
+    "/art-slash/t-kleptonus-greenicus/05.jpg",
+    "/art-slash/t-kleptonus-greenicus/06.jpg",
+    "/art-slash/t-kleptonus-greenicus/07.jpg",
+    "/art-slash/t-kleptonus-greenicus/08.jpg"
+   ]
+  },
+  {
+   "slug": "t-la-muse",
+   "title": "La Muse",
+   "images": [
+    "/art-slash/t-la-muse/01.jpg",
+    "/art-slash/t-la-muse/02.jpg",
+    "/art-slash/t-la-muse/03.jpg",
+    "/art-slash/t-la-muse/04.jpg",
+    "/art-slash/t-la-muse/05.jpg",
+    "/art-slash/t-la-muse/06.jpg",
+    "/art-slash/t-la-muse/07.jpg",
+    "/art-slash/t-la-muse/08.jpg"
+   ]
+  },
+  {
+   "slug": "t-l-excentrique",
+   "title": "L’excentrique",
+   "images": [
+    "/art-slash/t-l-excentrique/01.jpg",
+    "/art-slash/t-l-excentrique/02.jpg",
+    "/art-slash/t-l-excentrique/03.jpg",
+    "/art-slash/t-l-excentrique/04.jpg",
+    "/art-slash/t-l-excentrique/05.jpg",
+    "/art-slash/t-l-excentrique/06.jpg",
+    "/art-slash/t-l-excentrique/07.jpg",
+    "/art-slash/t-l-excentrique/08.jpg"
+   ]
+  },
+  {
+   "slug": "t-muse-de-la-se-duction",
+   "title": "Muse de la séduction",
+   "images": [
+    "/art-slash/t-muse-de-la-se-duction/01.jpg",
+    "/art-slash/t-muse-de-la-se-duction/02.jpg",
+    "/art-slash/t-muse-de-la-se-duction/03.jpg",
+    "/art-slash/t-muse-de-la-se-duction/04.jpg",
+    "/art-slash/t-muse-de-la-se-duction/05.jpg",
+    "/art-slash/t-muse-de-la-se-duction/06.jpg",
+    "/art-slash/t-muse-de-la-se-duction/07.jpg",
+    "/art-slash/t-muse-de-la-se-duction/08.jpg"
+   ]
+  },
+  {
+   "slug": "t-muse-de-l-envou-tement",
+   "title": "Muse de l’envoûtement",
+   "images": [
+    "/art-slash/t-muse-de-l-envou-tement/01.jpg",
+    "/art-slash/t-muse-de-l-envou-tement/02.jpg",
+    "/art-slash/t-muse-de-l-envou-tement/03.jpg",
+    "/art-slash/t-muse-de-l-envou-tement/04.jpg"
+   ]
+  },
+  {
+   "slug": "t-oceane-fly",
+   "title": "Oceane Fly",
+   "images": [
+    "/art-slash/t-oceane-fly/01.jpg",
+    "/art-slash/t-oceane-fly/02.jpg",
+    "/art-slash/t-oceane-fly/03.jpg",
+    "/art-slash/t-oceane-fly/04.jpg",
+    "/art-slash/t-oceane-fly/05.jpg",
+    "/art-slash/t-oceane-fly/06.jpg",
+    "/art-slash/t-oceane-fly/07.jpg",
+    "/art-slash/t-oceane-fly/08.jpg"
+   ]
+  },
+  {
+   "slug": "t-vision-trouble",
+   "title": "Vision Trouble",
+   "images": [
+    "/art-slash/t-vision-trouble/01.jpg",
+    "/art-slash/t-vision-trouble/02.jpg",
+    "/art-slash/t-vision-trouble/03.jpg",
+    "/art-slash/t-vision-trouble/04.jpg",
+    "/art-slash/t-vision-trouble/05.jpg",
+    "/art-slash/t-vision-trouble/06.jpg",
+    "/art-slash/t-vision-trouble/07.jpg",
+    "/art-slash/t-vision-trouble/08.jpg"
    ]
   }
- ]
+ ],
+ "performance": {
+  "slug": "les-muses",
+  "title": "Les Muses",
+  "meta": "Performance live · 10/03/18",
+  "credit": "Body painting Boris Hierso",
+  "images": [
+   "/art-slash/les-muses/01.jpg",
+   "/art-slash/les-muses/02.jpg",
+   "/art-slash/les-muses/03.jpg",
+   "/art-slash/les-muses/04.jpg",
+   "/art-slash/les-muses/05.jpg",
+   "/art-slash/les-muses/06.jpg",
+   "/art-slash/les-muses/07.jpg",
+   "/art-slash/les-muses/08.jpg",
+   "/art-slash/les-muses/09.jpg",
+   "/art-slash/les-muses/10.jpg",
+   "/art-slash/les-muses/11.jpg",
+   "/art-slash/les-muses/12.jpg"
+  ]
+ }
 }
