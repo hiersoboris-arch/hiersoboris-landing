@@ -35,6 +35,7 @@ export default function SiteHeader() {
   const solid = scrolled || open;
 
   return (
+    <>
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
         solid
@@ -92,9 +93,10 @@ export default function SiteHeader() {
           </button>
         </div>
       </div>
+    </header>
 
       {open && (
-        <div className="md:hidden fixed inset-0 top-16 bg-bg z-40 px-6 py-8">
+        <div className="md:hidden fixed inset-x-0 top-16 bottom-0 z-40 bg-[#FAF7F2] px-6 py-8 overflow-y-auto">
           <nav className="flex flex-col gap-1">
             {LINKS.map((l) => (
               <Link
@@ -120,6 +122,6 @@ export default function SiteHeader() {
           </nav>
         </div>
       )}
-    </header>
+    </>
   );
 }
