@@ -236,6 +236,9 @@ export default function Home() {
               Voir mes résultats
             </a>
           </div>
+          <p className="rise rise-4 mt-4 text-sm text-muted">
+            30 minutes, en visio, sans engagement.
+          </p>
           <div className="rise rise-5 mt-12 flex flex-wrap gap-x-12 gap-y-6">
             <HeroStat value="3,8M€" label="ARR généré, 10 ans" accent />
             <HeroStat value="387" label="deals signés" />
