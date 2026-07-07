@@ -8,7 +8,7 @@ import { track } from "@vercel/analytics";
 const CALENDLY = "https://calendly.com/hierso-boris/echange";
 
 const LINKS = [
-  { href: "/#aider", label: "Aider" },
+  { href: "/#aider", label: "Offres" },
   { href: "/#preuves", label: "Preuves" },
   { href: "/#ressources", label: "Ressources" },
   { href: "/art-slash", label: "Art Slash" },

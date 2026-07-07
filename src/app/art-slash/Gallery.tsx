@@ -126,7 +126,7 @@ export default function Gallery({ data }: { data: Data }) {
       {/* BODY PAINTING */}
       <section id="body" className="scroll-mt-24 mt-20 md:mt-28">
         <div className="max-w-content mx-auto px-6">
-          <div className="flex items-baseline justify-between border-b border-cream/10 pb-5 mb-14">
+          <div className="flex items-baseline justify-between border-b border-cream/10 pb-5 mb-4">
             <h2 className="serif text-4xl md:text-6xl tracking-tight">
               Body Painting
             </h2>
@@ -134,6 +134,9 @@ export default function Gallery({ data }: { data: Data }) {
               Séries pro
             </span>
           </div>
+          <p className="text-sm text-cream/40 mb-14">
+            Clique une image pour l&apos;agrandir.
+          </p>
         </div>
 
         <div className="space-y-24 md:space-y-32">
