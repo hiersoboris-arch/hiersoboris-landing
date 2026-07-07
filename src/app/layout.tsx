@@ -3,7 +3,6 @@ import { Fraunces, Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { SITE_URL } from "@/lib/site-url";
-import { FAQ } from "@/lib/faq";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -83,6 +82,7 @@ export default function RootLayout({
               ],
               sameAs: [
                 "https://www.linkedin.com/in/boris-hierso-alphandery",
+                "https://www.instagram.com/borishierso",
                 "https://coaching.hiersoboris.fr",
                 "https://toolsbox.hiersoboris.fr",
               ],
@@ -106,12 +106,14 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "FAQPage",
-              mainEntity: FAQ.map((f) => ({
-                "@type": "Question",
-                name: f.q,
-                acceptedAnswer: { "@type": "Answer", text: f.a },
-              })),
+              "@type": "WebSite",
+              name: "Boris Hierso Alphandéry",
+              url: SITE_URL,
+              inLanguage: "fr-FR",
+              author: {
+                "@type": "Person",
+                name: "Boris Hierso Alphandéry",
+              },
             }),
           }}
         />

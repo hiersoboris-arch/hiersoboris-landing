@@ -166,6 +166,20 @@ const TESTIMONIALS = [
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: FAQ.map((f) => ({
+              "@type": "Question",
+              name: f.q,
+              acceptedAnswer: { "@type": "Answer", text: f.a },
+            })),
+          }),
+        }}
+      />
       <SiteHeader />
       <main id="contenu">
       {/* Bandeau dark (handoff) : yeux peints */}

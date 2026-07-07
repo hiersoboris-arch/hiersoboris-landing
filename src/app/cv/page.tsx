@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, Download, ArrowUpRight } from "lucide-react";
 import { CALENDLY, LINKEDIN, EMAIL } from "@/lib/contact";
+import { SITE_URL } from "@/lib/site-url";
 
 const CV_PDF = "/CV-Boris-Hierso-Alphandery.pdf";
 
@@ -117,6 +118,19 @@ const EXPERIENCES = [
 export default function CVPage() {
   return (
     <main id="contenu" className="max-w-3xl mx-auto px-6 py-16 md:py-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Accueil", item: SITE_URL },
+              { "@type": "ListItem", position: 2, name: "CV", item: `${SITE_URL}/cv` },
+            ],
+          }),
+        }}
+      />
       {/* Retour + télécharger */}
       <div className="flex items-center justify-between mb-12">
         <Link

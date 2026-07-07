@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import Gallery from "./Gallery";
 import data from "./gallery-data.json";
 import { IG } from "@/lib/contact";
+import { SITE_URL } from "@/lib/site-url";
 
 export const metadata: Metadata = {
   title: "Art Slash · Galerie",
@@ -21,6 +22,44 @@ export const metadata: Metadata = {
 export default function ArtSlashPage() {
   return (
     <main id="contenu" className="bg-night text-cream">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Accueil", item: SITE_URL },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Art Slash",
+                  item: `${SITE_URL}/art-slash`,
+                },
+              ],
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "CollectionPage",
+              name: "Art Slash",
+              url: `${SITE_URL}/art-slash`,
+              inLanguage: "fr-FR",
+              about: {
+                "@type": "VisualArtwork",
+                name: "Art Slash",
+                artform: ["Action painting", "Body painting"],
+                dateCreated: "2014/2018",
+                creator: {
+                  "@type": "Person",
+                  name: "Boris Hierso Alphandéry",
+                  url: SITE_URL,
+                },
+              },
+            },
+          ]),
+        }}
+      />
       {/* Bandeau immersif */}
       <header className="relative isolate">
         <div className="relative h-[60vh] min-h-[420px] w-full overflow-hidden">
