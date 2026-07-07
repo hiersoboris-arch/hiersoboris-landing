@@ -15,6 +15,11 @@ export const metadata: Metadata = {
     title: "Art Slash · Boris Hierso Alphandéry",
     description: "Action painting, body painting et performances (2014-2018).",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Art Slash · Boris Hierso Alphandéry",
+    description: "Action painting, body painting et performances (2014-2018).",
+  },
 };
 
 const IG = "https://www.instagram.com/borishierso/";

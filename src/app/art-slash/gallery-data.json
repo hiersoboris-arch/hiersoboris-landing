@@ -2,195 +2,291 @@
  "toiles": [
   {
    "src": "/art-slash/toiles/arctique.jpg",
-   "title": "Arctique"
+   "title": "Arctique",
+   "w": 1500,
+   "h": 1249
   },
   {
    "src": "/art-slash/toiles/carnaval.jpg",
-   "title": "Carnaval"
+   "title": "Carnaval",
+   "w": 1500,
+   "h": 1497
   },
   {
    "src": "/art-slash/toiles/cauchemar-ou-re-ve-l-irre-alite-sans-fin.jpg",
-   "title": "Cauchemar ou réve l'irréalité sans fin"
+   "title": "Cauchemar ou réve l'irréalité sans fin",
+   "w": 1500,
+   "h": 1225
   },
   {
    "src": "/art-slash/toiles/champ-de-vie.jpg",
-   "title": "Champ de Vie"
+   "title": "Champ de Vie",
+   "w": 1500,
+   "h": 744
   },
   {
    "src": "/art-slash/toiles/chine-imperial.jpg",
-   "title": "Chine Imperial"
+   "title": "Chine Imperial",
+   "w": 1500,
+   "h": 740
   },
   {
    "src": "/art-slash/toiles/dune-d-or.jpg",
-   "title": "Dune D'or"
+   "title": "Dune D'or",
+   "w": 1500,
+   "h": 1494
   },
   {
    "src": "/art-slash/toiles/eau.jpg",
-   "title": "Eau"
+   "title": "Eau",
+   "w": 1500,
+   "h": 1201
   },
   {
    "src": "/art-slash/toiles/festif.jpg",
-   "title": "Festif"
+   "title": "Festif",
+   "w": 1500,
+   "h": 1214
   },
   {
    "src": "/art-slash/toiles/fore-t-noire.jpg",
-   "title": "Forêt noire"
+   "title": "Forêt noire",
+   "w": 1218,
+   "h": 1500
   },
   {
    "src": "/art-slash/toiles/galaxy.jpg",
-   "title": "Galaxy"
+   "title": "Galaxy",
+   "w": 1294,
+   "h": 1500
   },
   {
    "src": "/art-slash/toiles/jungle.jpg",
-   "title": "Jungle"
+   "title": "Jungle",
+   "w": 1500,
+   "h": 740
   },
   {
    "src": "/art-slash/toiles/l-inconnu.jpg",
-   "title": "L'inconnu"
+   "title": "L'inconnu",
+   "w": 1500,
+   "h": 745
   },
   {
    "src": "/art-slash/toiles/la-jouissance-d-un-homme.jpg",
-   "title": "La jouissance d'un homme"
+   "title": "La jouissance d'un homme",
+   "w": 1134,
+   "h": 1500
   },
   {
    "src": "/art-slash/toiles/la-naissance-du-dragon.jpg",
-   "title": "La naissance du dragon"
+   "title": "La naissance du dragon",
+   "w": 1500,
+   "h": 1086
   },
   {
    "src": "/art-slash/toiles/le-chirurgien.jpg",
-   "title": "Le chirurgien"
+   "title": "Le chirurgien",
+   "w": 691,
+   "h": 1500
   },
   {
    "src": "/art-slash/toiles/le-danger.jpg",
-   "title": "Le danger"
+   "title": "Le danger",
+   "w": 1055,
+   "h": 1500
   },
   {
    "src": "/art-slash/toiles/le-feu-qui-brule.jpg",
-   "title": "Le feu qui brule"
+   "title": "Le feu qui brule",
+   "w": 1500,
+   "h": 1239
   },
   {
    "src": "/art-slash/toiles/le-petit-bourgeois.jpg",
-   "title": "Le petit bourgeois"
+   "title": "Le petit bourgeois",
+   "w": 1500,
+   "h": 1021
   },
   {
    "src": "/art-slash/toiles/le-triangle-des-bermude.jpg",
-   "title": "Le triangle des bermude"
+   "title": "Le triangle des bermude",
+   "w": 1500,
+   "h": 1124
   },
   {
    "src": "/art-slash/toiles/le-voyageur.jpg",
-   "title": "Le voyageur"
+   "title": "Le voyageur",
+   "w": 1500,
+   "h": 1165
   },
   {
    "src": "/art-slash/toiles/les-mots-peuvent-tue-e.jpg",
-   "title": "Les mots peuvent tuée"
+   "title": "Les mots peuvent tuée",
+   "w": 672,
+   "h": 1339
   },
   {
    "src": "/art-slash/toiles/marchand-de-sable.jpg",
-   "title": "Marchand de sable"
+   "title": "Marchand de sable",
+   "w": 1500,
+   "h": 722
   },
   {
    "src": "/art-slash/toiles/massacre-japonais.jpg",
-   "title": "Massacre japonais"
+   "title": "Massacre japonais",
+   "w": 1500,
+   "h": 738
   },
   {
    "src": "/art-slash/toiles/metal-rocheux.jpg",
-   "title": "Metal rocheux"
+   "title": "Metal rocheux",
+   "w": 1500,
+   "h": 1231
   },
   {
    "src": "/art-slash/toiles/me-tropolitane.jpg",
-   "title": "Métropolitane"
+   "title": "Métropolitane",
+   "w": 709,
+   "h": 1500
   },
   {
    "src": "/art-slash/toiles/new-york-is-time.jpg",
-   "title": "New - York is time"
+   "title": "New - York is time",
+   "w": 1500,
+   "h": 1076
   },
   {
    "src": "/art-slash/toiles/or-et-argent-sur-le-sang-de-nos-mort.jpg",
-   "title": "Or et argent sur le sang de nos mort"
+   "title": "Or et argent sur le sang de nos mort",
+   "w": 1500,
+   "h": 1170
   },
   {
    "src": "/art-slash/toiles/or-noir.jpg",
-   "title": "Or noir"
+   "title": "Or noir",
+   "w": 752,
+   "h": 1500
   },
   {
    "src": "/art-slash/toiles/paysage-de-chine.jpg",
-   "title": "Paysage de chine"
+   "title": "Paysage de chine",
+   "w": 1500,
+   "h": 1487
   },
   {
    "src": "/art-slash/toiles/petit-air-d-automne.jpg",
-   "title": "Petit air d'automne"
+   "title": "Petit air d'automne",
+   "w": 1500,
+   "h": 1110
   },
   {
    "src": "/art-slash/toiles/pourqu-oi.jpg",
-   "title": "Pourqu'oi"
+   "title": "Pourqu'oi",
+   "w": 1500,
+   "h": 1202
   },
   {
    "src": "/art-slash/toiles/sang-sable.jpg",
-   "title": "Sang sablé"
+   "title": "Sang sablé",
+   "w": 1500,
+   "h": 1220
   },
   {
    "src": "/art-slash/toiles/street-pop.jpg",
-   "title": "Street pop"
+   "title": "Street pop",
+   "w": 1500,
+   "h": 1099
   },
   {
    "src": "/art-slash/toiles/valle-e.jpg",
-   "title": "Vallée"
+   "title": "Vallée",
+   "w": 1500,
+   "h": 1489
   },
   {
    "src": "/art-slash/toiles/vernie-essaie.jpg",
-   "title": "Vernie essaie"
+   "title": "Vernie essaie",
+   "w": 1500,
+   "h": 1003
   },
   {
    "src": "/art-slash/toiles/volcanique.jpg",
-   "title": "Volcanique"
+   "title": "Volcanique",
+   "w": 1500,
+   "h": 1149
   },
   {
    "src": "/art-slash/toiles/zen.jpg",
-   "title": "Zen"
+   "title": "Zen",
+   "w": 1500,
+   "h": 719
   },
   {
    "src": "/art-slash/toiles/dsc1999.jpg",
-   "title": "_DSC1999"
+   "title": "_DSC1999",
+   "w": 1500,
+   "h": 1191
   },
   {
    "src": "/art-slash/toiles/mg-4679.jpg",
-   "title": "_MG_4679"
+   "title": "_MG_4679",
+   "w": 1500,
+   "h": 1387
   },
   {
    "src": "/art-slash/toiles/mg-4740.jpg",
-   "title": "_MG_4740"
+   "title": "_MG_4740",
+   "w": 1246,
+   "h": 1500
   },
   {
    "src": "/art-slash/toiles/mg-4756.jpg",
-   "title": "_MG_4756"
+   "title": "_MG_4756",
+   "w": 1500,
+   "h": 1068
   },
   {
    "src": "/art-slash/toiles/mg-4768.jpg",
-   "title": "_MG_4768"
+   "title": "_MG_4768",
+   "w": 1500,
+   "h": 1055
   },
   {
    "src": "/art-slash/toiles/mg-4798.jpg",
-   "title": "_MG_4798"
+   "title": "_MG_4798",
+   "w": 1500,
+   "h": 1196
   },
   {
    "src": "/art-slash/toiles/mg-4809.jpg",
-   "title": "_MG_4809"
+   "title": "_MG_4809",
+   "w": 1499,
+   "h": 1495
   },
   {
    "src": "/art-slash/toiles/mg-4817.jpg",
-   "title": "_MG_4817"
+   "title": "_MG_4817",
+   "w": 1500,
+   "h": 1204
   },
   {
    "src": "/art-slash/toiles/mg-4825.jpg",
-   "title": "_MG_4825"
+   "title": "_MG_4825",
+   "w": 1500,
+   "h": 581
   },
   {
    "src": "/art-slash/toiles/mg-4828.jpg",
-   "title": "_MG_4828"
+   "title": "_MG_4828",
+   "w": 1500,
+   "h": 1000
   },
   {
    "src": "/art-slash/toiles/mg-4829.jpg",
-   "title": "_MG_4829"
+   "title": "_MG_4829",
+   "w": 1500,
+   "h": 1077
   }
  ],
  "pro": [

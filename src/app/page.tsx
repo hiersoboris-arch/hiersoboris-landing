@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { FAQ } from "@/lib/faq";
+import SiteHeader from "./SiteHeader";
 
 function LinkedinIcon({ className }: { className?: string }) {
   return (
@@ -168,6 +169,7 @@ const TESTIMONIALS = [
 export default function Home() {
   return (
     <>
+      <SiteHeader />
       {/* Bandeau dark (handoff) : yeux peints */}
       <header className="relative isolate bg-night text-cream">
         <div className="relative h-[44vh] min-h-[320px] md:h-[54vh] w-full overflow-hidden">
@@ -183,27 +185,6 @@ export default function Home() {
             className="absolute inset-0 bg-gradient-to-t from-night/90 via-night/15 to-night/40"
             aria-hidden="true"
           />
-          {/* Nav posée sur le bandeau */}
-          <div className="absolute inset-x-0 top-0 z-10 max-w-content mx-auto w-full px-6 h-20 flex items-center justify-between">
-            <Link href="/" className="serif text-lg md:text-xl tracking-tight text-cream">
-              Boris Hierso Alphandéry
-            </Link>
-            <nav className="hidden md:flex items-center gap-8 text-sm text-cream/75">
-              <a href="#aider" className="hover:text-cream transition">Aider</a>
-              <a href="#preuves" className="hover:text-cream transition">Preuves</a>
-              <a href="#ressources" className="hover:text-cream transition">Ressources</a>
-              <Link href="/art-slash" className="hover:text-cream transition">Art Slash</Link>
-              <a href="#contact" className="hover:text-cream transition">Contact</a>
-            </nav>
-            <a
-              href={CALENDLY}
-              className="inline-flex items-center gap-2 bg-bordeaux-soft text-cream px-4 py-2 rounded-full text-sm font-medium hover:bg-bordeaux transition"
-            >
-              <span className="hidden sm:inline">Prendre 30 minutes</span>
-              <span className="sm:hidden">Échange</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </a>
-          </div>
           {/* Label bas de bandeau */}
           <div className="absolute inset-x-0 bottom-0 z-10 max-w-content mx-auto w-full px-6 pb-6">
             <div className="text-xs md:text-sm tracking-[0.22em] uppercase text-cream/85">
