@@ -54,7 +54,15 @@ export default function Gallery({ data }: { data: Data }) {
       else if (e.key === "ArrowRight") move(1);
       else if (e.key === "ArrowLeft") move(-1);
       else if (e.key === "Tab") {
+        const nodes = dialogRef.current?.querySelectorAll<HTMLElement>("button");
+        if (!nodes || nodes.length === 0) return;
+        const list = Array.from(nodes);
+        const idx = list.indexOf(document.activeElement as HTMLElement);
         e.preventDefault();
+        const next = e.shiftKey
+          ? (idx - 1 + list.length) % list.length
+          : (idx + 1) % list.length;
+        list[next].focus();
       }
     };
     window.addEventListener("keydown", onKey);
@@ -134,7 +142,7 @@ export default function Gallery({ data }: { data: Data }) {
               Séries pro
             </span>
           </div>
-          <p className="text-sm text-cream/40 mb-14">
+          <p className="text-sm text-cream/60 mb-14">
             Clique une image pour l&apos;agrandir.
           </p>
         </div>
@@ -176,7 +184,7 @@ export default function Gallery({ data }: { data: Data }) {
             <h3 className="serif text-2xl md:text-4xl tracking-tight text-cream/80">
               Essais & recherches
             </h3>
-            <span className="text-xs uppercase tracking-[0.2em] text-cream/35">
+            <span className="text-xs uppercase tracking-[0.2em] text-cream/55">
               Planches d&apos;atelier
             </span>
           </div>

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import Gallery from "./Gallery";
 import data from "./gallery-data.json";
+import { IG } from "@/lib/contact";
 
 export const metadata: Metadata = {
   title: "Art Slash · Galerie",
@@ -16,8 +17,6 @@ export const metadata: Metadata = {
     description: "Action painting, body painting et performances (2014-2018).",
   },
 };
-
-const IG = "https://www.instagram.com/borishierso/";
 
 export default function ArtSlashPage() {
   return (

@@ -4,8 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { track } from "@vercel/analytics";
-
-const CALENDLY = "https://calendly.com/hierso-boris/echange";
+import { CALENDLY } from "@/lib/contact";
 
 const LINKS = [
   { href: "/#aider", label: "Offres" },

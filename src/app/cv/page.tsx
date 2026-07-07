@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, Download, ArrowUpRight } from "lucide-react";
+import { CALENDLY, LINKEDIN, EMAIL } from "@/lib/contact";
 
-const EMAIL = "hierso.boris@gmail.com";
-const LINKEDIN = "https://www.linkedin.com/in/boris-hierso-alphandery";
-const CALENDLY = "https://calendly.com/hierso-boris/echange";
 const CV_PDF = "/CV-Boris-Hierso-Alphandery.pdf";
 
 export const metadata: Metadata = {

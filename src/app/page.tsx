@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { FAQ } from "@/lib/faq";
+import { CALENDLY, LINKEDIN, EMAIL } from "@/lib/contact";
 import SiteHeader from "./SiteHeader";
 
 function LinkedinIcon({ className }: { className?: string }) {
@@ -17,10 +18,6 @@ function LinkedinIcon({ className }: { className?: string }) {
     </svg>
   );
 }
-
-const CALENDLY = "https://calendly.com/hierso-boris/echange";
-const LINKEDIN = "https://www.linkedin.com/in/boris-hierso-alphandery";
-const EMAIL = "hierso.boris@gmail.com";
 
 const COMPANIES: { name: string; logo: string; url?: string }[] = [
   { name: "Exoteach", logo: "/logos/logo-l-exoteach.png", url: "https://www.exoteach.com" },
