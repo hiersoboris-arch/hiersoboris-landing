@@ -36,12 +36,6 @@ export const metadata: Metadata = {
     description:
       "Head of Sales freelance, coach en négociation et créateur d'outils IA. 10 ans de vente B2B. Disponible pour missions, CDI, formations et conférences. Basé à Paris.",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Boris Hierso Alphandéry",
-    description:
-      "Head of Sales freelance, coach négo et maker IA. Disponible pour missions, CDI, formations et conférences. Paris.",
-  },
   robots: {
     index: true,
     follow: true,

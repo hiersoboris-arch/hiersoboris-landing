@@ -18,12 +18,6 @@ export const metadata: Metadata = {
     description:
       "Head of Sales freelance, 10 ans de vente B2B. Résultats chiffrés et parcours complet.",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "CV · Boris Hierso Alphandéry",
-    description:
-      "Head of Sales freelance, 10 ans de vente B2B. Résultats chiffrés et parcours complet.",
-  },
 };
 
 const SKILLS = [
