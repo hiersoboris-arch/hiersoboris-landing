@@ -32,6 +32,7 @@ const config: Config = {
         bordeaux: {
           DEFAULT: "#7C2A38",
           soft: "#9B3A48",
+          light: "#C46A76",
           deep: "#5C1A26",
         },
       },

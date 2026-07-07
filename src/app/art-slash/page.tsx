@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 export default function ArtSlashPage() {
   return (
-    <main className="bg-night text-cream">
+    <main id="contenu" className="bg-night text-cream">
       {/* Bandeau immersif */}
       <header className="relative isolate">
         <div className="relative h-[60vh] min-h-[420px] w-full overflow-hidden">
@@ -55,7 +55,7 @@ export default function ArtSlashPage() {
             </a>
           </div>
           <div className="absolute inset-x-0 bottom-0 z-10 max-w-content mx-auto w-full px-6 pb-10 md:pb-14">
-            <div className="text-xs uppercase tracking-[0.24em] text-bordeaux-soft mb-4">
+            <div className="text-xs uppercase tracking-[0.24em] text-bordeaux-light mb-4">
               2014 - 2018 · archive
             </div>
             <h1 className="serif text-6xl md:text-9xl leading-[0.9] tracking-tight">
@@ -83,26 +83,26 @@ export default function ArtSlashPage() {
       {/* Colophon */}
       <section className="border-t border-cream/10">
         <div className="max-w-content mx-auto px-6 py-16 md:py-24">
-          <div className="text-xs uppercase tracking-[0.2em] text-bordeaux-soft mb-8">
+          <div className="text-xs uppercase tracking-[0.2em] text-bordeaux-light mb-8">
             Crédits
           </div>
           <div className="grid md:grid-cols-3 gap-10 text-sm leading-relaxed">
             <div>
-              <div className="text-cream/45 mb-2">Artiste</div>
+              <div className="text-cream/60 mb-2">Artiste</div>
               <p className="text-cream">
                 Boris Hierso Alphandéry. Toiles, body painting et performances,
                 2014-2018.
               </p>
             </div>
             <div>
-              <div className="text-cream/45 mb-2">Photographes</div>
+              <div className="text-cream/60 mb-2">Photographes</div>
               <p className="text-cream">
                 Tristan Dudot · Clément Ouvrard · Sami Eddine · Alexia Vermiglio
                 · Jean-Yves Dana · Picovore · Pictural1.
               </p>
             </div>
             <div>
-              <div className="text-cream/45 mb-2">Modèles & collaborateurs</div>
+              <div className="text-cream/60 mb-2">Modèles & collaborateurs</div>
               <p className="text-cream">
                 Pauline Ortega · Joséphine Cordesse · Naphyg · Mickaël Bokis ·
                 Pierre Roumegas · Arnaud Gagnoud · Mary DMN · Isabelle Treiber ·
@@ -110,7 +110,7 @@ export default function ArtSlashPage() {
               </p>
             </div>
           </div>
-          <p className="mt-12 text-cream/45 text-sm max-w-2xl">
+          <p className="mt-12 text-cream/60 text-sm max-w-2xl">
             Les crédits sont reconstitués à partir de mes archives Instagram. Si
             vous figurez sur une image et souhaitez un crédit, une correction ou
             un retrait, écrivez-moi : hierso.boris@gmail.com.

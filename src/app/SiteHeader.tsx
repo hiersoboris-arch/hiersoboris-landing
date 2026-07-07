@@ -84,7 +84,7 @@ export default function SiteHeader() {
             onClick={() => setOpen((v) => !v)}
             aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
             aria-expanded={open}
-            className={`md:hidden p-2 -mr-2 transition-colors ${
+            className={`md:hidden p-2.5 -mr-2 transition-colors ${
               solid ? "text-ink" : "text-cream"
             }`}
           >

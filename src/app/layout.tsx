@@ -50,6 +50,9 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${fraunces.variable} ${inter.variable}`}>
       <body className="antialiased">
+        <a href="#contenu" className="skip-link">
+          Aller au contenu
+        </a>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

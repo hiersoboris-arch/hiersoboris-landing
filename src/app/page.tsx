@@ -167,8 +167,9 @@ export default function Home() {
   return (
     <>
       <SiteHeader />
+      <main id="contenu">
       {/* Bandeau dark (handoff) : yeux peints */}
-      <header className="relative isolate bg-night text-cream">
+      <section className="relative isolate bg-night text-cream">
         <div className="relative h-[44vh] min-h-[320px] md:h-[54vh] w-full overflow-hidden">
           <Image
             src="/hero/destruction.jpg"
@@ -189,7 +190,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </header>
+      </section>
 
       {/* Hero clair */}
       <section className="relative max-w-content mx-auto px-6 pt-14 md:pt-20 pb-14 md:pb-20">
@@ -440,6 +441,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </main>
 
       {/* Footer */}
       <footer className="border-t hairline">
@@ -573,7 +575,7 @@ function CompanyPill({
     />
   );
   if (!url) {
-    return <span className="group mx-6 shrink-0 flex items-center">{img}</span>;
+    return <span className="group mx-6 shrink-0 flex items-center py-2">{img}</span>;
   }
   return (
     <a
@@ -581,7 +583,7 @@ function CompanyPill({
       target="_blank"
       rel="noopener noreferrer"
       aria-label={`Visiter le site de ${name}`}
-      className="group mx-6 shrink-0 flex items-center transition hover:-translate-y-0.5"
+      className="group mx-6 shrink-0 flex items-center py-2 transition hover:-translate-y-0.5"
     >
       {img}
     </a>

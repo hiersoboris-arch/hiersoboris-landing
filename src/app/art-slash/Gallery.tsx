@@ -29,9 +29,16 @@ export default function Gallery({ data }: { data: Data }) {
   const [showNav, setShowNav] = useState(false);
   const dialogRef = useRef<HTMLDivElement>(null);
   const touchX = useRef<number | null>(null);
+  const triggerRef = useRef<HTMLElement | null>(null);
 
-  const open = useCallback((items: Item[], i: number) => setBox({ items, i }), []);
-  const close = useCallback(() => setBox(null), []);
+  const open = useCallback((items: Item[], i: number) => {
+    triggerRef.current = document.activeElement as HTMLElement;
+    setBox({ items, i });
+  }, []);
+  const close = useCallback(() => {
+    setBox(null);
+    triggerRef.current?.focus();
+  }, []);
   const move = useCallback(
     (d: number) =>
       setBox((b) =>
@@ -100,7 +107,7 @@ export default function Gallery({ data }: { data: Data }) {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-night via-night/20 to-transparent" />
           <div className="absolute inset-x-0 bottom-0 p-7">
-            <div className="serif text-sm text-bordeaux-soft mb-1">01</div>
+            <div className="serif text-sm text-bordeaux-light mb-1">01</div>
             <div className="serif text-4xl md:text-5xl text-cream">
               Body Painting
             </div>
@@ -122,7 +129,7 @@ export default function Gallery({ data }: { data: Data }) {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-night via-night/20 to-transparent" />
           <div className="absolute inset-x-0 bottom-0 p-7">
-            <div className="serif text-sm text-bordeaux-soft mb-1">02</div>
+            <div className="serif text-sm text-bordeaux-light mb-1">02</div>
             <div className="serif text-4xl md:text-5xl text-cream">Peinture</div>
             <div className="text-sm text-cream/70 mt-1">
               {data.toiles.length} toiles · action painting
@@ -138,7 +145,7 @@ export default function Gallery({ data }: { data: Data }) {
             <h2 className="serif text-4xl md:text-6xl tracking-tight">
               Body Painting
             </h2>
-            <span className="text-xs uppercase tracking-[0.2em] text-bordeaux-soft">
+            <span className="text-xs uppercase tracking-[0.2em] text-bordeaux-light">
               Séries pro
             </span>
           </div>
@@ -228,7 +235,7 @@ export default function Gallery({ data }: { data: Data }) {
         <div className="max-w-content mx-auto px-6">
           <div className="flex items-baseline justify-between border-b border-cream/10 pb-5 mb-14">
             <h2 className="serif text-4xl md:text-6xl tracking-tight">Peinture</h2>
-            <span className="text-xs uppercase tracking-[0.2em] text-bordeaux-soft">
+            <span className="text-xs uppercase tracking-[0.2em] text-bordeaux-light">
               Toiles · action painting
             </span>
           </div>
@@ -266,20 +273,20 @@ export default function Gallery({ data }: { data: Data }) {
       >
         <a
           href="#body"
-          className="px-3 py-1.5 rounded-full text-cream/80 hover:bg-cream/10 hover:text-cream transition"
+          className="px-4 min-h-[44px] inline-flex items-center justify-center rounded-full text-cream/80 hover:bg-cream/10 hover:text-cream transition"
         >
           Body
         </a>
         <a
           href="#peinture"
-          className="px-3 py-1.5 rounded-full text-cream/80 hover:bg-cream/10 hover:text-cream transition"
+          className="px-4 min-h-[44px] inline-flex items-center justify-center rounded-full text-cream/80 hover:bg-cream/10 hover:text-cream transition"
         >
           Peinture
         </a>
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           aria-label="Revenir en haut"
-          className="px-3 py-1.5 rounded-full text-cream/80 hover:bg-cream/10 hover:text-cream transition"
+          className="px-4 min-h-[44px] inline-flex items-center justify-center rounded-full text-cream/80 hover:bg-cream/10 hover:text-cream transition"
         >
           <ArrowUp className="w-4 h-4" />
         </button>
@@ -333,7 +340,7 @@ export default function Gallery({ data }: { data: Data }) {
             />
             <figcaption className="mt-3 text-center text-sm text-cream/60 max-w-2xl px-4">
               {box.items[box.i].caption}
-              <span className="text-cream/35 ml-2">
+              <span className="text-cream/60 ml-2">
                 {box.i + 1} / {box.items.length}
               </span>
             </figcaption>
@@ -369,13 +376,13 @@ function Chapter({
     <div className="max-w-content mx-auto px-6">
       <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2 mb-7">
         <div>
-          <div className="text-xs uppercase tracking-[0.22em] text-bordeaux-soft mb-2">
+          <div className="text-xs uppercase tracking-[0.22em] text-bordeaux-light mb-2">
             {kicker}
           </div>
           <h3 className="serif text-3xl md:text-5xl tracking-tight">
             {serie.title}
             {serie.meta && (
-              <span className="text-cream/40 text-xl md:text-2xl ml-3 italic">
+              <span className="text-cream/60 text-xl md:text-2xl ml-3 italic">
                 {serie.meta}
               </span>
             )}
@@ -384,7 +391,8 @@ function Chapter({
         {serie.credit && (
           <button
             onClick={onOpen}
-            className="text-sm text-cream/55 hover:text-cream transition text-left md:text-right max-w-xs"
+            aria-label={`Voir la série ${serie.title}`}
+            className="text-sm text-cream/60 hover:text-cream transition text-left md:text-right max-w-xs"
           >
             {serie.credit}
           </button>

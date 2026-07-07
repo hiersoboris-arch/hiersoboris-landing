@@ -116,7 +116,7 @@ const EXPERIENCES = [
 
 export default function CVPage() {
   return (
-    <main className="max-w-3xl mx-auto px-6 py-16 md:py-24">
+    <main id="contenu" className="max-w-3xl mx-auto px-6 py-16 md:py-24">
       {/* Retour + télécharger */}
       <div className="flex items-center justify-between mb-12">
         <Link

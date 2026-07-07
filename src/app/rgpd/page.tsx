@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function Rgpd() {
   return (
-    <main className="max-w-3xl mx-auto px-6 py-16 md:py-24">
+    <main id="contenu" className="max-w-3xl mx-auto px-6 py-16 md:py-24">
       <Link
         href="/"
         className="inline-flex items-center gap-2 text-sm text-muted hover:text-ink transition mb-12"
