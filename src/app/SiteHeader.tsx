@@ -10,11 +10,12 @@ const LINKS = [
   { href: "/#aider", label: "Offres" },
   { href: "/#preuves", label: "Preuves" },
   { href: "/#ressources", label: "Ressources" },
+  { href: "/alternance", label: "Alternance" },
   { href: "/art-slash", label: "Art Slash" },
   { href: "/#contact", label: "Contact" },
 ];
 
-export default function SiteHeader() {
+export default function SiteHeader({ solidFromTop }: { solidFromTop?: boolean }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -32,7 +33,7 @@ export default function SiteHeader() {
     };
   }, [open]);
 
-  const solid = scrolled || open;
+  const solid = solidFromTop || scrolled || open;
 
   return (
     <>

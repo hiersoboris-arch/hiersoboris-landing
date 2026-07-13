@@ -25,9 +25,21 @@
 - Intervenir et prendre la parole : CCI, conférences, tables rondes, écoles.
 - Outiller la vente : IA, automation (n8n, Claude), CRM.
 
+## Intervenant et formateur
+- Professeur intervenant en école de commerce : vente B2B, prospection et cold calling, social selling, IA appliquée à la vente.
+- Coach principal Paris du concours Les Négociales 2026, juré en finale nationale (40h de coaching).
+- 9 classes accompagnées (~225 étudiants), 14,2/20 de moyenne sur les interventions.
+- Sujets d'intervention : prospection et cold call, IA et automatisation commerciale, négociation et closing, stratégie commerciale, Sales Ops / RevOps, growth B2B et ABM, entrepreneuriat et IA.
+
+## Alternance (placement)
+- Page dédiée : https://hiersoboris.fr/alternance
+- Des postes d'alternance Sales sélectionnés à la source (entreprises anonymisées), pour les étudiants, les responsables de placement des écoles et les entreprises qui recrutent.
+- Kit gratuit pour les étudiants "Décroche ton alternance" : https://formation-boris-ha.notion.site/39c28a764b9780d591f9e6f12df1fb9f
+
 ## Pages
 - Accueil : https://hiersoboris.fr
 - CV : https://hiersoboris.fr/cv
+- Alternance : https://hiersoboris.fr/alternance
 - Art Slash (galerie artistique, archive 2014-2018) : https://hiersoboris.fr/art-slash
 
 ## Contact

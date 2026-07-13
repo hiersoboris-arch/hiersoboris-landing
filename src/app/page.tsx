@@ -81,7 +81,7 @@ const RESULTS = [
     role: "Head of Sales freelance · spiritueux premium (en cours)",
     figures: [
       "450k€ générés, objectif 1,5M€ d'ici fin 2026",
-      "6 freelances et 8 apporteurs internationaux managés",
+      "Task force commerciale recrutée et animée : commerciaux terrain et apporteurs d'affaires",
       "Déploiement multi-marchés : CHR, cavistes, hôtels et palaces, export",
     ],
   },
@@ -325,6 +325,72 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Intervenant & formateur */}
+      <section id="intervenant" className="border-b hairline">
+        <div className="reveal max-w-content mx-auto px-6 py-20 md:py-28">
+          <div className="grid md:grid-cols-12 gap-12 mb-14">
+            <div className="md:col-span-6">
+              <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
+                <span className="dot" />
+                Intervenant &amp; formateur
+              </div>
+              <h2 className="serif text-3xl md:text-5xl leading-[1.05] tracking-tight mb-6">
+                Transmettre,
+                <br />
+                <span className="text-muted">en école comme en entreprise.</span>
+              </h2>
+              <p className="text-muted leading-relaxed">
+                Professeur intervenant en école de commerce (vente B2B, prospection, social selling, IA appliquée à la vente), coach principal Paris du concours <strong className="text-ink">Les Négociales</strong>, juré de soutenances et formateur d&apos;équipes commerciales. Des cours conçus de zéro, ancrés dans le terrain : ce que j&apos;enseigne le matin, je le pratique l&apos;après-midi en mission.
+              </p>
+              <div className="mt-8 flex flex-wrap items-center gap-4">
+                <a
+                  href={CALENDLY}
+                  className="inline-flex items-center gap-2 bg-bordeaux text-cream px-6 py-3.5 rounded-full text-sm font-medium hover:bg-bordeaux-soft transition"
+                >
+                  Faire intervenir Boris
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+                <Link
+                  href="/alternance"
+                  className="inline-flex items-center gap-2 text-ink px-6 py-3.5 rounded-full text-sm font-medium border hairline hover:bg-accent-tint transition"
+                >
+                  Écoles : je place aussi des alternants
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            </div>
+            <div className="md:col-span-6 grid grid-cols-2 gap-px bg-border border hairline rounded-2xl overflow-hidden">
+              <Stat value="400" caption="étudiants et pros formés au total." />
+              <Stat value="14,2/20" caption="de moyenne sur mes interventions (9 classes, ~225 étudiants)." />
+              <Stat value="40h" caption="de coaching Les Négociales 2026, coach principal Paris et juré en finale nationale." />
+              <Stat value="100%" caption="terrain : cours, ateliers, business games et jurys, jamais de théorie hors-sol." />
+            </div>
+          </div>
+
+          <div className="text-xs uppercase tracking-[0.18em] text-muted mb-5">
+            Mes sujets d&apos;intervention
+          </div>
+          <div className="flex flex-wrap gap-3">
+            {[
+              "Prospection, cold call & social selling",
+              "IA & automatisation commerciale",
+              "Négociation & closing",
+              "Stratégie commerciale & plans d'actions",
+              "Sales Ops / RevOps & CRM",
+              "Growth B2B & ABM",
+              "Entrepreneuriat & IA",
+            ].map((s) => (
+              <span
+                key={s}
+                className="border hairline bg-card rounded-full px-4 py-2 text-sm text-ink"
+              >
+                {s}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Recommandations */}
       <section id="recommandations" className="border-b hairline grain">
         <div className="reveal max-w-content mx-auto px-6 py-20 md:py-28">
@@ -386,11 +452,11 @@ export default function Home() {
               footer="toolsbox.hiersoboris.fr"
             />
             <ProjectCard
-              href="https://coaching.hiersoboris.fr"
-              tag="App · En ligne"
-              title="Coaching Alternance"
-              desc="L'app que j'ai codée pour aider les étudiants en alternance à structurer leur recherche d'entreprise. Suivi, relances IA."
-              footer="coaching.hiersoboris.fr"
+              href="https://formation-boris-ha.notion.site/39c28a764b9780d591f9e6f12df1fb9f"
+              tag="Guide · Public"
+              title="Décroche ton alternance"
+              desc="Le kit complet pour les étudiants : pitch d'entretien, CV ATS et visuel, objections, salaire, mini-CRM à dupliquer. Tout est gratuit."
+              footer="formation-boris-ha.notion.site"
             />
           </div>
         </div>

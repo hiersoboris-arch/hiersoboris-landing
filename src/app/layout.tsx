@@ -83,7 +83,6 @@ export default function RootLayout({
               sameAs: [
                 "https://www.linkedin.com/in/boris-hierso-alphandery",
                 "https://www.instagram.com/borishierso",
-                "https://coaching.hiersoboris.fr",
                 "https://toolsbox.hiersoboris.fr",
               ],
               knowsAbout: [
