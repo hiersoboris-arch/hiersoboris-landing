@@ -88,24 +88,6 @@ const OPPORTUNITES: Opportunite[] = [
       "Bac+3 à master · à l'aise au téléphone et en porte-à-porte · permis B · sensibilité santé / social appréciée.",
   },
   {
-    code: "ALT-04",
-    badge: "Fintech · détaxe digitale",
-    role: "Alternant·e Sales · partenariats commerçants (B2B)",
-    contexte:
-      "Fintech française pionnière de la détaxe mobile pour les touristes hors UE. Terrain premium : boutiques de luxe, concept stores et retailers parisiens.",
-    lieu: "Paris",
-    rythme: "Mix terrain + bureau",
-    demarrage: "À discuter",
-    missions: [
-      "Prospection des commerçants partenaires (luxe, concept stores, retail premium)",
-      "Pitch en boutique et signature de partenariats",
-      "Animation du portefeuille existant (formation, support, relances)",
-      "Co-construction du process commercial avec le fondateur",
-    ],
-    profil:
-      "Bac+3 à master · anglais courant · à l'aise pour pitcher debout en boutique · une autre langue (chinois, arabe, japonais) est un gros plus.",
-  },
-  {
     code: "ALT-05",
     badge: "Real estate · colliving premium",
     role: "Alternant·e Sales B2B · cycle complet (prospection → closing)",
