@@ -142,6 +142,44 @@ const OPPORTUNITES: Opportunite[] = [
     profil:
       "Master 1 ou Master 2 · autonome, à l'aise pour construire sans process existant · appétence pour la data et les systèmes d'information.",
   },
+  {
+    code: "ALT-08",
+    badge: "IA · agents autonomes open source",
+    role: "Alternant·e Sales · premier renfort commercial",
+    contexte:
+      "Éditeur open source d'agents IA, des collaborateurs digitaux qui ont chacun un rôle et des KPI comme un humain. Leur agent commercial vient de sortir et l'argument porte : il démarre à quelques centaines d'euros par mois quand un profil junior en coûte plusieurs milliers, et l'actif reste chez le client. Le fondateur fait encore la prospection lui-même. Tu serais son premier renfort commercial, sur un produit neuf et un marché à créer.",
+    lieu: "Paris, télétravail large",
+    rythme: "À définir avec l'entreprise",
+    demarrage: "Septembre 2026",
+    missions: [
+      "Prospection des PME et scale-ups qui veulent industrialiser leur outbound sans recruter",
+      "Démos du produit et accompagnement des pilotes de 30 jours",
+      "Qualification des besoins, puis passage de relais au fondateur pour le closing",
+      "Animation de la communauté open source, qui est leur premier canal d'acquisition",
+      "Structuration du discours commercial et des séquences, tout est à construire",
+    ],
+    profil:
+      "Bac+4-5 · forte appétence IA et outils, c'est le cœur du produit et de ta crédibilité face aux prospects · à l'aise avec un produit technique sans être développeur · anglais utile, la documentation et la communauté sont en anglais.",
+  },
+  {
+    code: "JOB-01",
+    badge: "IA · mission courte en freelance",
+    role: "Mission freelance junior · implémentation d'agents IA",
+    contexte:
+      "Même éditeur que l'offre ALT-08. Leurs clients installent l'agent mais ne savent pas le configurer : il faut quelqu'un pour poser les cibles, les listes et les routines. C'est une mission courte, à la prestation, pas une alternance.",
+    lieu: "À distance",
+    rythme: "Mission courte, volume rythmé par les onboardings clients",
+    demarrage: "À discuter",
+    missions: [
+      "Onboarding des nouveaux clients sur la plateforme",
+      "Paramétrage de l'agent commercial : cible, listes, séquences email et LinkedIn, copy",
+      "Mise en place de l'infrastructure d'envoi : domaines dédiés, boîtes mail, chauffe",
+      "Branchement des intégrations selon la stack du client (CRM, LinkedIn, messagerie, agenda)",
+      "Calibration sur les premières semaines, puis passation et documentation",
+    ],
+    profil:
+      "Junior sales ops, growth ou SDR outillé, 1 à 3 ans d'expérience ou très bon alternant sortant · à l'aise avec les outils d'outbound et les intégrations sans être développeur · rigoureux sur la donnée · autonome et pédagogue, tu es en contact direct avec leurs clients.",
+  },
 ];
 
 export default function Alternance() {
