@@ -180,6 +180,25 @@ const OPPORTUNITES: Opportunite[] = [
     profil:
       "Junior sales ops, growth ou SDR outillé, 1 à 3 ans d'expérience ou très bon alternant sortant · à l'aise avec les outils d'outbound et les intégrations sans être développeur · rigoureux sur la donnée · autonome et pédagogue, tu es en contact direct avec leurs clients.",
   },
+  {
+    code: "ALT-09",
+    badge: "SaaS B2B · agent IA pour la prospection",
+    role: "Alternant·e Business Developer · poste très téléphone",
+    contexte:
+      "Éditeur d'une plateforme de prospection tout-en-un avec un agent IA embarqué, vendue à des entreprises B2B déjà structurées. Tu rejoins une équipe commerciale de cinq personnes et tu serais leur troisième alternant : le poste est rodé, pas à défricher. Tu ne pars jamais d'une page blanche, l'agent sort les listes et les signaux d'achat, toi tu décroches. La culture commerciale est forte en interne, plusieurs associés viennent eux-mêmes de la vente.",
+    lieu: "Paris 2e, présentiel",
+    rythme: "À définir avec l'entreprise",
+    demarrage: "Rentrée 2026",
+    missions: [
+      "Appels sortants sur des comptes pré-qualifiés par l'agent, à partir de signaux d'achat réels",
+      "Prospection multicanale email et LinkedIn depuis la plateforme maison",
+      "Qualification des interlocuteurs et prise de rendez-vous pour les Account Executives",
+      "Travail sur des cibles B2B de 50 à 300 salariés, avec des équipes commerciales déjà en place",
+      "Contribution au discours commercial et aux séquences",
+    ],
+    profil:
+      "Bac+3 à bac+5 · bilingue français-anglais, une partie des clients est à l'international · au moins un stage ou une alternance déjà faits · à l'aise au téléphone, tu as déjà décroché et ça ne te fait pas peur · l'envie et la vitesse d'apprentissage comptent plus que la technique, elle s'apprend sur place.",
+  },
 ];
 
 export default function Alternance() {
