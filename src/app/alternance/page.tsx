@@ -122,7 +122,7 @@ const OPPORTUNITES: Opportunite[] = [
       "Structuration du CRM et contribution au discours commercial",
     ],
     profil:
-      "Pas un profil débutant : une première expérience de prospection ou de vente fait la différence · français parfait (anglais un plus) · à l'aise au téléphone, résilient face au rejet, curieux d'industrie et de tech · basé en région parisienne.",
+      "Pas un profil débutant : une première expérience de prospection ou de vente fait la différence · français parfait (anglais un plus) · à l'aise au téléphone, résilient face au rejet, curieux d'industrie et de tech · basé à Paris ou à proximité de La Défense.",
   },
   {
     code: "ALT-07",
