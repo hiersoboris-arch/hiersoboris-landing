@@ -105,6 +105,43 @@ const OPPORTUNITES: Opportunite[] = [
     profil:
       "Bac+3 à master · bilingue français-anglais (espagnol ou italien apprécié) · profil analytique et sociable · pas besoin de background immo : je coache la dimension Sales B2B.",
   },
+  {
+    code: "ALT-06",
+    badge: "Industrie · SaaS de gestion de l'obsolescence",
+    role: "Alternant·e Business Developer · grands comptes industriels",
+    contexte:
+      "Société qui sécurise la production industrielle en gérant l'obsolescence des pièces détachées critiques : quand une pièce introuvable arrête une ligne de production, elle la retrouve, avec un gain moyen de 45%. Elle industrialise cette expertise dans un SaaS qui score le risque d'obsolescence de tout un parc machines. Tu rejoins directement l'équipe commerciale, avec une évolution possible vers un poste de Business Developer confirmé en CDI.",
+    lieu: "La Défense / Courbevoie (92), déplacements ponctuels sur les sites industriels",
+    rythme: "Présentiel · alternance de 12 à 24 mois (stage de 4 à 6 mois possible)",
+    demarrage: "Septembre ou octobre 2026 (pré-alternance possible en amont)",
+    missions: [
+      "Ciblage des groupes industriels multi-sites, en approche corporate plutôt que site par site",
+      "Prospection téléphone, email et LinkedIn (stack semi-automatisée et IA déjà en place)",
+      "Qualification des interlocuteurs : maintenance, production, achats MRO, direction financière",
+      "Rendez-vous de qualification courts, scorés, puis transmis à l'expert avec une fiche détaillée",
+      "Structuration du CRM et contribution au discours commercial",
+    ],
+    profil:
+      "Pas un profil débutant : une première expérience de prospection ou de vente fait la différence · français parfait (anglais un plus) · à l'aise au téléphone, résilient face au rejet, curieux d'industrie et de tech · basé en région parisienne.",
+  },
+  {
+    code: "ALT-07",
+    badge: "Conseil · flux de données et systèmes d'information",
+    role: "Alternant·e commercial·e · premier profil Sales de la structure",
+    contexte:
+      "Jeune société de conseil en flux de données et systèmes d'information, fondée par des ingénieurs et en cours de structuration. L'équipe sait délivrer mais n'a personne au commercial : tu serais le tout premier profil Sales, en direct avec le fondateur. Je t'accompagne gratuitement les premières semaines sur le cadrage et la méthode.",
+    lieu: "Île-de-France, organisation décentralisée (pas de bureau fixe)",
+    rythme: "3 semaines entreprise / 1 semaine école",
+    demarrage: "Rentrée 2026, à confirmer",
+    missions: [
+      "Prospection des comptes cibles et prise de rendez-vous",
+      "Qualification des besoins en amont des experts techniques",
+      "Construction du process commercial de zéro, avec le fondateur",
+      "Montée en puissance progressive sur des deals de plus gros volume",
+    ],
+    profil:
+      "Master 1 ou Master 2 · autonome, à l'aise pour construire sans process existant · appétence pour la data et les systèmes d'information.",
+  },
 ];
 
 export default function Alternance() {
