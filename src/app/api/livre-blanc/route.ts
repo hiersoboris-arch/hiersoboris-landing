@@ -52,6 +52,7 @@ export async function POST(request: Request) {
   const veutContact = body.contact === true;
 
   const champs: Record<string, string> = {};
+  if (!prenom) champs.prenom = "Indique ton prénom.";
   if (!nom) champs.nom = "Indique ton nom.";
   if (!email) champs.email = "Indique ton adresse mail.";
   else if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email))

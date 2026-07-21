@@ -24,6 +24,7 @@ export default function LivreBlancForm() {
   const [champs, setChamps] = useState<Record<string, string>>({});
   const [erreur, setErreur] = useState("");
 
+  const prenomRef = useRef<HTMLInputElement>(null);
   const nomRef = useRef<HTMLInputElement>(null);
   const emailRef = useRef<HTMLInputElement>(null);
   const telRef = useRef<HTMLInputElement>(null);
@@ -60,7 +61,8 @@ export default function LivreBlancForm() {
       if (!reponse.ok) {
         if (resultat.champs) {
           setChamps(resultat.champs);
-          if (resultat.champs.nom) nomRef.current?.focus();
+          if (resultat.champs.prenom) prenomRef.current?.focus();
+          else if (resultat.champs.nom) nomRef.current?.focus();
           else if (resultat.champs.email) emailRef.current?.focus();
           else if (resultat.champs.telephone) telRef.current?.focus();
         } else {
@@ -139,15 +141,24 @@ export default function LivreBlancForm() {
       <div className="mt-6 grid sm:grid-cols-2 gap-4">
         <div>
           <label htmlFor="lb-prenom" className="block text-sm font-medium text-ink mb-2">
-            Prénom
+            Prénom <span className="text-bordeaux">*</span>
           </label>
           <input
+            ref={prenomRef}
             id="lb-prenom"
             name="prenom"
             type="text"
+            required
             autoComplete="given-name"
+            aria-invalid={Boolean(champs.prenom)}
+            aria-describedby={champs.prenom ? "lb-prenom-erreur" : undefined}
             className={champBase}
           />
+          {champs.prenom && (
+            <p id="lb-prenom-erreur" role="alert" className="mt-2 text-sm text-bordeaux">
+              {champs.prenom}
+            </p>
+          )}
         </div>
         <div>
           <label htmlFor="lb-nom" className="block text-sm font-medium text-ink mb-2">

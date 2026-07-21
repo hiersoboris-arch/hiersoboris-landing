@@ -105,7 +105,7 @@ const OPPORTUNITES: Opportunite[] = [
       "Organisation d'événements pour fidéliser les clients corporate",
     ],
     profil:
-      "Bac+3 à master · bilingue français-anglais (espagnol ou italien apprécié) · profil analytique et sociable · pas besoin de background immo : je coache la dimension Sales B2B.",
+      "Bac+3 à master · bilingue français-anglais (espagnol ou italien apprécié) · profil analytique et sociable · pas besoin de background immobilier.",
   },
   {
     code: "ALT-06",
@@ -114,7 +114,7 @@ const OPPORTUNITES: Opportunite[] = [
     contexte:
       "Société qui sécurise la production industrielle en gérant l'obsolescence des pièces détachées critiques : quand une pièce introuvable arrête une ligne de production, elle la retrouve, avec un gain moyen de 45%. Elle industrialise cette expertise dans un SaaS qui score le risque d'obsolescence de tout un parc machines. Tu rejoins directement l'équipe commerciale, avec une évolution possible vers un poste de Business Developer confirmé en CDI.",
     lieu: "La Défense / Courbevoie (92), déplacements ponctuels sur les sites industriels",
-    rythme: "Présentiel · alternance de 12 à 24 mois (stage de 4 à 6 mois possible)",
+    rythme: "Présentiel · alternance de 12 à 24 mois",
     demarrage: "Septembre ou octobre 2026 (pré-alternance possible en amont)",
     missions: [
       "Ciblage des groupes industriels multi-sites, en approche corporate plutôt que site par site",
@@ -142,7 +142,7 @@ const OPPORTUNITES: Opportunite[] = [
       "Montée en puissance progressive sur des deals de plus gros volume",
     ],
     profil:
-      "Master 1 ou Master 2 · autonome, à l'aise pour construire sans process existant · appétence pour la data et les systèmes d'information.",
+      "Bac+3 à Bac+5 · autonome, à l'aise pour construire sans process existant · appétence pour la data et les systèmes d'information.",
   },
   {
     code: "ALT-08",
@@ -161,7 +161,7 @@ const OPPORTUNITES: Opportunite[] = [
       "Structuration du discours commercial et des séquences, tout est à construire",
     ],
     profil:
-      "Bac+4-5 · forte appétence IA et outils, c'est le cœur du produit et de ta crédibilité face aux prospects · à l'aise avec un produit technique sans être développeur · anglais utile, la documentation et la communauté sont en anglais.",
+      "Bac+3 à Bac+5 · forte appétence IA et outils, c'est le cœur du produit et de ta crédibilité face aux prospects · à l'aise avec un produit technique sans être développeur · anglais utile, la documentation et la communauté sont en anglais.",
   },
   {
     code: "JOB-01",
