@@ -36,60 +36,6 @@ type Opportunite = {
 // aux candidats et aux écoles, jamais publié.
 const OPPORTUNITES: Opportunite[] = [
   {
-    code: "ALT-01",
-    badge: "SaaS B2B · IA pour la maintenance",
-    role: "Alternant·e Sales · cycle complet (prospection → closing)",
-    contexte:
-      "Scale-up française qui développe un assistant IA pour la maintenance d'infrastructures (bornes de recharge aujourd'hui, facility management et industrie demain). Tu seras la première personne dédiée au Sales, en direct avec le fondateur.",
-    lieu: "Ouest parisien (78) + Paris 13e",
-    rythme: "Beaucoup de télétravail, présentiel ponctuel selon les RDV",
-    demarrage: "Dès maintenant",
-    missions: [
-      "Prospection des opérateurs de bornes de recharge et de leurs équipes ops / maintenance",
-      "Qualification des besoins et démos avec le CEO",
-      "Cycle complet : ouverture, discovery, pilote 30 jours, closing",
-      "Ouverture de marchés voisins (Belgique, Pays-Bas, Allemagne) en anglais",
-    ],
-    profil:
-      "Dernière année / MBA · bilingue français-anglais · autonome, à l'aise sur des cycles B2B techniques.",
-  },
-  {
-    code: "ALT-02",
-    badge: "Conseil tech haut de gamme",
-    role: "Alternant·e Sales · prospection nouveaux comptes",
-    contexte:
-      "Boutique de conseil tech (refonte logicielle, développement sur-mesure, IA, formations certifiées) qui travaille pour de grands comptes industriels et medtech. Poste à créer, en binôme direct avec le président.",
-    lieu: "Issy-les-Moulineaux (92)",
-    rythme: "3 jours bureau / 2 jours télétravail",
-    demarrage: "Septembre 2026",
-    missions: [
-      "Prospection de nouveaux comptes (ETI et grands comptes industriels et tech)",
-      "Diversification de la base clients",
-      "Qualification puis transmission des leads aux experts pour la phase technique",
-      "Construction du process commercial avec le dirigeant",
-    ],
-    profil:
-      "4e ou 5e année · bilingue français-anglais · autonome · gros plus si bagage tech (école d'ingénieurs, ex-dev, BTS info).",
-  },
-  {
-    code: "ALT-03",
-    badge: "Healthtech / RH",
-    role: "Alternant·e Sales · terrain pharmacies + cycle long entreprises",
-    contexte:
-      "Scale-up française qui aide les 11 millions d'aidants familiaux à concilier vie pro et accompagnement d'un proche (app + experts médico-sociaux). Distribution via les entreprises (RH / QVT) et via les pharmacies.",
-    lieu: "Saint-Denis (93), proche ligne 13",
-    rythme: "Présentiel apprécié, télétravail possible",
-    demarrage: "Dès maintenant",
-    missions: [
-      "Prospection terrain auprès des pharmacies : partenariats d'affiliation, 3 à 5 visites par jour",
-      "Cycles longs B2B auprès des RH / DRH d'entreprises",
-      "Cible secondaire : groupements de pharmacies, plateformes de distribution",
-      "Reporting hebdo en direct avec le CEO",
-    ],
-    profil:
-      "Bac+3 à master · à l'aise au téléphone et en porte-à-porte · permis B · sensibilité santé / social appréciée.",
-  },
-  {
     code: "ALT-05",
     badge: "Real estate · colliving premium",
     role: "Alternant·e Sales B2B · cycle complet (prospection → closing)",
@@ -265,7 +211,7 @@ export default function Alternance() {
             <AudienceCard
               tag="Étudiants"
               title="Tu cherches ton alternance ?"
-              desc="Repère les postes qui te parlent, puis écris-moi sur LinkedIn avec la référence (ALT-01, ALT-02...) ou réserve 15 minutes. Je te présente l'entreprise et je t'aide à préparer l'entretien."
+              desc="Repère les postes qui te parlent, puis écris-moi sur LinkedIn avec la référence (ALT-05, ALT-06...) ou réserve 15 minutes. Je te présente l'entreprise et je t'aide à préparer l'entretien."
               ctaHref="#livre-blanc"
               ctaLabel="Recevoir le kit gratuit"
             />
