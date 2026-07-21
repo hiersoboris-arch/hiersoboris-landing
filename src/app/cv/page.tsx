@@ -32,8 +32,22 @@ const SKILLS = [
 
 const EXPERIENCES = [
   {
+    company: "BHA Consulting",
+    role: "Fondateur · conseil commercial, formation et apport d'affaires",
+    period: "Fév. 2025 → en cours",
+    context: "Ma structure : entrepreneur individuel, Paris",
+    points: [
+      "Structuration commerciale de PME, start-ups et associations : go-to-market, offre, tarifaire, pipeline, process, outils.",
+      "Direction commerciale externalisée et pilotage d'équipes (alternants, freelances, apporteurs d'affaires).",
+      "Prospection, commercialisation, négociation et closing en direct pour le compte de mes clients.",
+      "Apport d'affaires et mise en relation qualifiée sur mes réseaux B2B.",
+      "Formation et coaching : équipes commerciales en entreprise, écoles et organismes de formation.",
+      "Accompagnement et placement d'alternants Sales, de la préparation du candidat au suivi en entreprise.",
+    ],
+  },
+  {
     company: "Exoteach",
-    role: "Head of Sales freelance",
+    role: "Head of Sales freelance puis consultant apporteur d'affaires",
     period: "Déc. 2025 → en cours",
     context: "EdTech, SaaS B2B IA-first",
     points: [
@@ -72,6 +86,16 @@ const EXPERIENCES = [
     points: [
       "9 classes accompagnées, ~225 étudiants, 14,2/20 de moyenne sur les interventions.",
       "Prospection & cold calling, social selling, IA copywriting, IA sales automation.",
+    ],
+  },
+  {
+    company: "Akimbo",
+    role: "Sales Coach",
+    period: "Juil. 2026 → en cours",
+    context: "Organisme de formation commerciale, Paris",
+    points: [
+      "Membre du pool de sales coachs, formations intra-entreprise et bootcamps business developer.",
+      "Module animé : l'intelligence artificielle au service de la performance commerciale.",
     ],
   },
   {

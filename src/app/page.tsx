@@ -24,6 +24,7 @@ const COMPANIES: { name: string; logo: string; url?: string }[] = [
   { name: "Avelor Spirits", logo: "/logos/logo-l-avelor.png", url: "https://avelorspirits.com" },
   { name: "HappyPal", logo: "/logos/logo-l-happypal.png", url: "https://www.happypal.fr" },
   { name: "Euridis Business School", logo: "/logos/logo-l-euridis.png", url: "https://www.euridis-ecole.com" },
+  { name: "Akimbo", logo: "/logos/logo-l-akimbo.png", url: "https://www.akimbo.eu" },
   { name: "Les Négociales", logo: "/logos/logo-l-negociales.png", url: "https://www.lesnegociales.com" },
   { name: "ValueCo", logo: "/logos/logo-l-valueco.png", url: "https://www.valuecometrics.com" },
   { name: "WoMa", logo: "/logos/logo-l-woma.png", url: "https://woma.fr" },
@@ -68,7 +69,7 @@ const OFFERS = [
 const RESULTS = [
   {
     company: "Exoteach",
-    role: "Head of Sales freelance · EdTech SaaS B2B (en cours)",
+    role: "Head of Sales freelance puis consultant apporteur d'affaires · EdTech SaaS B2B (en cours)",
     figures: [
       "290k€ de pipe qualifié construit de zéro",
       "73 RDV commerciaux menés, 91% de taux d'avancement",
@@ -86,10 +87,11 @@ const RESULTS = [
     ],
   },
   {
-    company: "Euridis & Les Négociales",
-    role: "Intervenant et coach · la transmission (en cours)",
+    company: "Euridis, Akimbo & Les Négociales",
+    role: "Intervenant, sales coach et coach de concours · la transmission (en cours)",
     figures: [
       "Euridis : 9 classes, ~225 étudiants, 14,2/20 de moyenne",
+      "Akimbo : sales coach du pool de formateurs, module IA et performance commerciale",
       "Les Négociales 2026 : coach principal Paris et juré, 40h de coaching",
       "Prospection, social selling et IA appliquée à la vente",
     ],
@@ -340,7 +342,7 @@ export default function Home() {
                 <span className="text-muted">en école comme en entreprise.</span>
               </h2>
               <p className="text-muted leading-relaxed">
-                Professeur intervenant en école de commerce (vente B2B, prospection, social selling, IA appliquée à la vente), coach principal Paris du concours <strong className="text-ink">Les Négociales</strong>, juré de soutenances et formateur d&apos;équipes commerciales. Des cours conçus de zéro, ancrés dans le terrain : ce que j&apos;enseigne le matin, je le pratique l&apos;après-midi en mission.
+                Professeur intervenant en école de commerce (vente B2B, prospection, social selling, IA appliquée à la vente), sales coach pour un organisme de formation commerciale (<strong className="text-ink">Akimbo</strong>), coach principal Paris du concours <strong className="text-ink">Les Négociales</strong>, juré de soutenances et formateur d&apos;équipes commerciales. Des cours conçus de zéro, ancrés dans le terrain : ce que j&apos;enseigne le matin, je le pratique l&apos;après-midi en mission.
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-4">
                 <a
@@ -362,7 +364,7 @@ export default function Home() {
             <div className="md:col-span-6 grid grid-cols-2 gap-px bg-border border hairline rounded-2xl overflow-hidden">
               <Stat value="400" caption="étudiants et pros formés au total." />
               <Stat value="14,2/20" caption="de moyenne sur mes interventions (9 classes, ~225 étudiants)." />
-              <Stat value="40h" caption="de coaching Les Négociales 2026, coach principal Paris et juré en finale nationale." />
+              <Stat value="40h" caption="de coaching Les Négociales 2026, coach principal Paris, juré et acheteur." />
               <Stat value="100%" caption="terrain : cours, ateliers, business games et jurys, jamais de théorie hors-sol." />
             </div>
           </div>
