@@ -27,9 +27,24 @@ export default function MentionsLegales() {
         <section>
           <h2 className="serif text-xl mb-2">Éditeur du site</h2>
           <p className="text-muted">
-            Boris Hierso Alphandéry, entrepreneur individuel.
+            <strong className="text-ink">BORIS HIERSO ALPHANDERY</strong>, entrepreneur
+            individuel (catégorie juridique 1000), exerçant sous le nom commercial BHA
+            Consulting.
             <br />
-            Contact : hierso.boris@gmail.com
+            Siège social : 47 rue Brancion, 75015 Paris, France.
+            <br />
+            SIREN : 837 786 565 · SIRET du siège : 837 786 565 00023.
+            <br />
+            Numéro de TVA intracommunautaire : FR79837786565.
+            <br />
+            Code APE : 70.22Z, conseil pour les affaires et autres conseils de gestion.
+            <br />
+            Déclaration d&apos;activité de formation enregistrée sous le numéro
+            11 75 74446 75 auprès du préfet de région d&apos;Île-de-France. Cet
+            enregistrement ne vaut pas agrément de l&apos;État.
+          </p>
+          <p className="text-muted mt-3">
+            Contact : hierso.boris@gmail.com · +33 6 72 40 27 98
             <br />
             Directeur de la publication : Boris Hierso Alphandéry.
           </p>
@@ -38,9 +53,13 @@ export default function MentionsLegales() {
         <section>
           <h2 className="serif text-xl mb-2">Hébergement</h2>
           <p className="text-muted">
-            Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis.
-            <br />
-            vercel.com
+            Le site est hébergé par <strong className="text-ink">Vercel Inc.</strong>, 340
+            S Lemon Ave #4133, Walnut, CA 91789, États-Unis (vercel.com).
+          </p>
+          <p className="text-muted mt-3">
+            Le nom de domaine, la zone DNS et la messagerie sont gérés par{" "}
+            <strong className="text-ink">OVH SAS</strong>, 2 rue Kellermann, 59100
+            Roubaix, France (ovhcloud.com).
           </p>
         </section>
 

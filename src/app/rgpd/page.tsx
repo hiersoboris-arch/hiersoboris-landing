@@ -81,8 +81,11 @@ export default function Rgpd() {
             européenne) et l&apos;email de confirmation est envoyé via{" "}
             <strong className="text-ink">Resend</strong> (serveurs situés dans
             l&apos;Union européenne). Le site est hébergé par{" "}
-            <strong className="text-ink">Vercel</strong>. Ces prestataires agissent comme
-            sous-traitants et n&apos;utilisent pas ces données pour leur propre compte.
+            <strong className="text-ink">Vercel</strong>, et le nom de domaine, la zone
+            DNS ainsi que la messagerie sont gérés par{" "}
+            <strong className="text-ink">OVH</strong> (France). Ces prestataires agissent
+            comme sous-traitants et n&apos;utilisent pas ces données pour leur propre
+            compte.
           </p>
         </section>
 
