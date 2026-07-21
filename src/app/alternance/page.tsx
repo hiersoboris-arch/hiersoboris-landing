@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, ArrowUpRight, MapPin, CalendarDays, Laptop } from "lucide-react";
+import { ArrowLeft, ArrowRight, ArrowUpRight, MapPin, CalendarDays, Laptop, BookOpen, Check } from "lucide-react";
 import { CALENDLY, LINKEDIN } from "@/lib/contact";
+import { KIT_CONTENU } from "@/lib/livre-blanc";
 import { SITE_URL } from "@/lib/site-url";
 import SiteHeader from "../SiteHeader";
+import LivreBlancForm from "./LivreBlancForm";
 
 export const metadata: Metadata = {
   title: "Alternance Sales : les opportunités du moment",
@@ -244,6 +246,18 @@ export default function Alternance() {
               sur le poste, l&apos;équipe et le contexte. Les noms d&apos;entreprises sont
               volontairement masqués : je les donne de vive voix.
             </p>
+
+            <a
+              href="#livre-blanc"
+              className="mt-8 inline-flex items-center gap-3 border hairline bg-card pl-5 pr-4 py-3.5 rounded-full hover:border-accent transition group"
+            >
+              <BookOpen className="w-4 h-4 text-bordeaux" />
+              <span className="text-sm">
+                <span className="text-muted">Kit gratuit : </span>
+                <span className="text-ink font-medium">Décroche ton alternance</span>
+              </span>
+              <ArrowRight className="w-4 h-4 text-muted group-hover:translate-x-0.5 transition" />
+            </a>
           </div>
 
           {/* 3 audiences */}
@@ -252,6 +266,8 @@ export default function Alternance() {
               tag="Étudiants"
               title="Tu cherches ton alternance ?"
               desc="Repère les postes qui te parlent, puis écris-moi sur LinkedIn avec la référence (ALT-01, ALT-02...) ou réserve 15 minutes. Je te présente l'entreprise et je t'aide à préparer l'entretien."
+              ctaHref="#livre-blanc"
+              ctaLabel="Recevoir le kit gratuit"
             />
             <AudienceCard
               tag="Écoles"
@@ -283,6 +299,41 @@ export default function Alternance() {
               candidature ne part sans un échange préalable : c&apos;est ce qui fait que les
               dirigeants me font confiance, et que ta candidature arrive au bon endroit.
             </p>
+          </div>
+        </section>
+
+        {/* Livre blanc */}
+        <section id="livre-blanc" className="border-t hairline grain scroll-mt-28">
+          <div className="max-w-content mx-auto px-6 py-16 md:py-24">
+            <div className="grid md:grid-cols-12 gap-10 lg:gap-16 items-start">
+              <div className="md:col-span-6">
+                <div className="text-xs uppercase tracking-[0.18em] text-muted mb-5">
+                  <span className="dot" />
+                  Kit gratuit
+                </div>
+                <h2 className="serif text-3xl md:text-5xl leading-[1.05] tracking-tight">
+                  Décroche ton alternance.
+                </h2>
+                <p className="mt-6 text-lg text-muted leading-relaxed max-w-xl">
+                  Tout ce que je donne à mes étudiants avant un entretien, réuni sur une
+                  page. Rien de théorique : ce sont les mêmes réponses et les mêmes
+                  méthodes que celles que je fais travailler en cours.
+                </p>
+
+                <ul className="mt-8 space-y-3.5">
+                  {KIT_CONTENU.map((item) => (
+                    <li key={item} className="flex gap-3 text-muted leading-relaxed">
+                      <Check className="w-4 h-4 text-bordeaux shrink-0 mt-1.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="md:col-span-6">
+                <LivreBlancForm />
+              </div>
+            </div>
           </div>
         </section>
 
@@ -351,16 +402,29 @@ function AudienceCard({
   tag,
   title,
   desc,
+  ctaHref,
+  ctaLabel,
 }: {
   tag: string;
   title: string;
   desc: string;
+  ctaHref?: string;
+  ctaLabel?: string;
 }) {
   return (
-    <article className="lift bg-card border hairline rounded-2xl p-8">
+    <article className="lift bg-card border hairline rounded-2xl p-8 flex flex-col">
       <div className="text-xs uppercase tracking-[0.18em] text-accent mb-3">{tag}</div>
       <h2 className="serif text-2xl mb-3">{title}</h2>
       <p className="text-muted leading-relaxed">{desc}</p>
+      {ctaHref && ctaLabel && (
+        <a
+          href={ctaHref}
+          className="mt-5 inline-flex items-center gap-2 text-sm text-bordeaux font-medium hover:gap-3 transition-all"
+        >
+          {ctaLabel}
+          <ArrowRight className="w-4 h-4" />
+        </a>
+      )}
     </article>
   );
 }
