@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { envoyerKit } from "@/lib/mail-kit";
 
 // Base Notion "Leads · Livre blanc" (hub Placement).
 const NOTION_DB_ID = "18e885807cab4ac784eb25c5dbc61db1";
@@ -119,6 +120,9 @@ export async function POST(request: Request) {
       { status: 502 },
     );
   }
+
+  // Le lead est sauvegardé : l'email ne doit plus rien faire échouer.
+  await envoyerKit({ prenom, email, telephone, contact: veutContact });
 
   return NextResponse.json({ ok: true });
 }

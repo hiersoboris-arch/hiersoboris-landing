@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import Link from "next/link";
 import { ArrowUpRight, Check, Loader2 } from "lucide-react";
 import { KIT_URL } from "@/lib/livre-blanc";
 
@@ -90,8 +91,8 @@ export default function LivreBlancForm() {
         </div>
         <h3 className="serif text-2xl md:text-3xl mt-6">C&apos;est à toi.</h3>
         <p className="mt-3 text-muted leading-relaxed max-w-md mx-auto">
-          Le kit est en accès libre juste en dessous. Garde le lien, la page est mise à
-          jour régulièrement.
+          Le kit s&apos;ouvre juste en dessous, et je viens aussi de t&apos;envoyer le
+          lien par mail. Garde-le, la page est mise à jour régulièrement.
         </p>
         <a
           href={KIT_URL}
@@ -298,8 +299,20 @@ export default function LivreBlancForm() {
       </button>
 
       <p className="mt-4 text-xs text-muted leading-relaxed">
-        Gratuit, accès immédiat. Tes coordonnées servent à te répondre et à te proposer
-        des postes, rien d&apos;autre. Aucune revente, aucune newsletter automatique.
+        Gratuit, accès immédiat, et tu reçois aussi le lien par mail. En cliquant sur
+        « Recevoir le kit », tu acceptes que Boris Hierso Alphandéry conserve ces
+        informations pour t&apos;envoyer le kit et te proposer des offres d&apos;alternance.
+        Elles ne sont ni revendues ni transmises à un tiers, et sont supprimées après
+        3 ans sans contact. Tu peux y accéder, les corriger, les récupérer ou demander
+        leur suppression à tout moment en écrivant à{" "}
+        <a href="mailto:hierso.boris@gmail.com" className="underline hover:text-ink">
+          hierso.boris@gmail.com
+        </a>
+        . Détail et voies de recours sur la page{" "}
+        <Link href="/rgpd" className="underline hover:text-ink">
+          Données personnelles
+        </Link>
+        .
       </p>
     </form>
   );
