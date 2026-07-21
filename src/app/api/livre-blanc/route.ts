@@ -49,11 +49,23 @@ export async function POST(request: Request) {
     ? (body.profil as string)
     : "Non précisé";
 
+  const veutContact = body.contact === true;
+
   const champs: Record<string, string> = {};
   if (!nom) champs.nom = "Indique ton nom.";
   if (!email) champs.email = "Indique ton adresse mail.";
   else if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email))
     champs.email = "Cette adresse mail ne semble pas valide.";
+
+  // Le téléphone n'est exigé que si la personne demande à être rappelée :
+  // sans numéro, il n'y a pas de rappel possible.
+  if (veutContact) {
+    const chiffres = telephone.replace(/\D/g, "");
+    if (!telephone)
+      champs.telephone = "Ajoute ton numéro : c'est par téléphone que je rappelle.";
+    else if (chiffres.length < 9)
+      champs.telephone = "Ce numéro ne semble pas complet.";
+  }
 
   if (Object.keys(champs).length > 0) {
     return NextResponse.json({ champs }, { status: 400 });
@@ -84,7 +96,7 @@ export async function POST(request: Request) {
           Email: { email },
           "École / Entreprise": texte(organisation),
           Téléphone: telephone ? { phone_number: telephone } : { phone_number: null },
-          "Souhaite être recontacté": { checkbox: body.contact === true },
+          "Souhaite être recontacté": { checkbox: veutContact },
           Profil: { select: { name: profil } },
           Source: texte(source),
         },

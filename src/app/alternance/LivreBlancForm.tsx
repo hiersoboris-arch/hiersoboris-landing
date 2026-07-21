@@ -18,6 +18,7 @@ const champBase =
 
 export default function LivreBlancForm() {
   const [profil, setProfil] = useState<Profil>("Étudiant");
+  const [contact, setContact] = useState(false);
   const [envoi, setEnvoi] = useState(false);
   const [envoye, setEnvoye] = useState(false);
   const [champs, setChamps] = useState<Record<string, string>>({});
@@ -25,6 +26,7 @@ export default function LivreBlancForm() {
 
   const nomRef = useRef<HTMLInputElement>(null);
   const emailRef = useRef<HTMLInputElement>(null);
+  const telRef = useRef<HTMLInputElement>(null);
 
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -37,7 +39,7 @@ export default function LivreBlancForm() {
       email: String(data.get("email") || ""),
       organisation: String(data.get("organisation") || ""),
       telephone: String(data.get("telephone") || ""),
-      contact: data.get("contact") === "on",
+      contact,
       site: String(data.get("site") || ""),
       profil,
       source: "hiersoboris.fr/alternance",
@@ -60,6 +62,7 @@ export default function LivreBlancForm() {
           setChamps(resultat.champs);
           if (resultat.champs.nom) nomRef.current?.focus();
           else if (resultat.champs.email) emailRef.current?.focus();
+          else if (resultat.champs.telephone) telRef.current?.focus();
         } else {
           setErreur(resultat.error || "L'envoi a échoué. Réessaie dans un instant.");
         }
@@ -214,16 +217,25 @@ export default function LivreBlancForm() {
         </div>
         <div>
           <label htmlFor="lb-tel" className="block text-sm font-medium text-ink mb-2">
-            Téléphone
+            Téléphone {contact && <span className="text-bordeaux">*</span>}
           </label>
           <input
+            ref={telRef}
             id="lb-tel"
             name="telephone"
             type="tel"
             inputMode="tel"
             autoComplete="tel"
+            required={contact}
+            aria-invalid={Boolean(champs.telephone)}
+            aria-describedby={champs.telephone ? "lb-tel-erreur" : undefined}
             className={champBase}
           />
+          {champs.telephone && (
+            <p id="lb-tel-erreur" role="alert" className="mt-2 text-sm text-bordeaux">
+              {champs.telephone}
+            </p>
+          )}
         </div>
       </div>
 
@@ -231,12 +243,21 @@ export default function LivreBlancForm() {
         <input
           type="checkbox"
           name="contact"
+          checked={contact}
+          onChange={(e) => setContact(e.target.checked)}
           className="mt-1 w-5 h-5 rounded border-border text-bordeaux focus:ring-2 focus:ring-bordeaux"
         />
         <span className="text-sm text-muted leading-relaxed">
           Je souhaite que Boris me recontacte (placement, offres, questions).
         </span>
       </label>
+
+      {contact && (
+        <p className="mt-2.5 ml-8 text-sm text-muted leading-relaxed">
+          Je rappelle par téléphone, c&apos;est plus rapide qu&apos;un mail : ton numéro
+          devient donc nécessaire.
+        </p>
+      )}
 
       {/* Champ piège anti-bot : jamais visible, jamais rempli par un humain. */}
       <div aria-hidden="true" className="hidden">
