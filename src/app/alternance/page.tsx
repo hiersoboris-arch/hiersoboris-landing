@@ -111,22 +111,21 @@ const OPPORTUNITES: Opportunite[] = [
   },
   {
     code: "JOB-01",
-    badge: "IA · mission courte en freelance",
-    role: "Mission freelance junior · implémentation d'agents IA",
+    badge: "Prospection téléphonique · mission courte en freelance",
+    role: "Mission freelance junior · BDR, prise de rendez-vous",
     contexte:
-      "Même éditeur que l'offre ALT-08. Leurs clients installent l'agent mais ne savent pas le configurer : il faut quelqu'un pour poser les cibles, les listes et les routines. C'est une mission courte, à la prestation, pas une alternance.",
+      "Même éditeur que l'offre ALT-08. Ils ont besoin d'un renfort tout de suite pour décrocher le téléphone, en attendant l'alternant de la rentrée. Tu ne pars jamais d'une page blanche : leur agent sort les listes, toi tu appelles. Tu poses le rendez-vous, ils reprennent la main pour la démo et la signature. C'est une mission courte, à la prestation, pas une alternance.",
     lieu: "À distance",
-    rythme: "Mission courte, volume rythmé par les onboardings clients",
-    demarrage: "À discuter",
+    rythme: "Mission courte, août et septembre",
+    demarrage: "Dès que possible",
     missions: [
-      "Onboarding des nouveaux clients sur la plateforme",
-      "Paramétrage de l'agent commercial : cible, listes, séquences email et LinkedIn, copy",
-      "Mise en place de l'infrastructure d'envoi : domaines dédiés, boîtes mail, chauffe",
-      "Branchement des intégrations selon la stack du client (CRM, LinkedIn, messagerie, agenda)",
-      "Calibration sur les premières semaines, puis passation et documentation",
+      "Appeler les contacts fournis par l'agent",
+      "Qualifier le besoin au téléphone",
+      "Placer le rendez-vous dans l'agenda",
+      "Noter chaque appel dans leur outil de suivi",
     ],
     profil:
-      "Junior sales ops, growth ou commercial déjà rodé à la prospection, 1 à 3 ans d'expérience ou très bon alternant sortant · tu bosses en freelance, donc tu es équipé : ton ordinateur, ton téléphone, un enregistreur de call type Granola, et tu sais rentrer les infos dans le CRM demandé après chaque échange · à l'aise avec les outils d'outbound et les intégrations sans être développeur · autonome et pédagogue, tu es en contact direct avec leurs clients.",
+      "Junior en prospection, 1 à 3 ans d'expérience ou très bon alternant sortant · tu es à l'aise au téléphone et taper du call ne te fait pas peur, c'est tout le poste · déjà installé en freelance · équipé : ton ordinateur, ton téléphone, un enregistreur de call type Granola, et tu sais rentrer les infos dans l'outil de suivi demandé.",
   },
   {
     code: "ALT-09",
