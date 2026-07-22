@@ -126,7 +126,7 @@ const OPPORTUNITES: Opportunite[] = [
       "Calibration sur les premières semaines, puis passation et documentation",
     ],
     profil:
-      "Junior sales ops, growth ou SDR outillé, 1 à 3 ans d'expérience ou très bon alternant sortant · à l'aise avec les outils d'outbound et les intégrations sans être développeur · rigoureux sur la donnée · autonome et pédagogue, tu es en contact direct avec leurs clients.",
+      "Junior sales ops, growth ou commercial déjà rodé à la prospection, 1 à 3 ans d'expérience ou très bon alternant sortant · tu bosses en freelance, donc tu es équipé : ton ordinateur, ton téléphone, un enregistreur de call type Granola, et tu sais rentrer les infos dans le CRM demandé après chaque échange · à l'aise avec les outils d'outbound et les intégrations sans être développeur · autonome et pédagogue, tu es en contact direct avec leurs clients.",
   },
   {
     code: "ALT-09",
