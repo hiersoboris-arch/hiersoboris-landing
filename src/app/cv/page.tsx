@@ -33,16 +33,16 @@ const SKILLS = [
 const EXPERIENCES = [
   {
     company: "BHA Consulting",
-    role: "Fondateur · conseil commercial, formation et apport d'affaires",
-    period: "Fév. 2025 → en cours",
+    role: "Fondateur, Head of Sales freelance · conseil, formation et apport d'affaires",
+    period: "Fév. 2018 → en cours",
     context: "Ma structure : entrepreneur individuel, Paris",
     points: [
-      "Structuration commerciale de PME, start-ups et associations : go-to-market, offre, tarifaire, pipeline, process, outils.",
-      "Direction commerciale externalisée et pilotage d'équipes (alternants, freelances, apporteurs d'affaires).",
-      "Prospection, commercialisation, négociation et closing en direct pour le compte de mes clients.",
-      "Apport d'affaires et mise en relation qualifiée sur mes réseaux B2B.",
-      "Formation et coaching : équipes commerciales en entreprise, écoles et organismes de formation.",
-      "Accompagnement et placement d'alternants Sales, de la préparation du candidat au suivi en entreprise.",
+      "Structuration et direction commerciale : go-to-market, ICP, offre, tarifaire, argumentaire, pipeline et rituels construits de zéro. De 0 à 1, puis passage à l'échelle.",
+      "Prospection multicanale à fort volume (téléphone, LinkedIn, email), découverte, qualification et closing en direct pour le compte de mes clients.",
+      "Apport d'affaires : mise en relation qualifiée sur mes réseaux B2B, EdTech et formation, ouverture de comptes décideurs.",
+      "Formation et coaching : équipes commerciales en entreprise, écoles et organismes de formation, coaching individuel de commerciaux et de dirigeants.",
+      "Constitution et pilotage d'équipes (alternants, freelances, apporteurs), préparation et placement de candidats Sales.",
+      "Sales Ops, automatisation et IA : CRM, reporting, structuration de la data, workflows automatisés (n8n, Claude), IA appliquée à la vente.",
     ],
   },
   {
@@ -90,12 +90,14 @@ const EXPERIENCES = [
   },
   {
     company: "Akimbo",
-    role: "Sales Coach",
+    role: "Sales Coach freelance",
     period: "Juil. 2026 → en cours",
     context: "Organisme de formation commerciale, Paris",
     points: [
-      "Membre du pool de sales coachs, formations intra-entreprise et bootcamps business developer.",
-      "Module animé : l'intelligence artificielle au service de la performance commerciale.",
+      "Membre du pool de sales coachs : bootcamps business developer, e-learning et formations intra-entreprise.",
+      "Module animé : l'intelligence artificielle au service de la performance commerciale (prospection, copywriting, préparation de rendez-vous).",
+      "Pédagogie terrain : cas concrets adaptés aux cibles des participants, mises en situation réelles, débrief individuel.",
+      "Posture commerciale : découverte, qualification, closing, gestion des objections et ancrage des acquis après la session.",
     ],
   },
   {
