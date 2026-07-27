@@ -36,24 +36,6 @@ type Opportunite = {
 // aux candidats et aux écoles, jamais publié.
 const OPPORTUNITES: Opportunite[] = [
   {
-    code: "ALT-05",
-    badge: "Real estate · colliving premium",
-    role: "Alternant·e Sales B2B · cycle complet (prospection → closing)",
-    contexte:
-      "Scale-up européenne de colliving premium, présente dans 9 grandes villes en Europe et aux États-Unis. Elle lance son département B2B (logement des salariés en mobilité) : tu le montes aux côtés du top management.",
-    lieu: "Paris, déplacements ponctuels possibles",
-    rythme: "Hybride, présentiel majoritaire (1 à 2 jours de télétravail)",
-    demarrage: "Rentrée 2026 (septembre ou octobre)",
-    missions: [
-      "Premier point de contact des prospects B2B (RH, mobilité, talent acquisition)",
-      "Suivi rigoureux du pipeline jusqu'à la signature des contrats",
-      "Analyse des métriques (taux d'occupation, churn) avec le Sales Team Lead et la VP Sales",
-      "Organisation d'événements pour fidéliser les clients corporate",
-    ],
-    profil:
-      "Bac+3 à master · bilingue français-anglais (espagnol ou italien apprécié) · profil analytique et sociable · pas besoin de background immobilier.",
-  },
-  {
     code: "ALT-06",
     badge: "Industrie · SaaS de gestion de l'obsolescence",
     role: "Alternant·e Business Developer · grands comptes industriels",
