@@ -23,6 +23,7 @@ export const metadata: Metadata = {
 type Opportunite = {
   code: string;
   badge: string;
+  status?: string;
   role: string;
   contexte: string;
   lieu: string;
@@ -38,6 +39,7 @@ const OPPORTUNITES: Opportunite[] = [
   {
     code: "ALT-06",
     badge: "Industrie · SaaS de gestion de l'obsolescence",
+    status: "Profils en cours de validation",
     role: "Alternant·e Business Developer · grands comptes industriels",
     contexte:
       "Société qui sécurise la production industrielle en gérant l'obsolescence des pièces détachées critiques : quand une pièce introuvable arrête une ligne de production, elle la retrouve, avec un gain moyen de 45%. Elle industrialise cette expertise dans un SaaS qui score le risque d'obsolescence de tout un parc machines. Tu rejoins directement l'équipe commerciale, avec une évolution possible vers un poste de Business Developer confirmé en CDI.",
@@ -359,6 +361,7 @@ function AudienceCard({
 function OppCard({
   code,
   badge,
+  status,
   role,
   contexte,
   lieu,
@@ -371,9 +374,17 @@ function OppCard({
     <article className="bg-card border hairline rounded-2xl p-8 md:p-10 flex flex-col">
       <div className="flex items-center justify-between gap-3 mb-4">
         <span className="text-xs uppercase tracking-[0.18em] text-accent">{badge}</span>
-        <span className="text-xs text-muted border hairline rounded-full px-3 py-1">
-          Réf. {code}
-        </span>
+        <div className="flex items-center gap-2 shrink-0">
+          {status && (
+            <span className="text-xs text-accent border border-bordeaux/40 bg-bordeaux/5 rounded-full px-3 py-1 inline-flex items-center gap-1.5 whitespace-nowrap">
+              <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
+              {status}
+            </span>
+          )}
+          <span className="text-xs text-muted border hairline rounded-full px-3 py-1 whitespace-nowrap">
+            Réf. {code}
+          </span>
+        </div>
       </div>
       <h3 className="serif text-2xl leading-snug">{role}</h3>
       <p className="mt-3 text-muted leading-relaxed">{contexte}</p>
