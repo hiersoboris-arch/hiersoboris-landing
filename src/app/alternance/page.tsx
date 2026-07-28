@@ -194,7 +194,7 @@ export default function Alternance() {
             <AudienceCard
               tag="Étudiants"
               title="Tu cherches ton alternance ?"
-              desc="Repère les postes qui te parlent, puis écris-moi sur LinkedIn avec la référence (ALT-05, ALT-06...) ou réserve 15 minutes. Je te présente l'entreprise et je t'aide à préparer l'entretien."
+              desc="Repère les postes qui te parlent, puis écris-moi sur LinkedIn avec la référence (ALT-06, ALT-09...) ou réserve 15 minutes. Je te présente l'entreprise et je t'aide à préparer l'entretien."
               ctaHref="#livre-blanc"
               ctaLabel="Recevoir le kit gratuit"
             />
