@@ -237,7 +237,7 @@ export default function Home() {
           <p className="rise rise-3 mt-4 text-sm text-muted max-w-xl leading-relaxed">
             <strong className="text-ink font-medium">Dirigeant</strong> : je structure ta
             vente · <strong className="text-ink font-medium">Recruteur</strong> : ouvert à
-            un CDI Head of Sales,{" "}
+            tout type de poste, freelance comme CDI,{" "}
             <Link href="/cv" className="underline hover:text-ink">
               mon CV
             </Link>{" "}
@@ -535,7 +535,7 @@ export default function Home() {
                 <span className="text-accent">un poste à pourvoir ?</span>
               </h2>
               <p className="mt-8 text-lg text-muted max-w-xl leading-relaxed">
-                Clients : je prends de nouvelles missions freelance dès maintenant. Recruteurs : je suis ouvert dès maintenant à un poste de Head of Sales en CDI. Le plus simple reste 30 minutes en visio.
+                Clients : je prends de nouvelles missions freelance dès maintenant. Recruteurs : je suis ouvert à tout type de poste, freelance comme CDI. Le plus simple reste 30 minutes en visio.
               </p>
               <div className="mt-10">
                 <Image
