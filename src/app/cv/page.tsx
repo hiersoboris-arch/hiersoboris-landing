@@ -47,13 +47,13 @@ const EXPERIENCES = [
   },
   {
     company: "Exoteach",
-    role: "Head of Sales freelance puis consultant apporteur d'affaires",
-    period: "Déc. 2025 → en cours",
+    role: "Head of Sales freelance, puis apporteur d'affaires",
+    period: "Déc. 2025 → juin 2026",
     context: "EdTech, SaaS B2B IA-first",
     points: [
       "290k€ de pipe qualifié construit de zéro, 73 RDV commerciaux menés, 91% de taux d'avancement.",
       "150 calls par semaine, écosystème de 5 apporteurs d'affaires structuré.",
-      "Déploiement d'outils IA et d'automation. Objectif 500k€ d'ARR d'ici fin 2026. 15 000 étudiants utilisent la solution.",
+      "Déploiement d'outils IA et d'automation. Objectif 200k€ d'ARR d'ici fin 2026. 15 000 étudiants utilisent la solution.",
     ],
   },
   {
@@ -62,8 +62,8 @@ const EXPERIENCES = [
     period: "Janv. 2026 → en cours",
     context: "Groupe de spiritueux premium",
     points: [
-      "450k€ générés, objectif 1,5M€ d'ici fin 2026.",
-      "Management de 6 freelances et 8 apporteurs internationaux.",
+      "450k€ générés, machine commerciale construite de zéro.",
+      "CRM déployé, prospection outillée : 9 361 cavistes géolocalisés et enrichis.",
       "Déploiement multi-marchés : CHR, cavistes, hôtels et palaces, export.",
     ],
   },
@@ -110,10 +110,10 @@ const EXPERIENCES = [
   {
     company: "ValueCo",
     role: "First Sales puis Team Lead Sales freelance",
-    period: "Mars 2025 → mars 2026",
+    period: "Mars 2025 → déc. 2025",
     context: "Finance durable / ESG",
     points: [
-      "301 entreprises cotées rencontrées sur le marché francophone.",
+      "301 entreprises cotées cartographiées et qualifiées sur le marché francophone.",
       "8 000 calls, 140 rendez-vous physiques, 70 events en 8 mois.",
       "8 deals ouverts à +150k€ (logique d'exploration de marché).",
     ],
@@ -128,6 +128,7 @@ const EXPERIENCES = [
       "Jusqu'à 317% d'atteinte d'objectif en prospection.",
       "En AE Full Cycle : 100 deals signés, 452k€ d'ARR, 116% du quota annuel.",
       "Cycles longs et multi-interlocuteurs (DAF, DRH, DSI, élus syndicaux), grands comptes.",
+      "Recrutement et onboarding des alternants et stagiaires Sales : outils, culture, montée en route opérationnelle (48h à 1 mois par arrivée).",
     ],
   },
   {
@@ -189,7 +190,7 @@ export default function CVPage() {
         <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm">
           <span className="inline-flex items-center gap-2">
             <span className="live-dot" />
-            Disponible (freelance maintenant · CDI juillet 2026)
+            Disponible dès maintenant · freelance ou CDI
           </span>
           <span className="text-muted">Paris · remote</span>
         </div>

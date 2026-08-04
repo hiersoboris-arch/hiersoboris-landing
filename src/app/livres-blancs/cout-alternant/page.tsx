@@ -25,7 +25,7 @@ const CHIFFRES = [
   { value: "430 à 885 €", caption: "le coût net mensuel d'un alternant la 1re année, aides déduites" },
   { value: "5 000 €", caption: "l'aide maximale de l'État, versée chaque mois avant la paie" },
   { value: "3", caption: "exemples chiffrés : BTS, Master 1re année, Master 2e année" },
-  { value: "16", caption: "sections, du vocabulaire aux démarches, sources officielles liées" },
+  { value: "3 168 €", caption: "le surcoût annuel si vous ratez le salaire conventionnel de votre branche" },
 ];
 
 export default function CoutAlternant() {
@@ -123,7 +123,7 @@ export default function CoutAlternant() {
               </div>
 
               <div className="md:col-span-6">
-                <LivreBlancForm livret="cout-alternant" />
+                <LivreBlancForm livret="cout-alternant" masquerProfil />
               </div>
             </div>
           </div>

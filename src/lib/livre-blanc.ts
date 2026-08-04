@@ -8,6 +8,8 @@ export type LivretSlug = "kit-alternance" | "cout-alternant";
 export type Livret = {
   slug: LivretSlug;
   titre: string;
+  // Date de publication (ISO), affichée sur le hub ; le plus récent porte le badge Nouveau.
+  publie: string;
   // Page Notion publique, délivrée après le formulaire (et par email).
   url: string;
   // Valeur écrite dans la propriété select "Livre blanc" de la base Notion.
@@ -48,6 +50,7 @@ export const LIVRETS: Record<LivretSlug, Livret> = {
   "kit-alternance": {
     slug: "kit-alternance",
     titre: "Décroche ton alternance",
+    publie: "2026-07-20",
     url: "https://formation-boris-ha.notion.site/D-croche-ton-alternance-39c28a764b9780d591f9e6f12df1fb9f",
     notionSelect: "Kit alternance",
     sourceDefaut: "hiersoboris.fr/alternance",
@@ -88,6 +91,7 @@ export const LIVRETS: Record<LivretSlug, Livret> = {
   "cout-alternant": {
     slug: "cout-alternant",
     titre: "Combien coûte vraiment un alternant en 2026",
+    publie: "2026-08-04",
     url: "https://formation-boris-ha.notion.site/Combien-co-te-vraiment-un-alternant-en-2026-3a428a764b97815a9154efa99456a91a",
     notionSelect: "Coût alternant 2026",
     sourceDefaut: "hiersoboris.fr/livres-blancs/cout-alternant",

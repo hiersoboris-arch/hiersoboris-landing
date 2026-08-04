@@ -20,20 +20,20 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Boris Hierso Alphandéry · Head of Sales, coach & maker IA",
+    default: "Boris Hierso Alphandéry · Head of Sales B2B SaaS, sales coach & formateur",
     template: "%s · Boris Hierso Alphandéry",
   },
   description:
-    "Head of Sales freelance, coach en négociation et créateur d'outils IA. 10 ans de vente B2B. Disponible pour missions, CDI, formations et conférences. Basé à Paris.",
+    "Head of Sales B2B SaaS, sales coach et formateur. Machines commerciales de 0 à 1, augmentées à l'IA, du SMB au grand compte. Disponible pour missions, CDI, formations et conférences. Paris.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     locale: "fr_FR",
     url: SITE_URL,
     siteName: "Boris Hierso Alphandéry",
-    title: "Boris Hierso Alphandéry · Head of Sales, coach & maker IA",
+    title: "Boris Hierso Alphandéry · Head of Sales B2B SaaS, sales coach & formateur",
     description:
-      "Head of Sales freelance, coach en négociation et créateur d'outils IA. 10 ans de vente B2B. Disponible pour missions, CDI, formations et conférences. Basé à Paris.",
+      "Head of Sales B2B SaaS, sales coach et formateur. Machines commerciales de 0 à 1, augmentées à l'IA, du SMB au grand compte. Disponible pour missions, CDI, formations et conférences. Paris.",
   },
   robots: {
     index: true,

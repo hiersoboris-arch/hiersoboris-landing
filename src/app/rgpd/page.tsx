@@ -68,7 +68,9 @@ export default function Rgpd() {
             représenter jusqu&apos;à un email par jour en période de publication. Cette
             liste est gérée via Resend et chaque email contient un lien de
             désinscription immédiate, en un clic. Vous pouvez aussi demander votre
-            retrait par simple réponse ou par email.
+            retrait par simple réponse ou par email. Un formulaire d&apos;inscription
+            seule (adresse mail uniquement) existe également sur la page Livres
+            blancs : les mêmes règles s&apos;y appliquent.
           </p>
           <p className="text-muted mt-3">
             <strong className="text-ink">Base légale</strong> : votre consentement, donné

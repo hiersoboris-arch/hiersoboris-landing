@@ -4,6 +4,8 @@ import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { FAQ } from "@/lib/faq";
 import { CALENDLY, LINKEDIN, EMAIL, TOOLSBOX } from "@/lib/contact";
 import SiteHeader from "./SiteHeader";
+import NewsletterForm from "./NewsletterForm";
+import heroDestruction from "../../public/hero/destruction.jpg";
 
 function LinkedinIcon({ className }: { className?: string }) {
   return (
@@ -57,32 +59,32 @@ const OFFERS = [
   {
     title: "Intervenir & prendre la parole",
     audience: "CCI · conférences · tables rondes · événements",
-    desc: "Talks et ateliers sur l'IA appliquée à la vente, la prospection, la négociation et la structuration commerciale. Format court, concret, sans bullshit.",
+    desc: "Talks et ateliers sur l'IA appliquée à la vente, la prospection, la négociation et la structuration commerciale. Format court, concret, directement actionnable.",
   },
   {
     title: "Outiller la vente",
     audience: "Équipes qui veulent automatiser",
-    desc: "Outils IA et automation sur mesure (n8n, Claude), CRM, sales ops. Quand l'outil n'existe pas pour le bon usage, je le code.",
+    desc: "J'opère ma propre machine commerciale augmentée à l'IA, et je monte la tienne : agents, automation (n8n, Claude), CRM, sales ops. Quand l'outil n'existe pas, je le code.",
   },
 ];
 
 const RESULTS = [
   {
     company: "Exoteach",
-    role: "Head of Sales freelance puis consultant apporteur d'affaires · EdTech SaaS B2B (en cours)",
+    role: "Head of Sales freelance, puis apporteur d'affaires · EdTech SaaS B2B",
     figures: [
       "290k€ de pipe qualifié construit de zéro",
       "73 RDV commerciaux menés, 91% de taux d'avancement",
       "150 calls par semaine, 5 apporteurs d'affaires pilotés",
-      "Objectif 500k€ d'ARR d'ici fin 2026 · 15 000 étudiants utilisent la solution",
+      "Objectif 200k€ d'ARR d'ici fin 2026 · 15 000 étudiants utilisent la solution",
     ],
   },
   {
     company: "Avelor Spirits",
-    role: "Head of Sales freelance · spiritueux premium (en cours)",
+    role: "Head of Sales freelance · spiritueux premium",
     figures: [
-      "450k€ générés, objectif 1,5M€ d'ici fin 2026",
-      "Task force commerciale recrutée et animée : commerciaux terrain et apporteurs d'affaires",
+      "450k€ générés, machine commerciale construite de zéro",
+      "CRM déployé, prospection outillée : 9 361 cavistes géolocalisés et enrichis",
       "Déploiement multi-marchés : CHR, cavistes, hôtels et palaces, export",
     ],
   },
@@ -107,9 +109,9 @@ const RESULTS = [
   },
   {
     company: "ValueCo",
-    role: "First Sales → Team Lead freelance · finance durable / ESG",
+    role: "First Sales → Team Lead freelance · finance durable / ESG (2025)",
     figures: [
-      "301 entreprises cotées rencontrées sur le marché francophone",
+      "301 entreprises cotées cartographiées et qualifiées sur le marché francophone",
       "8 000 calls, 140 rendez-vous physiques, 70 events en 8 mois",
       "8 deals ouverts à +150k€",
     ],
@@ -121,7 +123,7 @@ const RESULTS = [
       "1,7M€ d'ARR généré en prospection (SDR & BDR)",
       "Jusqu'à 317% d'atteinte en prospection",
       "100 deals signés en AE Full Cycle, 116% du quota annuel",
-      "452k€ d'ARR signé en propre, cycles longs multi-interlocuteurs",
+      "Recrutement et onboarding des alternants et stagiaires Sales : outils, culture, mise en route",
     ],
   },
 ];
@@ -143,7 +145,7 @@ const TESTIMONIALS = [
     quote:
       "Un sales enthousiaste et chevronné, qui a su bâtir une stratégie de prospection très structurée. Ses qualités humaines feront de lui un leader apprécié.",
     name: "Aude Debard",
-    role: "Chief Growth Officer, ex-BNP Paribas CIB",
+    role: "Chief Growth Officer (ex-BNP Paribas CIB) · mission ValueCo",
   },
   {
     quote:
@@ -161,7 +163,7 @@ const TESTIMONIALS = [
     quote:
       "Boris est ce genre de collègue qu'on n'oublie pas. Si vous avez l'opportunité de bosser avec lui, foncez.",
     name: "Yohann Simeau",
-    role: "Ancien responsable, HappyPal",
+    role: "Senior Account Executive, HappyPal",
   },
 ];
 
@@ -188,10 +190,11 @@ export default function Home() {
       <section className="relative isolate bg-night text-cream">
         <div className="relative h-[44vh] min-h-[320px] md:h-[54vh] w-full overflow-hidden">
           <Image
-            src="/hero/destruction.jpg"
+            src={heroDestruction}
             alt="Boris Hierso Alphandéry, visage en body-painting (Destruction), fond noir"
             fill
             priority
+            placeholder="blur"
             sizes="100vw"
             className="object-cover object-center"
           />
@@ -200,10 +203,16 @@ export default function Home() {
             aria-hidden="true"
           />
           {/* Label bas de bandeau */}
-          <div className="absolute inset-x-0 bottom-0 z-10 max-w-content mx-auto w-full px-6 pb-6">
+          <div className="absolute inset-x-0 bottom-0 z-10 max-w-content mx-auto w-full px-6 pb-6 flex flex-wrap items-end justify-between gap-3">
             <div className="text-xs md:text-sm tracking-[0.22em] uppercase text-cream/85">
-              Head of Sales · Coach · Créateur d&apos;outils
+              Head of Sales B2B SaaS · Sales coach &amp; formateur
             </div>
+            <Link
+              href="/art-slash"
+              className="text-xs text-cream/60 hover:text-cream transition py-2"
+            >
+              Body painting : mon ancienne vie d&apos;artiste →
+            </Link>
           </div>
         </div>
       </section>
@@ -221,7 +230,21 @@ export default function Home() {
             <span className="italic text-bordeaux">Transmettre.</span>
           </h1>
           <p className="rise rise-3 mt-7 text-lg md:text-xl text-muted max-w-xl leading-relaxed">
-            Head of Sales, coach en négociation et créateur d&apos;outils. Je fais vendre, et je transmets ce qui marche.
+            Head of Sales B2B SaaS, sales coach et formateur. Je construis des machines
+            commerciales de 0 à 1, augmentées à l&apos;IA, du SMB au grand compte. Et je
+            transmets ce qui marche.
+          </p>
+          <p className="rise rise-3 mt-4 text-sm text-muted max-w-xl leading-relaxed">
+            <strong className="text-ink font-medium">Dirigeant</strong> : je structure ta
+            vente · <strong className="text-ink font-medium">Recruteur</strong> : ouvert à
+            un CDI Head of Sales,{" "}
+            <Link href="/cv" className="underline hover:text-ink">
+              mon CV
+            </Link>{" "}
+            · <strong className="text-ink font-medium">Étudiant</strong> :{" "}
+            <Link href="/alternance" className="underline hover:text-ink">
+              alternances et kit gratuit
+            </Link>
           </p>
           <div className="rise rise-4 mt-9 flex flex-wrap items-center gap-4">
             <a
@@ -245,6 +268,7 @@ export default function Home() {
             <HeroStat value="3,8M€" label="ARR généré, 10 ans" accent />
             <HeroStat value="387" label="deals signés" />
             <HeroStat value="400" label="formés, étudiants et pros" />
+            <HeroStat value="350 calls" label="de capacité hebdo · 0,3% de no-show par mois" />
           </div>
         </div>
       </section>
@@ -268,7 +292,7 @@ export default function Home() {
 
       {/* Comment je peux aider */}
       <section id="aider" className="border-b hairline">
-        <div className="reveal max-w-content mx-auto px-6 py-20 md:py-28">
+        <div className="max-w-content mx-auto px-6 py-20 md:py-28">
           <div className="max-w-2xl mb-14">
             <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
               <span className="dot" />
@@ -289,28 +313,27 @@ export default function Home() {
 
       {/* Preuves : portfolio par mission */}
       <section id="preuves" className="border-b hairline">
-        <div className="reveal max-w-content mx-auto px-6 py-20 md:py-28">
-          <div className="grid md:grid-cols-12 gap-12 mb-16">
-            <div className="md:col-span-5">
-              <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
-                <span className="dot" />
-                Preuves
-              </div>
-              <h2 className="serif text-3xl md:text-5xl leading-[1.05] tracking-tight mb-6">
-                Des chiffres,
-                <br />
-                <span className="text-muted">et des choses qui tournent.</span>
-              </h2>
-              <p className="text-muted leading-relaxed">
-                Aujourd&apos;hui, Head of Sales en mission chez <strong className="text-ink">Exoteach</strong> et <strong className="text-ink">Avelor Spirits</strong>. 10 ans de terrain B2B au total, dont 4 ans chez <strong className="text-ink">HappyPal</strong> (de SDR au management de l&apos;équipe Sales) et une mission chez <strong className="text-ink">ValueCo</strong> en 2025.
-              </p>
+        <div className="max-w-content mx-auto px-6 py-20 md:py-28">
+          <div className="max-w-3xl mb-16">
+            <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
+              <span className="dot" />
+              Résultats
             </div>
-            <div className="md:col-span-7 grid grid-cols-2 gap-px bg-border border hairline rounded-2xl overflow-hidden">
-              <Stat value="3,8M€" caption="d'ARR généré en 10 ans de Sales." />
-              <Stat value="387" caption="deals signés." />
-              <Stat value="400" caption="étudiants et pros formés." />
-              <Stat value="350 calls" caption="par semaine pour 9,5 RDV won, 0,3% de no-show par mois." />
-            </div>
+            <h2 className="serif text-3xl md:text-5xl leading-[1.05] tracking-tight mb-6">
+              Des chiffres,
+              <br />
+              <span className="text-muted">mission par mission.</span>
+            </h2>
+            <p className="text-muted leading-relaxed">
+              Head of Sales freelance : j&apos;ai construit les machines commerciales
+              d&apos;<strong className="text-ink">Exoteach</strong>,{" "}
+              d&apos;<strong className="text-ink">Avelor Spirits</strong> et de{" "}
+              <strong className="text-ink">WoMa</strong>. Avant ça, 10 ans de terrain B2B,
+              dont 4 ans chez <strong className="text-ink">HappyPal</strong> (SDR, BDR
+              Senior puis AE Full Cycle, avec le recrutement et l&apos;onboarding des
+              nouveaux Sales) et une mission chez{" "}
+              <strong className="text-ink">ValueCo</strong> en 2025.
+            </p>
           </div>
 
           {/* Détail par mission */}
@@ -329,7 +352,7 @@ export default function Home() {
 
       {/* Intervenant & formateur */}
       <section id="intervenant" className="border-b hairline">
-        <div className="reveal max-w-content mx-auto px-6 py-20 md:py-28">
+        <div className="max-w-content mx-auto px-6 py-20 md:py-28">
           <div className="grid md:grid-cols-12 gap-12 mb-14">
             <div className="md:col-span-6">
               <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
@@ -395,7 +418,7 @@ export default function Home() {
 
       {/* Recommandations */}
       <section id="recommandations" className="border-b hairline grain">
-        <div className="reveal max-w-content mx-auto px-6 py-20 md:py-28">
+        <div className="max-w-content mx-auto px-6 py-20 md:py-28">
           <div className="max-w-2xl mb-14">
             <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
               <span className="dot" />
@@ -426,7 +449,7 @@ export default function Home() {
 
       {/* Livres blancs */}
       <section id="livres-blancs" className="border-b hairline">
-        <div className="reveal max-w-content mx-auto px-6 py-20 md:py-28">
+        <div className="max-w-content mx-auto px-6 py-20 md:py-28">
           <div className="max-w-2xl mb-14">
             <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
               <span className="dot" />
@@ -455,18 +478,26 @@ export default function Home() {
             />
           </div>
 
-          <p className="mt-8 text-sm text-muted">
-            D&apos;autres guides arrivent.{" "}
-            <Link href="/livres-blancs" className="underline hover:text-ink">
-              Tous les livres blancs
-            </Link>
-          </p>
+          <div className="mt-10 grid md:grid-cols-12 gap-8 items-center">
+            <p className="md:col-span-5 text-sm text-muted leading-relaxed">
+              D&apos;autres guides arrivent tout au long du mois.{" "}
+              <Link
+                href="/livres-blancs"
+                className="underline hover:text-ink inline-flex items-center gap-1"
+              >
+                Tous les livres blancs
+              </Link>
+            </p>
+            <div className="md:col-span-7">
+              <NewsletterForm source="hiersoboris.fr/#livres-blancs" />
+            </div>
+          </div>
         </div>
       </section>
 
       {/* FAQ */}
       <section id="faq" className="border-b hairline">
-        <div className="reveal max-w-content mx-auto px-6 py-20 md:py-28 grid md:grid-cols-12 gap-12">
+        <div className="max-w-content mx-auto px-6 py-20 md:py-28 grid md:grid-cols-12 gap-12">
           <div className="md:col-span-4">
             <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
               <span className="dot" />
@@ -504,7 +535,7 @@ export default function Home() {
                 <span className="text-accent">un poste à pourvoir ?</span>
               </h2>
               <p className="mt-8 text-lg text-muted max-w-xl leading-relaxed">
-                Clients : je prends de nouvelles missions freelance dès maintenant. Recruteurs : je suis ouvert à un poste de Head of Sales en CDI à partir de juillet 2026. Le plus simple reste 30 minutes en visio.
+                Clients : je prends de nouvelles missions freelance dès maintenant. Recruteurs : je suis ouvert dès maintenant à un poste de Head of Sales en CDI. Le plus simple reste 30 minutes en visio.
               </p>
               <div className="mt-10">
                 <Image
@@ -536,6 +567,7 @@ export default function Home() {
           </div>
           <div className="flex flex-wrap items-center gap-6">
             <Link href="/cv" className="hover:text-ink">CV</Link>
+            <Link href="/art-slash" className="hover:text-ink">Art Slash</Link>
             <Link href="/mentions-legales" className="hover:text-ink">Mentions légales</Link>
             <Link href="/rgpd" className="hover:text-ink">RGPD</Link>
             <a

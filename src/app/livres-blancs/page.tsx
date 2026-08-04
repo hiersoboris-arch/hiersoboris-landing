@@ -1,39 +1,56 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import { LIVRETS } from "@/lib/livre-blanc";
 import { SITE_URL } from "@/lib/site-url";
 import { LINKEDIN } from "@/lib/contact";
 import SiteHeader from "../SiteHeader";
+import NewsletterForm from "../NewsletterForm";
 
 export const metadata: Metadata = {
-  title: "Livres blancs : alternance, recrutement, vente",
+  title: "Livres blancs : vente B2B, IA, alternance",
   description:
-    "Les livres blancs gratuits de Boris Hierso Alphandéry : décrocher son alternance côté étudiant, et le coût réel d'un alternant en 2026 côté entreprise.",
+    "Les livres blancs gratuits de Boris Hierso Alphandéry : vente B2B, prospection, IA appliquée à la vente, alternance et recrutement. De nouveaux guides tout au long du mois.",
   alternates: { canonical: "/livres-blancs" },
   openGraph: {
     type: "website",
     title: "Livres blancs · Boris Hierso Alphandéry",
     description:
-      "Des guides pratiques et gratuits : alternance côté étudiant, coût d'un alternant côté entreprise.",
+      "Des guides pratiques et gratuits : vente B2B, IA appliquée à la vente, alternance, recrutement.",
   },
 };
 
-const LIVRETS_HUB = [
+// Le hub liste les livrets du catalogue + leur page cible. Le plus récent
+// (date `publie` du catalogue) porte le badge Nouveau, calculé au build :
+// le site est redéployé à chaque nouveau livret, donc le badge suit.
+const CARTES = [
   {
+    livret: LIVRETS["cout-alternant"],
     tag: "Entreprises & écoles",
-    title: "Combien coûte vraiment un alternant en 2026",
     desc: "Le coût réel d'un alternant, aides déduites : grilles de rémunération 2026, aides de l'État et de l'Agefiph, trois exemples chiffrés, démarches dans l'ordre. Vérifié aux sources officielles (Légifrance, service-public.fr, URSSAF, BOSS).",
     href: "/livres-blancs/cout-alternant",
     cta: "Recevoir le guide",
+    couleur: "bg-bordeaux",
   },
   {
+    livret: LIVRETS["kit-alternance"],
     tag: "Étudiants",
-    title: "Décroche ton alternance",
     desc: "Tout ce que je donne à mes étudiants avant un entretien, réuni sur une page : les 8 réponses à préparer, le CV en deux versions (ATS et visuel), la méthode des 3 KPIs, un mini-CRM de candidatures et un LinkedIn optimisé.",
     href: "/alternance#livre-blanc",
     cta: "Recevoir le kit",
+    couleur: "bg-night",
   },
 ];
+
+const datePlusRecente = CARTES.map((c) => c.livret.publie).sort().reverse()[0];
+
+function dateFr(iso: string) {
+  return new Date(`${iso}T12:00:00`).toLocaleDateString("fr-FR", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+}
 
 export default function LivresBlancs() {
   return (
@@ -61,7 +78,7 @@ export default function LivresBlancs() {
         <section className="max-w-content mx-auto px-6 pb-16 md:pb-24">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-sm text-muted hover:text-ink transition mb-10"
+            className="inline-flex items-center gap-2 text-sm text-muted hover:text-ink transition mb-10 min-h-[44px]"
           >
             <ArrowLeft className="w-4 h-4" />
             Retour à l&apos;accueil
@@ -74,35 +91,68 @@ export default function LivresBlancs() {
               Les livres blancs.
             </h1>
             <p className="mt-7 text-lg text-muted max-w-2xl leading-relaxed">
-              Des guides pratiques, tirés du terrain : mes cours en école de commerce et
-              le placement d&apos;alternants chez des dirigeants que je connais. Chaque
+              Des guides pratiques, tirés de mes missions et de mes cours : vente B2B,
+              prospection, IA appliquée à la vente, alternance et recrutement. Chaque
               guide est gratuit, délivré contre un email, et mis à jour régulièrement.
+              De nouveaux guides sortent tout au long du mois.
             </p>
           </div>
 
           <div className="mt-12 grid md:grid-cols-2 gap-6">
-            {LIVRETS_HUB.map((l) => (
+            {CARTES.map((c) => (
               <article
-                key={l.href}
-                className="lift bg-card border hairline rounded-2xl p-8 md:p-10 flex flex-col"
+                key={c.href}
+                className="lift bg-card border hairline rounded-2xl p-7 md:p-8 flex gap-6"
               >
-                <div className="text-xs uppercase tracking-[0.18em] text-accent mb-4">
-                  {l.tag}
-                </div>
-                <h2 className="serif text-2xl md:text-3xl leading-snug">{l.title}</h2>
-                <p className="mt-4 text-muted leading-relaxed flex-1">{l.desc}</p>
+                {/* Couverture stylisée : matérialise le "livre" sans asset à produire */}
                 <Link
-                  href={l.href}
-                  className="mt-7 inline-flex items-center gap-2 text-bordeaux font-medium hover:gap-3 transition-all"
+                  href={c.href}
+                  aria-hidden="true"
+                  tabIndex={-1}
+                  className={`${c.couleur} hidden sm:flex shrink-0 w-28 md:w-32 aspect-[3/4] rounded-lg shadow-warm p-3 flex-col justify-between`}
                 >
-                  {l.cta}
-                  <ArrowRight className="w-4 h-4" />
+                  <span className="serif text-cream text-sm leading-snug">
+                    {c.livret.titre}
+                  </span>
+                  <span className="text-[9px] uppercase tracking-[0.18em] text-cream/70">
+                    Boris Hierso A.
+                  </span>
                 </Link>
+                <div className="flex flex-col flex-1">
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="text-xs uppercase tracking-[0.18em] text-accent">
+                      {c.tag}
+                    </span>
+                    {c.livret.publie === datePlusRecente && (
+                      <span className="text-[10px] uppercase tracking-[0.14em] bg-bordeaux text-cream rounded-full px-2.5 py-0.5">
+                        Nouveau
+                      </span>
+                    )}
+                  </div>
+                  <h2 className="serif text-2xl md:text-[1.7rem] leading-snug">
+                    {c.livret.titre}
+                  </h2>
+                  <p className="mt-3 text-sm text-muted leading-relaxed flex-1">{c.desc}</p>
+                  <div className="mt-5 flex items-center justify-between gap-3">
+                    <Link
+                      href={c.href}
+                      className="inline-flex items-center gap-2 text-bordeaux font-medium hover:gap-3 transition-all min-h-[44px]"
+                    >
+                      {c.cta}
+                      <ArrowRight className="w-4 h-4" />
+                    </Link>
+                    <span className="text-xs text-muted">{dateFr(c.livret.publie)}</span>
+                  </div>
+                </div>
               </article>
             ))}
           </div>
 
-          <p className="mt-10 text-sm text-muted max-w-2xl leading-relaxed">
+          <div className="mt-12 max-w-2xl">
+            <NewsletterForm source="hiersoboris.fr/livres-blancs" />
+          </div>
+
+          <p className="mt-8 text-sm text-muted max-w-2xl leading-relaxed">
             Une question sur un des guides, ou un sujet que je devrais couvrir ?
             Écris-moi sur{" "}
             <a
@@ -121,7 +171,7 @@ export default function LivresBlancs() {
       <footer className="border-t hairline">
         <div className="max-w-content mx-auto px-6 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-sm text-muted">
           <div className="serif">Boris Hierso Alphandéry</div>
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center gap-6">
             <Link href="/" className="hover:text-ink">Accueil</Link>
             <Link href="/alternance" className="hover:text-ink">Alternance</Link>
             <Link href="/mentions-legales" className="hover:text-ink">Mentions légales</Link>

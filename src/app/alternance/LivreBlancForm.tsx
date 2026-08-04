@@ -1,9 +1,26 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { ArrowUpRight, Check, Loader2 } from "lucide-react";
+import { track } from "@vercel/analytics";
 import { LIVRETS, type LivretSlug } from "@/lib/livre-blanc";
+
+// Mémorise les UTM du premier chargement pour attribuer le lead à la bonne
+// campagne (posts LinkedIn quotidiens), même après navigation interne.
+function utmCourante(): string {
+  try {
+    const p = new URLSearchParams(window.location.search);
+    const utm = ["utm_source", "utm_medium", "utm_campaign"]
+      .map((k) => p.get(k))
+      .filter(Boolean)
+      .join("/");
+    if (utm) sessionStorage.setItem("bha-utm", utm);
+    return utm || sessionStorage.getItem("bha-utm") || "";
+  } catch {
+    return "";
+  }
+}
 
 const PROFILS = ["Étudiant", "École", "Entreprise"] as const;
 type Profil = (typeof PROFILS)[number];
@@ -20,11 +37,19 @@ const champBase =
 export default function LivreBlancForm({
   livret = "kit-alternance",
   source,
+  masquerProfil = false,
 }: {
   livret?: LivretSlug;
   source?: string;
+  // Sur une landing mono-audience, le choix de profil est du bruit : on le
+  // masque et le profil par défaut du livret est envoyé tel quel.
+  masquerProfil?: boolean;
 }) {
   const L = LIVRETS[livret];
+
+  useEffect(() => {
+    utmCourante();
+  }, []);
   const [profil, setProfil] = useState<Profil>(L.profilDefaut);
   const [newsletter, setNewsletter] = useState(false);
   const [contact, setContact] = useState(false);
@@ -43,6 +68,7 @@ export default function LivreBlancForm({
     if (envoi) return;
 
     const data = new FormData(event.currentTarget);
+    const utm = utmCourante();
     const payload = {
       nom: String(data.get("nom") || ""),
       prenom: String(data.get("prenom") || ""),
@@ -54,7 +80,7 @@ export default function LivreBlancForm({
       site: String(data.get("site") || ""),
       profil,
       livret: L.slug,
-      source: source || L.sourceDefaut,
+      source: (source || L.sourceDefaut) + (utm ? ` · utm:${utm}` : ""),
     };
 
     setChamps({});
@@ -87,6 +113,7 @@ export default function LivreBlancForm({
         return;
       }
 
+      track("livret_submit", { livret: L.slug, newsletter });
       setEnvoye(true);
     } catch {
       setErreur(
@@ -129,7 +156,7 @@ export default function LivreBlancForm({
       noValidate
       className="border hairline bg-card rounded-2xl p-6 md:p-8"
     >
-      <fieldset>
+      <fieldset className={masquerProfil ? "hidden" : undefined}>
         <legend className="text-sm font-medium text-ink mb-3">
           {L.registre === "tu" ? "Tu es" : "Vous êtes"}
         </legend>
@@ -322,17 +349,24 @@ export default function LivreBlancForm({
         )}
       </button>
 
-      <p className="mt-4 text-xs text-muted leading-relaxed">
-        {L.ui.consentement}{" "}
-        <a href="mailto:hierso.boris@gmail.com" className="underline hover:text-ink">
-          hierso.boris@gmail.com
-        </a>
-        . Détail et voies de recours sur la page{" "}
-        <Link href="/rgpd" className="underline hover:text-ink">
-          Données personnelles
-        </Link>
-        .
-      </p>
+      <details className="mt-4 text-xs text-muted leading-relaxed">
+        <summary className="cursor-pointer underline decoration-dotted hover:text-ink">
+          {L.registre === "tu"
+            ? "Gratuit, accès immédiat. Ce que deviennent tes données"
+            : "Gratuit, accès immédiat. Ce que deviennent vos données"}
+        </summary>
+        <p className="mt-2">
+          {L.ui.consentement}{" "}
+          <a href="mailto:hierso.boris@gmail.com" className="underline hover:text-ink">
+            hierso.boris@gmail.com
+          </a>
+          . Détail et voies de recours sur la page{" "}
+          <Link href="/rgpd" className="underline hover:text-ink">
+            Données personnelles
+          </Link>
+          .
+        </p>
+      </details>
     </form>
   );
 }
