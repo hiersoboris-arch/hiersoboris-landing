@@ -153,6 +153,14 @@ export default function LivresBlancs() {
           </div>
 
           <p className="mt-8 text-sm text-muted max-w-2xl leading-relaxed">
+            Dirigeant ? Le plus court chemin reste le{" "}
+            <Link href="/diagnostic" className="underline hover:text-ink">
+              diagnostic de ta machine commerciale
+            </Link>{" "}
+            : 10 questions, tes 3 priorités par mail.
+          </p>
+
+          <p className="mt-8 text-sm text-muted max-w-2xl leading-relaxed">
             Une question sur un des guides, ou un sujet que je devrais couvrir ?
             Écris-moi sur{" "}
             <a

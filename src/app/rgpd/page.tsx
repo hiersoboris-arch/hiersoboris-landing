@@ -37,9 +37,9 @@ export default function Rgpd() {
           <h2 className="serif text-xl mb-2">Ce que ce site collecte</h2>
           <p className="text-muted">
             Le site est une vitrine. Il ne crée aucun compte, ne dépose aucun cookie
-            publicitaire ou de traçage, et les seuls formulaires présents sont ceux des
-            livres blancs : le kit « Décroche ton alternance » (page Alternance) et le
-            guide « Combien coûte vraiment un alternant en 2026 » (page Livres blancs).
+            publicitaire ou de traçage. Les seuls formulaires présents sont ceux des
+            livres blancs (pages Alternance et Livres blancs), l&apos;inscription à la
+            série des livres blancs, et le diagnostic commercial (page Diagnostic).
             En dehors de ces formulaires, aucune donnée personnelle n&apos;est
             collectée.
           </p>
@@ -60,6 +60,13 @@ export default function Rgpd() {
             proposer des offres d&apos;alternance ou vous recontacter au sujet du
             recrutement d&apos;un alternant. Aucune autre utilisation, aucune revente,
             aucune inscription à une newsletter sans case cochée.
+          </p>
+          <p className="text-muted mt-3">
+            <strong className="text-ink">Le diagnostic commercial</strong> : le
+            formulaire de la page Diagnostic collecte en plus vos réponses aux 10
+            questions et votre score, uniquement pour calculer et vous envoyer votre
+            résultat, puis, si vous avez coché la case dédiée, pour vous rappeler.
+            Mêmes règles de conservation et de droits que ci-dessus.
           </p>
           <p className="text-muted mt-3">
             <strong className="text-ink">Envoi des nouveaux livres blancs</strong> :

@@ -49,7 +49,7 @@ const OFFERS = [
   {
     title: "Structurer & piloter la vente",
     audience: "Dirigeants · startups · associations",
-    desc: "Je prends la direction commerciale, en mission ou en conseil : go-to-market, pipeline, process, outils, équipe. De 0 à 1, puis le passage à l'échelle.",
+    desc: "Je prends la direction commerciale, en mission ou en conseil : go-to-market, pipeline, process, outils, équipe. De 0 à 1, puis le passage à l'échelle. Un Head of Sales expérimenté, sans le coût ni le délai d'un recrutement à temps plein.",
   },
   {
     title: "Former & coacher les équipes",
@@ -307,6 +307,143 @@ export default function Home() {
             {OFFERS.map((o) => (
               <OfferCard key={o.title} {...o} />
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* La machine commerciale augmentée */}
+      <section id="machine" className="border-b hairline grain">
+        <div className="max-w-content mx-auto px-6 py-20 md:py-28">
+          <div className="max-w-2xl mb-12">
+            <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
+              <span className="dot" />
+              La méthode
+            </div>
+            <h2 className="serif text-3xl md:text-5xl leading-[1.05] tracking-tight">
+              La machine commerciale{" "}
+              <span className="italic text-bordeaux">augmentée.</span>
+            </h2>
+            <p className="mt-6 text-muted leading-relaxed">
+              La même méthode sur toutes mes missions : un système qui vend, opéré
+              avec l&apos;IA, puis transmis à l&apos;équipe. C&apos;est elle qui
+              produit les chiffres de la section suivante.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                n: "01",
+                titre: "Cibler",
+                desc: "ICP et personas documentés, signaux d'intention, enrichissement et scoring automatisés. On ne prospecte que ceux qui peuvent acheter.",
+              },
+              {
+                n: "02",
+                titre: "Engager",
+                desc: "Prospection multicanale à volume (téléphone, email, LinkedIn), séquences personnalisées à l'échelle par l'IA, cadence de relance qui ne lâche rien.",
+              },
+              {
+                n: "03",
+                titre: "Closer",
+                desc: "Qualification, négociation et closing sur tous les cycles, de 2 jours à 24 mois, du SMB au grand compte. Un pipeline qui prédit le CA.",
+              },
+              {
+                n: "04",
+                titre: "Transmettre",
+                desc: "Process documentés, équipe formée et outillée : la machine tourne sans moi. C'est le critère de fin de mission.",
+              },
+            ].map((e) => (
+              <div key={e.n} className="bg-card border hairline rounded-2xl p-7">
+                <div className="serif text-3xl text-bordeaux">{e.n}</div>
+                <h3 className="serif text-xl mt-3">{e.titre}</h3>
+                <p className="mt-2.5 text-sm text-muted leading-relaxed">{e.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-8 text-sm text-muted max-w-2xl leading-relaxed">
+            Opérée au quotidien avec ma propre stack : agents IA, Claude, n8n,
+            enrichissement et scoring automatisés, CRM sur mesure. Je ne consomme pas
+            l&apos;IA en surface, je construis et j&apos;opère les systèmes.
+          </p>
+
+          {/* Ce que je construis */}
+          <div className="mt-14">
+            <div className="text-xs uppercase tracking-[0.18em] text-muted mb-6">
+              Ce que je construis, et que tu peux voir
+            </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              <a
+                href={TOOLSBOX}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="lift group bg-card border hairline rounded-2xl p-7 hover:border-accent transition"
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <span className="text-xs uppercase tracking-[0.18em] text-accent">
+                    Annuaire · En ligne
+                  </span>
+                  <ArrowUpRight className="w-5 h-5 text-muted group-hover:text-accent transition" />
+                </div>
+                <h3 className="serif text-xl">The Tools Box</h3>
+                <p className="mt-2.5 text-sm text-muted leading-relaxed">
+                  200+ outils sales, ops et IA, testés en mission et classés. En accès
+                  libre, filtrable.
+                </p>
+              </a>
+              <Link
+                href="/livres-blancs"
+                className="lift group bg-card border hairline rounded-2xl p-7 hover:border-accent transition"
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <span className="text-xs uppercase tracking-[0.18em] text-accent">
+                    Ce site · Automatisé
+                  </span>
+                  <ArrowRight className="w-5 h-5 text-muted group-hover:text-accent transition" />
+                </div>
+                <h3 className="serif text-xl">La machine de ce site</h3>
+                <p className="mt-2.5 text-sm text-muted leading-relaxed">
+                  Livres blancs, capture des leads, emails et suivi : cette page est
+                  elle-même opérée par ma machine (agents IA, Notion, Resend).
+                </p>
+              </Link>
+              <a
+                href={CALENDLY}
+                className="lift group bg-card border hairline rounded-2xl p-7 hover:border-accent transition"
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <span className="text-xs uppercase tracking-[0.18em] text-accent">
+                    Agents · Démo sur demande
+                  </span>
+                  <ArrowUpRight className="w-5 h-5 text-muted group-hover:text-accent transition" />
+                </div>
+                <h3 className="serif text-xl">Des agents qui prospectent</h3>
+                <p className="mt-2.5 text-sm text-muted leading-relaxed">
+                  Sourcing, qualification et suivi de pipeline par agents IA
+                  autonomes, avec garde-fous et budget. Je montre, en visio.
+                </p>
+              </a>
+            </div>
+          </div>
+
+          {/* Pont diagnostic */}
+          <div className="mt-14 border hairline bg-card rounded-2xl p-8 md:p-10 md:flex items-center justify-between gap-8">
+            <div>
+              <h3 className="serif text-2xl md:text-3xl">
+                Et la tienne, elle en est où ?
+              </h3>
+              <p className="mt-2 text-muted leading-relaxed max-w-xl">
+                10 questions, 3 minutes : ton score, ton niveau, et les 3 priorités
+                que je te conseille, par mail. Gratuit.
+              </p>
+            </div>
+            <Link
+              href="/diagnostic"
+              className="mt-6 md:mt-0 shrink-0 inline-flex items-center gap-2 bg-bordeaux text-cream px-7 py-4 rounded-full font-medium hover:bg-bordeaux-soft transition"
+            >
+              Faire le diagnostic
+              <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>
