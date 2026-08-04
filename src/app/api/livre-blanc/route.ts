@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-import { envoyerKit } from "@/lib/mail-kit";
+import { getLivret } from "@/lib/livre-blanc";
+import { envoyerLivret } from "@/lib/mail-kit";
 
 // Base Notion "Leads · Livre blanc" (hub Placement).
 const NOTION_DB_ID = "18e885807cab4ac784eb25c5dbc61db1";
@@ -16,6 +17,7 @@ type Payload = {
   contact?: boolean;
   profil?: string;
   source?: string;
+  livret?: string;
   // Champ piège : rempli uniquement par les bots, jamais affiché.
   site?: string;
 };
@@ -40,12 +42,15 @@ export async function POST(request: Request) {
   // Bot : on répond 200 sans rien enregistrer, pour ne pas lui signaler le piège.
   if (clean(body.site)) return NextResponse.json({ ok: true });
 
+  // Un slug inconnu retombe sur le kit historique (anciens clients sans champ livret).
+  const livret = getLivret(clean(body.livret, 60));
+
   const nom = clean(body.nom, 120);
   const email = clean(body.email, 200);
   const prenom = clean(body.prenom, 120);
   const organisation = clean(body.organisation, 200);
   const telephone = clean(body.telephone, 40);
-  const source = clean(body.source, 120) || "hiersoboris.fr/alternance";
+  const source = clean(body.source, 120) || livret.sourceDefaut;
   const profil = PROFILS.includes(body.profil as (typeof PROFILS)[number])
     ? (body.profil as string)
     : "Non précisé";
@@ -53,20 +58,18 @@ export async function POST(request: Request) {
   const veutContact = body.contact === true;
 
   const champs: Record<string, string> = {};
-  if (!prenom) champs.prenom = "Indique ton prénom.";
-  if (!nom) champs.nom = "Indique ton nom.";
-  if (!email) champs.email = "Indique ton adresse mail.";
+  if (!prenom) champs.prenom = livret.erreurs.prenom;
+  if (!nom) champs.nom = livret.erreurs.nom;
+  if (!email) champs.email = livret.erreurs.email;
   else if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email))
-    champs.email = "Cette adresse mail ne semble pas valide.";
+    champs.email = livret.erreurs.emailInvalide;
 
   // Le téléphone n'est exigé que si la personne demande à être rappelée :
   // sans numéro, il n'y a pas de rappel possible.
   if (veutContact) {
     const chiffres = telephone.replace(/\D/g, "");
-    if (!telephone)
-      champs.telephone = "Ajoute ton numéro : c'est par téléphone que je rappelle.";
-    else if (chiffres.length < 9)
-      champs.telephone = "Ce numéro ne semble pas complet.";
+    if (!telephone) champs.telephone = livret.erreurs.telManquant;
+    else if (chiffres.length < 9) champs.telephone = livret.erreurs.telIncomplet;
   }
 
   if (Object.keys(champs).length > 0) {
@@ -100,6 +103,7 @@ export async function POST(request: Request) {
           Téléphone: telephone ? { phone_number: telephone } : { phone_number: null },
           "Souhaite être recontacté": { checkbox: veutContact },
           Profil: { select: { name: profil } },
+          "Livre blanc": { select: { name: livret.notionSelect } },
           Source: texte(source),
         },
       }),
@@ -122,7 +126,7 @@ export async function POST(request: Request) {
   }
 
   // Le lead est sauvegardé : l'email ne doit plus rien faire échouer.
-  await envoyerKit({ prenom, email, telephone, contact: veutContact });
+  await envoyerLivret({ prenom, email, telephone, contact: veutContact }, livret);
 
   return NextResponse.json({ ok: true });
 }

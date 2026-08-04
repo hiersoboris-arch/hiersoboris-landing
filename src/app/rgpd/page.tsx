@@ -37,24 +37,28 @@ export default function Rgpd() {
           <h2 className="serif text-xl mb-2">Ce que ce site collecte</h2>
           <p className="text-muted">
             Le site est une vitrine. Il ne crée aucun compte, ne dépose aucun cookie
-            publicitaire ou de traçage, et le seul formulaire présent est celui du kit
-            « Décroche ton alternance », sur la page Alternance. En dehors de ce
-            formulaire, aucune donnée personnelle n&apos;est collectée.
+            publicitaire ou de traçage, et les seuls formulaires présents sont ceux des
+            livres blancs : le kit « Décroche ton alternance » (page Alternance) et le
+            guide « Combien coûte vraiment un alternant en 2026 » (page Livres blancs).
+            En dehors de ces formulaires, aucune donnée personnelle n&apos;est
+            collectée.
           </p>
         </section>
 
         <section>
-          <h2 className="serif text-xl mb-2">Le formulaire du kit alternance</h2>
+          <h2 className="serif text-xl mb-2">Les formulaires de livres blancs</h2>
           <p className="text-muted">
             <strong className="text-ink">Données collectées</strong> : prénom, nom et
-            adresse mail (obligatoires), profil (étudiant, école ou entreprise), école
-            ou entreprise et numéro de téléphone (facultatifs, le numéro devenant
-            nécessaire si vous demandez à être recontacté).
+            adresse mail (obligatoires), le livre blanc demandé, profil (étudiant,
+            école ou entreprise), école ou entreprise et numéro de téléphone
+            (facultatifs, le numéro devenant nécessaire si vous demandez à être
+            recontacté).
           </p>
           <p className="text-muted mt-3">
-            <strong className="text-ink">Finalités</strong> : vous envoyer le kit et le
-            lien de confirmation, puis vous proposer des offres d&apos;alternance
-            correspondant à votre profil. Aucune autre utilisation, aucune revente,
+            <strong className="text-ink">Finalités</strong> : vous envoyer le livre
+            blanc demandé et le lien de confirmation, puis, selon votre profil, vous
+            proposer des offres d&apos;alternance ou vous recontacter au sujet du
+            recrutement d&apos;un alternant. Aucune autre utilisation, aucune revente,
             aucune inscription automatique à une newsletter.
           </p>
           <p className="text-muted mt-3">
@@ -141,8 +145,9 @@ export default function Rgpd() {
         <section>
           <h2 className="serif text-xl mb-2">Mise à jour</h2>
           <p className="text-muted">
-            Cette page a été mise à jour le 20 juillet 2026, à l&apos;occasion de
-            l&apos;ajout du formulaire du kit alternance.
+            Cette page a été mise à jour le 4 août 2026, à l&apos;occasion de
+            l&apos;ajout du livre blanc « Combien coûte vraiment un alternant en
+            2026 ».
           </p>
         </section>
       </div>

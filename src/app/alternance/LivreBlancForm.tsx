@@ -3,7 +3,7 @@
 import { useRef, useState } from "react";
 import Link from "next/link";
 import { ArrowUpRight, Check, Loader2 } from "lucide-react";
-import { KIT_URL } from "@/lib/livre-blanc";
+import { LIVRETS, type LivretSlug } from "@/lib/livre-blanc";
 
 const PROFILS = ["Étudiant", "École", "Entreprise"] as const;
 type Profil = (typeof PROFILS)[number];
@@ -17,8 +17,15 @@ const LABEL_ORGANISATION: Record<Profil, string> = {
 const champBase =
   "w-full min-h-[44px] rounded-xl border hairline bg-bg px-4 py-3 text-ink placeholder:text-muted/60 focus:outline-none focus:ring-2 focus:ring-bordeaux focus:border-bordeaux transition";
 
-export default function LivreBlancForm() {
-  const [profil, setProfil] = useState<Profil>("Étudiant");
+export default function LivreBlancForm({
+  livret = "kit-alternance",
+  source,
+}: {
+  livret?: LivretSlug;
+  source?: string;
+}) {
+  const L = LIVRETS[livret];
+  const [profil, setProfil] = useState<Profil>(L.profilDefaut);
   const [contact, setContact] = useState(false);
   const [envoi, setEnvoi] = useState(false);
   const [envoye, setEnvoye] = useState(false);
@@ -44,7 +51,8 @@ export default function LivreBlancForm() {
       contact,
       site: String(data.get("site") || ""),
       profil,
-      source: "hiersoboris.fr/alternance",
+      livret: L.slug,
+      source: source || L.sourceDefaut,
     };
 
     setChamps({});
@@ -67,14 +75,23 @@ export default function LivreBlancForm() {
           else if (resultat.champs.email) emailRef.current?.focus();
           else if (resultat.champs.telephone) telRef.current?.focus();
         } else {
-          setErreur(resultat.error || "L'envoi a échoué. Réessaie dans un instant.");
+          setErreur(
+            resultat.error ||
+              (L.registre === "tu"
+                ? "L'envoi a échoué. Réessaie dans un instant."
+                : "L'envoi a échoué. Réessayez dans un instant."),
+          );
         }
         return;
       }
 
       setEnvoye(true);
     } catch {
-      setErreur("Connexion impossible. Vérifie ta connexion et réessaie.");
+      setErreur(
+        L.registre === "tu"
+          ? "Connexion impossible. Vérifie ta connexion et réessaie."
+          : "Connexion impossible. Vérifiez votre connexion et réessayez.",
+      );
     } finally {
       setEnvoi(false);
     }
@@ -89,18 +106,15 @@ export default function LivreBlancForm() {
         <div className="w-12 h-12 rounded-full bg-bordeaux text-cream grid place-items-center mx-auto">
           <Check className="w-6 h-6" />
         </div>
-        <h3 className="serif text-2xl md:text-3xl mt-6">C&apos;est à toi.</h3>
-        <p className="mt-3 text-muted leading-relaxed max-w-md mx-auto">
-          Le kit s&apos;ouvre juste en dessous, et je viens aussi de t&apos;envoyer le
-          lien par mail. Garde-le, la page est mise à jour régulièrement.
-        </p>
+        <h3 className="serif text-2xl md:text-3xl mt-6">{L.ui.succesTitre}</h3>
+        <p className="mt-3 text-muted leading-relaxed max-w-md mx-auto">{L.ui.succes}</p>
         <a
-          href={KIT_URL}
+          href={L.url}
           target="_blank"
           rel="noopener noreferrer"
           className="mt-7 inline-flex items-center gap-2 bg-bordeaux text-cream px-7 py-4 rounded-full font-medium hover:bg-bordeaux-soft transition"
         >
-          Ouvrir le kit
+          {L.ui.ouvrir}
           <ArrowUpRight className="w-4 h-4" />
         </a>
       </div>
@@ -114,7 +128,9 @@ export default function LivreBlancForm() {
       className="border hairline bg-card rounded-2xl p-6 md:p-8"
     >
       <fieldset>
-        <legend className="text-sm font-medium text-ink mb-3">Tu es</legend>
+        <legend className="text-sm font-medium text-ink mb-3">
+          {L.registre === "tu" ? "Tu es" : "Vous êtes"}
+        </legend>
         <div className="flex flex-wrap gap-2">
           {PROFILS.map((p) => (
             <label
@@ -206,7 +222,7 @@ export default function LivreBlancForm() {
           </p>
         ) : (
           <p id="lb-email-aide" className="mt-2 text-sm text-muted">
-            Ton adresse perso marche très bien.
+            {L.ui.aideEmail}
           </p>
         )}
       </div>
@@ -259,16 +275,11 @@ export default function LivreBlancForm() {
           onChange={(e) => setContact(e.target.checked)}
           className="mt-1 w-5 h-5 rounded border-border text-bordeaux focus:ring-2 focus:ring-bordeaux"
         />
-        <span className="text-sm text-muted leading-relaxed">
-          Je souhaite que Boris me recontacte (placement, offres, questions).
-        </span>
+        <span className="text-sm text-muted leading-relaxed">{L.ui.labelContact}</span>
       </label>
 
       {contact && (
-        <p className="mt-2.5 ml-8 text-sm text-muted leading-relaxed">
-          Je rappelle par téléphone, c&apos;est plus rapide qu&apos;un mail : ton numéro
-          devient donc nécessaire.
-        </p>
+        <p className="mt-2.5 ml-8 text-sm text-muted leading-relaxed">{L.ui.noteTel}</p>
       )}
 
       {/* Champ piège anti-bot : jamais visible, jamais rempli par un humain. */}
@@ -294,17 +305,12 @@ export default function LivreBlancForm() {
             Envoi
           </>
         ) : (
-          "Recevoir le kit"
+          L.ui.cta
         )}
       </button>
 
       <p className="mt-4 text-xs text-muted leading-relaxed">
-        Gratuit, accès immédiat, et tu reçois aussi le lien par mail. En cliquant sur
-        « Recevoir le kit », tu acceptes que Boris Hierso Alphandéry conserve ces
-        informations pour t&apos;envoyer le kit et te proposer des offres d&apos;alternance.
-        Elles ne sont ni revendues ni transmises à un tiers, et sont supprimées après
-        3 ans sans contact. Tu peux y accéder, les corriger, les récupérer ou demander
-        leur suppression à tout moment en écrivant à{" "}
+        {L.ui.consentement}{" "}
         <a href="mailto:hierso.boris@gmail.com" className="underline hover:text-ink">
           hierso.boris@gmail.com
         </a>

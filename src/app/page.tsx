@@ -438,7 +438,7 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             <ProjectCard
               href="https://formation-boris-ha.notion.site/les-n-gociales"
               tag="Guide · Public"
@@ -459,6 +459,13 @@ export default function Home() {
               title="Décroche ton alternance"
               desc="Le kit complet pour les étudiants : pitch d'entretien, CV ATS et visuel, objections, salaire, mini-CRM à dupliquer. Tout est gratuit."
               footer="formation-boris-ha.notion.site"
+            />
+            <ProjectCard
+              href="/livres-blancs/cout-alternant"
+              tag="Livre blanc · Entreprises"
+              title="Combien coûte un alternant en 2026"
+              desc="Le coût réel d'un alternant, aides déduites : grilles de rémunération 2026, aides de l'État, exemples chiffrés. Vérifié aux sources officielles."
+              footer="hiersoboris.fr/livres-blancs"
             />
           </div>
         </div>
