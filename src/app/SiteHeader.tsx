@@ -2,14 +2,15 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { track } from "@vercel/analytics";
-import { CALENDLY } from "@/lib/contact";
+import { CALENDLY, TOOLSBOX } from "@/lib/contact";
 
 const LINKS = [
   { href: "/#aider", label: "Offres" },
   { href: "/#preuves", label: "Preuves" },
-  { href: "/#ressources", label: "Ressources" },
+  { href: "/#livres-blancs", label: "Livres blancs" },
   { href: "/alternance", label: "Alternance" },
   { href: "/art-slash", label: "Art Slash" },
   { href: "/#contact", label: "Contact" },
@@ -70,6 +71,23 @@ export default function SiteHeader({ solidFromTop }: { solidFromTop?: boolean })
               {l.label}
             </Link>
           ))}
+          <a
+            href={TOOLSBOX}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`inline-flex items-center gap-2 transition ${
+              solid ? "hover:text-ink" : "hover:text-cream"
+            }`}
+          >
+            <Image
+              src="/logos/toolsbox.png"
+              alt=""
+              width={18}
+              height={18}
+              className="rounded-[5px]"
+            />
+            Tools Box
+          </a>
         </nav>
 
         <div className="flex items-center gap-2">
@@ -109,6 +127,22 @@ export default function SiteHeader({ solidFromTop }: { solidFromTop?: boolean })
                 {l.label}
               </Link>
             ))}
+            <a
+              href={TOOLSBOX}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+              className="serif text-3xl text-ink py-3 border-b hairline flex items-center gap-3"
+            >
+              <Image
+                src="/logos/toolsbox.png"
+                alt=""
+                width={28}
+                height={28}
+                className="rounded-lg"
+              />
+              Tools Box
+            </a>
             <a
               href={CALENDLY}
               onClick={() => {

@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { FAQ } from "@/lib/faq";
-import { CALENDLY, LINKEDIN, EMAIL } from "@/lib/contact";
+import { CALENDLY, LINKEDIN, EMAIL, TOOLSBOX } from "@/lib/contact";
 import SiteHeader from "./SiteHeader";
 
 function LinkedinIcon({ className }: { className?: string }) {
@@ -424,50 +424,43 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Ressources & transmission */}
-      <section id="ressources" className="border-b hairline">
+      {/* Livres blancs */}
+      <section id="livres-blancs" className="border-b hairline">
         <div className="reveal max-w-content mx-auto px-6 py-20 md:py-28">
           <div className="max-w-2xl mb-14">
             <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
               <span className="dot" />
-              Ressources &amp; transmission
+              Livres blancs
             </div>
             <h2 className="serif text-3xl md:text-5xl leading-[1.05] tracking-tight">
-              En accès libre,{" "}
-              <span className="text-muted">pour celles et ceux qui apprennent.</span>
+              Des guides gratuits,{" "}
+              <span className="text-muted">tirés du terrain.</span>
             </h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
             <ProjectCard
-              href="https://formation-boris-ha.notion.site/les-n-gociales"
-              tag="Guide · Public"
-              title="Préparer Les Négociales"
-              desc="Ma méthode complète de négociation + des cas pratiques tirés des éditions passées. Pour les étudiants qui préparent le concours."
-              footer="formation-boris-ha.notion.site"
-            />
-            <ProjectCard
-              href="https://toolsbox.hiersoboris.fr"
-              tag="Outil · En ligne"
-              title="The Tools Box"
-              desc="L'annuaire des outils que j'utilise en sales, sales ops et build : prospection, enrichissement, automatisation, IA. Filtrable."
-              footer="toolsbox.hiersoboris.fr"
-            />
-            <ProjectCard
-              href="https://formation-boris-ha.notion.site/39c28a764b9780d591f9e6f12df1fb9f"
-              tag="Guide · Public"
-              title="Décroche ton alternance"
-              desc="Le kit complet pour les étudiants : pitch d'entretien, CV ATS et visuel, objections, salaire, mini-CRM à dupliquer. Tout est gratuit."
-              footer="formation-boris-ha.notion.site"
-            />
-            <ProjectCard
               href="/livres-blancs/cout-alternant"
-              tag="Livre blanc · Entreprises"
-              title="Combien coûte un alternant en 2026"
+              tag="Livre blanc · Entreprises et écoles"
+              title="Combien coûte vraiment un alternant en 2026"
               desc="Le coût réel d'un alternant, aides déduites : grilles de rémunération 2026, aides de l'État, exemples chiffrés. Vérifié aux sources officielles."
-              footer="hiersoboris.fr/livres-blancs"
+              footer="Recevoir le guide"
+            />
+            <ProjectCard
+              href="/alternance#livre-blanc"
+              tag="Livre blanc · Étudiants"
+              title="Décroche ton alternance"
+              desc="Le kit complet avant un entretien : les 8 réponses à préparer, CV ATS et visuel, objections, salaire, mini-CRM de candidatures à dupliquer."
+              footer="Recevoir le kit"
             />
           </div>
+
+          <p className="mt-8 text-sm text-muted">
+            D&apos;autres guides arrivent.{" "}
+            <Link href="/livres-blancs" className="underline hover:text-ink">
+              Tous les livres blancs
+            </Link>
+          </p>
         </div>
       </section>
 
@@ -541,10 +534,25 @@ export default function Home() {
           <div className="serif">
             Boris Hierso Alphandéry · {new Date().getFullYear()}
           </div>
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center gap-6">
             <Link href="/cv" className="hover:text-ink">CV</Link>
             <Link href="/mentions-legales" className="hover:text-ink">Mentions légales</Link>
             <Link href="/rgpd" className="hover:text-ink">RGPD</Link>
+            <a
+              href={TOOLSBOX}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-ink inline-flex items-center gap-1.5"
+            >
+              <Image
+                src="/logos/toolsbox.png"
+                alt=""
+                width={14}
+                height={14}
+                className="rounded-[4px]"
+              />
+              Tools Box
+            </a>
             <a href={LINKEDIN} className="hover:text-ink inline-flex items-center gap-1.5">
               <LinkedinIcon className="w-3.5 h-3.5" />
               LinkedIn
