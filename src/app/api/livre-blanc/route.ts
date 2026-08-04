@@ -15,6 +15,7 @@ type Payload = {
   organisation?: string;
   telephone?: string;
   contact?: boolean;
+  newsletter?: boolean;
   profil?: string;
   source?: string;
   livret?: string;
@@ -56,6 +57,7 @@ export async function POST(request: Request) {
     : "Non précisé";
 
   const veutContact = body.contact === true;
+  const veutNewsletter = body.newsletter === true;
 
   const champs: Record<string, string> = {};
   if (!prenom) champs.prenom = livret.erreurs.prenom;
@@ -102,6 +104,7 @@ export async function POST(request: Request) {
           "École / Entreprise": texte(organisation),
           Téléphone: telephone ? { phone_number: telephone } : { phone_number: null },
           "Souhaite être recontacté": { checkbox: veutContact },
+          Newsletter: { checkbox: veutNewsletter },
           Profil: { select: { name: profil } },
           "Livre blanc": { select: { name: livret.notionSelect } },
           Source: texte(source),
@@ -126,7 +129,10 @@ export async function POST(request: Request) {
   }
 
   // Le lead est sauvegardé : l'email ne doit plus rien faire échouer.
-  await envoyerLivret({ prenom, email, telephone, contact: veutContact }, livret);
+  await envoyerLivret(
+    { prenom, email, telephone, contact: veutContact, newsletter: veutNewsletter },
+    livret,
+  );
 
   return NextResponse.json({ ok: true });
 }

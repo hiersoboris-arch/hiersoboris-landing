@@ -26,6 +26,7 @@ export default function LivreBlancForm({
 }) {
   const L = LIVRETS[livret];
   const [profil, setProfil] = useState<Profil>(L.profilDefaut);
+  const [newsletter, setNewsletter] = useState(false);
   const [contact, setContact] = useState(false);
   const [envoi, setEnvoi] = useState(false);
   const [envoye, setEnvoye] = useState(false);
@@ -49,6 +50,7 @@ export default function LivreBlancForm({
       organisation: String(data.get("organisation") || ""),
       telephone: String(data.get("telephone") || ""),
       contact,
+      newsletter,
       site: String(data.get("site") || ""),
       profil,
       livret: L.slug,
@@ -268,6 +270,17 @@ export default function LivreBlancForm({
       </div>
 
       <label className="mt-5 flex items-start gap-3 cursor-pointer">
+        <input
+          type="checkbox"
+          name="newsletter"
+          checked={newsletter}
+          onChange={(e) => setNewsletter(e.target.checked)}
+          className="mt-1 w-5 h-5 rounded border-border text-bordeaux focus:ring-2 focus:ring-bordeaux"
+        />
+        <span className="text-sm text-muted leading-relaxed">{L.ui.labelNewsletter}</span>
+      </label>
+
+      <label className="mt-3.5 flex items-start gap-3 cursor-pointer">
         <input
           type="checkbox"
           name="contact"

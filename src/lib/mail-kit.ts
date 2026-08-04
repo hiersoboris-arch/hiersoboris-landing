@@ -8,6 +8,7 @@ type Destinataire = {
   email: string;
   telephone: string;
   contact: boolean;
+  newsletter: boolean;
 };
 
 type Message = { objet: string; corps: string[]; rgpd: string };
@@ -29,7 +30,11 @@ function composer(d: Destinataire, livret: Livret): Message {
         "Bien à vous,\nBoris",
       ],
       rgpd: `Vous recevez ce message parce que vous avez demandé le guide sur hiersoboris.fr. Je conserve ${collectees.join(", ")} pour vous envoyer ce guide${
-        d.contact ? " et vous recontacter au sujet du recrutement d'un alternant" : ""
+        d.contact ? ", vous recontacter au sujet du recrutement d'un alternant" : ""
+      }${
+        d.newsletter
+          ? ", et vous envoyer chaque nouveau livre blanc à sa sortie (désinscription en un clic dans chaque email)"
+          : ""
       }. Ces informations ne sont ni revendues ni transmises à un tiers, et sont supprimées au bout de 3 ans sans contact. Pour y accéder, les corriger ou demander leur suppression : répondez simplement à ce message.`,
     };
   }
@@ -48,7 +53,11 @@ function composer(d: Destinataire, livret: Livret): Message {
       "Bien à toi,\nBoris",
     ],
     rgpd: `Tu reçois ce message parce que tu as demandé le kit sur hiersoboris.fr/alternance. Je conserve ${collectees.join(", ")} pour t'envoyer ce kit${
-      d.contact ? " et te recontacter au sujet des offres d'alternance" : ""
+      d.contact ? ", te recontacter au sujet des offres d'alternance" : ""
+    }${
+      d.newsletter
+        ? ", et t'envoyer chaque nouveau livre blanc à sa sortie (désinscription en un clic dans chaque email)"
+        : ""
     }. Ces informations ne sont ni revendues ni transmises à un tiers, et sont supprimées au bout de 3 ans sans contact. Pour y accéder, les corriger ou demander leur suppression : réponds simplement à ce message.`,
   };
 }

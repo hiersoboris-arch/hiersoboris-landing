@@ -26,6 +26,7 @@ export type Livret = {
     succesTitre: string;
     succes: string;
     aideEmail: string;
+    labelNewsletter: string;
     labelContact: string;
     noteTel: string;
     // Mention RGPD affichée sous le bouton, jusqu'à "en écrivant à" (le
@@ -67,6 +68,8 @@ export const LIVRETS: Record<LivretSlug, Livret> = {
       succes:
         "Le kit s'ouvre juste en dessous, et je viens aussi de t'envoyer le lien par mail. Garde-le, la page est mise à jour régulièrement.",
       aideEmail: "Ton adresse perso marche très bien.",
+      labelNewsletter:
+        "Je veux recevoir les prochains livres blancs par email dès leur sortie. En août, ça peut aller jusqu'à un par jour ; tu te désinscris en un clic depuis n'importe quel email.",
       labelContact: "Je souhaite que Boris me recontacte (placement, offres, questions).",
       noteTel:
         "Je rappelle par téléphone, c'est plus rapide qu'un mail : ton numéro devient donc nécessaire.",
@@ -105,6 +108,8 @@ export const LIVRETS: Record<LivretSlug, Livret> = {
       succes:
         "Le guide s'ouvre juste en dessous, et je viens aussi de vous envoyer le lien par mail. Gardez-le : la page est mise à jour à chaque changement réglementaire.",
       aideEmail: "Votre adresse pro ou perso, comme vous préférez.",
+      labelNewsletter:
+        "Je souhaite recevoir les prochains livres blancs par email dès leur sortie. En août, cela peut aller jusqu'à un par jour ; désinscription en un clic depuis n'importe quel email.",
       labelContact:
         "Je souhaite que Boris me recontacte (recrutement d'un alternant, questions).",
       noteTel:
