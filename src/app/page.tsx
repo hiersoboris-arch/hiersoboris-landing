@@ -134,24 +134,28 @@ const TESTIMONIALS = [
       "Il a posé les bases de toute notre approche commerciale, de la définition des cibles jusqu'au closing. Je le recommande sans hésiter à toute structure qui veut structurer son commerce.",
     name: "Sylvain Petit",
     role: "CTO et cofondateur, Exoteach",
+    chiffres: "290k€ de pipe qualifié construit de zéro, 73 RDV menés.",
   },
   {
     quote:
       "Un de ces profils rares capables d'une vision globale tout en gardant une rigueur d'exécution irréprochable. Son implication dans le développement d'Avelor a été précieuse.",
     name: "Valentin Haeck",
     role: "Fondateur, Avelor Spirits Group",
+    chiffres: "450k€ générés, machine commerciale construite de zéro.",
   },
   {
     quote:
       "Un sales enthousiaste et chevronné, qui a su bâtir une stratégie de prospection très structurée. Ses qualités humaines feront de lui un leader apprécié.",
     name: "Aude Debard",
     role: "Chief Growth Officer (ex-BNP Paribas CIB) · mission ValueCo",
+    chiffres: "8 000 calls, 140 RDV physiques, 8 deals ouverts à +150k€.",
   },
   {
     quote:
       "Un intervenant qui transforme la pédagogie en véritable levier de performance.",
     name: "Christelle Roy",
     role: "MBA Ingénieur d'Affaires, Euridis",
+    chiffres: "9 classes, ~225 étudiants, 14,2/20 de moyenne.",
   },
   {
     quote:
@@ -164,6 +168,7 @@ const TESTIMONIALS = [
       "Boris est ce genre de collègue qu'on n'oublie pas. Si vous avez l'opportunité de bosser avec lui, foncez.",
     name: "Yohann Simeau",
     role: "Senior Account Executive, HappyPal",
+    chiffres: "1,7M€ d'ARR généré en prospection, jusqu'à 317% d'atteinte.",
   },
 ];
 
@@ -805,16 +810,26 @@ function TestimonialCard({
   quote,
   name,
   role,
+  chiffres,
 }: {
   quote: string;
   name: string;
   role: string;
+  // Ligne factuelle écrite par Boris (jamais dans la citation) : les chiffres
+  // de la mission dont parle la reco. Ne JAMAIS modifier le texte des quotes
+  // elles-mêmes : ce sont les mots réels de personnes réelles.
+  chiffres?: string;
 }) {
   return (
     <figure className="lift bg-card border hairline rounded-2xl p-8 flex flex-col">
-      <blockquote className="text-ink leading-relaxed mb-6">
+      <blockquote className="text-ink leading-relaxed mb-5">
         &laquo; {quote} &raquo;
       </blockquote>
+      {chiffres && (
+        <p className="text-xs text-bordeaux font-medium tracking-wide mb-5">
+          La mission en chiffres : {chiffres}
+        </p>
+      )}
       <figcaption className="mt-auto pt-2">
         <div className="serif text-lg">{name}</div>
         <div className="text-sm text-muted">{role}</div>
