@@ -46,6 +46,28 @@ const EXPERIENCES = [
     ],
   },
   {
+    company: "Euridis Business School",
+    role: "Intervenant",
+    period: "Oct. 2025 → en cours",
+    context: "École de commerce spécialisée vente",
+    points: [
+      "9 classes accompagnées, ~225 étudiants, 14,2/20 de moyenne sur les interventions.",
+      "Prospection & cold calling, social selling, IA copywriting, IA sales automation.",
+    ],
+  },
+  {
+    company: "Akimbo",
+    role: "Sales Coach freelance",
+    period: "Juil. 2026 → en cours",
+    context: "Organisme de formation commerciale, Paris",
+    points: [
+      "Membre du pool de sales coachs : bootcamps business developer, e-learning et formations intra-entreprise.",
+      "Module animé : l'intelligence artificielle au service de la performance commerciale (prospection, copywriting, préparation de rendez-vous).",
+      "Pédagogie terrain : cas concrets adaptés aux cibles des participants, mises en situation réelles, débrief individuel.",
+      "Posture commerciale : découverte, qualification, closing, gestion des objections et ancrage des acquis après la session.",
+    ],
+  },
+  {
     company: "Exoteach",
     role: "Head of Sales freelance, puis apporteur d'affaires",
     period: "Déc. 2025 → juin 2026",
@@ -79,30 +101,8 @@ const EXPERIENCES = [
     ],
   },
   {
-    company: "Euridis Business School",
-    role: "Intervenant",
-    period: "Oct. 2025 → en cours",
-    context: "École de commerce spécialisée vente",
-    points: [
-      "9 classes accompagnées, ~225 étudiants, 14,2/20 de moyenne sur les interventions.",
-      "Prospection & cold calling, social selling, IA copywriting, IA sales automation.",
-    ],
-  },
-  {
-    company: "Akimbo",
-    role: "Sales Coach freelance",
-    period: "Juil. 2026 → en cours",
-    context: "Organisme de formation commerciale, Paris",
-    points: [
-      "Membre du pool de sales coachs : bootcamps business developer, e-learning et formations intra-entreprise.",
-      "Module animé : l'intelligence artificielle au service de la performance commerciale (prospection, copywriting, préparation de rendez-vous).",
-      "Pédagogie terrain : cas concrets adaptés aux cibles des participants, mises en situation réelles, débrief individuel.",
-      "Posture commerciale : découverte, qualification, closing, gestion des objections et ancrage des acquis après la session.",
-    ],
-  },
-  {
     company: "Les Négociales 2026",
-    role: "Coach principal Paris, juré et acheteur",
+    role: "Coach principal pour Euridis Paris, juré et acheteur en finale",
     period: "2026",
     context: "Plus grand concours de négociation commerciale francophone",
     points: ["40h de coaching, près de 50 étudiants accompagnés."],

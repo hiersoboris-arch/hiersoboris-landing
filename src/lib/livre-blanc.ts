@@ -99,7 +99,7 @@ export const LIVRETS: Record<LivretSlug, Livret> = {
     profilDefaut: "Entreprise",
     contenu: [
       "Les grilles de rémunération 2026 : pourcentages du SMIC par âge et année de contrat, et le piège du salaire conventionnel",
-      "L'aide de l'État jusqu'à 5 000 €, versée chaque mois avant la paie, et les aides Agefiph cumulables",
+      "L'aide de l'État, la 1re année seulement : de 2 000 € (Bac+3 à Bac+5) à 5 000 € (CAP, Bac) selon le diplôme et la taille d'entreprise, versée chaque mois avant la paie",
       "Trois exemples chiffrés, aides déduites : BTS, Master en 1re année, Master en 2e année",
       "Recruter un profil de plus de 30 ans : dérogations d'âge et contrat de professionnalisation",
       "Stage, périodes d'essai, participation formation de 750 € : ce qui change d'un contrat à l'autre",

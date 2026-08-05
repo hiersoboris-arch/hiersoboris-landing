@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 const CHIFFRES = [
   { value: "430 à 885 €", caption: "le coût net mensuel d'un alternant la 1re année, aides déduites" },
-  { value: "5 000 €", caption: "l'aide maximale de l'État, versée chaque mois avant la paie" },
+  { value: "2 000 à 5 000 €", caption: "l'aide de l'État la 1re année, selon le diplôme préparé et la taille d'entreprise, versée chaque mois avant la paie" },
   { value: "3", caption: "exemples chiffrés : BTS, Master 1re année, Master 2e année" },
   { value: "3 168 €", caption: "le surcoût annuel si vous ratez le salaire conventionnel de votre branche" },
 ];

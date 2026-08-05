@@ -89,13 +89,30 @@ const RESULTS = [
     ],
   },
   {
-    company: "Euridis, Akimbo & Les Négociales",
-    role: "Intervenant, sales coach et coach de concours · la transmission (en cours)",
+    company: "Euridis Business School",
+    role: "Intervenant · école de commerce spécialisée vente B2B (en cours)",
     figures: [
-      "Euridis : 9 classes, ~225 étudiants, 14,2/20 de moyenne",
-      "Akimbo : sales coach du pool de formateurs, module IA et performance commerciale",
-      "Les Négociales 2026 : coach principal Paris et juré, 40h de coaching",
-      "Prospection, social selling et IA appliquée à la vente",
+      "9 classes accompagnées, ~225 étudiants, 14,2/20 de moyenne",
+      "Cours conçus de zéro : prospection & cold calling, social selling, IA copywriting, IA sales automation",
+      "Membre du jury de soutenances (stratégie commerciale / ABM)",
+    ],
+  },
+  {
+    company: "Akimbo",
+    role: "Sales coach freelance · organisme de formation commerciale (en cours)",
+    figures: [
+      "L'un des sales coachs du pool d'Akimbo : formations B2B intra et inter-entreprises",
+      "Module phare animé : l'IA au service de la performance commerciale",
+      "Sessions de 2 à 3 jours, 12 participants max, méthodes SPIN et MEDDIC, débrief individuel",
+    ],
+  },
+  {
+    company: "Les Négociales 2026",
+    role: "Coach pour Euridis Paris · plus grand concours de négociation francophone",
+    figures: [
+      "Coach principal des étudiants d'Euridis Paris : 40h de coaching, près de 50 étudiants préparés",
+      "Juré de notation aux qualifications, puis acheteur et juré professionnel en finale nationale à Nancy",
+      "Méthode des 3C (Comprendre, Creuser, Clore) et règle 70/30",
     ],
   },
   {
@@ -507,7 +524,7 @@ export default function Home() {
                 <span className="text-muted">en école comme en entreprise.</span>
               </h2>
               <p className="text-muted leading-relaxed">
-                Professeur intervenant en école de commerce (vente B2B, prospection, social selling, IA appliquée à la vente), sales coach pour un organisme de formation commerciale (<strong className="text-ink">Akimbo</strong>), coach principal Paris du concours <strong className="text-ink">Les Négociales</strong>, juré de soutenances et formateur d&apos;équipes commerciales. Des cours conçus de zéro, ancrés dans le terrain : ce que j&apos;enseigne le matin, je le pratique l&apos;après-midi en mission.
+                Professeur intervenant en école de commerce (vente B2B, prospection, social selling, IA appliquée à la vente), l&apos;un des sales coachs du pool d&apos;<strong className="text-ink">Akimbo</strong>, coach des étudiants d&apos;Euridis Paris pour le concours <strong className="text-ink">Les Négociales</strong> (juré et acheteur en finale nationale), juré de soutenances et formateur d&apos;équipes commerciales. Des cours conçus de zéro, ancrés dans le terrain : ce que j&apos;enseigne le matin, je le pratique l&apos;après-midi en mission.
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-4">
                 <a
@@ -529,7 +546,7 @@ export default function Home() {
             <div className="md:col-span-6 grid grid-cols-2 gap-px bg-border border hairline rounded-2xl overflow-hidden">
               <Stat value="400" caption="étudiants et pros formés au total." />
               <Stat value="14,2/20" caption="de moyenne sur mes interventions (9 classes, ~225 étudiants)." />
-              <Stat value="40h" caption="de coaching Les Négociales 2026, coach principal Paris, juré et acheteur." />
+              <Stat value="40h" caption="de coaching Les Négociales 2026 pour Euridis Paris (~50 étudiants), juré et acheteur en finale." />
               <Stat value="100%" caption="terrain : cours, ateliers, business games et jurys, jamais de théorie hors-sol." />
             </div>
           </div>
