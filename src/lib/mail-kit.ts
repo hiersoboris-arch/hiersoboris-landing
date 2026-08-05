@@ -39,6 +39,30 @@ function composer(d: Destinataire, livret: Livret): Message {
     };
   }
 
+  if (livret.slug === "lettre-motivation") {
+    const collectees = ["ton prénom", "ton nom", "ton adresse mail"];
+    if (d.telephone) collectees.push("ton numéro de téléphone");
+    return {
+      objet: "Ton atelier : la lettre de motivation qu'on lit jusqu'au bout",
+      corps: [
+        d.prenom ? `Hello ${d.prenom},` : "Hello,",
+        "Voici ton atelier pour écrire une lettre de motivation qu'on lit vraiment jusqu'au bout :",
+        livret.url,
+        "Tu y trouveras la structure AIDA posée sur « vous, nous, moi », les 6 leviers d'une lettre vivante, la chasse aux formules carpette, la liste noire de ce qui te grille, le format mail en 10 phrases et l'exercice guidé avec sa grille d'auto-contrôle.",
+        "Un conseil : prends une vraie offre qui t'intéresse et écris ta lettre en même temps que tu lis. Une lettre qu'on ne pourrait recycler pour aucune autre boîte vaut mille lettres génériques.",
+        "Les offres que je sélectionne à la source sont ici : https://hiersoboris.fr/alternance\nSi l'une d'elles te parle, réponds-moi avec sa référence.",
+        "Bien à toi,\nBoris",
+      ],
+      rgpd: `Tu reçois ce message parce que tu as demandé l'atelier sur hiersoboris.fr. Je conserve ${collectees.join(", ")} pour t'envoyer cet atelier${
+        d.contact ? ", te recontacter au sujet des offres d'alternance" : ""
+      }${
+        d.newsletter
+          ? ", et t'envoyer chaque nouveau livre blanc à sa sortie (désinscription en un clic dans chaque email)"
+          : ""
+      }. Ces informations ne sont ni revendues ni transmises à un tiers, et sont supprimées au bout de 3 ans sans contact. Pour y accéder, les corriger ou demander leur suppression : réponds simplement à ce message.`,
+    };
+  }
+
   const collectees = ["ton prénom", "ton nom", "ton adresse mail"];
   if (d.telephone) collectees.push("ton numéro de téléphone");
   return {

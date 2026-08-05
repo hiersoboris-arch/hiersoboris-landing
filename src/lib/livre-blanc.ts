@@ -3,7 +3,7 @@
 // page sous /livres-blancs, et ajouter sa valeur au select "Livre blanc" de la
 // base Notion "Leads · Livre blanc" (les valeurs doivent correspondre exactement).
 
-export type LivretSlug = "kit-alternance" | "cout-alternant";
+export type LivretSlug = "kit-alternance" | "cout-alternant" | "lettre-motivation";
 
 export type Livret = {
   slug: LivretSlug;
@@ -78,6 +78,47 @@ export const LIVRETS: Record<LivretSlug, Livret> = {
         "Je rappelle par téléphone, c'est plus rapide qu'un mail : ton numéro devient donc nécessaire.",
       consentement:
         "Gratuit, accès immédiat, et tu reçois aussi le lien par mail. En cliquant sur « Recevoir le kit », tu acceptes que Boris Hierso Alphandéry conserve ces informations pour t'envoyer le kit et te proposer des offres d'alternance. Elles ne sont ni revendues ni transmises à un tiers, et sont supprimées après 3 ans sans contact. Tu peux y accéder, les corriger, les récupérer ou demander leur suppression à tout moment en écrivant à",
+    },
+    erreurs: {
+      prenom: "Indique ton prénom.",
+      nom: "Indique ton nom.",
+      email: "Indique ton adresse mail.",
+      emailInvalide: "Cette adresse mail ne semble pas valide.",
+      telManquant: "Ajoute ton numéro : c'est par téléphone que je rappelle.",
+      telIncomplet: "Ce numéro ne semble pas complet.",
+    },
+  },
+  "lettre-motivation": {
+    slug: "lettre-motivation",
+    titre: "La lettre de motivation qu'on lit jusqu'au bout",
+    publie: "2026-08-05",
+    url: "https://formation-boris-ha.notion.site/Lettre-de-motivation-3b128a764b9780ebb243c014492477cc",
+    notionSelect: "Lettre de motivation",
+    sourceDefaut: "hiersoboris.fr/livres-blancs/lettre-motivation",
+    registre: "tu",
+    profilDefaut: "Étudiant",
+    contenu: [
+      "La structure AIDA posée sur vous, nous, moi : quatre blocs courts, une page max, une accroche qui parle d'eux avant de parler de toi",
+      "Les 6 leviers d'une lettre vivante : l'histoire au microscope, le point de rencontre, l'émotion assumée, écrire comme tu parles",
+      "La chasse aux formules carpette : le tableau des reformulations qui te remettent en position d'acteur (fini le « m'a permis de »)",
+      "La liste noire : accroches bateau, adjectifs creux et politesses pompeuses qui te grillent en une ligne",
+      "Le mail de motivation en 10 phrases, souvent préféré à la longue lettre par les recruteurs",
+      "L'IA copilote et pas rédacteur : l'utiliser sans te faire repérer, plus l'exercice guidé en 3 étapes et ta grille d'auto-contrôle",
+    ],
+    ui: {
+      cta: "Recevoir l'atelier",
+      ouvrir: "Ouvrir l'atelier",
+      succesTitre: "C'est à toi.",
+      succes:
+        "L'atelier s'ouvre juste en dessous, et je viens aussi de t'envoyer le lien par mail. Garde-le, la page est enrichie régulièrement.",
+      aideEmail: "Ton adresse perso marche très bien.",
+      labelNewsletter:
+        "Je veux recevoir les prochains livres blancs par email dès leur sortie. En août, ça peut aller jusqu'à un par jour ; tu te désinscris en un clic depuis n'importe quel email.",
+      labelContact: "Je souhaite que Boris me recontacte (alternance, offres, questions).",
+      noteTel:
+        "Je rappelle par téléphone, c'est plus rapide qu'un mail : ton numéro devient donc nécessaire.",
+      consentement:
+        "Gratuit, accès immédiat, et tu reçois aussi le lien par mail. En cliquant sur « Recevoir l'atelier », tu acceptes que Boris Hierso Alphandéry conserve ces informations pour t'envoyer l'atelier et te proposer des offres d'alternance. Elles ne sont ni revendues ni transmises à un tiers, et sont supprimées après 3 ans sans contact. Tu peux y accéder, les corriger, les récupérer ou demander leur suppression à tout moment en écrivant à",
     },
     erreurs: {
       prenom: "Indique ton prénom.",

@@ -39,6 +39,7 @@
 - Des postes d'alternance Sales sélectionnés à la source (entreprises anonymisées), pour les étudiants, les responsables de placement des écoles et les entreprises qui recrutent.
 - Kit gratuit pour les étudiants "Décroche ton alternance" : https://formation-boris-ha.notion.site/39c28a764b9780d591f9e6f12df1fb9f
 - Livre blanc gratuit pour les entreprises "Combien coûte vraiment un alternant en 2026" (grilles de rémunération, aides de l'État, exemples chiffrés) : https://hiersoboris.fr/livres-blancs/cout-alternant
+- Atelier gratuit pour les candidats "La lettre de motivation qu'on lit jusqu'au bout" (structure AIDA, 6 leviers, format mail, usage de l'IA) : https://hiersoboris.fr/livres-blancs/lettre-motivation
 
 ## Pages
 - Accueil : https://hiersoboris.fr

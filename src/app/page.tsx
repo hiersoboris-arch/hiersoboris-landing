@@ -622,18 +622,18 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 gap-6">
             <ProjectCard
+              href="/livres-blancs/lettre-motivation"
+              tag="Livre blanc · Étudiants et candidats"
+              title="La lettre de motivation qu'on lit jusqu'au bout"
+              desc="La méthode pour écrire une lettre qu'on ne peut recycler nulle part ailleurs : structure AIDA, 6 leviers, la liste noire des formules qui grillent, le format mail et le bon usage de l'IA."
+              footer="Recevoir l'atelier"
+            />
+            <ProjectCard
               href="/livres-blancs/cout-alternant"
               tag="Livre blanc · Entreprises et écoles"
               title="Combien coûte vraiment un alternant en 2026"
               desc="Le coût réel d'un alternant, aides déduites : grilles de rémunération 2026, aides de l'État, exemples chiffrés. Vérifié aux sources officielles."
               footer="Recevoir le guide"
-            />
-            <ProjectCard
-              href="/alternance#livre-blanc"
-              tag="Livre blanc · Étudiants"
-              title="Décroche ton alternance"
-              desc="Le kit complet avant un entretien : les 8 réponses à préparer, CV ATS et visuel, objections, salaire, mini-CRM de candidatures à dupliquer."
-              footer="Recevoir le kit"
             />
           </div>
 

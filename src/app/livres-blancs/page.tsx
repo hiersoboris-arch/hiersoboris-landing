@@ -25,6 +25,14 @@ export const metadata: Metadata = {
 // le site est redéployé à chaque nouveau livret, donc le badge suit.
 const CARTES = [
   {
+    livret: LIVRETS["lettre-motivation"],
+    tag: "Étudiants & candidats",
+    desc: "La méthode pour écrire une lettre qu'on ne peut recycler nulle part ailleurs : structure AIDA, 6 leviers d'une lettre vivante, la liste noire des formules qui grillent, le format mail en 10 phrases et le bon usage de l'IA. Synthèse de dizaines de recruteurs et coachs carrière.",
+    href: "/livres-blancs/lettre-motivation",
+    cta: "Recevoir l'atelier",
+    couleur: "bg-night",
+  },
+  {
     livret: LIVRETS["cout-alternant"],
     tag: "Entreprises & écoles",
     desc: "Le coût réel d'un alternant, aides déduites : grilles de rémunération 2026, aides de l'État et de l'Agefiph, trois exemples chiffrés, démarches dans l'ordre. Vérifié aux sources officielles (Légifrance, service-public.fr, URSSAF, BOSS).",
