@@ -39,6 +39,30 @@ function composer(d: Destinataire, livret: Livret): Message {
     };
   }
 
+  if (livret.slug === "cv") {
+    const collectees = ["ton prénom", "ton nom", "ton adresse mail"];
+    if (d.telephone) collectees.push("ton numéro de téléphone");
+    return {
+      objet: "Ta méthode : rends ton CV impossible à rejeter",
+      corps: [
+        d.prenom ? `Hello ${d.prenom},` : "Hello,",
+        "Voici ta méthode pour un CV qui passe la machine, puis l'humain :",
+        livret.url,
+        "Tu y trouveras les deux routes d'un CV (ATS puis humain dans un grand groupe, humain seul en approche directe), le tableau des KPIs commerciaux à aller chercher, la façon de transformer un job étudiant en argument commercial, les verbes à bannir, et les 3 prompts IA pour diagnostiquer, réécrire et tester ton CV face à une offre.",
+        "Un conseil : ne lis pas la page en entier avant d'agir. Prends une vraie offre, ton CV actuel, et fais l'exercice en même temps. Tu verras ton score bouger.",
+        "Les offres que je sélectionne à la source sont ici : https://hiersoboris.fr/alternance\nSi l'une d'elles te parle, réponds-moi avec sa référence.",
+        "Bien à toi,\nBoris",
+      ],
+      rgpd: `Tu reçois ce message parce que tu as demandé la méthode CV sur hiersoboris.fr. Je conserve ${collectees.join(", ")} pour t'envoyer cette méthode${
+        d.contact ? ", te recontacter au sujet des offres d'alternance" : ""
+      }${
+        d.newsletter
+          ? ", et t'envoyer chaque nouveau livre blanc à sa sortie (désinscription en un clic dans chaque email)"
+          : ""
+      }. Ces informations ne sont ni revendues ni transmises à un tiers, et sont supprimées au bout de 3 ans sans contact. Pour y accéder, les corriger ou demander leur suppression : réponds simplement à ce message.`,
+    };
+  }
+
   if (livret.slug === "lettre-motivation") {
     const collectees = ["ton prénom", "ton nom", "ton adresse mail"];
     if (d.telephone) collectees.push("ton numéro de téléphone");

@@ -40,6 +40,7 @@
 - Kit gratuit pour les étudiants "Décroche ton alternance" : https://formation-boris-ha.notion.site/39c28a764b9780d591f9e6f12df1fb9f
 - Livre blanc gratuit pour les entreprises "Combien coûte vraiment un alternant en 2026" (grilles de rémunération, aides de l'État, exemples chiffrés) : https://hiersoboris.fr/livres-blancs/cout-alternant
 - Atelier gratuit pour les candidats "La lettre de motivation qu'on lit jusqu'au bout" (structure AIDA, 6 leviers, format mail, usage de l'IA) : https://hiersoboris.fr/livres-blancs/lettre-motivation
+- Méthode gratuite pour les candidats "Rends ton CV impossible à rejeter" (les deux routes ATS et approche directe, KPIs commerciaux, verbes à bannir, un CV par poste visé, 3 prompts IA) : https://hiersoboris.fr/livres-blancs/cv
 
 ## Pages
 - Accueil : https://hiersoboris.fr

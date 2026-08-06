@@ -3,7 +3,11 @@
 // page sous /livres-blancs, et ajouter sa valeur au select "Livre blanc" de la
 // base Notion "Leads · Livre blanc" (les valeurs doivent correspondre exactement).
 
-export type LivretSlug = "kit-alternance" | "cout-alternant" | "lettre-motivation";
+export type LivretSlug =
+  | "kit-alternance"
+  | "cout-alternant"
+  | "lettre-motivation"
+  | "cv";
 
 export type Livret = {
   slug: LivretSlug;
@@ -78,6 +82,47 @@ export const LIVRETS: Record<LivretSlug, Livret> = {
         "Je rappelle par téléphone, c'est plus rapide qu'un mail : ton numéro devient donc nécessaire.",
       consentement:
         "Gratuit, accès immédiat, et tu reçois aussi le lien par mail. En cliquant sur « Recevoir le kit », tu acceptes que Boris Hierso Alphandéry conserve ces informations pour t'envoyer le kit et te proposer des offres d'alternance. Elles ne sont ni revendues ni transmises à un tiers, et sont supprimées après 3 ans sans contact. Tu peux y accéder, les corriger, les récupérer ou demander leur suppression à tout moment en écrivant à",
+    },
+    erreurs: {
+      prenom: "Indique ton prénom.",
+      nom: "Indique ton nom.",
+      email: "Indique ton adresse mail.",
+      emailInvalide: "Cette adresse mail ne semble pas valide.",
+      telManquant: "Ajoute ton numéro : c'est par téléphone que je rappelle.",
+      telIncomplet: "Ce numéro ne semble pas complet.",
+    },
+  },
+  cv: {
+    slug: "cv",
+    titre: "Rends ton CV impossible à rejeter",
+    publie: "2026-08-06",
+    url: "https://formation-boris-ha.notion.site/Rends-ton-CV-impossible-rejeter-37b28a764b978160985fd6942da85353",
+    notionSelect: "CV",
+    sourceDefaut: "hiersoboris.fr/livres-blancs/cv",
+    registre: "tu",
+    profilDefaut: "Étudiant",
+    contenu: [
+      "Les deux routes de ton CV : ATS puis humain dans un grand groupe, humain seul en start-up et en approche directe, avec le tableau qui te dit laquelle des deux versions envoyer",
+      "Ce que l'œil capte en 7 secondes : le titre à l'intitulé visé, l'accroche en vous, moi, nous, et où placer tes coordonnées",
+      "Le tableau des KPIs commerciaux à aller chercher (résultat, efficacité, périmètre, activité, impact) et la règle du croisement échelle x pertinence",
+      "Comment transformer un job étudiant en argument commercial, avec 5 exemples réécrits ligne à ligne",
+      "Les verbes qui te cachent et ceux qui te montrent, plus la liste noire de ce qui te grille en une ligne",
+      "Un CV par poste visé, illustré par mes trois CV réels, et les 3 prompts IA : diagnostic, réécriture chiffrée, double test ATS et humain",
+    ],
+    ui: {
+      cta: "Recevoir la méthode",
+      ouvrir: "Ouvrir la méthode",
+      succesTitre: "C'est à toi.",
+      succes:
+        "La méthode s'ouvre juste en dessous, et je viens aussi de t'envoyer le lien par mail. Garde-le, la page est enrichie régulièrement.",
+      aideEmail: "Ton adresse perso marche très bien.",
+      labelNewsletter:
+        "Je veux recevoir les prochains livres blancs par email dès leur sortie. En août, ça peut aller jusqu'à un par jour ; tu te désinscris en un clic depuis n'importe quel email.",
+      labelContact: "Je souhaite que Boris me recontacte (alternance, offres, questions).",
+      noteTel:
+        "Je rappelle par téléphone, c'est plus rapide qu'un mail : ton numéro devient donc nécessaire.",
+      consentement:
+        "Gratuit, accès immédiat, et tu reçois aussi le lien par mail. En cliquant sur « Recevoir la méthode », tu acceptes que Boris Hierso Alphandéry conserve ces informations pour t'envoyer la méthode et te proposer des offres d'alternance. Elles ne sont ni revendues ni transmises à un tiers, et sont supprimées après 3 ans sans contact. Tu peux y accéder, les corriger, les récupérer ou demander leur suppression à tout moment en écrivant à",
     },
     erreurs: {
       prenom: "Indique ton prénom.",

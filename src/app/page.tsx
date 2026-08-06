@@ -620,7 +620,14 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <ProjectCard
+              href="/livres-blancs/cv"
+              tag="Livre blanc · Étudiants et candidats"
+              title="Rends ton CV impossible à rejeter"
+              desc="Deux routes, deux CV : ATS pour les grands groupes, visuel pour l'approche directe. Le tableau des KPIs commerciaux, les verbes à bannir, et un CV par poste visé illustré par mes trois CV réels."
+              footer="Recevoir la méthode"
+            />
             <ProjectCard
               href="/livres-blancs/lettre-motivation"
               tag="Livre blanc · Étudiants et candidats"

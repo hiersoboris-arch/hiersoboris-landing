@@ -25,6 +25,14 @@ export const metadata: Metadata = {
 // le site est redéployé à chaque nouveau livret, donc le badge suit.
 const CARTES = [
   {
+    livret: LIVRETS["cv"],
+    tag: "Étudiants & candidats",
+    desc: "La méthode pour un CV qui passe la machine puis l'humain : les deux routes (ATS des grands groupes, approche directe en start-up), le tableau des KPIs commerciaux à aller chercher, les verbes qui te cachent, un CV par poste visé illustré par mes trois CV réels, et 3 prompts IA pour le tester face à une offre.",
+    href: "/livres-blancs/cv",
+    cta: "Recevoir la méthode",
+    couleur: "bg-bordeaux",
+  },
+  {
     livret: LIVRETS["lettre-motivation"],
     tag: "Étudiants & candidats",
     desc: "La méthode pour écrire une lettre qu'on ne peut recycler nulle part ailleurs : structure AIDA, 6 leviers d'une lettre vivante, la liste noire des formules qui grillent, le format mail en 10 phrases et le bon usage de l'IA. Synthèse de dizaines de recruteurs et coachs carrière.",
@@ -38,7 +46,7 @@ const CARTES = [
     desc: "Le coût réel d'un alternant, aides déduites : grilles de rémunération 2026, aides de l'État et de l'Agefiph, trois exemples chiffrés, démarches dans l'ordre. Vérifié aux sources officielles (Légifrance, service-public.fr, URSSAF, BOSS).",
     href: "/livres-blancs/cout-alternant",
     cta: "Recevoir le guide",
-    couleur: "bg-bordeaux",
+    couleur: "bg-night",
   },
   {
     livret: LIVRETS["kit-alternance"],
@@ -46,7 +54,7 @@ const CARTES = [
     desc: "Tout ce que je donne à mes étudiants avant un entretien, réuni sur une page : les 8 réponses à préparer, le CV en deux versions (ATS et visuel), la méthode des 3 KPIs, un mini-CRM de candidatures et un LinkedIn optimisé.",
     href: "/alternance#livre-blanc",
     cta: "Recevoir le kit",
-    couleur: "bg-night",
+    couleur: "bg-bordeaux",
   },
 ];
 
