@@ -85,6 +85,7 @@ export default function DiagnosticForm() {
           nom: String(data.get("nom") || ""),
           email: String(data.get("email") || ""),
           telephone: String(data.get("telephone") || ""),
+          linkedin: String(data.get("linkedin") || ""),
           contact,
           newsletter,
           site: String(data.get("site") || ""),
@@ -265,6 +266,21 @@ export default function DiagnosticForm() {
               <p role="alert" className="mt-2 text-sm text-bordeaux">{champs.telephone}</p>
             )}
           </div>
+        </div>
+
+        <div className="mt-4">
+          <label htmlFor="dg-linkedin" className="block text-sm font-medium text-ink mb-2">
+            Profil LinkedIn
+          </label>
+          <input
+            id="dg-linkedin"
+            name="linkedin"
+            type="url"
+            inputMode="url"
+            autoComplete="url"
+            placeholder="linkedin.com/in/..."
+            className={champBase}
+          />
         </div>
 
         <label className="mt-5 flex items-start gap-3 cursor-pointer">

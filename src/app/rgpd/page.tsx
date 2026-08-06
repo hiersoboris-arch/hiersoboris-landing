@@ -51,8 +51,9 @@ export default function Rgpd() {
             <strong className="text-ink">Données collectées</strong> : prénom, nom et
             adresse mail (obligatoires), le livre blanc demandé, votre choix de
             recevoir ou non les prochains livres blancs, profil (étudiant, école ou
-            entreprise), école ou entreprise et numéro de téléphone (facultatifs, le
-            numéro devenant nécessaire si vous demandez à être recontacté).
+            entreprise), école ou entreprise, numéro de téléphone et profil LinkedIn
+            (facultatifs, le numéro devenant nécessaire si vous demandez à être
+            recontacté).
           </p>
           <p className="text-muted mt-3">
             <strong className="text-ink">Finalités</strong> : vous envoyer le livre

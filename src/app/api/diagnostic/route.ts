@@ -14,6 +14,7 @@ type Payload = {
   nom?: string;
   email?: string;
   telephone?: string;
+  linkedin?: string;
   contact?: boolean;
   newsletter?: boolean;
   source?: string;
@@ -24,6 +25,14 @@ type Payload = {
 function clean(value: unknown, max = 200) {
   if (typeof value !== "string") return "";
   return value.trim().slice(0, max);
+}
+
+// Champ facultatif : on normalise sans jamais bloquer le lead pour autant.
+function nettoyerLinkedin(value: unknown): string {
+  let v = clean(value, 200);
+  if (!v) return "";
+  if (!/^https?:\/\//i.test(v)) v = `https://${v}`;
+  return v;
 }
 
 export async function POST(request: Request) {
@@ -51,6 +60,7 @@ export async function POST(request: Request) {
   const nom = clean(body.nom, 120);
   const email = clean(body.email, 200);
   const telephone = clean(body.telephone, 40);
+  const linkedin = nettoyerLinkedin(body.linkedin);
   const source = clean(body.source, 120) || "hiersoboris.fr/diagnostic";
   const veutContact = body.contact === true;
   const veutNewsletter = body.newsletter === true;
@@ -99,6 +109,7 @@ export async function POST(request: Request) {
           Prénom: { rich_text: [{ text: { content: prenom } }] },
           Email: { email },
           Téléphone: telephone ? { phone_number: telephone } : { phone_number: null },
+          LinkedIn: linkedin ? { url: linkedin } : { url: null },
           "Souhaite être recontacté": { checkbox: veutContact },
           Newsletter: { checkbox: veutNewsletter },
           "Livre blanc": { select: { name: "Diagnostic commercial" } },

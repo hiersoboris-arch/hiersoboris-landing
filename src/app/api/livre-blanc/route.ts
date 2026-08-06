@@ -14,6 +14,7 @@ type Payload = {
   email?: string;
   organisation?: string;
   telephone?: string;
+  linkedin?: string;
   contact?: boolean;
   newsletter?: boolean;
   profil?: string;
@@ -30,6 +31,14 @@ function clean(value: unknown, max = 200) {
 
 function texte(value: string) {
   return value ? { rich_text: [{ text: { content: value } }] } : { rich_text: [] };
+}
+
+// Champ facultatif : on normalise sans jamais bloquer le lead pour autant.
+function nettoyerLinkedin(value: unknown): string {
+  let v = clean(value, 200);
+  if (!v) return "";
+  if (!/^https?:\/\//i.test(v)) v = `https://${v}`;
+  return v;
 }
 
 export async function POST(request: Request) {
@@ -51,6 +60,7 @@ export async function POST(request: Request) {
   const prenom = clean(body.prenom, 120);
   const organisation = clean(body.organisation, 200);
   const telephone = clean(body.telephone, 40);
+  const linkedin = nettoyerLinkedin(body.linkedin);
   const source = clean(body.source, 120) || livret.sourceDefaut;
   const profil = PROFILS.includes(body.profil as (typeof PROFILS)[number])
     ? (body.profil as string)
@@ -103,6 +113,7 @@ export async function POST(request: Request) {
           Email: { email },
           "École / Entreprise": texte(organisation),
           Téléphone: telephone ? { phone_number: telephone } : { phone_number: null },
+          LinkedIn: linkedin ? { url: linkedin } : { url: null },
           "Souhaite être recontacté": { checkbox: veutContact },
           Newsletter: { checkbox: veutNewsletter },
           Profil: { select: { name: profil } },
