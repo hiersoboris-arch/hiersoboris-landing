@@ -164,11 +164,10 @@ export default function Rgpd() {
         <section>
           <h2 className="serif text-xl mb-2">Mise à jour</h2>
           <p className="text-muted">
-            Cette page a été mise à jour le 6 août 2026, à l&apos;occasion de
-            l&apos;ajout des livres blancs « La lettre de motivation qu&apos;on lit
-            jusqu&apos;au bout » et « Rends ton CV impossible à rejeter ». La
-            collecte et la durée de conservation sont identiques pour tous les
-            livres blancs.
+            Cette page a été mise à jour le 10 août 2026, à l&apos;occasion de
+            l&apos;ajout du livre blanc « Ta page de référence : ton autobiographie
+            en KPIs ». La collecte et la durée de conservation sont identiques pour
+            tous les livres blancs.
           </p>
         </section>
       </div>

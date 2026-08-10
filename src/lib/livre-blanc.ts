@@ -7,7 +7,8 @@ export type LivretSlug =
   | "kit-alternance"
   | "cout-alternant"
   | "lettre-motivation"
-  | "cv";
+  | "cv"
+  | "page-reference";
 
 export type Livret = {
   slug: LivretSlug;
@@ -82,6 +83,47 @@ export const LIVRETS: Record<LivretSlug, Livret> = {
         "Je rappelle par téléphone, c'est plus rapide qu'un mail : ton numéro devient donc nécessaire.",
       consentement:
         "Gratuit, accès immédiat, et tu reçois aussi le lien par mail. En cliquant sur « Recevoir le kit », tu acceptes que Boris Hierso Alphandéry conserve ces informations pour t'envoyer le kit et te proposer des offres d'alternance. Elles ne sont ni revendues ni transmises à un tiers, et sont supprimées après 3 ans sans contact. Tu peux y accéder, les corriger, les récupérer ou demander leur suppression à tout moment en écrivant à",
+    },
+    erreurs: {
+      prenom: "Indique ton prénom.",
+      nom: "Indique ton nom.",
+      email: "Indique ton adresse mail.",
+      emailInvalide: "Cette adresse mail ne semble pas valide.",
+      telManquant: "Ajoute ton numéro : c'est par téléphone que je rappelle.",
+      telIncomplet: "Ce numéro ne semble pas complet.",
+    },
+  },
+  "page-reference": {
+    slug: "page-reference",
+    titre: "Ta page de référence : ton autobiographie en KPIs",
+    publie: "2026-08-10",
+    url: "https://formation-boris-ha.notion.site/Ta-page-de-r-f-rence-ton-autobiographie-en-KPIs-3b128a764b97819eb89ce3235ca954ea",
+    notionSelect: "Page de référence",
+    sourceDefaut: "hiersoboris.fr/livres-blancs/page-reference",
+    registre: "tu",
+    profilDefaut: "Étudiant",
+    contenu: [
+      "Pourquoi tu oublies ce que tu fais : l'oubli, le sentiment d'imposture (70 % de la population) et le travail de l'ombre que personne ne compte",
+      "La règle qui rend la page utile : elle ne se partage jamais, c'est ta fiche de carrière et pas un document de candidature",
+      "Ce qui en sort et où ça va : ton CV, ton profil LinkedIn, ta lettre, tes réponses en entretien, ta demande d'augmentation",
+      "« Mais je n'ai rien à mettre » : le tableau de traduction pour infirmière, opérateur, jobs d'été, bénévolat, congé parental ou trois stages",
+      "Le gabarit complet à dupliquer : pitch, compétences, preuves par expérience, fil rouge et formulations verrouillées",
+      "Le prompt qui empêche ton IA d'inventer un chiffre, et l'exercice guidé pour construire ta page en 45 minutes",
+    ],
+    ui: {
+      cta: "Recevoir le modèle",
+      ouvrir: "Ouvrir le modèle",
+      succesTitre: "C'est à toi.",
+      succes:
+        "Le modèle s'ouvre juste en dessous, et je viens aussi de t'envoyer le lien par mail. Duplique-le, il est fait pour être rempli.",
+      aideEmail: "Ton adresse perso marche très bien.",
+      labelNewsletter:
+        "Je veux recevoir les prochains livres blancs par email dès leur sortie. En août, ça peut aller jusqu'à un par jour ; tu te désinscris en un clic depuis n'importe quel email.",
+      labelContact: "Je souhaite que Boris me recontacte (alternance, offres, questions).",
+      noteTel:
+        "Je rappelle par téléphone, c'est plus rapide qu'un mail : ton numéro devient donc nécessaire.",
+      consentement:
+        "Gratuit, accès immédiat, et tu reçois aussi le lien par mail. En cliquant sur « Recevoir le modèle », tu acceptes que Boris Hierso Alphandéry conserve ces informations pour t'envoyer le modèle et te proposer des offres d'alternance. Elles ne sont ni revendues ni transmises à un tiers, et sont supprimées après 3 ans sans contact. Tu peux y accéder, les corriger, les récupérer ou demander leur suppression à tout moment en écrivant à",
     },
     erreurs: {
       prenom: "Indique ton prénom.",

@@ -622,18 +622,18 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <ProjectCard
+              href="/livres-blancs/page-reference"
+              tag="Livre blanc · Étudiants et candidats"
+              title="Ta page de référence : ton autobiographie en KPIs"
+              desc="La fiche de carrière que tu ne montres à personne : tous tes chiffres sur une page. Ton CV, ta lettre et tes entretiens en sont extraits, et ton IA n'invente plus rien."
+              footer="Recevoir le modèle"
+            />
+            <ProjectCard
               href="/livres-blancs/cv"
               tag="Livre blanc · Étudiants et candidats"
               title="Rends ton CV impossible à rejeter"
               desc="Deux routes, deux CV : ATS pour les grands groupes, visuel pour l'approche directe. Le tableau des KPIs commerciaux, les verbes à bannir, et un CV par poste visé illustré par mes trois CV réels."
               footer="Recevoir la méthode"
-            />
-            <ProjectCard
-              href="/livres-blancs/lettre-motivation"
-              tag="Livre blanc · Étudiants et candidats"
-              title="La lettre de motivation qu'on lit jusqu'au bout"
-              desc="La méthode pour écrire une lettre qu'on ne peut recycler nulle part ailleurs : structure AIDA, 6 leviers, la liste noire des formules qui grillent, le format mail et le bon usage de l'IA."
-              footer="Recevoir l'atelier"
             />
             <ProjectCard
               href="/livres-blancs/cout-alternant"

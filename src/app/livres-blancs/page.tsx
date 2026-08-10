@@ -25,6 +25,14 @@ export const metadata: Metadata = {
 // le site est redéployé à chaque nouveau livret, donc le badge suit.
 const CARTES = [
   {
+    livret: LIVRETS["page-reference"],
+    tag: "Étudiants & candidats",
+    desc: "Le modèle de la fiche de carrière que tu ne montreras jamais à personne : tous tes chiffres, tes preuves par expérience et tes formulations verrouillées sur une seule page. C'est elle qui alimente ton CV, ta lettre, ton LinkedIn et tes entretiens, et qui empêche l'IA d'inventer un chiffre à ta place. Avec le tableau de traduction pour les parcours qui semblent vides.",
+    href: "/livres-blancs/page-reference",
+    cta: "Recevoir le modèle",
+    couleur: "bg-night",
+  },
+  {
     livret: LIVRETS["cv"],
     tag: "Étudiants & candidats",
     desc: "La méthode pour un CV qui passe la machine puis l'humain : les deux routes (ATS des grands groupes, approche directe en start-up), le tableau des KPIs commerciaux à aller chercher, les verbes qui te cachent, un CV par poste visé illustré par mes trois CV réels, et 3 prompts IA pour le tester face à une offre.",

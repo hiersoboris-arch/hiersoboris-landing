@@ -39,6 +39,30 @@ function composer(d: Destinataire, livret: Livret): Message {
     };
   }
 
+  if (livret.slug === "page-reference") {
+    const collectees = ["ton prénom", "ton nom", "ton adresse mail"];
+    if (d.telephone) collectees.push("ton numéro de téléphone");
+    return {
+      objet: "Ton modèle : ta page de référence en KPIs",
+      corps: [
+        d.prenom ? `Hello ${d.prenom},` : "Hello,",
+        "Voici le modèle de ta page de référence, ton autobiographie professionnelle en bullet points :",
+        livret.url,
+        "Duplique-la, c'est un gabarit fait pour être rempli. Tu y trouveras pourquoi tu oublies ce que tu fais, le tableau de traduction pour valoriser un parcours qui semble vide, le gabarit complet et le prompt qui empêche ton IA d'inventer un chiffre à ta place.",
+        "Une règle avant de commencer : cette page ne se partage jamais. C'est ta fiche de carrière, pas un document de candidature. Ce qui se montre (CV, LinkedIn, lettre, entretien) en est extrait, taillé à chaque fois pour une cible précise.",
+        "Les offres que je sélectionne à la source sont ici : https://hiersoboris.fr/alternance\nSi l'une d'elles te parle, réponds-moi avec sa référence.",
+        "Bien à toi,\nBoris",
+      ],
+      rgpd: `Tu reçois ce message parce que tu as demandé le modèle sur hiersoboris.fr. Je conserve ${collectees.join(", ")} pour t'envoyer ce modèle${
+        d.contact ? ", te recontacter au sujet des offres d'alternance" : ""
+      }${
+        d.newsletter
+          ? ", et t'envoyer chaque nouveau livre blanc à sa sortie (désinscription en un clic dans chaque email)"
+          : ""
+      }. Ces informations ne sont ni revendues ni transmises à un tiers, et sont supprimées au bout de 3 ans sans contact. Pour y accéder, les corriger ou demander leur suppression : réponds simplement à ce message.`,
+    };
+  }
+
   if (livret.slug === "cv") {
     const collectees = ["ton prénom", "ton nom", "ton adresse mail"];
     if (d.telephone) collectees.push("ton numéro de téléphone");
