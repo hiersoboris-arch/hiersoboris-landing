@@ -37,26 +37,6 @@ type Opportunite = {
 // aux candidats et aux écoles, jamais publié.
 const OPPORTUNITES: Opportunite[] = [
   {
-    code: "ALT-06",
-    badge: "Industrie · SaaS de gestion de l'obsolescence",
-    status: "Profils en cours de validation",
-    role: "Alternant·e Business Developer · grands comptes industriels",
-    contexte:
-      "Société qui sécurise la production industrielle en gérant l'obsolescence des pièces détachées critiques : quand une pièce introuvable arrête une ligne de production, elle la retrouve, avec un gain moyen de 45%. Elle industrialise cette expertise dans un SaaS qui score le risque d'obsolescence de tout un parc machines. Tu rejoins directement l'équipe commerciale, avec une évolution possible vers un poste de Business Developer confirmé en CDI.",
-    lieu: "La Défense / Courbevoie (92), déplacements ponctuels sur les sites industriels",
-    rythme: "Présentiel · alternance de 12 à 24 mois",
-    demarrage: "Septembre ou octobre 2026 (pré-alternance possible en amont)",
-    missions: [
-      "Ciblage des groupes industriels multi-sites, en approche corporate plutôt que site par site",
-      "Prospection téléphone, email et LinkedIn (stack semi-automatisée et IA déjà en place)",
-      "Qualification des interlocuteurs : maintenance, production, achats MRO, direction financière",
-      "Rendez-vous de qualification courts, scorés, puis transmis à l'expert avec une fiche détaillée",
-      "Structuration du CRM et contribution au discours commercial",
-    ],
-    profil:
-      "Pas un profil débutant : une première expérience de prospection ou de vente fait la différence · français parfait (anglais un plus) · à l'aise au téléphone, résilient face au rejet, curieux d'industrie et de tech · basé à Paris ou à proximité de La Défense.",
-  },
-  {
     code: "ALT-07",
     badge: "Conseil · flux de données et systèmes d'information",
     role: "Alternant·e commercial·e · premier profil Sales de la structure",
@@ -194,7 +174,7 @@ export default function Alternance() {
             <AudienceCard
               tag="Étudiants"
               title="Tu cherches ton alternance ?"
-              desc="Repère les postes qui te parlent, puis écris-moi sur LinkedIn avec la référence (ALT-06, ALT-09...) ou réserve 15 minutes. Je te présente l'entreprise et je t'aide à préparer l'entretien."
+              desc="Repère les postes qui te parlent, puis écris-moi sur LinkedIn avec la référence (ALT-07, ALT-09...) ou réserve 15 minutes. Je te présente l'entreprise et je t'aide à préparer l'entretien."
               ctaHref="#livre-blanc"
               ctaLabel="Recevoir le kit gratuit"
             />
