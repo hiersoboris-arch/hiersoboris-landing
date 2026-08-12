@@ -42,6 +42,7 @@
 - Atelier gratuit pour les candidats "La lettre de motivation qu'on lit jusqu'au bout" (structure AIDA, 6 leviers, format mail, usage de l'IA) : https://hiersoboris.fr/livres-blancs/lettre-motivation
 - Modèle gratuit pour les candidats "Ta page de référence : ton autobiographie en KPIs" (la fiche de carrière privée qui alimente CV, lettre, LinkedIn et entretiens ; gabarit + exercice 45 min) : https://hiersoboris.fr/livres-blancs/page-reference
 - Méthode gratuite pour les candidats "Rends ton CV impossible à rejeter" (les deux routes ATS et approche directe, KPIs commerciaux, verbes à bannir, un CV par poste visé, 3 prompts IA) : https://hiersoboris.fr/livres-blancs/cv
+- Guide gratuit "Négocie ton salaire sans te saborder" (vocabulaire du package, BSPCE, fourchette en 3 chiffres, script d'annonce, 8 objections, 12 questions sur le variable, chapitre alternants) : https://hiersoboris.fr/livres-blancs/negociation-salaire
 
 ## Pages
 - Accueil : https://hiersoboris.fr

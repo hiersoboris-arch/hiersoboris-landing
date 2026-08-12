@@ -622,6 +622,13 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <ProjectCard
+              href="/livres-blancs/negociation-salaire"
+              tag="Livre blanc · Étudiants, candidats et commerciaux"
+              title="Négocie ton salaire sans te saborder"
+              desc="Fourchette en trois chiffres, script en quatre temps, 8 objections et leurs réponses, variable et BSPCE décodés. Parler d'argent est une compétence, pas un trait de caractère."
+              footer="Recevoir le guide"
+            />
+            <ProjectCard
               href="/livres-blancs/page-reference"
               tag="Livre blanc · Étudiants et candidats"
               title="Ta page de référence : ton autobiographie en KPIs"

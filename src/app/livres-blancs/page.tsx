@@ -25,6 +25,14 @@ export const metadata: Metadata = {
 // le site est redéployé à chaque nouveau livret, donc le badge suit.
 const CARTES = [
   {
+    livret: LIVRETS["negociation-salaire"],
+    tag: "Étudiants, candidats & commerciaux",
+    desc: "Parler d'argent est une compétence, pas un trait de caractère : le vocabulaire du package (fixe, variable, OTE, BSPCE), ta fourchette en trois chiffres, le script en quatre temps, les 8 objections et leurs réponses, les 12 questions à poser sur un variable, et le chapitre alternants : lâche le fixe, va chercher le variable.",
+    href: "/livres-blancs/negociation-salaire",
+    cta: "Recevoir le guide",
+    couleur: "bg-bordeaux",
+  },
+  {
     livret: LIVRETS["page-reference"],
     tag: "Étudiants & candidats",
     desc: "Le modèle de la fiche de carrière que tu ne montreras jamais à personne : tous tes chiffres, tes preuves par expérience et tes formulations verrouillées sur une seule page. C'est elle qui alimente ton CV, ta lettre, ton LinkedIn et tes entretiens, et qui empêche l'IA d'inventer un chiffre à ta place. Avec le tableau de traduction pour les parcours qui semblent vides.",

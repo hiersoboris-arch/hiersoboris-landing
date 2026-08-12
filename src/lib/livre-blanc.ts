@@ -8,7 +8,8 @@ export type LivretSlug =
   | "cout-alternant"
   | "lettre-motivation"
   | "cv"
-  | "page-reference";
+  | "page-reference"
+  | "negociation-salaire";
 
 export type Livret = {
   slug: LivretSlug;
@@ -83,6 +84,47 @@ export const LIVRETS: Record<LivretSlug, Livret> = {
         "Je rappelle par téléphone, c'est plus rapide qu'un mail : ton numéro devient donc nécessaire.",
       consentement:
         "Gratuit, accès immédiat, et tu reçois aussi le lien par mail. En cliquant sur « Recevoir le kit », tu acceptes que Boris Hierso Alphandéry conserve ces informations pour t'envoyer le kit et te proposer des offres d'alternance. Elles ne sont ni revendues ni transmises à un tiers, et sont supprimées après 3 ans sans contact. Tu peux y accéder, les corriger, les récupérer ou demander leur suppression à tout moment en écrivant à",
+    },
+    erreurs: {
+      prenom: "Indique ton prénom.",
+      nom: "Indique ton nom.",
+      email: "Indique ton adresse mail.",
+      emailInvalide: "Cette adresse mail ne semble pas valide.",
+      telManquant: "Ajoute ton numéro : c'est par téléphone que je rappelle.",
+      telIncomplet: "Ce numéro ne semble pas complet.",
+    },
+  },
+  "negociation-salaire": {
+    slug: "negociation-salaire",
+    titre: "Négocie ton salaire sans te saborder",
+    publie: "2026-08-11",
+    url: "https://formation-boris-ha.notion.site/N-gocie-ton-salaire-sans-te-saborder-3b928a764b9781fc92cec1d8345162c7",
+    notionSelect: "Négociation salaire",
+    sourceDefaut: "hiersoboris.fr/livres-blancs/negociation-salaire",
+    registre: "tu",
+    profilDefaut: "Étudiant",
+    contenu: [
+      "Le vocabulaire du package une fois pour toutes : fixe, variable, OTE, commission, equity, brut et net, et les pièges de chacun",
+      "Les BSPCE enfin expliqués : vesting, cliff, prix d'exercice, les 7 questions à poser avant d'accepter, et la règle d'arbitrage fixe contre equity",
+      "Ta fourchette en trois chiffres (plancher dur, cible, ancrage) et les sources à croiser pour la construire",
+      "Le script en quatre temps pour annoncer un chiffre et le tenir, plus les 8 objections avec la réponse à chacune",
+      "Alternant ou premier poste : pourquoi lâcher le fixe et aller chercher le variable, avec les ordres de grandeur qui passent",
+      "Les 12 questions à poser sur un variable avant de signer, la réévaluation en poste, et les 7 pièges qui coûtent cher",
+    ],
+    ui: {
+      cta: "Recevoir le guide",
+      ouvrir: "Ouvrir le guide",
+      succesTitre: "C'est à toi.",
+      succes:
+        "Le guide s'ouvre juste en dessous, et je viens aussi de t'envoyer le lien par mail. Garde-le sous la main avant chaque entretien.",
+      aideEmail: "Ton adresse perso marche très bien.",
+      labelNewsletter:
+        "Je veux recevoir les prochains livres blancs par email dès leur sortie. En août, ça peut aller jusqu'à un par jour ; tu te désinscris en un clic depuis n'importe quel email.",
+      labelContact: "Je souhaite que Boris me recontacte (alternance, offres, questions).",
+      noteTel:
+        "Je rappelle par téléphone, c'est plus rapide qu'un mail : ton numéro devient donc nécessaire.",
+      consentement:
+        "Gratuit, accès immédiat, et tu reçois aussi le lien par mail. En cliquant sur « Recevoir le guide », tu acceptes que Boris Hierso Alphandéry conserve ces informations pour t'envoyer le guide et te proposer des offres d'alternance. Elles ne sont ni revendues ni transmises à un tiers, et sont supprimées après 3 ans sans contact. Tu peux y accéder, les corriger, les récupérer ou demander leur suppression à tout moment en écrivant à",
     },
     erreurs: {
       prenom: "Indique ton prénom.",

@@ -39,6 +39,30 @@ function composer(d: Destinataire, livret: Livret): Message {
     };
   }
 
+  if (livret.slug === "negociation-salaire") {
+    const collectees = ["ton prénom", "ton nom", "ton adresse mail"];
+    if (d.telephone) collectees.push("ton numéro de téléphone");
+    return {
+      objet: "Ton guide : négocie ton salaire sans te saborder",
+      corps: [
+        d.prenom ? `Hello ${d.prenom},` : "Hello,",
+        "Voici ton guide pour négocier ta rémunération sans te saborder :",
+        livret.url,
+        "Tu y trouveras le vocabulaire du package (fixe, variable, OTE, BSPCE), la méthode des trois chiffres (plancher, cible, ancrage), le script en quatre temps pour annoncer un montant et le tenir, les 8 objections avec leurs réponses, les 12 questions à poser sur un variable, et le chapitre dédié aux alternants : lâche le fixe, va chercher le variable.",
+        "Un conseil : fais l'exercice de 45 minutes en bas de page avant ton prochain entretien. Trois chiffres écrits et une phrase répétée à voix haute changent complètement la conversation.",
+        "Les offres que je sélectionne à la source sont ici : https://hiersoboris.fr/alternance\nSi l'une d'elles te parle, réponds-moi avec sa référence.",
+        "Bien à toi,\nBoris",
+      ],
+      rgpd: `Tu reçois ce message parce que tu as demandé le guide sur hiersoboris.fr. Je conserve ${collectees.join(", ")} pour t'envoyer ce guide${
+        d.contact ? ", te recontacter au sujet des offres d'alternance" : ""
+      }${
+        d.newsletter
+          ? ", et t'envoyer chaque nouveau livre blanc à sa sortie (désinscription en un clic dans chaque email)"
+          : ""
+      }. Ces informations ne sont ni revendues ni transmises à un tiers, et sont supprimées au bout de 3 ans sans contact. Pour y accéder, les corriger ou demander leur suppression : réponds simplement à ce message.`,
+    };
+  }
+
   if (livret.slug === "page-reference") {
     const collectees = ["ton prénom", "ton nom", "ton adresse mail"];
     if (d.telephone) collectees.push("ton numéro de téléphone");
