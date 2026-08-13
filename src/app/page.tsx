@@ -189,26 +189,6 @@ const TESTIMONIALS = [
   },
 ];
 
-// Comptes pour lesquels j'interviens comme apporteur d'affaires : uniquement des
-// boîtes où je travaille de l'intérieur. Rien de confidentiel ici (pas de deal
-// nommé, pas de commission, pas de contact) : cette section est publique.
-const PARTNERS = [
-  {
-    name: "Green Track Genius",
-    role: "Directeur commercial externalisé et apporteur d'affaires · industrie",
-    desc: "Quand une pièce détachée critique casse et devient introuvable, GTG la retrouve : sourcing, reconditionné équivalent neuf, magasin de maintenance externalisé. Leur SaaS Obsolio cartographie et note l'obsolescence de tout le parc d'une usine, avant la panne.",
-    cible: "Groupes industriels multi-sites : pharma, cosmétique, pneumatique, raffinage, agroalimentaire. Interlocuteurs : direction de site, maintenance, achats MRO, direction financière.",
-    href: "https://obsol.io",
-    hrefLabel: "Découvrir Obsolio",
-  },
-  {
-    name: "Just In Track",
-    role: "Apporteur d'affaires et sales coach · incubation de startups",
-    desc: "Un stabilisateur de croissance pour les boîtes qui grossissent plus vite qu'elles ne se structurent : un programme de trois jours, des bureaux équipés à Courbevoie, un mentor au quotidien et les fonctions support intégrées.",
-    cible: "Startups Pre-Seed et Seed, 2 à 5 personnes, déjà du chiffre d'affaires et une croissance à tenir. J'accompagne ensuite le commercial des boîtes que j'amène.",
-  },
-];
-
 export default function Home() {
   return (
     <>
@@ -595,92 +575,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Partenaires & apport d'affaires */}
-      <section id="partenaires" className="border-b hairline">
-        <div className="max-w-content mx-auto px-6 py-20 md:py-28">
-          <div className="max-w-3xl mb-14">
-            <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
-              <span className="dot" />
-              Partenaires &amp; apport d&apos;affaires
-            </div>
-            <h2 className="serif text-3xl md:text-5xl leading-[1.05] tracking-tight mb-6">
-              J&apos;apporte des affaires,
-              <br />
-              <span className="text-muted">
-                et je rémunère qui m&apos;en apporte.
-              </span>
-            </h2>
-            <p className="text-muted leading-relaxed">
-              Je ne représente que des entreprises que je connais de
-              l&apos;intérieur, parce que je travaille dedans. Deux comptes sont
-              ouverts à l&apos;apport d&apos;affaires en ce moment :{" "}
-              <strong className="text-ink">Green Track Genius</strong> côté
-              industrie, <strong className="text-ink">Just In Track</strong> côté
-              startups. Et ça marche dans les deux sens : si tu m&apos;ouvres une
-              porte et qu&apos;elle se transforme en contrat, tu touches ta part.
-            </p>
-          </div>
-
-          <div className="text-xs uppercase tracking-[0.18em] text-muted mb-6">
-            Les comptes que je représente
-          </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            {PARTNERS.map((p) => (
-              <PartnerCard key={p.name} {...p} />
-            ))}
-          </div>
-
-          {/* Devenir apporteur */}
-          <div className="mt-16">
-            <div className="text-xs uppercase tracking-[0.18em] text-muted mb-6">
-              Tu connais une entreprise concernée ?
-            </div>
-            <div className="grid md:grid-cols-3 gap-px bg-border border hairline rounded-2xl overflow-hidden">
-              {[
-                {
-                  n: "01",
-                  titre: "Tu me signales le contact",
-                  desc: "Un nom, une entreprise, le contexte en deux lignes. Je te dis sous 48h si c'est dans la cible, sans te faire attendre.",
-                },
-                {
-                  n: "02",
-                  titre: "On cadre la commission",
-                  desc: "Un accord écrit avant la moindre mise en relation : périmètre, pourcentage, délai de paiement. Jamais de discussion d'argent après coup.",
-                },
-                {
-                  n: "03",
-                  titre: "Je prends la main",
-                  desc: "Qualification, rendez-vous, négociation, closing. Tu es tenu au courant à chaque étape, tu n'as rien à porter.",
-                },
-              ].map((e) => (
-                <div key={e.n} className="bg-card p-8">
-                  <div className="serif text-3xl text-bordeaux mb-3">{e.n}</div>
-                  <div className="serif text-xl mb-2">{e.titre}</div>
-                  <p className="text-sm text-muted leading-relaxed">{e.desc}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <a
-                href={CALENDLY}
-                className="inline-flex items-center gap-2 bg-bordeaux text-cream px-6 py-3.5 rounded-full text-sm font-medium hover:bg-bordeaux-soft transition"
-              >
-                Me présenter une affaire
-                <ArrowRight className="w-4 h-4" />
-              </a>
-              <a
-                href={`mailto:${EMAIL}`}
-                className="inline-flex items-center gap-2 text-ink px-6 py-3.5 rounded-full text-sm font-medium border hairline hover:bg-accent-tint transition"
-              >
-                M&apos;écrire directement
-                <ArrowRight className="w-4 h-4" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Recommandations */}
       <section id="recommandations" className="border-b hairline grain">
         <div className="max-w-content mx-auto px-6 py-20 md:py-28">
@@ -939,45 +833,6 @@ function ResultCard({
           </li>
         ))}
       </ul>
-    </article>
-  );
-}
-
-function PartnerCard({
-  name,
-  role,
-  desc,
-  cible,
-  href,
-  hrefLabel,
-}: {
-  name: string;
-  role: string;
-  desc: string;
-  cible: string;
-  href?: string;
-  hrefLabel?: string;
-}) {
-  return (
-    <article className="bg-card border hairline rounded-2xl p-8 md:p-10 flex flex-col">
-      <h3 className="serif text-2xl">{name}</h3>
-      <div className="text-sm text-muted mb-6">{role}</div>
-      <p className="text-ink leading-relaxed mb-6">{desc}</p>
-      <div className="text-xs uppercase tracking-[0.18em] text-muted mb-2">
-        Pour qui
-      </div>
-      <p className="text-muted leading-relaxed">{cible}</p>
-      {href && (
-        <a
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-auto pt-6 inline-flex items-center gap-2 text-sm font-medium text-ink hover:text-accent transition"
-        >
-          {hrefLabel}
-          <ArrowUpRight className="w-4 h-4" />
-        </a>
-      )}
     </article>
   );
 }
