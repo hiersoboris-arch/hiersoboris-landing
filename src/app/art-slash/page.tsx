@@ -10,12 +10,12 @@ import { SITE_URL } from "@/lib/site-url";
 export const metadata: Metadata = {
   title: "Art Slash · Galerie",
   description:
-    "Art Slash, le travail artistique de Boris Hierso Alphandéry (2014-2018) : toiles d'action painting, body painting et performances. Archive, plus en activité.",
+    "Art Slash, le travail artistique de Boris Hierso Alphandéry (2011-2021) : toiles d'action painting, body painting et performances. Archive, plus en activité.",
   alternates: { canonical: "/art-slash" },
   openGraph: {
     type: "website",
     title: "Art Slash · Boris Hierso Alphandéry",
-    description: "Action painting, body painting et performances (2014-2018).",
+    description: "Action painting, body painting et performances (2011-2021).",
   },
 };
 
@@ -49,7 +49,7 @@ export default function ArtSlashPage() {
                 "@type": "VisualArtwork",
                 name: "Art Slash",
                 artform: ["Action painting", "Body painting"],
-                dateCreated: "2014/2018",
+                dateCreated: "2011/2021",
                 creator: {
                   "@type": "Person",
                   name: "Boris Hierso Alphandéry",
@@ -95,7 +95,7 @@ export default function ArtSlashPage() {
           </div>
           <div className="absolute inset-x-0 bottom-0 z-10 max-w-content mx-auto w-full px-6 pb-10 md:pb-14">
             <div className="text-xs uppercase tracking-[0.24em] text-bordeaux-light mb-4">
-              2014 - 2018 · archive
+              2011 - 2021 · archive
             </div>
             <h1 className="serif text-6xl md:text-9xl leading-[0.9] tracking-tight">
               Art Slash
@@ -112,7 +112,7 @@ export default function ArtSlashPage() {
         <p className="mt-6 text-lg text-cream/65 leading-relaxed max-w-2xl">
           Art Slash, c&apos;est le nom de ma technique : la projection, le
           geste, la matière. Sur toile d&apos;abord, puis sur les corps, en
-          friches urbaines et en festival. Je ne peins plus depuis 2018. Cette
+          friches urbaines et en festival. Je ne peins plus depuis 2021. Cette
           page est une archive, pour celles et ceux qui veulent voir le travail.
         </p>
       </section>
@@ -130,7 +130,7 @@ export default function ArtSlashPage() {
               <div className="text-cream/60 mb-2">Artiste</div>
               <p className="text-cream">
                 Boris Hierso Alphandéry. Toiles, body painting et performances,
-                2014-2018.
+                2011-2021.
               </p>
             </div>
             <div>
