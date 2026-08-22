@@ -622,6 +622,41 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <ProjectCard
+              href="/livres-blancs/histoire-alternance"
+              tag="Livre blanc · Étudiants et curieux"
+              title="D'où vient l'alternance : mille ans d'histoire de l'éducation"
+              desc="Charlemagne n'a pas inventé l'école, et l'alternance n'est pas une invention récente. Le récit de mille ans d'histoire, du chef-d'œuvre médiéval à la loi Astier de 1919."
+              footer="Recevoir le récit"
+            />
+            <ProjectCard
+              href="/livres-blancs/fiche-de-poste"
+              tag="Livre blanc · Entreprises et écoles"
+              title="La fiche de poste qui attire : ma trame, commentée"
+              desc="Les 12 blocs dans l'ordre, la vraie fenêtre de démarrage d'une alternance, l'effet de l'affichage du salaire, et un exemple complet à copier."
+              footer="Recevoir la trame"
+            />
+            <ProjectCard
+              href="/livres-blancs/convaincre-entretien"
+              tag="Livre blanc · Étudiants, candidats et commerciaux"
+              title="Convaincre en entretien : questions, cas pratiques et mises en situation"
+              desc="La fiche entreprise en 8 blocs, la méthode STAR sans la réciter, les 20 questions classiques et costaud, et le business case avec sa grille de notation."
+              footer="Recevoir le guide"
+            />
+            <ProjectCard
+              href="/livres-blancs/metiers-de-la-vente"
+              tag="Livre blanc · Étudiants, candidats et commerciaux"
+              title="Les métiers de la vente décodés (et les vraies fourchettes 2026)"
+              desc="Le décodeur français/start-up (BDR, SDR, Account Executive, Head of Sales...), les fourchettes réelles 2026 et les 6 pièges de lecture d'une offre."
+              footer="Recevoir le décodeur"
+            />
+            <ProjectCard
+              href="/livres-blancs/trouve-les-offres"
+              tag="Livre blanc · Étudiants, candidats et commerciaux"
+              title="Trouve les offres : cherche un job comme un commercial prospecte"
+              desc="Le vrai poids du marché caché, les 6 canaux, ta liste de 50 entreprises, ton mini-CRM, et l'automatisation sans jamais devenir un robot qui postule à tout."
+              footer="Recevoir le guide"
+            />
+            <ProjectCard
               href="/livres-blancs/negociation-salaire"
               tag="Livre blanc · Étudiants, candidats et commerciaux"
               title="Négocie ton salaire sans te saborder"

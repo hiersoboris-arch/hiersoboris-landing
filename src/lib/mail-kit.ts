@@ -135,6 +135,125 @@ function composer(d: Destinataire, livret: Livret): Message {
     };
   }
 
+  if (livret.slug === "trouve-les-offres") {
+    const collectees = ["ton prénom", "ton nom", "ton adresse mail"];
+    if (d.telephone) collectees.push("ton numéro de téléphone");
+    return {
+      objet: "Ton guide : cherche un job comme un commercial prospecte",
+      corps: [
+        d.prenom ? `Hello ${d.prenom},` : "Hello,",
+        "Voici ton guide pour chercher un job (ou une alternance) comme un commercial prospecte :",
+        livret.url,
+        "Tu y trouveras le vrai poids du marché caché, la science des liens faibles (une étude sur 20 millions de personnes), les 6 canaux et ce que chacun rapporte, ta liste de 50 entreprises à construire, ton mini-CRM en 6 colonnes et les 3 niveaux d'automatisation, IA comprise, sans jamais candidater en automatique.",
+        "Un conseil : commence par l'exercice d'une heure en bas de page. À la fin, tu as une liste, un CRM ouvert et cinq messages envoyés à des liens faibles. C'est plus utile qu'une journée de plus à rafraîchir des job boards.",
+        "Les offres que je sélectionne à la source sont ici : https://hiersoboris.fr/alternance\nSi l'une d'elles te parle, réponds-moi avec sa référence.",
+        "Bien à toi,\nBoris",
+      ],
+      rgpd: `Tu reçois ce message parce que tu as demandé le guide sur hiersoboris.fr. Je conserve ${collectees.join(", ")} pour t'envoyer ce guide${
+        d.contact ? ", te recontacter au sujet des offres d'alternance" : ""
+      }${
+        d.newsletter
+          ? ", et t'envoyer chaque nouveau livre blanc à sa sortie (désinscription en un clic dans chaque email)"
+          : ""
+      }. Ces informations ne sont ni revendues ni transmises à un tiers, et sont supprimées au bout de 3 ans sans contact. Pour y accéder, les corriger ou demander leur suppression : réponds simplement à ce message.`,
+    };
+  }
+
+  if (livret.slug === "metiers-de-la-vente") {
+    const collectees = ["ton prénom", "ton nom", "ton adresse mail"];
+    if (d.telephone) collectees.push("ton numéro de téléphone");
+    return {
+      objet: "Ton décodeur : les métiers de la vente et les vraies fourchettes 2026",
+      corps: [
+        d.prenom ? `Hello ${d.prenom},` : "Hello,",
+        "Voici ton décodeur des métiers de la vente, avec les vraies fourchettes 2026 :",
+        livret.url,
+        "Tu y trouveras la chaîne de valeur commerciale en 6 étapes, le décodeur français/start-up (BDR, SDR, Account Executive, Account Manager, Head of Sales...), les fourchettes réelles par poste et par séniorité, les 3 chemins d'évolution et les 6 pièges de lecture d'une offre.",
+        "Un conseil : avant ton prochain entretien, situe l'offre sur la chaîne de valeur et vérifie sa fourchette dans la bonne grille (tech ou marché général). Tu arrives en connaissant la valeur du poste mieux que la moitié des candidats.",
+        "Les offres que je sélectionne à la source sont ici : https://hiersoboris.fr/alternance\nSi l'une d'elles te parle, réponds-moi avec sa référence.",
+        "Bien à toi,\nBoris",
+      ],
+      rgpd: `Tu reçois ce message parce que tu as demandé le décodeur sur hiersoboris.fr. Je conserve ${collectees.join(", ")} pour t'envoyer ce décodeur${
+        d.contact ? ", te recontacter au sujet des offres d'alternance" : ""
+      }${
+        d.newsletter
+          ? ", et t'envoyer chaque nouveau livre blanc à sa sortie (désinscription en un clic dans chaque email)"
+          : ""
+      }. Ces informations ne sont ni revendues ni transmises à un tiers, et sont supprimées au bout de 3 ans sans contact. Pour y accéder, les corriger ou demander leur suppression : réponds simplement à ce message.`,
+    };
+  }
+
+  if (livret.slug === "convaincre-entretien") {
+    const collectees = ["ton prénom", "ton nom", "ton adresse mail"];
+    if (d.telephone) collectees.push("ton numéro de téléphone");
+    return {
+      objet: "Ton guide : convaincre en entretien",
+      corps: [
+        d.prenom ? `Hello ${d.prenom},` : "Hello,",
+        "Voici ton guide pour convaincre en entretien commercial :",
+        livret.url,
+        "Tu y trouveras ce que dit la science du recrutement sur ce qui prédit vraiment ta performance, la fiche entreprise en 8 blocs, la méthode STAR sans la réciter, les 20 questions classiques et costaud, le business case avec la grille de notation et deux prompts pour t'entraîner seul, et les questions à poser pour reprendre la main.",
+        "Un conseil : prépare tes six histoires STAR avant de préparer quoi que ce soit d'autre. Elles couvrent 80 % des questions comportementales, et c'est ce qui te distingue d'un candidat qui improvise.",
+        "Les offres que je sélectionne à la source sont ici : https://hiersoboris.fr/alternance\nSi l'une d'elles te parle, réponds-moi avec sa référence.",
+        "Bien à toi,\nBoris",
+      ],
+      rgpd: `Tu reçois ce message parce que tu as demandé le guide sur hiersoboris.fr. Je conserve ${collectees.join(", ")} pour t'envoyer ce guide${
+        d.contact ? ", te recontacter au sujet des offres d'alternance" : ""
+      }${
+        d.newsletter
+          ? ", et t'envoyer chaque nouveau livre blanc à sa sortie (désinscription en un clic dans chaque email)"
+          : ""
+      }. Ces informations ne sont ni revendues ni transmises à un tiers, et sont supprimées au bout de 3 ans sans contact. Pour y accéder, les corriger ou demander leur suppression : réponds simplement à ce message.`,
+    };
+  }
+
+  if (livret.slug === "fiche-de-poste") {
+    const collectees = ["votre prénom", "votre nom", "votre adresse mail"];
+    if (d.telephone) collectees.push("votre numéro de téléphone");
+    return {
+      objet: "Votre trame : la fiche de poste qui attire",
+      corps: [
+        d.prenom ? `Bonjour ${d.prenom},` : "Bonjour,",
+        "Voici la trame que j'utilise pour mes propres recrutements et ceux de mes clients :",
+        livret.url,
+        "Vous y trouverez les 12 blocs d'une fiche de poste qui filtre avant l'entretien plutôt qu'après, la fenêtre réelle de démarrage d'un contrat d'apprentissage (6 mois, pas 2 semaines), l'effet de l'affichage de la rémunération sur le volume de candidatures, un exemple complet à copier, et ce qu'il faut enlever d'une annonce qui ne rapporte rien.",
+        "Si vous cherchez un alternant Sales, je pré-qualifie les profils avant de vous les présenter. Les postes ouverts sont sur https://hiersoboris.fr/alternance, et vous pouvez répondre directement à ce message.",
+        "Bien à vous,\nBoris",
+      ],
+      rgpd: `Vous recevez ce message parce que vous avez demandé la trame sur hiersoboris.fr. Je conserve ${collectees.join(", ")} pour vous envoyer cette trame${
+        d.contact ? ", vous recontacter au sujet du recrutement d'un alternant" : ""
+      }${
+        d.newsletter
+          ? ", et vous envoyer chaque nouveau livre blanc à sa sortie (désinscription en un clic dans chaque email)"
+          : ""
+      }. Ces informations ne sont ni revendues ni transmises à un tiers, et sont supprimées au bout de 3 ans sans contact. Pour y accéder, les corriger ou demander leur suppression : répondez simplement à ce message.`,
+    };
+  }
+
+  if (livret.slug === "histoire-alternance") {
+    const collectees = ["ton prénom", "ton nom", "ton adresse mail"];
+    if (d.telephone) collectees.push("ton numéro de téléphone");
+    return {
+      objet: "Ton récit : d'où vient l'alternance",
+      corps: [
+        d.prenom ? `Hello ${d.prenom},` : "Hello,",
+        "Voici le récit de mille ans d'histoire de l'alternance et de l'école :",
+        livret.url,
+        "Tu y trouveras le mythe Charlemagne démonté, la construction de l'école française en 5 lois, l'autre histoire (celle de l'apprentissage, supprimé en 1791 puis reconstruit loi après loi), d'où viennent tes diplômes un par un, et un tour du monde de l'alternance en 6 régions.",
+        "Un conseil : fais l'exercice de fin de page, une frise personnelle de 6 lignes qui relie ton propre contrat à son histoire. Elle te sert le jour où quelqu'un te dit que l'alternance est un plan B.",
+        "Les offres que je sélectionne à la source sont ici : https://hiersoboris.fr/alternance\nSi l'une d'elles te parle, réponds-moi avec sa référence.",
+        "Bien à toi,\nBoris",
+      ],
+      rgpd: `Tu reçois ce message parce que tu as demandé le récit sur hiersoboris.fr. Je conserve ${collectees.join(", ")} pour t'envoyer ce récit${
+        d.contact ? ", te recontacter au sujet des offres d'alternance" : ""
+      }${
+        d.newsletter
+          ? ", et t'envoyer chaque nouveau livre blanc à sa sortie (désinscription en un clic dans chaque email)"
+          : ""
+      }. Ces informations ne sont ni revendues ni transmises à un tiers, et sont supprimées au bout de 3 ans sans contact. Pour y accéder, les corriger ou demander leur suppression : réponds simplement à ce message.`,
+    };
+  }
+
   const collectees = ["ton prénom", "ton nom", "ton adresse mail"];
   if (d.telephone) collectees.push("ton numéro de téléphone");
   return {
@@ -164,10 +283,10 @@ function escapeHtml(s: string) {
 
 function paragrapheHtml(bloc: string, livret: Livret) {
   if (bloc === livret.url) {
-    return `<p><a href="${livret.url}" style="display:inline-block;background:#7C2A38;color:#F4EFE6;text-decoration:none;padding:14px 28px;border-radius:999px;font-weight:500">${escapeHtml(livret.ui.ouvrir)}</a></p>`;
+    return `<p><a href="${livret.url}" style="display:inline-block;background:#BC2A13;color:#FFFFFF;text-decoration:none;padding:14px 28px;border-radius:0;font-weight:500">${escapeHtml(livret.ui.ouvrir)}</a></p>`;
   }
   const contenu = escapeHtml(bloc)
-    .replace(/https:\/\/hiersoboris\.fr\/alternance/g, '<a href="https://hiersoboris.fr/alternance" style="color:#7C2A38">hiersoboris.fr/alternance</a>')
+    .replace(/https:\/\/hiersoboris\.fr\/alternance/g, '<a href="https://hiersoboris.fr/alternance" style="color:#BC2A13">hiersoboris.fr/alternance</a>')
     .replace(/\n/g, "<br>");
   return `<p>${contenu}</p>`;
 }
@@ -186,10 +305,10 @@ export async function envoyerLivret(d: Destinataire, livret: Livret) {
 
   const message = composer(d, livret);
   const texte = `${message.corps.join("\n\n")}\n\n---\n${message.rgpd}`;
-  const html = `<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#1F1B17;max-width:560px">
+  const html = `<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#2B2F35;max-width:560px">
 ${message.corps.map((bloc) => paragrapheHtml(bloc, livret)).join("\n")}
-<hr style="border:none;border-top:1px solid #E7E1D7;margin:28px 0">
-<p style="font-size:13px;color:#6B6055;line-height:1.5">${escapeHtml(message.rgpd)}</p>
+<hr style="border:none;border-top:1px solid #CBD1D6;margin:28px 0">
+<p style="font-size:13px;color:#5C636C;line-height:1.5">${escapeHtml(message.rgpd)}</p>
 </div>`;
 
   try {

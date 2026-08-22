@@ -25,6 +25,46 @@ export const metadata: Metadata = {
 // le site est redéployé à chaque nouveau livret, donc le badge suit.
 const CARTES = [
   {
+    livret: LIVRETS["histoire-alternance"],
+    tag: "Étudiants & curieux",
+    desc: "On croit que Charlemagne a inventé l'école et que l'alternance est une invention récente. Les deux sont faux. Le récit de mille ans d'histoire de l'éducation, du chef-d'œuvre médiéval à la loi Astier de 1919, jusqu'au tour du monde de l'alternance aujourd'hui.",
+    href: "/livres-blancs/histoire-alternance",
+    cta: "Recevoir le récit",
+    couleur: "bg-night",
+  },
+  {
+    livret: LIVRETS["fiche-de-poste"],
+    tag: "Entreprises & écoles",
+    desc: "La trame que j'utilise pour mes propres recrutements et ceux de mes clients : les 12 blocs dans l'ordre, la vraie fenêtre de démarrage d'une alternance, l'effet de l'affichage du salaire, et un exemple complet à copier.",
+    href: "/livres-blancs/fiche-de-poste",
+    cta: "Recevoir la trame",
+    couleur: "bg-bordeaux",
+  },
+  {
+    livret: LIVRETS["convaincre-entretien"],
+    tag: "Étudiants, candidats & commerciaux",
+    desc: "Un entretien n'est pas un interrogatoire, c'est une vente. La fiche entreprise en 8 blocs, la méthode STAR sans la réciter, les 20 questions classiques et costaud, et le business case avec sa grille de notation.",
+    href: "/livres-blancs/convaincre-entretien",
+    cta: "Recevoir le guide",
+    couleur: "bg-night",
+  },
+  {
+    livret: LIVRETS["metiers-de-la-vente"],
+    tag: "Étudiants, candidats & commerciaux",
+    desc: "Le même métier porte dix noms différents. Le décodeur français/start-up (BDR, SDR, Account Executive, Head of Sales...), les fourchettes réelles 2026 et les 6 pièges de lecture d'une offre.",
+    href: "/livres-blancs/metiers-de-la-vente",
+    cta: "Recevoir le décodeur",
+    couleur: "bg-bordeaux",
+  },
+  {
+    livret: LIVRETS["trouve-les-offres"],
+    tag: "Étudiants, candidats & commerciaux",
+    desc: "Chercher un job, c'est de la prospection commerciale. Le vrai poids du marché caché, les 6 canaux, ta liste de 50 entreprises, ton mini-CRM, et l'automatisation sans jamais devenir un robot qui postule à tout.",
+    href: "/livres-blancs/trouve-les-offres",
+    cta: "Recevoir le guide",
+    couleur: "bg-night",
+  },
+  {
     livret: LIVRETS["negociation-salaire"],
     tag: "Étudiants, candidats & commerciaux",
     desc: "Parler d'argent est une compétence, pas un trait de caractère : le vocabulaire du package (fixe, variable, OTE, BSPCE), ta fourchette en trois chiffres, le script en quatre temps, les 8 objections et leurs réponses, les 12 questions à poser sur un variable, et le chapitre alternants : lâche le fixe, va chercher le variable.",
