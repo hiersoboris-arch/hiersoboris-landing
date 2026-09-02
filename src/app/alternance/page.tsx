@@ -55,43 +55,6 @@ const OPPORTUNITES: Opportunite[] = [
       "Bac+3 à Bac+5 · autonome, à l'aise pour construire sans process existant · appétence pour la data et les systèmes d'information.",
   },
   {
-    code: "ALT-08",
-    badge: "IA · agents autonomes open source",
-    role: "Alternant·e Sales · premier renfort commercial",
-    contexte:
-      "Éditeur open source d'agents IA, des collaborateurs digitaux qui ont chacun un rôle et des KPI comme un humain. Leur agent commercial vient de sortir et l'argument porte : il démarre à quelques centaines d'euros par mois quand un profil junior en coûte plusieurs milliers, et l'actif reste chez le client. Le fondateur fait encore la prospection lui-même. Tu serais son premier renfort commercial, sur un produit neuf et un marché à créer.",
-    lieu: "Paris, télétravail large",
-    rythme: "À définir avec l'entreprise",
-    demarrage: "Septembre 2026",
-    missions: [
-      "Prospection des PME et scale-ups qui veulent industrialiser leur outbound sans recruter",
-      "Démos du produit et accompagnement des pilotes de 30 jours",
-      "Qualification des besoins, puis passage de relais au fondateur pour le closing",
-      "Animation de la communauté open source, qui est leur premier canal d'acquisition",
-      "Structuration du discours commercial et des séquences, tout est à construire",
-    ],
-    profil:
-      "Bac+3 à Bac+5 · forte appétence IA et outils, c'est le cœur du produit et de ta crédibilité face aux prospects · à l'aise avec un produit technique sans être développeur · anglais utile, la documentation et la communauté sont en anglais.",
-  },
-  {
-    code: "JOB-01",
-    badge: "Prospection téléphonique · mission courte en freelance",
-    role: "Mission freelance junior · BDR, prise de rendez-vous",
-    contexte:
-      "Même éditeur que l'offre ALT-08. Ils ont besoin d'un renfort tout de suite pour décrocher le téléphone, en attendant l'alternant de la rentrée. Tu ne pars jamais d'une page blanche : leur agent sort les listes, toi tu appelles. Tu poses le rendez-vous, ils reprennent la main pour la démo et la signature. C'est une mission courte, à la prestation, pas une alternance.",
-    lieu: "À distance",
-    rythme: "Mission courte, août et septembre",
-    demarrage: "Dès que possible",
-    missions: [
-      "Appeler les contacts fournis par l'agent",
-      "Qualifier le besoin au téléphone",
-      "Placer le rendez-vous dans l'agenda",
-      "Noter chaque appel dans leur outil de suivi",
-    ],
-    profil:
-      "Junior en prospection, 1 à 3 ans d'expérience ou très bon alternant sortant · tu es à l'aise au téléphone et taper du call ne te fait pas peur, c'est tout le poste · déjà installé en freelance · équipé : ton ordinateur, ton téléphone, un enregistreur de call type Granola, et tu sais rentrer les infos dans l'outil de suivi demandé.",
-  },
-  {
     code: "ALT-09",
     badge: "SaaS B2B · agent IA pour la prospection",
     role: "Alternant·e Business Developer · poste très téléphone",
@@ -108,7 +71,7 @@ const OPPORTUNITES: Opportunite[] = [
       "Contribution au discours commercial et aux séquences",
     ],
     profil:
-      "Bac+3 à bac+5 · bilingue français-anglais, une partie des clients est à l'international · au moins un stage ou une alternance déjà faits · à l'aise au téléphone, tu as déjà décroché et ça ne te fait pas peur · l'envie et la vitesse d'apprentissage comptent plus que la technique, elle s'apprend sur place.",
+      "Bac+3 à bac+5 · un bon niveau d'anglais est un plus, une partie des clients est à l'international, mais un profil francophone qui décroche vraiment le téléphone est tout aussi bienvenu · au moins un stage ou une alternance déjà faits · à l'aise au téléphone, tu as déjà décroché et ça ne te fait pas peur · l'envie et la vitesse d'apprentissage comptent plus que la technique, elle s'apprend sur place.",
   },
 ];
 
