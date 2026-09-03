@@ -126,9 +126,9 @@ export default function Rgpd() {
           <h2 className="serif text-xl mb-2">Prise de contact</h2>
           <p className="text-muted">
             Si vous me contactez par email (hierso.boris@gmail.com) ou réservez
-            un échange via Calendly, les données que vous transmettez servent
+            un échange via Cal.com, les données que vous transmettez servent
             uniquement à traiter votre demande et ne sont ni revendues ni
-            partagées. Calendly applique sa propre politique de confidentialité.
+            partagées. Cal.com applique sa propre politique de confidentialité.
           </p>
         </section>
 

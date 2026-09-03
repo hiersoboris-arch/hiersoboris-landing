@@ -27,6 +27,6 @@ export const FAQ: { q: string; a: string }[] = [
   },
   {
     q: "Comment travailler avec toi ?",
-    a: "Le plus simple : réserver 30 minutes via Calendly. Tu peux aussi m'écrire par email (hierso.boris@gmail.com) ou sur LinkedIn.",
+    a: "Le plus simple : réserver 30 minutes via Cal.com. Tu peux aussi m'écrire par email (hierso.boris@gmail.com) ou sur LinkedIn.",
   },
 ];

@@ -757,7 +757,7 @@ export default function Home() {
             </div>
 
             <div className="md:col-span-5 space-y-3">
-              <ContactCard href={CALENDLY} tag="Calendly" label="Prendre 30 minutes" primary />
+              <ContactCard href={CALENDLY} tag="Cal.com" label="Prendre 30 minutes" primary />
               <ContactCard href={LINKEDIN} tag="LinkedIn" label="Suivre · échanger" icon />
               <ContactCard href={`mailto:${EMAIL}`} tag="Email" label={EMAIL} />
               <ContactCard href="/cv" tag="Recruteurs" label="Voir mon CV" />

@@ -232,7 +232,7 @@ export default function Alternance() {
                 >
                   <span>
                     <span className="block text-xs uppercase tracking-[0.18em] opacity-70">
-                      Calendly
+                      Cal.com
                     </span>
                     <span className="serif text-lg mt-1 block">Prendre 15 minutes</span>
                   </span>

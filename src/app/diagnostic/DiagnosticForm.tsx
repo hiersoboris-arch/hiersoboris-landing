@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowRight, Check, Loader2 } from "lucide-react";
 import { track } from "@vercel/analytics";
 import { QUESTIONS, SCORE_MAX } from "@/lib/diagnostic";
+import { CALENDLY } from "@/lib/contact";
 
 // Même mémorisation d'UTM que le formulaire des livres blancs.
 function utmCourante(): string {
@@ -132,7 +133,7 @@ export default function DiagnosticForm() {
           ))}
         </ul>
         <a
-          href="https://calendly.com/hierso-boris/echange"
+          href={CALENDLY}
           className="mt-8 inline-flex items-center gap-2 bg-bordeaux text-cream px-7 py-4 rounded-full font-medium hover:bg-bordeaux-soft transition"
         >
           Identifier le levier n°1 en 30 minutes
