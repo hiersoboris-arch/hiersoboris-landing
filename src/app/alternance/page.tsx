@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, ArrowUpRight, MapPin, CalendarDays, Laptop, BookOpen, Check } from "lucide-react";
-import { CALENDLY, CAL_RECRUTEMENT, LINKEDIN } from "@/lib/contact";
+import { CAL_RECRUTEMENT, LINKEDIN } from "@/lib/contact";
 import { KIT_CONTENU } from "@/lib/livre-blanc";
 import { SITE_URL } from "@/lib/site-url";
 import SiteHeader from "../SiteHeader";
@@ -367,7 +367,7 @@ function OppCard({
 
       <div className="mt-8 pt-2">
         <a
-          href={CALENDLY}
+          href={CAL_RECRUTEMENT}
           className="inline-flex items-center gap-2 bg-bordeaux text-cream px-5 py-3 rounded-full text-sm font-medium hover:bg-bordeaux-soft transition"
         >
           Ce poste m&apos;intéresse
