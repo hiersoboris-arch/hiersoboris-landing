@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, ArrowUpRight, MapPin, CalendarDays, Laptop, BookOpen, Check } from "lucide-react";
-import { CALENDLY, LINKEDIN } from "@/lib/contact";
+import { CALENDLY, CAL_RECRUTEMENT, LINKEDIN } from "@/lib/contact";
 import { KIT_CONTENU } from "@/lib/livre-blanc";
 import { SITE_URL } from "@/lib/site-url";
 import SiteHeader from "../SiteHeader";
@@ -228,12 +228,12 @@ export default function Alternance() {
               </div>
               <div className="md:col-span-5 space-y-3">
                 <a
-                  href={CALENDLY}
+                  href={CAL_RECRUTEMENT}
                   className="flex items-center justify-between bg-bordeaux text-cream px-6 py-5 rounded-2xl hover:bg-bordeaux-soft transition"
                 >
                   <span>
                     <span className="block kicker opacity-70">
-                      Calendly
+                      Cal.com
                     </span>
                     <span className="serif text-lg mt-1 block">Prendre 15 minutes</span>
                   </span>
