@@ -94,7 +94,7 @@ export default function ArtSlashPage() {
             </a>
           </div>
           <div className="absolute inset-x-0 bottom-0 z-10 max-w-content mx-auto w-full px-6 pb-10 md:pb-14">
-            <div className="text-xs uppercase tracking-[0.24em] text-bordeaux-light mb-4">
+            <div className="kicker text-bordeaux-light mb-4">
               2011 - 2021 · archive
             </div>
             <h1 className="serif text-6xl md:text-9xl leading-[0.9] tracking-tight">
@@ -122,7 +122,7 @@ export default function ArtSlashPage() {
       {/* Colophon */}
       <section className="border-t border-cream/10">
         <div className="max-w-content mx-auto px-6 py-16 md:py-24">
-          <div className="text-xs uppercase tracking-[0.2em] text-bordeaux-light mb-8">
+          <div className="kicker text-bordeaux-light mb-8">
             Crédits
           </div>
           <div className="grid md:grid-cols-3 gap-10 text-sm leading-relaxed">

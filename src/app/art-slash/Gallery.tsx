@@ -4,6 +4,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { X, ChevronLeft, ChevronRight, ArrowUp } from "lucide-react";
+import { kickerClass } from "@/lib/kicker";
 
 type Toile = { src: string; title: string; w?: number; h?: number };
 type Serie = {
@@ -145,7 +146,7 @@ export default function Gallery({ data }: { data: Data }) {
             <h2 className="serif text-4xl md:text-6xl tracking-tight">
               Body Painting
             </h2>
-            <span className="text-xs uppercase tracking-[0.2em] text-bordeaux-light">
+            <span className="kicker text-bordeaux-light">
               Séries pro
             </span>
           </div>
@@ -191,7 +192,7 @@ export default function Gallery({ data }: { data: Data }) {
             <h3 className="serif text-2xl md:text-4xl tracking-tight text-cream/80">
               Essais & recherches
             </h3>
-            <span className="text-xs uppercase tracking-[0.2em] text-cream/55">
+            <span className="kicker text-cream/55">
               Planches d&apos;atelier
             </span>
           </div>
@@ -235,7 +236,7 @@ export default function Gallery({ data }: { data: Data }) {
         <div className="max-w-content mx-auto px-6">
           <div className="flex items-baseline justify-between border-b border-cream/10 pb-5 mb-14">
             <h2 className="serif text-4xl md:text-6xl tracking-tight">Peinture</h2>
-            <span className="text-xs uppercase tracking-[0.2em] text-bordeaux-light">
+            <span className="kicker text-bordeaux-light">
               Toiles · action painting
             </span>
           </div>
@@ -376,7 +377,7 @@ function Chapter({
     <div className="max-w-content mx-auto px-6">
       <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2 mb-7">
         <div>
-          <div className="text-xs uppercase tracking-[0.22em] text-bordeaux-light mb-2">
+          <div className={`${kickerClass(kicker)} text-bordeaux-light mb-2`}>
             {kicker}
           </div>
           <h3 className="serif text-3xl md:text-5xl tracking-tight">

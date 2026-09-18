@@ -2,21 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  /* Titres : Archivo elargi a 112 %. Le caractere vient de la largeur, pas du
+     contraste du trait. Le line-height n'est qu'un DEFAUT : place ici, il cede
+     devant un leading-* explicite. Dans la couche utilities il gagnait toujours,
+     et un titre de carte restait coince a 1.12 sur six lignes. */
+  .serif {
+    font-family: var(--font-archivo), "Helvetica Neue", Arial, sans-serif;
+    font-stretch: 112%;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 1.12;
+  }
+}
+
 html {
-  background: #FAF7F2;
+  background: #F8FAFB;
   scroll-behavior: smooth;
   scroll-padding-top: 5.5rem;
 }
 
 body {
-  color: #1F1B17;
-  background: #FAF7F2;
-  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  color: #2B2F35;
+  background: #F8FAFB;
+  font-family: var(--font-archivo), "Helvetica Neue", Arial, sans-serif;
+  font-optical-sizing: auto;
+  line-height: 1.62;
 }
 
 ::selection {
-  background: rgba(124, 42, 56, 0.16);
-  color: #1F1B17;
+  background: #BC2A13;
+  color: #FFFFFF;
 }
 
 /* Entrée orchestrée (chargement) + révélation au scroll */
@@ -58,40 +74,105 @@ body {
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.2s ease;
 }
 .lift:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 18px 42px -24px rgba(31, 27, 23, 0.28);
+  transform: translateY(-1px);
+  border-color: #BC2A13;
 }
 
 /* Halo chaud (profondeur d'ambiance) */
+/* Halo neutralise : la charte n'admet aucun degrade de decoration. */
 .glow {
   position: absolute;
-  border-radius: 9999px;
-  filter: blur(90px);
-  pointer-events: none;
-  z-index: 0;
+  display: none;
 }
 
 @layer utilities {
-  .serif {
-    font-family: var(--font-fraunces), ui-serif, Georgia, serif;
-    font-optical-sizing: auto;
-  }
   .hairline {
-    border-color: #E7E1D7;
+    border-color: #CBD1D6;
+  }
+
+  /* --- Couche d'accessibilite du design system BHA --------------------------
+     Boris est dyslexique, dysorthographique et dyscalculique, et une partie de
+     ses audiences a plus de 50 ans. Le readme du design system pose ces regles
+     comme prioritaires sur toute consideration esthetique. Elles sont donc des
+     utilitaires et non des reglages ponctuels, pour qu'une page nouvelle les
+     herite au lieu de les oublier. */
+
+  /* Sur-titres, labels, badges. Remplace le text-xs de 12px, sous le plancher
+     de 13px du systeme. IBM Plex Mono est charge depuis le debut mais n'etait
+     utilise nulle part : c'est ici qu'il sert. */
+  .kicker {
+    font-family: var(--font-plex-mono), ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 0.8125rem;   /* 13px, plancher du systeme */
+    font-weight: 500;
+    letter-spacing: 0.09em;
+    line-height: 1.32;
+    text-transform: uppercase;
+  }
+
+  /* Meme sur-titre, sans capitales. Le systeme interdit la capitale au-dela de
+     trois mots : au-dela, le mot perd sa silhouette et se dechiffre lettre a
+     lettre, ce qui est exactement le cout que paie un lecteur dyslexique. */
+  .kicker-long {
+    text-transform: none;
+    letter-spacing: 0.04em;
+  }
+
+  /* Tout chiffre de LECTURE (ratios, tableaux, dates, mesures, prix en ligne).
+     Traits d'epaisseur constante et chasse fixe pour que 1, 5 et 7 ne se
+     confondent jamais : c'est la regle dyscalculie du systeme. */
+  .data {
+    font-family: var(--font-plex-mono), ui-monospace, "SF Mono", Menlo, monospace;
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0;
+  }
+
+  /* Grands chiffres d'AFFICHAGE (>= 24px) : Archivo elargi, mais tabulaire,
+     pour qu'une serie de statistiques s'aligne au lieu de danser. */
+  .num {
+    font-family: var(--font-archivo), "Helvetica Neue", Arial, sans-serif;
+    font-stretch: 105%;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.015em;
+    line-height: 1;
+  }
+
+  /* Filet fort : ouvre une section ou un bloc. Le systeme n'a que deux
+     epaisseurs, le filet fin 1px (.hairline) et celui-ci. */
+  .rule {
+    border: 0;
+    border-top: 3px solid #15171A;
+    margin: 0;
+  }
+  .rule-accent {
+    border-top-color: #BC2A13;
+  }
+
+  /* La coupe oblique remplace l'arrondi : 18px sur les cartes, 10px sur les
+     boutons. Rayon 0 partout, c'est la coupe qui donne le caractere. */
+  .cut {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 18px), calc(100% - 18px) 100%, 0 100%);
+  }
+  .cut-tl {
+    clip-path: polygon(18px 0, 100% 0, 100% 100%, 0 100%, 0 18px);
+  }
+  .cut-btn {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
   }
   .grain {
-    background-image: radial-gradient(rgba(31, 27, 23, 0.04) 1px, transparent 1px);
+    background-image: radial-gradient(rgba(21, 23, 26, 0.05) 1px, transparent 1px);
     background-size: 4px 4px;
   }
   .dot::before {
     content: "";
     display: inline-block;
-    width: 6px;
-    height: 6px;
-    border-radius: 9999px;
-    background: #7C2A38;
+    width: 8px;
+    height: 2px;
+    border-radius: 0;
+    background: #BC2A13;
     margin-right: 10px;
-    vertical-align: 2px;
+    vertical-align: 5px;
   }
   /* Pastille de disponibilité (point vert qui respire) */
   .live-dot {
@@ -99,15 +180,15 @@ body {
     display: inline-block;
     width: 8px;
     height: 8px;
-    border-radius: 9999px;
-    background: #1F9D55;
+    border-radius: 0;
+    background: #1C7A55;
   }
   .live-dot::after {
     content: "";
     position: absolute;
     inset: 0;
-    border-radius: 9999px;
-    background: #1F9D55;
+    border-radius: 0;
+    background: #1C7A55;
     animation: live-pulse 2.4s ease-out infinite;
   }
 }
@@ -144,19 +225,23 @@ body {
 
 @layer utilities {
   /* Cadre portrait organique (blob doux) */
+  /* La coupe oblique remplace l'arrondi organique. */
   .blobby {
-    border-radius: 58% 42% 47% 53% / 56% 49% 51% 44%;
+    border-radius: 0;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 18px), calc(100% - 18px) 100%, 0 100%);
   }
   .blobby-2 {
-    border-radius: 42% 58% 53% 47% / 49% 56% 44% 51%;
+    border-radius: 0;
+    clip-path: polygon(18px 0, 100% 0, 100% 100%, 0 100%, 0 18px);
   }
   /* Signature manuscrite fondue sur fond clair */
   .sig {
     mix-blend-mode: multiply;
   }
   /* Ombre chaude douce */
+  /* Aucune ombre portee dans la charte : conserve neutre pour ne rien deplacer. */
   .shadow-warm {
-    box-shadow: 0 24px 60px -24px rgba(31, 27, 23, 0.22);
+    box-shadow: none;
   }
 }
 
@@ -169,15 +254,15 @@ body {
 /* Accessibilité : focus clavier visible sur tous les éléments interactifs */
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid #7C2A38;
-  outline-offset: 3px;
-  border-radius: 6px;
+  outline: 2px solid #BC2A13;
+  outline-offset: 2px;
+  border-radius: 0;
 }
 
 /* Anneau de focus lisible sur les surfaces sombres */
 .bg-night a:focus-visible,
 .bg-night button:focus-visible {
-  outline-color: #F4EFE6;
+  outline-color: #F2653F;
 }
 
 /* Lien d'évitement clavier */
@@ -186,10 +271,10 @@ button:focus-visible {
   left: 1rem;
   top: -3rem;
   z-index: 100;
-  background: #7C2A38;
-  color: #F4EFE6;
+  background: #BC2A13;
+  color: #FFFFFF;
   padding: 0.6rem 1rem;
-  border-radius: 9999px;
+  border-radius: 0;
   font-size: 0.875rem;
   transition: top 0.2s ease;
 }

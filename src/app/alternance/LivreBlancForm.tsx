@@ -365,7 +365,7 @@ export default function LivreBlancForm({
         )}
       </button>
 
-      <details className="mt-4 text-xs text-muted leading-relaxed">
+      <details className="mt-4 text-sm text-muted leading-relaxed">
         <summary className="cursor-pointer underline decoration-dotted hover:text-ink">
           {L.registre === "tu"
             ? "Gratuit, accès immédiat. Ce que deviennent tes données"

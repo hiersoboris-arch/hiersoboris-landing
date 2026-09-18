@@ -75,22 +75,22 @@ ${rgpd}`;
     .join("");
   const detailHtml = QUESTIONS.map(
     (q, i) =>
-      `<p style="margin:0 0 10px"><strong>${i + 1}. ${escapeHtml(q.q)}</strong><br>→ ${escapeHtml(q.options[reponses[i]])} <span style="color:#6B6055">(${reponses[i]}/2)</span></p>`,
+      `<p style="margin:0 0 10px"><strong>${i + 1}. ${escapeHtml(q.q)}</strong><br>→ ${escapeHtml(q.options[reponses[i]])} <span style="color:#5C636C">(${reponses[i]}/2)</span></p>`,
   ).join("");
 
-  const html = `<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#1F1B17;max-width:560px">
+  const html = `<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#2B2F35;max-width:560px">
 <p>${escapeHtml(bonjour)}</p>
 <p style="font-size:20px"><strong>Ton diagnostic : ${score}/${SCORE_MAX} · ${escapeHtml(niveau.titre)}</strong></p>
 <p>${escapeHtml(niveau.texte)}</p>
 <p><strong>Les 3 priorités que je te conseille :</strong></p>
 <ol>${recosHtml}</ol>
-<hr style="border:none;border-top:1px solid #E7E1D7;margin:20px 0">
+<hr style="border:none;border-top:1px solid #CBD1D6;margin:20px 0">
 <p><strong>Le détail de tes réponses</strong></p>
 ${detailHtml}
-<p><a href="${CALENDLY}" style="display:inline-block;background:#7C2A38;color:#F4EFE6;text-decoration:none;padding:14px 28px;border-radius:999px;font-weight:500">Identifier le levier n°1 en 30 minutes</a></p>
+<p><a href="${CALENDLY}" style="display:inline-block;background:#BC2A13;color:#FFFFFF;text-decoration:none;padding:14px 28px;border-radius:0;font-weight:500">Identifier le levier n°1 en 30 minutes</a></p>
 <p>Bien à toi,<br>Boris</p>
-<hr style="border:none;border-top:1px solid #E7E1D7;margin:28px 0">
-<p style="font-size:13px;color:#6B6055;line-height:1.5">${escapeHtml(rgpd)}</p>
+<hr style="border:none;border-top:1px solid #CBD1D6;margin:28px 0">
+<p style="font-size:14px;color:#5C636C;line-height:1.6">${escapeHtml(rgpd)}</p>
 </div>`;
 
   try {

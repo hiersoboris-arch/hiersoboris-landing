@@ -96,7 +96,7 @@ export default function SiteHeader({ solidFromTop }: { solidFromTop?: boolean })
     </header>
 
       {open && (
-        <div className="md:hidden fixed inset-x-0 top-16 bottom-0 z-40 bg-[#FAF7F2] px-6 py-8 overflow-y-auto">
+        <div className="md:hidden fixed inset-x-0 top-16 bottom-0 z-40 bg-[#F8FAFB] px-6 py-8 overflow-y-auto">
           <nav className="flex flex-col gap-1">
             {LINKS.map((l) => (
               <Link

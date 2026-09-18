@@ -114,10 +114,10 @@ export default function DiagnosticForm() {
         <div className="w-12 h-12 rounded-full bg-bordeaux text-cream grid place-items-center">
           <Check className="w-6 h-6" />
         </div>
-        <div className="mt-6 text-xs uppercase tracking-[0.18em] text-muted">
+        <div className="mt-6 kicker text-muted">
           Ton résultat
         </div>
-        <h2 className="serif text-3xl md:text-4xl mt-2">
+        <h2 className="serif tabular-nums text-3xl md:text-4xl mt-2">
           {resultat.score}/{resultat.max} · {resultat.titre}
         </h2>
         <p className="mt-4 text-muted leading-relaxed">{resultat.texte}</p>
@@ -146,7 +146,7 @@ export default function DiagnosticForm() {
   return (
     <form onSubmit={onSubmit} noValidate>
       {/* Progression */}
-      <div className="sticky top-16 md:top-20 z-10 -mx-6 px-6 py-3 bg-[#FAF7F2]/95 backdrop-blur-sm border-b hairline mb-8">
+      <div className="sticky top-16 md:top-20 z-10 -mx-6 px-6 py-3 bg-[#F8FAFB]/95 backdrop-blur-sm border-b hairline mb-8">
         <div className="max-w-3xl flex items-center gap-4">
           <div className="flex-1 h-1.5 rounded-full bg-border overflow-hidden">
             <div
@@ -172,7 +172,7 @@ export default function DiagnosticForm() {
                 {q.options.map((opt, oi) => (
                   <label
                     key={opt}
-                    className={`min-h-[48px] px-5 py-3 flex items-center rounded-xl border cursor-pointer transition text-sm leading-snug ${
+                    className={`min-h-[48px] px-5 py-3 flex items-center rounded-xl border cursor-pointer transition text-sm leading-relaxed ${
                       reponses[qi] === oi
                         ? "bg-bordeaux text-cream border-bordeaux"
                         : "hairline bg-card text-ink hover:border-accent"
@@ -334,7 +334,7 @@ export default function DiagnosticForm() {
           )}
         </button>
 
-        <details className="mt-4 text-xs text-muted leading-relaxed">
+        <details className="mt-4 text-sm text-muted leading-relaxed">
           <summary className="cursor-pointer underline decoration-dotted hover:text-ink">
             Gratuit, résultat immédiat. Ce que deviennent tes données
           </summary>

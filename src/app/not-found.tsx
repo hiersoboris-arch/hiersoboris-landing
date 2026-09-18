@@ -4,7 +4,7 @@ import { ArrowLeft } from "lucide-react";
 export default function NotFound() {
   return (
     <main id="contenu" className="max-w-3xl mx-auto px-6 min-h-[70vh] flex flex-col justify-center">
-      <div className="text-xs uppercase tracking-[0.2em] text-accent mb-4">
+      <div className="kicker text-accent mb-4">
         Erreur 404
       </div>
       <h1 className="serif text-5xl md:text-7xl tracking-tight">

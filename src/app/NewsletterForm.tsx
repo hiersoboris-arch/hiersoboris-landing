@@ -98,7 +98,7 @@ export default function NewsletterForm({ source }: { source: string }) {
           {erreur}
         </p>
       )}
-      <p className="mt-3 text-xs text-muted leading-relaxed">
+      <p className="mt-3 text-sm text-muted leading-relaxed">
         Un email par nouveau guide, jusqu&apos;à un par jour en août. Désinscription en
         un clic dans chaque email, données jamais revendues.
       </p>
