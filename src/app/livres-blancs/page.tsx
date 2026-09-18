@@ -156,7 +156,7 @@ export default function LivresBlancs() {
             Retour à l&apos;accueil
           </Link>
           <div className="max-w-3xl">
-            <div className="text-xs md:text-sm tracking-[0.2em] uppercase text-bordeaux mb-6">
+            <div className="kicker md:text-sm text-bordeaux mb-6">
               Ressources gratuites
             </div>
             <h1 className="serif text-4xl md:text-6xl leading-[1.02] tracking-tight">
@@ -183,7 +183,7 @@ export default function LivresBlancs() {
                   tabIndex={-1}
                   className={`${c.couleur} hidden sm:flex shrink-0 w-28 md:w-32 aspect-[3/4] rounded-lg shadow-warm p-3 flex-col justify-between`}
                 >
-                  <span className="serif text-cream text-sm leading-snug">
+                  <span className="serif text-cream text-sm leading-relaxed">
                     {c.livret.titre}
                   </span>
                   <span className="text-[9px] uppercase tracking-[0.18em] text-cream/70">
@@ -192,7 +192,7 @@ export default function LivresBlancs() {
                 </Link>
                 <div className="flex flex-col flex-1">
                   <div className="flex items-center gap-3 mb-3">
-                    <span className="text-xs uppercase tracking-[0.18em] text-accent">
+                    <span className="kicker text-accent">
                       {c.tag}
                     </span>
                     {c.livret.publie === datePlusRecente && (
@@ -213,7 +213,7 @@ export default function LivresBlancs() {
                       {c.cta}
                       <ArrowRight className="w-4 h-4" />
                     </Link>
-                    <span className="text-xs text-muted">{dateFr(c.livret.publie)}</span>
+                    <span className="text-sm text-muted">{dateFr(c.livret.publie)}</span>
                   </div>
                 </div>
               </article>

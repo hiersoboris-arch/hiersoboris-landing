@@ -67,7 +67,7 @@ export default function LettreMotivation() {
             Tous les livres blancs
           </Link>
           <div className="max-w-3xl">
-            <div className="text-xs md:text-sm tracking-[0.2em] uppercase text-bordeaux mb-6">
+            <div className="kicker md:text-sm text-bordeaux mb-6 kicker-long">
               Livre blanc · Étudiants &amp; candidats
             </div>
             <h1 className="serif text-4xl md:text-6xl leading-[1.02] tracking-tight">
@@ -88,7 +88,7 @@ export default function LettreMotivation() {
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-px bg-border border hairline rounded-2xl overflow-hidden">
             {CHIFFRES.map((c) => (
               <div key={c.caption} className="bg-card p-6 md:p-8">
-                <div className="serif text-3xl md:text-4xl mb-2">{c.value}</div>
+                <div className="num text-3xl md:text-4xl mb-2">{c.value}</div>
                 <div className="text-sm text-muted leading-relaxed">{c.caption}</div>
               </div>
             ))}
@@ -100,7 +100,7 @@ export default function LettreMotivation() {
           <div className="max-w-content mx-auto px-6 py-16 md:py-24">
             <div className="grid md:grid-cols-12 gap-10 lg:gap-16 items-start">
               <div className="md:col-span-6">
-                <div className="text-xs uppercase tracking-[0.18em] text-muted mb-5">
+                <div className="kicker text-muted mb-5 kicker-long">
                   <span className="dot" />
                   Ce que tu y trouveras
                 </div>

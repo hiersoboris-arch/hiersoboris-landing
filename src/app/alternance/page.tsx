@@ -6,6 +6,7 @@ import { KIT_CONTENU } from "@/lib/livre-blanc";
 import { SITE_URL } from "@/lib/site-url";
 import SiteHeader from "../SiteHeader";
 import LivreBlancForm from "./LivreBlancForm";
+import { kickerClass } from "@/lib/kicker";
 
 export const metadata: Metadata = {
   title: "Alternance Sales : les opportunités du moment",
@@ -103,7 +104,7 @@ export default function Alternance() {
             Retour à l&apos;accueil
           </Link>
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2.5 text-xs md:text-sm tracking-[0.2em] uppercase text-bordeaux mb-6">
+            <div className="inline-flex items-center gap-2.5 kicker md:text-sm text-bordeaux mb-6">
               <span className="live-dot" />
               <span>{OPPORTUNITES.length} postes ouverts</span>
             </div>
@@ -157,7 +158,7 @@ export default function Alternance() {
         {/* Offres */}
         <section id="offres" className="border-t hairline">
           <div className="max-w-content mx-auto px-6 py-16 md:py-24">
-            <div className="text-xs uppercase tracking-[0.18em] text-muted mb-8">
+            <div className="kicker text-muted mb-8 kicker-long">
               <span className="dot" />
               Les postes du moment
             </div>
@@ -179,7 +180,7 @@ export default function Alternance() {
           <div className="max-w-content mx-auto px-6 py-16 md:py-24">
             <div className="grid md:grid-cols-12 gap-10 lg:gap-16 items-start">
               <div className="md:col-span-6">
-                <div className="text-xs uppercase tracking-[0.18em] text-muted mb-5">
+                <div className="kicker text-muted mb-5">
                   <span className="dot" />
                   Kit gratuit
                 </div>
@@ -231,7 +232,7 @@ export default function Alternance() {
                   className="flex items-center justify-between bg-bordeaux text-cream px-6 py-5 rounded-2xl hover:bg-bordeaux-soft transition"
                 >
                   <span>
-                    <span className="block text-xs uppercase tracking-[0.18em] opacity-70">
+                    <span className="block kicker opacity-70">
                       Calendly
                     </span>
                     <span className="serif text-lg mt-1 block">Prendre 15 minutes</span>
@@ -243,7 +244,7 @@ export default function Alternance() {
                   className="flex items-center justify-between border hairline bg-card px-6 py-5 rounded-2xl hover:border-accent transition"
                 >
                   <span>
-                    <span className="block text-xs uppercase tracking-[0.18em] text-muted">
+                    <span className="block kicker text-muted">
                       LinkedIn
                     </span>
                     <span className="serif text-lg mt-1 block">M&apos;écrire directement</span>
@@ -285,7 +286,7 @@ function AudienceCard({
 }) {
   return (
     <article className="lift bg-card border hairline rounded-2xl p-8 flex flex-col">
-      <div className="text-xs uppercase tracking-[0.18em] text-accent mb-3">{tag}</div>
+      <div className={`${kickerClass(tag)} text-accent mb-3`}>{tag}</div>
       <h2 className="serif text-2xl mb-3">{title}</h2>
       <p className="text-muted leading-relaxed">{desc}</p>
       {ctaHref && ctaLabel && (
@@ -316,15 +317,15 @@ function OppCard({
   return (
     <article className="bg-card border hairline rounded-2xl p-8 md:p-10 flex flex-col">
       <div className="flex items-center justify-between gap-3 mb-4">
-        <span className="text-xs uppercase tracking-[0.18em] text-accent">{badge}</span>
+        <span className={`${kickerClass(badge)} text-accent`}>{badge}</span>
         <div className="flex items-center gap-2 shrink-0">
           {status && (
-            <span className="text-xs text-accent border border-bordeaux/40 bg-bordeaux/5 rounded-full px-3 py-1 inline-flex items-center gap-1.5 whitespace-nowrap">
+            <span className="text-sm text-accent border border-bordeaux/40 bg-bordeaux/5 rounded-full px-3 py-1 inline-flex items-center gap-1.5 whitespace-nowrap">
               <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
               {status}
             </span>
           )}
-          <span className="text-xs text-muted border hairline rounded-full px-3 py-1 whitespace-nowrap">
+          <span className="text-sm text-muted border hairline rounded-full px-3 py-1 whitespace-nowrap">
             Réf. {code}
           </span>
         </div>
@@ -348,7 +349,7 @@ function OppCard({
       </div>
 
       <div className="mt-6">
-        <div className="text-xs uppercase tracking-[0.18em] text-muted mb-2">Missions</div>
+        <div className="kicker text-muted mb-2">Missions</div>
         <ul className="space-y-2">
           {missions.map((m, i) => (
             <li key={i} className="flex gap-3 leading-relaxed">
@@ -360,7 +361,7 @@ function OppCard({
       </div>
 
       <div className="mt-6">
-        <div className="text-xs uppercase tracking-[0.18em] text-muted mb-2">Profil</div>
+        <div className="kicker text-muted mb-2">Profil</div>
         <p className="leading-relaxed">{profil}</p>
       </div>
 

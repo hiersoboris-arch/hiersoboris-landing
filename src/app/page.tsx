@@ -6,6 +6,7 @@ import { CALENDLY, LINKEDIN, EMAIL, TOOLSBOX } from "@/lib/contact";
 import SiteHeader from "./SiteHeader";
 import NewsletterForm from "./NewsletterForm";
 import heroDestruction from "../../public/hero/destruction.jpg";
+import { kickerClass } from "@/lib/kicker";
 
 function LinkedinIcon({ className }: { className?: string }) {
   return (
@@ -226,12 +227,12 @@ export default function Home() {
           />
           {/* Label bas de bandeau */}
           <div className="absolute inset-x-0 bottom-0 z-10 max-w-content mx-auto w-full px-6 pb-6 flex flex-wrap items-end justify-between gap-3">
-            <div className="text-xs md:text-sm tracking-[0.22em] uppercase text-cream/85">
+            <div className="kicker md:text-sm text-cream/85 kicker-long">
               Head of Sales B2B SaaS · Sales coach &amp; formateur
             </div>
             <Link
               href="/art-slash"
-              className="text-xs text-cream/60 hover:text-cream transition py-2"
+              className="text-sm text-cream/60 hover:text-cream transition py-2"
             >
               Body painting : mon ancienne vie d&apos;artiste →
             </Link>
@@ -242,7 +243,7 @@ export default function Home() {
       {/* Hero clair */}
       <section className="relative max-w-content mx-auto px-6 pt-14 md:pt-20 pb-14 md:pb-20">
         <div className="max-w-3xl">
-          <div className="rise rise-1 inline-flex items-center gap-2.5 text-xs md:text-sm tracking-[0.2em] uppercase text-bordeaux mb-6">
+          <div className="rise rise-1 inline-flex items-center gap-2.5 kicker md:text-sm text-bordeaux mb-6">
             <span className="live-dot" />
             <span>Disponible dès maintenant</span>
           </div>
@@ -287,7 +288,7 @@ export default function Home() {
             30 minutes, en visio, sans engagement.
           </p>
           <div className="rise rise-5 mt-12 flex flex-wrap gap-x-12 gap-y-6">
-            <HeroStat value="3,8M€" label="ARR généré, 10 ans" accent />
+            <HeroStat value="3,8M€" label="ARR moyen par an, sur 10 ans" accent />
             <HeroStat value="387" label="deals signés" />
             <HeroStat value="400" label="formés, étudiants et pros" />
             <HeroStat value="350 calls" label="de capacité hebdo · 0,3% de no-show par mois" />
@@ -298,7 +299,7 @@ export default function Home() {
       {/* Trust strip (marquee) */}
       <section id="confiance" className="border-b hairline py-10 overflow-hidden">
         <div className="max-w-content mx-auto px-6 mb-6">
-          <div className="text-xs uppercase tracking-[0.18em] text-muted">
+          <div className="kicker text-muted kicker-long">
             <span className="dot" />
             Ils m&apos;ont fait confiance, et me font encore confiance
           </div>
@@ -316,7 +317,7 @@ export default function Home() {
       <section id="aider" className="border-b hairline">
         <div className="max-w-content mx-auto px-6 py-20 md:py-28">
           <div className="max-w-2xl mb-14">
-            <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
+            <div className="kicker text-muted mb-4">
               <span className="dot" />
               Travailler ensemble
             </div>
@@ -337,7 +338,7 @@ export default function Home() {
       <section id="machine" className="border-b hairline grain">
         <div className="max-w-content mx-auto px-6 py-20 md:py-28">
           <div className="max-w-2xl mb-12">
-            <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
+            <div className="kicker text-muted mb-4">
               <span className="dot" />
               La méthode
             </div>
@@ -391,7 +392,7 @@ export default function Home() {
 
           {/* Ce que je construis */}
           <div className="mt-14">
-            <div className="text-xs uppercase tracking-[0.18em] text-muted mb-6">
+            <div className="kicker text-muted mb-6 kicker-long">
               Ce que je construis, et que tu peux voir
             </div>
             <div className="grid md:grid-cols-3 gap-6">
@@ -402,7 +403,7 @@ export default function Home() {
                 className="lift group bg-card border hairline rounded-2xl p-7 hover:border-accent transition"
               >
                 <div className="flex items-start justify-between mb-4">
-                  <span className="text-xs uppercase tracking-[0.18em] text-accent">
+                  <span className="kicker text-accent">
                     Annuaire · En ligne
                   </span>
                   <ArrowUpRight className="w-5 h-5 text-muted group-hover:text-accent transition" />
@@ -418,7 +419,7 @@ export default function Home() {
                 className="lift group bg-card border hairline rounded-2xl p-7 hover:border-accent transition"
               >
                 <div className="flex items-start justify-between mb-4">
-                  <span className="text-xs uppercase tracking-[0.18em] text-accent">
+                  <span className="kicker text-accent">
                     Ce site · Automatisé
                   </span>
                   <ArrowRight className="w-5 h-5 text-muted group-hover:text-accent transition" />
@@ -434,7 +435,7 @@ export default function Home() {
                 className="lift group bg-card border hairline rounded-2xl p-7 hover:border-accent transition"
               >
                 <div className="flex items-start justify-between mb-4">
-                  <span className="text-xs uppercase tracking-[0.18em] text-accent">
+                  <span className="kicker text-accent kicker-long">
                     Agents · Démo sur demande
                   </span>
                   <ArrowUpRight className="w-5 h-5 text-muted group-hover:text-accent transition" />
@@ -474,7 +475,7 @@ export default function Home() {
       <section id="preuves" className="border-b hairline">
         <div className="max-w-content mx-auto px-6 py-20 md:py-28">
           <div className="max-w-3xl mb-16">
-            <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
+            <div className="kicker text-muted mb-4">
               <span className="dot" />
               Résultats
             </div>
@@ -497,7 +498,7 @@ export default function Home() {
 
           {/* Détail par mission */}
           <div className="mb-16">
-            <div className="text-xs uppercase tracking-[0.18em] text-muted mb-6">
+            <div className="kicker text-muted mb-6 kicker-long">
               Le détail, par mission
             </div>
             <div className="grid md:grid-cols-2 gap-6">
@@ -514,7 +515,7 @@ export default function Home() {
         <div className="max-w-content mx-auto px-6 py-20 md:py-28">
           <div className="grid md:grid-cols-12 gap-12 mb-14">
             <div className="md:col-span-6">
-              <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
+              <div className="kicker text-muted mb-4">
                 <span className="dot" />
                 Intervenant &amp; formateur
               </div>
@@ -551,7 +552,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="text-xs uppercase tracking-[0.18em] text-muted mb-5">
+          <div className="kicker text-muted mb-5">
             Mes sujets d&apos;intervention
           </div>
           <div className="flex flex-wrap gap-3">
@@ -579,7 +580,7 @@ export default function Home() {
       <section id="recommandations" className="border-b hairline grain">
         <div className="max-w-content mx-auto px-6 py-20 md:py-28">
           <div className="max-w-2xl mb-14">
-            <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
+            <div className="kicker text-muted mb-4">
               <span className="dot" />
               Recommandations
             </div>
@@ -610,7 +611,7 @@ export default function Home() {
       <section id="livres-blancs" className="border-b hairline">
         <div className="max-w-content mx-auto px-6 py-20 md:py-28">
           <div className="max-w-2xl mb-14">
-            <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
+            <div className="kicker text-muted mb-4">
               <span className="dot" />
               Livres blancs
             </div>
@@ -707,7 +708,7 @@ export default function Home() {
       <section id="faq" className="border-b hairline">
         <div className="max-w-content mx-auto px-6 py-20 md:py-28 grid md:grid-cols-12 gap-12">
           <div className="md:col-span-4">
-            <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
+            <div className="kicker text-muted mb-4">
               <span className="dot" />
               Questions fréquentes
             </div>
@@ -732,7 +733,7 @@ export default function Home() {
         <div className="reveal relative z-10 max-w-content mx-auto px-6 py-24 md:py-32">
           <div className="grid md:grid-cols-12 gap-12 items-start">
             <div className="md:col-span-7">
-              <div className="text-xs uppercase tracking-[0.18em] text-muted mb-4">
+              <div className="kicker text-muted mb-4">
                 <span className="dot" />
                 Parlons
               </div>
@@ -816,13 +817,13 @@ function HeroStat({
   return (
     <div>
       <div
-        className={`serif text-3xl md:text-4xl leading-none ${
+        className={`serif tabular-nums text-3xl md:text-4xl leading-none ${
           accent ? "text-bordeaux" : "text-ink"
         }`}
       >
         {value}
       </div>
-      <div className="mt-1.5 text-xs uppercase tracking-[0.12em] text-muted">
+      <div className={`mt-1.5 ${kickerClass(label)} text-muted`}>
         {label}
       </div>
     </div>
@@ -840,7 +841,7 @@ function OfferCard({
 }) {
   return (
     <article className="lift bg-card border hairline rounded-2xl p-8 md:p-10 hover:border-accent transition">
-      <div className="text-xs uppercase tracking-[0.18em] text-accent mb-3">{audience}</div>
+      <div className={`${kickerClass(audience)} text-accent mb-3`}>{audience}</div>
       <h3 className="serif text-2xl mb-3">{title}</h3>
       <p className="text-muted leading-relaxed">{desc}</p>
     </article>
@@ -892,7 +893,7 @@ function TestimonialCard({
         &laquo; {quote} &raquo;
       </blockquote>
       {chiffres && (
-        <p className="text-xs text-bordeaux font-medium tracking-wide mb-5">
+        <p className="text-sm text-bordeaux font-medium tracking-wide mb-5">
           La mission en chiffres : {chiffres}
         </p>
       )}
@@ -959,7 +960,7 @@ function ProjectCard({
       className="lift group bg-card border hairline rounded-2xl p-8 hover:border-accent transition"
     >
       <div className="flex items-start justify-between mb-6">
-        <div className="text-xs uppercase tracking-[0.18em] text-accent">{tag}</div>
+        <div className={`${kickerClass(tag)} text-accent`}>{tag}</div>
         <ArrowUpRight className="w-5 h-5 text-muted group-hover:text-accent transition" />
       </div>
       <h3 className="serif text-2xl mb-2">{title}</h3>
@@ -1013,8 +1014,8 @@ function ContactCard({
         <div
           className={
             primary
-              ? "text-xs uppercase tracking-[0.18em] opacity-70"
-              : "text-xs uppercase tracking-[0.18em] text-muted"
+              ? "kicker opacity-70"
+              : "kicker text-muted"
           }
         >
           {tag}

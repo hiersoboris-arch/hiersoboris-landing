@@ -216,7 +216,7 @@ export default function CVPage() {
 
       {/* Compétences */}
       <section className="mb-14">
-        <h2 className="text-xs uppercase tracking-[0.18em] text-muted mb-6">
+        <h2 className="kicker text-muted mb-6 kicker-long">
           <span className="dot" />
           Ce que je sais faire
         </h2>
@@ -232,7 +232,7 @@ export default function CVPage() {
 
       {/* Expériences */}
       <section className="mb-14">
-        <h2 className="text-xs uppercase tracking-[0.18em] text-muted mb-8">
+        <h2 className="kicker text-muted mb-8">
           <span className="dot" />
           Expériences
         </h2>

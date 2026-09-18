@@ -50,7 +50,7 @@ export default function Diagnostic() {
             Retour à l&apos;accueil
           </Link>
           <div className="max-w-3xl">
-            <div className="text-xs md:text-sm tracking-[0.2em] uppercase text-bordeaux mb-6">
+            <div className="kicker md:text-sm text-bordeaux mb-6 kicker-long">
               Diagnostic gratuit · 3 minutes
             </div>
             <h1 className="serif text-4xl md:text-6xl leading-[1.02] tracking-tight">
