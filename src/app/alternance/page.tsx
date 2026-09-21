@@ -39,21 +39,22 @@ type Opportunite = {
 const OPPORTUNITES: Opportunite[] = [
   {
     code: "ALT-07",
-    badge: "Conseil · flux de données et systèmes d'information",
-    role: "Alternant·e commercial·e · premier profil Sales de la structure",
+    badge: "Conseil data · ERP, BI et automatisation",
+    role: "Alternant·e Business Developer B2B · premier profil Sales de la structure",
     contexte:
-      "Jeune société de conseil en flux de données et systèmes d'information, fondée par des ingénieurs et en cours de structuration. L'équipe sait délivrer mais n'a personne au commercial : tu serais le tout premier profil Sales, en direct avec le fondateur. Je t'accompagne gratuitement les premières semaines sur le cadrage et la méthode.",
-    lieu: "Île-de-France, organisation décentralisée (pas de bureau fixe)",
-    rythme: "3 semaines entreprise / 1 semaine école",
-    demarrage: "Rentrée 2026, à confirmer",
+      "Collectif de cinq consultants seniors qui aide les PME et ETI à fiabiliser leur pilotage, automatiser les tâches sans valeur ajoutée et unifier leurs systèmes (Power BI, Odoo, ERP, IA). Ils ont la technique, les références et le réseau : ce qui leur manque, c'est quelqu'un qui fasse tourner la machine commerciale au quotidien. Le playbook commercial n'existe pas encore, tu l'écris avec les associés. Rémunération légale de l'alternance plus une commission jusqu'à 10 % sur chaque affaire signée que tu as initiée. Maître d'apprentissage dédié et point quotidien avec l'équipe, ce qui change beaucoup sur un poste en full remote.",
+    lieu: "Full remote",
+    rythme: "Selon le rythme de ton école",
+    demarrage: "Octobre ou novembre 2026, contrat de 12 mois",
     missions: [
-      "Prospection des comptes cibles et prise de rendez-vous",
-      "Qualification des besoins en amont des experts techniques",
-      "Construction du process commercial de zéro, avec le fondateur",
-      "Montée en puissance progressive sur des deals de plus gros volume",
+      "Construire la base de comptes cibles et détecter les signaux d'achat",
+      "Concevoir, tester et itérer les séquences d'approche",
+      "Décrocher des rendez-vous qualifiés",
+      "Participer à l'avant-vente aux côtés des associés",
+      "Piloter le pipeline avec des chiffres",
     ],
     profil:
-      "Bac+3 à Bac+5 · autonome, à l'aise pour construire sans process existant · appétence pour la data et les systèmes d'information.",
+      "Master 2 ou MBA vente B2B en alternance · au moins une alternance en Sales déjà faite · une vraie appétence pour la tech et la donnée · l'autonomie nécessaire pour être efficace en full remote.",
   },
   {
     code: "ALT-09",
