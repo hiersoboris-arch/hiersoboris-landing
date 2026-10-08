@@ -288,10 +288,10 @@ export default function Home() {
             30 minutes, en visio, sans engagement.
           </p>
           <div className="rise rise-5 mt-12 flex flex-wrap gap-x-12 gap-y-6">
-            <HeroStat value="3,8M€" label="ARR moyen par an, sur 10 ans" accent />
-            <HeroStat value="387" label="deals signés" />
-            <HeroStat value="400" label="formés, étudiants et pros" />
-            <HeroStat value="350 calls" label="de capacité hebdo · 0,3% de no-show par mois" />
+            <HeroStat value="5M€" label="d'ARR généré par an, sur 10 ans" accent />
+            <HeroStat value="500" label="deals won" />
+            <HeroStat value="500" label="étudiants et pros formés par an" />
+            <HeroStat value="250 calls" label="cold & warm par semaine" />
           </div>
         </div>
       </section>
@@ -545,7 +545,7 @@ export default function Home() {
               </div>
             </div>
             <div className="md:col-span-6 grid grid-cols-2 gap-px bg-border border hairline rounded-2xl overflow-hidden">
-              <Stat value="400" caption="étudiants et pros formés au total." />
+              <Stat value="500" caption="étudiants et pros formés par an." />
               <Stat value="14,2/20" caption="de moyenne sur mes interventions (9 classes, ~225 étudiants)." />
               <Stat value="40h" caption="de coaching Les Négociales 2026 pour Euridis Paris (~50 étudiants), juré et acheteur en finale." />
               <Stat value="100%" caption="terrain : cours, ateliers, business games et jurys, jamais de théorie hors-sol." />
