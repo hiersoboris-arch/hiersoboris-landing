@@ -6,6 +6,12 @@ import { SITE_URL } from "@/lib/site-url";
 
 const CV_PDF = "/CV-Boris-Hierso-Alphandery.pdf";
 
+const CV_PDFS = [
+  { href: CV_PDF, label: "CV Sales coach & formateur" },
+  { href: "/cv/CV-Boris-Hierso-Alphandery-Head-of-Sales.pdf", label: "CV Head of Sales freelance" },
+  { href: "/cv/CV-Boris-Hierso-Alphandery-Formateur-Intervenant.pdf", label: "CV Formateur & intervenant" },
+];
+
 export const metadata: Metadata = {
   title: "CV",
   description:
@@ -32,19 +38,6 @@ const SKILLS = [
 
 const EXPERIENCES = [
   {
-    company: "Pitchbase",
-    role: "Cofondateur et Head of Sales",
-    period: "Août 2026 → en cours",
-    context: "SalesTech, simulateur de vente par IA vocale",
-    points: [
-      "Le produit : l'IA joue les interlocuteurs, de la prospection à l'account management, puis évalue chaque appel selon le framework de l'étape (BANT, MEDDIC, SPIN) avec un débrief de ce qu'il faut retravailler. Plus de 600 clients : indépendants, étudiants, équipes commerciales.",
-      "Cofondateur aux côtés de Briac Roudaut, en charge du commercial, des écoles, des entreprises et du réseau.",
-      "Offre et pricing repensés : grille par siège, offres écoles et entreprises.",
-      "Pipeline B2B ouvert de zéro (écoles, organismes de formation, grands comptes) : un IAE signé.",
-      "Structuration de la société : CRM et espace de travail communs, conformité RGPD (registre, TIA, DPA), machine de prospection automatisée.",
-    ],
-  },
-  {
     company: "BHA Consulting",
     role: "Fondateur, Head of Sales freelance · conseil, formation et apport d'affaires",
     period: "Fév. 2018 → en cours",
@@ -56,6 +49,19 @@ const EXPERIENCES = [
       "Formation et coaching : équipes commerciales en entreprise, écoles et organismes de formation, coaching individuel de commerciaux et de dirigeants.",
       "Constitution et pilotage d'équipes (alternants, freelances, apporteurs), préparation et placement de candidats Sales.",
       "Sales Ops, automatisation et IA : CRM, reporting, structuration de la data, workflows automatisés (n8n, Claude), IA appliquée à la vente.",
+    ],
+  },
+  {
+    company: "Pitchbase",
+    role: "Cofondateur et Head of Sales",
+    period: "Sept. 2026 → en cours",
+    context: "SalesTech, simulateur de vente par IA vocale",
+    points: [
+      "Le produit : l'IA joue les interlocuteurs, de la prospection à l'account management, puis évalue chaque appel selon le framework de l'étape (BANT, MEDDIC, SPIN) avec un débrief de ce qu'il faut retravailler. Plus de 600 clients : indépendants, étudiants, équipes commerciales.",
+      "Cofondateur aux côtés de Briac Roudaut, en charge du commercial, des écoles, des entreprises et du réseau.",
+      "Offre et pricing repensés : grille par siège, offres écoles et entreprises.",
+      "Pipeline B2B ouvert de zéro (écoles, organismes de formation, grands comptes) : un IAE signé.",
+      "Structuration de la société : CRM et espace de travail communs, conformité RGPD (registre, TIA, DPA), machine de prospection automatisée.",
     ],
   },
   {
@@ -284,16 +290,19 @@ export default function CVPage() {
           Prendre 30 minutes
           <ArrowUpRight className="w-4 h-4" />
         </a>
-        <a
-          href={CV_PDF}
-          download
-          target="_blank"
-          rel="noopener"
-          className="inline-flex items-center gap-2 text-ink px-6 py-3.5 rounded-full text-sm font-medium border hairline hover:bg-accent-tint transition"
-        >
-          <Download className="w-4 h-4" />
-          Télécharger en PDF
-        </a>
+        {CV_PDFS.map((cv) => (
+          <a
+            key={cv.href}
+            href={cv.href}
+            download
+            target="_blank"
+            rel="noopener"
+            className="inline-flex items-center gap-2 text-ink px-6 py-3.5 rounded-full text-sm font-medium border hairline hover:bg-accent-tint transition"
+          >
+            <Download className="w-4 h-4" />
+            {cv.label}
+          </a>
+        ))}
       </section>
     </main>
   );
