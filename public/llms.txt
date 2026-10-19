@@ -1,6 +1,6 @@
 # Boris Hierso Alphandéry
 
-> Head of Sales B2B SaaS, sales coach et formateur, basé à Paris. 10 ans de vente B2B, machines commerciales de 0 à 1 augmentées à l'IA, closing tous cycles du SMB au grand compte. Ancien artiste peintre et bodypainter (technique "Art Slash", 2011-2021).
+> Cofondateur et Head of Sales de Pitchbase (https://pitchbase.app), Head of Sales B2B SaaS, sales coach et formateur, basé à Paris. 10 ans de vente B2B, machines commerciales de 0 à 1 augmentées à l'IA, closing tous cycles du SMB au grand compte. Ancien artiste peintre et bodypainter (technique "Art Slash", 2011-2021).
 
 ## Qui
 - Head of Sales freelance depuis environ 1 an, 10 ans de vente B2B au total.
@@ -8,9 +8,10 @@
 - Basé à Paris, interventions en français.
 
 ## Missions en cours
+- Pitchbase (https://pitchbase.app) : cofondateur et Head of Sales depuis août 2026. Simulateur de vente par IA vocale : l'IA joue les interlocuteurs de la prospection à l'account management et évalue chaque appel selon le framework de l'étape (BANT, MEDDIC, SPIN). Plus de 600 clients (indépendants, étudiants, équipes commerciales).
 - BHA Consulting : sa structure (entrepreneur individuel, Paris). Conseil et structuration commerciale, formation, coaching, prospection et vente pour le compte de clients, apport d'affaires, accompagnement et placement d'alternants Sales.
 - Exoteach : Head of Sales freelance puis consultant apporteur d'affaires (EdTech, SaaS B2B).
-- Avelor Spirits : Head of Sales freelance (spiritueux premium).
+- Avelor Spirits : Head of Sales freelance (spiritueux premium), mission terminée en juin 2026.
 - WoMa : mission conseil Head of Sales (association, Paris 19e).
 - Euridis Business School et Les Négociales : intervenant et coach.
 - Akimbo : sales coach (organisme de formation commerciale, Paris), module IA et performance commerciale.

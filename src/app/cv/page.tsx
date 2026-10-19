@@ -9,13 +9,13 @@ const CV_PDF = "/CV-Boris-Hierso-Alphandery.pdf";
 export const metadata: Metadata = {
   title: "CV",
   description:
-    "CV de Boris Hierso Alphandéry, Head of Sales freelance : 10 ans de vente B2B, résultats chiffrés, missions Exoteach, Avelor, HappyPal, ValueCo. Disponible, basé à Paris.",
+    "CV de Boris Hierso Alphandéry, cofondateur et Head of Sales de Pitchbase : 10 ans de vente B2B, résultats chiffrés, missions Pitchbase, Exoteach, Avelor, HappyPal, ValueCo. Disponible, basé à Paris.",
   alternates: { canonical: "/cv" },
   openGraph: {
     type: "profile",
     title: "CV · Boris Hierso Alphandéry",
     description:
-      "Head of Sales freelance, 10 ans de vente B2B. Résultats chiffrés et parcours complet.",
+      "Cofondateur et Head of Sales de Pitchbase, 10 ans de vente B2B. Résultats chiffrés et parcours complet.",
   },
 };
 
@@ -31,6 +31,19 @@ const SKILLS = [
 ];
 
 const EXPERIENCES = [
+  {
+    company: "Pitchbase",
+    role: "Cofondateur et Head of Sales",
+    period: "Août 2026 → en cours",
+    context: "SalesTech, simulateur de vente par IA vocale",
+    points: [
+      "Le produit : l'IA joue les interlocuteurs, de la prospection à l'account management, puis évalue chaque appel selon le framework de l'étape (BANT, MEDDIC, SPIN) avec un débrief de ce qu'il faut retravailler. Plus de 600 clients : indépendants, étudiants, équipes commerciales.",
+      "Cofondateur aux côtés de Briac Roudaut, en charge du commercial, des écoles, des entreprises et du réseau.",
+      "Offre et pricing repensés : grille par siège, offres écoles et entreprises.",
+      "Pipeline B2B ouvert de zéro (écoles, organismes de formation, grands comptes) : un IAE signé.",
+      "Structuration de la société : CRM et espace de travail communs, conformité RGPD (registre, TIA, DPA), machine de prospection automatisée.",
+    ],
+  },
   {
     company: "BHA Consulting",
     role: "Fondateur, Head of Sales freelance · conseil, formation et apport d'affaires",
@@ -81,7 +94,7 @@ const EXPERIENCES = [
   {
     company: "Avelor Spirits",
     role: "Head of Sales freelance",
-    period: "Janv. 2026 → en cours",
+    period: "Janv. 2026 → juin 2026",
     context: "Groupe de spiritueux premium",
     points: [
       "450k€ générés, machine commerciale construite de zéro.",
@@ -185,7 +198,11 @@ export default function CVPage() {
           Boris Hierso Alphandéry
         </h1>
         <p className="mt-3 text-lg text-muted">
-          Head of Sales freelance · Coach en négociation · Intervenant
+          Cofondateur et Head of Sales de{" "}
+          <a href="https://pitchbase.app" className="text-ink hover:text-accent underline decoration-accent underline-offset-4">
+            Pitchbase
+          </a>{" "}
+          · Head of Sales freelance · Coach en négociation · Intervenant
         </p>
         <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm">
           <span className="inline-flex items-center gap-2">
@@ -210,7 +227,7 @@ export default function CVPage() {
       {/* Profil */}
       <section className="mb-12">
         <p className="serif text-xl md:text-2xl leading-snug">
-          Head of Sales, 10 ans de vente B2B. J&apos;aime structurer, transmettre et faire performer des équipes commerciales, avec énergie et impact. De la prospection au closing, sur cycles longs et grands comptes.
+          Cofondateur et Head of Sales de Pitchbase, 10 ans de vente B2B. J&apos;aime structurer, transmettre et faire performer des équipes commerciales, avec énergie et impact. De la prospection au closing, sur cycles longs et grands comptes.
         </p>
       </section>
 

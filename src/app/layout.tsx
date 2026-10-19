@@ -23,20 +23,20 @@ const plexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Boris Hierso Alphandéry · Head of Sales B2B SaaS, sales coach & formateur",
+    default: "Boris Hierso Alphandéry · Cofondateur de Pitchbase, Head of Sales B2B SaaS, sales coach & formateur",
     template: "%s · Boris Hierso Alphandéry",
   },
   description:
-    "Head of Sales B2B SaaS, sales coach et formateur. Machines commerciales de 0 à 1, augmentées à l'IA, du SMB au grand compte. Disponible pour missions, CDI, formations et conférences. Paris.",
+    "Cofondateur et Head of Sales de Pitchbase, Head of Sales B2B SaaS, sales coach et formateur. Machines commerciales de 0 à 1, augmentées à l'IA, du SMB au grand compte. Disponible pour missions, CDI, formations et conférences. Paris.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     locale: "fr_FR",
     url: SITE_URL,
     siteName: "Boris Hierso Alphandéry",
-    title: "Boris Hierso Alphandéry · Head of Sales B2B SaaS, sales coach & formateur",
+    title: "Boris Hierso Alphandéry · Cofondateur de Pitchbase, Head of Sales B2B SaaS, sales coach & formateur",
     description:
-      "Head of Sales B2B SaaS, sales coach et formateur. Machines commerciales de 0 à 1, augmentées à l'IA, du SMB au grand compte. Disponible pour missions, CDI, formations et conférences. Paris.",
+      "Cofondateur et Head of Sales de Pitchbase, Head of Sales B2B SaaS, sales coach et formateur. Machines commerciales de 0 à 1, augmentées à l'IA, du SMB au grand compte. Disponible pour missions, CDI, formations et conférences. Paris.",
   },
   robots: {
     index: true,
@@ -64,9 +64,9 @@ export default function RootLayout({
               name: "Boris Hierso Alphandéry",
               url: SITE_URL,
               image: `${SITE_URL}/portrait.jpg`,
-              jobTitle: "Head of Sales freelance, coach et intervenant",
+              jobTitle: "Cofondateur et Head of Sales de Pitchbase, sales coach et formateur",
               description:
-                "Head of Sales freelance, coach en négociation et créateur d'outils IA. 10 ans de vente B2B. Intervient aussi en conférences et formations (CCI, écoles, événements).",
+                "Cofondateur et Head of Sales de Pitchbase, Head of Sales B2B SaaS, sales coach et formateur. 10 ans de vente B2B, machine commerciale augmentée à l'IA. Intervient aussi en conférences et formations (CCI, écoles, événements).",
               email: "mailto:hierso.boris@gmail.com",
               address: {
                 "@type": "PostalAddress",
@@ -74,14 +74,16 @@ export default function RootLayout({
                 addressCountry: "FR",
               },
               worksFor: [
+                { "@type": "Organization", name: "Pitchbase", url: "https://pitchbase.app" },
+                { "@type": "Organization", name: "Akimbo" },
                 { "@type": "Organization", name: "Exoteach" },
-                { "@type": "Organization", name: "Avelor Spirits" },
                 { "@type": "Organization", name: "WoMa" },
                 { "@type": "Organization", name: "Euridis Business School" },
               ],
               alumniOf: [
                 { "@type": "Organization", name: "HappyPal" },
                 { "@type": "Organization", name: "ValueCo" },
+                { "@type": "Organization", name: "Avelor Spirits" },
               ],
               sameAs: [
                 "https://www.linkedin.com/in/boris-hierso-alphandery",

@@ -71,6 +71,16 @@ const OFFERS = [
 
 const RESULTS = [
   {
+    company: "Pitchbase",
+    role: "Cofondateur et Head of Sales · SalesTech, simulateur de vente par IA vocale (en cours)",
+    figures: [
+      "L'IA joue les interlocuteurs, de la prospection à l'account management, et évalue chaque appel selon le framework de l'étape (BANT, MEDDIC, SPIN)",
+      "Plus de 600 clients : indépendants, étudiants, équipes commerciales",
+      "Pipeline B2B ouvert de zéro : écoles, organismes de formation, grands comptes, un IAE signé",
+      "Offre et pricing repensés, CRM et machine de prospection automatisée",
+    ],
+  },
+  {
     company: "Exoteach",
     role: "Head of Sales freelance, puis apporteur d'affaires · EdTech SaaS B2B",
     figures: [
@@ -228,7 +238,14 @@ export default function Home() {
           {/* Label bas de bandeau */}
           <div className="absolute inset-x-0 bottom-0 z-10 max-w-content mx-auto w-full px-6 pb-6 flex flex-wrap items-end justify-between gap-3">
             <div className="kicker md:text-sm text-cream/85 kicker-long">
-              Head of Sales B2B SaaS · Sales coach &amp; formateur
+              Cofondateur de{" "}
+              <a
+                href="https://pitchbase.app"
+                className="underline decoration-cream/40 underline-offset-4 hover:text-cream"
+              >
+                Pitchbase
+              </a>{" "}
+              · Head of Sales B2B SaaS · Sales coach &amp; formateur
             </div>
             <Link
               href="/art-slash"
@@ -253,9 +270,9 @@ export default function Home() {
             <span className="italic text-bordeaux">Transmettre.</span>
           </h1>
           <p className="rise rise-3 mt-7 text-lg md:text-xl text-muted max-w-xl leading-relaxed">
-            Head of Sales B2B SaaS, sales coach et formateur. Je construis des machines
-            commerciales de 0 à 1, augmentées à l&apos;IA, du SMB au grand compte. Et je
-            transmets ce qui marche.
+            Cofondateur et Head of Sales de Pitchbase, sales coach et formateur. 10 ans de
+            vente B2B : je construis des machines commerciales de 0 à 1, augmentées à
+            l&apos;IA, du SMB au grand compte. Et je transmets ce qui marche.
           </p>
           <p className="rise rise-3 mt-4 text-sm text-muted max-w-xl leading-relaxed">
             <strong className="text-ink font-medium">Dirigeant</strong> : je structure ta
