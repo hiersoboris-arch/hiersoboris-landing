@@ -7,7 +7,7 @@
 export const FAQ: { q: string; a: string }[] = [
   {
     q: "Tu es disponible ?",
-    a: "Oui, dès maintenant : missions freelance comme poste de Head of Sales en CDI. Mes missions en cours sont organisées pour être transmises proprement.",
+    a: "Oui, en freelance uniquement : Head of Sales en temps partagé ou en management de transition, sales coaching et formation en entreprise, interventions, formations et jurys pour les écoles, CFA et organismes de formation. Plus de CDI ni de poste à temps plein, en parallèle de Pitchbase.",
   },
   {
     q: "Sur quels sujets interviens-tu en conférence ou en formation ?",

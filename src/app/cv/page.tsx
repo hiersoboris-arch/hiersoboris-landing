@@ -9,7 +9,7 @@ const CV_PDF = "/CV-Boris-Hierso-Alphandery.pdf";
 export const metadata: Metadata = {
   title: "CV",
   description:
-    "CV de Boris Hierso Alphandéry, cofondateur et Head of Sales de Pitchbase : 10 ans de vente B2B, résultats chiffrés, missions Pitchbase, Exoteach, Avelor, HappyPal, ValueCo. Disponible, basé à Paris.",
+    "CV de Boris Hierso Alphandéry, cofondateur et Head of Sales de Pitchbase : 10 ans de vente B2B, résultats chiffrés, missions Pitchbase, Exoteach, Avelor, HappyPal, ValueCo. Disponible en freelance, basé à Paris.",
   alternates: { canonical: "/cv" },
   openGraph: {
     type: "profile",
@@ -207,7 +207,7 @@ export default function CVPage() {
         <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm">
           <span className="inline-flex items-center gap-2">
             <span className="live-dot" />
-            Disponible dès maintenant · freelance ou CDI
+            Disponible en freelance · missions, coaching, formation
           </span>
           <span className="text-muted">Paris · remote</span>
         </div>

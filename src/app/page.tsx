@@ -262,7 +262,7 @@ export default function Home() {
         <div className="max-w-3xl">
           <div className="rise rise-1 inline-flex items-center gap-2.5 kicker md:text-sm text-bordeaux mb-6">
             <span className="live-dot" />
-            <span>Disponible dès maintenant</span>
+            <span>Disponible en freelance</span>
           </div>
           <h1 className="rise rise-2 serif text-5xl md:text-[5.25rem] leading-[0.98] tracking-tight">
             Vendre. Structurer.
@@ -276,8 +276,8 @@ export default function Home() {
           </p>
           <p className="rise rise-3 mt-4 text-sm text-muted max-w-xl leading-relaxed">
             <strong className="text-ink font-medium">Dirigeant</strong> : je structure ta
-            vente · <strong className="text-ink font-medium">Recruteur</strong> : ouvert à
-            tout type de poste, freelance comme CDI,{" "}
+            vente · <strong className="text-ink font-medium">Recruteur</strong> : missions
+            freelance, coaching et formation, plus de CDI,{" "}
             <Link href="/cv" className="underline hover:text-ink">
               mon CV
             </Link>{" "}
@@ -761,7 +761,7 @@ export default function Home() {
                 <span className="text-accent">un poste à pourvoir ?</span>
               </h2>
               <p className="mt-8 text-lg text-muted max-w-xl leading-relaxed">
-                Clients : je prends de nouvelles missions freelance dès maintenant. Recruteurs : je suis ouvert à tout type de poste, freelance comme CDI. Le plus simple reste 30 minutes en visio.
+                Clients comme recruteurs : je prends de nouvelles missions en freelance (Head of Sales en temps partagé ou de transition, sales coaching, formation, interventions en école). Plus de CDI ni de temps plein. Le plus simple reste 30 minutes en visio.
               </p>
               <div className="mt-10">
                 <Image

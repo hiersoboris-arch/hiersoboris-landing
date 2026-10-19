@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: "%s · Boris Hierso Alphandéry",
   },
   description:
-    "Cofondateur et Head of Sales de Pitchbase, Head of Sales B2B SaaS, sales coach et formateur. Machines commerciales de 0 à 1, augmentées à l'IA, du SMB au grand compte. Disponible pour missions, CDI, formations et conférences. Paris.",
+    "Cofondateur et Head of Sales de Pitchbase, Head of Sales B2B SaaS, sales coach et formateur. Machines commerciales de 0 à 1, augmentées à l'IA, du SMB au grand compte. Disponible en freelance : missions, coaching, formations et conférences. Paris.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "Boris Hierso Alphandéry",
     title: "Boris Hierso Alphandéry · Cofondateur de Pitchbase, Head of Sales B2B SaaS, sales coach & formateur",
     description:
-      "Cofondateur et Head of Sales de Pitchbase, Head of Sales B2B SaaS, sales coach et formateur. Machines commerciales de 0 à 1, augmentées à l'IA, du SMB au grand compte. Disponible pour missions, CDI, formations et conférences. Paris.",
+      "Cofondateur et Head of Sales de Pitchbase, Head of Sales B2B SaaS, sales coach et formateur. Machines commerciales de 0 à 1, augmentées à l'IA, du SMB au grand compte. Disponible en freelance : missions, coaching, formations et conférences. Paris.",
   },
   robots: {
     index: true,
