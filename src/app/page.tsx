@@ -288,8 +288,8 @@ export default function Home() {
             30 minutes, en visio, sans engagement.
           </p>
           <div className="rise rise-5 mt-12 flex flex-wrap gap-x-12 gap-y-6">
-            <HeroStat value="5M€" label="d'ARR généré par an, sur 10 ans" accent />
-            <HeroStat value="500" label="deals won" />
+            <HeroStat value="+5M€" label="de CA piloté ou accompagné par an, sur 10 ans" accent />
+            <HeroStat value="500" label="deals signés" />
             <HeroStat value="500" label="étudiants et pros formés par an" />
             <HeroStat value="250 calls" label="cold & warm par semaine" />
           </div>
