@@ -75,7 +75,7 @@ const RESULTS = [
     role: "Cofondateur et Head of Sales · SalesTech, simulateur de vente par IA vocale (en cours)",
     figures: [
       "L'IA joue les interlocuteurs, de la prospection à l'account management, et évalue chaque appel selon le framework de l'étape (BANT, MEDDIC, SPIN)",
-      "Plus de 600 clients : indépendants, étudiants, équipes commerciales",
+      "Plus de 700 clients : indépendants, étudiants, équipes commerciales",
       "Pipeline B2B ouvert de zéro : écoles, organismes de formation, grands comptes, un IAE signé",
       "Offre et pricing repensés, CRM et machine de prospection automatisée",
     ],

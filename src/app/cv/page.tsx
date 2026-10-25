@@ -57,7 +57,7 @@ const EXPERIENCES = [
     period: "Sept. 2026 → en cours",
     context: "SalesTech, simulateur de vente par IA vocale",
     points: [
-      "Le produit : l'IA joue les interlocuteurs, de la prospection à l'account management, puis évalue chaque appel selon le framework de l'étape (BANT, MEDDIC, SPIN) avec un débrief de ce qu'il faut retravailler. Plus de 600 clients : indépendants, étudiants, équipes commerciales.",
+      "Le produit : l'IA joue les interlocuteurs, de la prospection à l'account management, puis évalue chaque appel selon le framework de l'étape (BANT, MEDDIC, SPIN) avec un débrief de ce qu'il faut retravailler. Plus de 700 clients : indépendants, étudiants, équipes commerciales.",
       "Cofondateur aux côtés de Briac Roudaut, en charge du commercial, des écoles, des entreprises et du réseau.",
       "Offre et pricing repensés : grille par siège, offres écoles et entreprises.",
       "Pipeline B2B ouvert de zéro (écoles, organismes de formation, grands comptes) : un IAE signé.",
