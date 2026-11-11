@@ -9,6 +9,7 @@ import { CALENDLY } from "@/lib/contact";
 const LINKS = [
   { href: "/#aider", label: "Offres" },
   { href: "/#preuves", label: "Résultats" },
+  { href: "/formations", label: "Formations" },
   { href: "/livres-blancs", label: "Livres blancs" },
   { href: "/alternance", label: "Alternance" },
   { href: "/#contact", label: "Contact" },

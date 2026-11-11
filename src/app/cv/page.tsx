@@ -80,8 +80,8 @@ const EXPERIENCES = [
     period: "Juil. 2026 → en cours",
     context: "Organisme de formation commerciale, Paris",
     points: [
-      "Membre du pool de sales coachs : bootcamps business developer, e-learning et formations intra-entreprise.",
-      "Module animé : l'intelligence artificielle au service de la performance commerciale (prospection, copywriting, préparation de rendez-vous).",
+      "Formations de 2 jours en entreprise (présentiel intra, visio intra ou inter-entreprises) et coaching individuel sur 6 semaines (kick-off + 12 séances).",
+      "Thèmes animés : l'IA au service de la performance commerciale, la relation client au quotidien, l'account management (9 thèmes possibles).",
       "Pédagogie terrain : cas concrets adaptés aux cibles des participants, mises en situation réelles, débrief individuel.",
       "Posture commerciale : découverte, qualification, closing, gestion des objections et ancrage des acquis après la session.",
     ],

@@ -54,8 +54,8 @@ const OFFERS = [
   },
   {
     title: "Former & coacher les équipes",
-    audience: "Managers Sales · écoles · étudiants",
-    desc: "Montée en compétences des commerciaux, coaching terrain, interventions. Méthode concrète et mises en situation réelles, jamais de théorie hors-sol.",
+    audience: "Équipes Sales · managers · écoles · commerciaux en solo",
+    desc: "Formations de 2 jours en entreprise (présentiel ou visio), ateliers courts, coaching individuel sur 6 semaines, cours en école. IA appliquée à la vente, relation client, prospection, négociation, sur vos cas réels. Finançable par ton OPCO via des organismes certifiés Qualiopi.",
   },
   {
     title: "Intervenir & prendre la parole",
@@ -112,9 +112,10 @@ const RESULTS = [
     company: "Akimbo",
     role: "Sales coach freelance · organisme de formation commerciale (en cours)",
     figures: [
-      "L'un des sales coachs du pool d'Akimbo : formations B2B intra et inter-entreprises",
-      "Module phare animé : l'IA au service de la performance commerciale",
-      "Sessions de 2 à 3 jours, 12 participants max, méthodes SPIN et MEDDIC, débrief individuel",
+      "Formations de 2 jours en entreprise : en présentiel chez le client, en visio pour une entreprise ou en inter-entreprises",
+      "Coaching individuel sur 6 semaines : kick-off, 12 séances de 45 minutes, un livrable par semaine",
+      "Thèmes animés : IA au service de la performance commerciale, relation client, account management (9 thèmes possibles)",
+      "Programmes conçus à mon nom, adaptés à l'outil de l'équipe : Copilot, ChatGPT, Gemini, Claude",
     ],
   },
   {
@@ -542,7 +543,7 @@ export default function Home() {
                 <span className="text-muted">en école comme en entreprise.</span>
               </h2>
               <p className="text-muted leading-relaxed">
-                Professeur intervenant en école de commerce (vente B2B, prospection, social selling, IA appliquée à la vente), l&apos;un des sales coachs du pool d&apos;<strong className="text-ink">Akimbo</strong>, coach des étudiants d&apos;Euridis Paris pour le concours <strong className="text-ink">Les Négociales</strong> (juré et acheteur en finale nationale), juré de soutenances et formateur d&apos;équipes commerciales. Des cours conçus de zéro, ancrés dans le terrain : ce que j&apos;enseigne le matin, je le pratique l&apos;après-midi en mission.
+                Professeur intervenant en école de commerce (vente B2B, prospection, social selling, IA appliquée à la vente), l&apos;un des sales coachs du pool d&apos;<strong className="text-ink">Akimbo</strong>, coach des étudiants d&apos;Euridis Paris pour le concours <strong className="text-ink">Les Négociales</strong> (juré et acheteur en finale nationale), juré de soutenances et formateur d&apos;équipes commerciales en entreprise (présentiel ou visio) et coach en individuel. Des cours conçus de zéro, ancrés dans le terrain : ce que j&apos;enseigne le matin, je le pratique l&apos;après-midi en mission.
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-4">
                 <a
@@ -552,6 +553,13 @@ export default function Home() {
                   Faire intervenir Boris
                   <ArrowRight className="w-4 h-4" />
                 </a>
+                <Link
+                  href="/formations"
+                  className="inline-flex items-center gap-2 text-ink px-6 py-3.5 rounded-full text-sm font-medium border hairline hover:bg-accent-tint transition"
+                >
+                  Voir les formations
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
                 <Link
                   href="/alternance"
                   className="inline-flex items-center gap-2 text-ink px-6 py-3.5 rounded-full text-sm font-medium border hairline hover:bg-accent-tint transition"
@@ -577,6 +585,8 @@ export default function Home() {
               "Prospection, cold call & social selling",
               "IA & automatisation commerciale",
               "Négociation & closing",
+              "Relation client & account management",
+              "Coaching individuel",
               "Stratégie commerciale & plans d'actions",
               "Sales Ops / RevOps & CRM",
               "Growth B2B & ABM",
