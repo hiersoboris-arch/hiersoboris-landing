@@ -11,11 +11,11 @@ export const FAQ: { q: string; a: string }[] = [
   },
   {
     q: "Sur quels sujets interviens-tu en conférence ou en formation ?",
-    a: "IA appliquée à la vente, prospection et cold calling, négociation, structuration commerciale et sales ops. Formats : keynote, table ronde, atelier ou cours. J'interviens pour des entreprises (formations de 2 jours, ateliers, coaching individuel), des écoles, des CCI et des événements.",
+    a: "IA appliquée à la vente, prospection et cold calling, négociation, structuration commerciale et sales ops. Formats : keynote, table ronde, atelier ou cours. J'interviens pour des entreprises (formations d'une journée à plusieurs semaines, ateliers, coaching individuel), des écoles, des CCI et des événements.",
   },
   {
     q: "Tes formations sont-elles finançables par l'OPCO ?",
-    a: "Oui. Je suis déclaré organisme de formation et ma certification Qualiopi est en préparation : d'ici là, les formations finançables passent par des organismes de formation certifiés Qualiopi avec lesquels je travaille, choisis selon ton besoin et ton OPCO. Formats : 2 jours en entreprise (présentiel ou visio), ateliers courts, coaching individuel sur 6 semaines. Le détail est sur hiersoboris.fr/formations.",
+    a: "Oui. Je passe par des organismes de formation certifiés Qualiopi avec lesquels je travaille, choisis selon ton besoin et ton OPCO : ce sont eux qui portent le dossier de prise en charge, moi qui conçois et anime. Formats : en entreprise d'une journée à plusieurs semaines (présentiel ou visio), ateliers courts, coaching individuel. Plus de 145 cours et modules prêts. Le détail est sur hiersoboris.fr/formations.",
   },
   {
     q: "Pour qui travailles-tu ?",

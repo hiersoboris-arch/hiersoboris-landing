@@ -8,7 +8,7 @@ import SiteHeader from "../SiteHeader";
 export const metadata: Metadata = {
   title: "Formations vente B2B et IA, coaching individuel",
   description:
-    "Formations de Boris Hierso Alphandéry : IA appliquée à la vente, relation client et account management, prospection, négociation. En entreprise (présentiel ou visio, 2 jours), en ateliers courts, en coaching individuel sur 6 semaines et en école. Finançables par ton OPCO via des organismes certifiés Qualiopi.",
+    "Formations de Boris Hierso Alphandéry : IA appliquée à la vente, relation client et account management, prospection, négociation. En entreprise (présentiel ou visio, d'une journée à plusieurs semaines), en ateliers courts, en coaching individuel et en école. Plus de 145 cours et modules prêts. Finançables par ton OPCO via des organismes certifiés Qualiopi.",
   alternates: { canonical: "/formations" },
   openGraph: {
     type: "website",
@@ -26,18 +26,18 @@ export const metadata: Metadata = {
 const FORMATS = [
   {
     titre: "En entreprise, en présentiel",
-    duree: "2 jours · 14 heures",
-    desc: "Une session intra, dans tes locaux, partout en France, pour ton équipe seulement. Tout se joue sur vos outils, vos comptes et vos vrais mails.",
+    duree: "De 1 à 20 jours",
+    desc: "Une session intra, dans tes locaux, partout en France, pour ton équipe seulement. 2 jours pour démarrer, 3, 5, 10 ou 20 jours pour aller au fond. Tout se joue sur vos outils, vos comptes et vos vrais mails.",
   },
   {
     titre: "En visio",
-    duree: "2 jours · 14 heures",
-    desc: "Pour une seule entreprise ou en inter-entreprises. Même programme, mêmes livrables, rythmé pour la visio : jeux et quiz toutes les 20 minutes.",
+    duree: "D'une heure à plusieurs semaines",
+    desc: "Pour une seule entreprise ou en inter-entreprises. Mêmes programmes, mêmes livrables, rythmés pour la visio : jeux et quiz toutes les 20 minutes.",
   },
   {
     titre: "En coaching individuel",
-    duree: "6 semaines · kick-off + 12 séances",
-    desc: "Un kick-off d'1 heure, puis 2 séances de 45 minutes par semaine et un livrable par semaine, sur le vrai pipeline du commercial ou du dirigeant.",
+    duree: "Au rythme de tes deals",
+    desc: "En tête-à-tête, pour un commercial, un fondateur ou un indépendant qui vend. Des séances courtes sur ton vrai pipeline, un livrable concret à chaque étape, des simulations d'appel sur Pitchbase. Aussi pour les profils en reconversion vers la vente.",
   },
 ];
 
@@ -61,15 +61,15 @@ const IA_PERF = [
 ];
 
 const THEMES = [
-  { t: "IA appliquée à la vente", fait: true },
-  { t: "Relation client au quotidien", fait: true },
-  { t: "Account management et grands comptes", fait: true },
-  { t: "Prospection de nouveaux clients", fait: false },
-  { t: "Stratégie commerciale", fait: false },
-  { t: "Storytelling commercial", fait: false },
-  { t: "Professionnaliser sa démarche commerciale", fait: false },
-  { t: "Management commercial", fait: false },
-  { t: "Webmarketing", fait: false },
+  "IA appliquée à la vente",
+  "Relation client au quotidien",
+  "Account management et grands comptes",
+  "Prospection de nouveaux clients",
+  "Stratégie commerciale",
+  "Storytelling commercial",
+  "Professionnaliser sa démarche commerciale",
+  "Management commercial",
+  "Webmarketing",
 ];
 
 const ATELIERS = [
@@ -79,22 +79,6 @@ const ATELIERS = [
   { t: "CRM : un pipeline qui se tient à jour tout seul", d: "7 heures", s: "Tu sors avec 5 contacts, 3 affaires et 1 routine dans ton CRM" },
   { t: "Le radar commercial : savoir qui bouge, et où le croiser", d: "7 heures", s: "Signaux d'achat sur sources publiques : tu sors avec 5 signaux, 3 événements et 1 routine" },
   { t: "Les cas extrêmement difficiles", d: "1 heure", s: "Clients agressifs, impasses, conflits : les méthodes pour garder la main" },
-];
-
-const SEANCES = [
-  { t: "Kick-off", s: "Ton terrain, tes chiffres, ce qui bloque, et 3 objectifs à 6 semaines" },
-  { t: "Go-to-market", s: "Dire en 30 secondes quel problème tu résous, pour qui, et où trouver tes contacts" },
-  { t: "Choisir sa cible", s: "Moins de 250 comptes, pourquoi maintenant, et 10 comptes à appeler" },
-  { t: "Écrire pour être lu", s: "Un mail de prospection qui obtient une réponse, organisé en séquence" },
-  { t: "Le bon signal", s: "Le bon prospect, au bon moment, et une séquence pilotée" },
-  { t: "Décrocher le rendez-vous", s: "Passer le barrage, ouvrir en 20 secondes, raccrocher avec une date" },
-  { t: "L'appel qui convertit", s: "Un script réécrit avec les données, un entraînement sans brûler ses prospects" },
-  { t: "La découverte complète", s: "Faire parler, tout couvrir, finir sur une prochaine étape datée" },
-  { t: "Qualifier et raconter", s: "Faire chiffrer le coût du statu quo et trouver la raison d'agir maintenant" },
-  { t: "Démo, objections et prix", s: "Une démo qui suit la découverte, un prix annoncé sans trembler" },
-  { t: "Grands comptes et valeur", s: "Cartographier un compte, qualifier un deal complexe, chiffrer sa valeur" },
-  { t: "Négocier sans brader", s: "Tenir sa marge face à un acheteur, et sortir avec une date" },
-  { t: "Après la signature", s: "Garder et faire grandir un client signé" },
 ];
 
 const ECOLE = [
@@ -148,17 +132,17 @@ const NDA = [
     detail: "Environ 220 salariés, siège en Île-de-France. Équipe commerciale sur Claude, Gemini, Dust et HubSpot, avec un business case pour la direction financière.",
   },
   {
-    format: "Coaching individuel · 6 semaines",
+    format: "Coaching individuel",
     qui: "Cabinet de conseil et d'intégration CRM",
     detail: "PME de 6 à 9 salariés, partenaire de 2 éditeurs (CRM et service client). Réactivation de la base clients et chasse de nouveaux comptes.",
   },
   {
-    format: "Coaching individuel · 6 semaines",
+    format: "Coaching individuel",
     qui: "Agence digitale web et IA, à Paris",
     detail: "PME de 6 à 9 salariés. Ciblage par verticale, séquences de prospection et pipeline qui se tient à jour tout seul.",
   },
   {
-    format: "Coaching individuel · 6 semaines",
+    format: "Coaching individuel",
     qui: "Analyste senior en études de marché",
     detail: "Secteur luxe et beauté, en reconversion vers l'account management.",
   },
@@ -300,32 +284,23 @@ export default function Formations() {
                 </p>
               </div>
               <p className="mt-6 text-sm text-muted leading-relaxed">
-                Déjà animée en entreprise (études de marché, intégration de logiciels) et en
-                inter-entreprises, bientôt dans le paiement en ligne.
+                Déjà animée en entreprise et en inter-entreprises. 2 jours pour le format de base,
+                et autant de jours que tu veux pour aller plus loin.
               </p>
             </div>
             <div className="md:col-span-5">
-              <Kicker>9 thèmes de formation</Kicker>
+              <Kicker>Les grands thèmes</Kicker>
               <p className="text-muted leading-relaxed mb-6">
-                Même format de 2 jours, sur l&apos;un de ces thèmes. Ceux marqués d&apos;un point
-                bordeaux sont ceux que j&apos;anime le plus souvent.
-              </p>
-              <p className="text-sm text-muted leading-relaxed mb-6">
-                Relation client au quotidien : un plan de relation client au jour 1, un plan de
-                fidélisation à 30 jours au jour 2, 2 cas clients joués en face à face, 7 jeux.
-                J&apos;ai porté le programme de 7 à 14 chapitres.
+                Chaque thème se monte sur la durée qui te va, d&apos;une journée à plusieurs
+                semaines, et se combine avec les autres.
               </p>
               <ul className="space-y-3">
                 {THEMES.map((t) => (
                   <li
-                    key={t.t}
-                    className="flex items-center gap-3 bg-card border hairline rounded-xl px-4 py-3 text-sm text-ink"
+                    key={t}
+                    className="bg-card border hairline rounded-xl px-4 py-3 text-sm text-ink"
                   >
-                    <span
-                      className={`w-2 h-2 rounded-full shrink-0 ${t.fait ? "bg-bordeaux" : "bg-border"}`}
-                      aria-hidden="true"
-                    />
-                    {t.t}
+                    {t}
                   </li>
                 ))}
               </ul>
@@ -336,13 +311,15 @@ export default function Formations() {
         {/* Ateliers courts */}
         <section className="border-t hairline">
           <div className="max-w-content mx-auto px-6 py-16 md:py-20">
-            <Kicker>Ateliers courts · 1 à 7 heures</Kicker>
+            <Kicker>Plus de 145 cours et modules prêts</Kicker>
             <h2 className="serif text-3xl md:text-4xl leading-tight tracking-tight mb-4">
               Un sujet, d&apos;une heure à une journée.
             </h2>
             <p className="text-muted leading-relaxed max-w-2xl mb-10">
-              Pour une équipe qui veut avancer sur un point précis, en ouverture d&apos;un séminaire
-              ou en complément d&apos;une formation longue.
+              Plus de 145 cours et modules déjà préparés, de 60 minutes à la journée entière :
+              prospection, cold call, social selling, négociation, closing, account management,
+              CRM, IA, automatisation, management, recrutement. Ils se prennent seuls ou
+              s&apos;assemblent en formation sur mesure. Quelques exemples :
             </p>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
               {ATELIERS.map((a) => (
@@ -356,39 +333,6 @@ export default function Formations() {
           </div>
         </section>
 
-        {/* Coaching individuel */}
-        <section className="border-t hairline grain">
-          <div className="max-w-content mx-auto px-6 py-16 md:py-20">
-            <Kicker>Coaching individuel · 6 semaines</Kicker>
-            <h2 className="serif text-3xl md:text-4xl leading-tight tracking-tight mb-4">
-              De la cible au client signé, en 13 séances.
-            </h2>
-            <p className="text-muted leading-relaxed max-w-2xl mb-10">
-              Pour un commercial, un fondateur ou un indépendant qui vend. Chaque séance de 45
-              minutes : 15 minutes de méthode, 10 minutes de quiz et de questions sur ton cas, 20
-              minutes de mise en situation ou d&apos;atelier avec ton IA. En direct ou via les
-              organismes de formation avec lesquels je travaille.
-            </p>
-            <p className="text-muted leading-relaxed max-w-2xl mb-10 -mt-6">
-              Avant la première séance, tu reçois une étude de ton entreprise et de ton marché.
-              Ensuite, un espace personnel avec tes séances, tes prompts, tes comptes cibles et ta
-              to-do, et des simulations d&apos;appel sur{" "}
-              <a href="https://pitchbase.app" className="underline">Pitchbase</a>. Pour des
-              dirigeants de PME comme pour des professionnels en reconversion vers la vente.
-            </p>
-            <div className="grid md:grid-cols-2 gap-x-10">
-              {SEANCES.map((s, i) => (
-                <div key={s.t} className="flex gap-4 border-b hairline py-4">
-                  <span className="serif text-bordeaux w-6 shrink-0">{i}</span>
-                  <div>
-                    <div className="text-ink font-medium">{s.t}</div>
-                    <div className="text-sm text-muted leading-relaxed">{s.s}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* En école */}
         <section className="border-t hairline">
@@ -399,16 +343,16 @@ export default function Formations() {
                 Des cours conçus de zéro.
               </h2>
               <p className="mt-5 text-muted leading-relaxed">
-                Professeur intervenant à Euridis Business School depuis octobre 2025 : 9 classes
-                accompagnées, environ 225 étudiants, 14,2/20 de moyenne sur mes interventions.
-                Coach principal des étudiants d&apos;Euridis Paris pour Les Négociales 2026, juré de
-                soutenances. Du Bachelor au MBA : jeux notés, simulations d&apos;appel sur Pitchbase, épreuves blanches de certification RNCP. Aussi des ateliers de prospection pour aider les étudiants à décrocher leur alternance, et des jurys (soutenances, concours start-up).
+                Professeur intervenant à Euridis Business School : une douzaine de promos
+                d&apos;une trentaine d&apos;étudiants, environ 350 étudiants, 14,3/20 de moyenne sur
+                mes interventions. Coach des étudiants d&apos;Euridis Paris pour Les Négociales 2026
+                et 2027, juré de soutenances. Du Bachelor au MBA : jeux notés, simulations d&apos;appel sur Pitchbase, épreuves blanches de certification RNCP. Aussi des ateliers de prospection pour aider les étudiants à décrocher leur alternance, et des jurys (soutenances, concours start-up).
               </p>
               <Link
                 href="/alternance"
                 className="mt-6 inline-flex items-center gap-2 text-bordeaux font-medium hover:gap-3 transition-all min-h-[44px]"
               >
-                Écoles : je place aussi des alternants
+                Écoles : je présente aussi des alternants
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
@@ -473,15 +417,10 @@ export default function Formations() {
                   Finançable par ton OPCO.
                 </h2>
                 <p className="mt-5 text-cream/80 leading-relaxed">
-                  Je suis déclaré organisme de formation. Ma certification Qualiopi est en
-                  préparation : d&apos;ici là, les formations finançables passent par des organismes
-                  de formation certifiés Qualiopi avec lesquels je travaille, choisis selon ton
-                  besoin et ton OPCO. Dis-moi à quel OPCO tu es rattaché, je te dis comment on
-                  monte le dossier.
-                </p>
-                <p className="mt-4 text-xs text-cream/60">
-                  Déclaration d&apos;activité n° 11 75 74446 75 auprès du préfet de région
-                  Île-de-France. Cet enregistrement ne vaut pas agrément de l&apos;État.
+                  Je passe par des organismes de formation certifiés Qualiopi avec lesquels je
+                  travaille, choisis selon ton besoin et ton OPCO : ce sont eux qui portent le
+                  dossier de prise en charge, moi qui conçois et anime. Dis-moi à quel OPCO tu es
+                  rattaché, je te dis par qui on passe.
                 </p>
               </div>
               <div className="md:col-span-5 flex md:justify-end items-end">

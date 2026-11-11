@@ -55,7 +55,7 @@ const OFFERS = [
   {
     title: "Former & coacher les équipes",
     audience: "Équipes Sales · managers · écoles · commerciaux en solo",
-    desc: "Formations de 2 jours en entreprise (présentiel ou visio), ateliers courts, coaching individuel sur 6 semaines, cours en école. IA appliquée à la vente, relation client, prospection, négociation, sur vos cas réels. Finançable par ton OPCO via des organismes certifiés Qualiopi.",
+    desc: "Formations en entreprise d'une journée à plusieurs semaines (présentiel ou visio), ateliers courts, coaching individuel, cours en école. IA appliquée à la vente, relation client, prospection, négociation, sur vos cas réels. Finançable par ton OPCO via des organismes certifiés Qualiopi.",
   },
   {
     title: "Intervenir & prendre la parole",
@@ -103,7 +103,7 @@ const RESULTS = [
     company: "Euridis Business School",
     role: "Intervenant · école de commerce spécialisée vente B2B (en cours)",
     figures: [
-      "9 classes accompagnées, ~225 étudiants, 14,2/20 de moyenne",
+      "Une douzaine de promos d'une trentaine d'étudiants, environ 350 étudiants, 14,3/20 de moyenne",
       "Cours conçus de zéro : prospection & cold calling, social selling, IA copywriting, IA sales automation",
       "Membre du jury de soutenances (stratégie commerciale / ABM)",
     ],
@@ -113,16 +113,16 @@ const RESULTS = [
     role: "Sales coach freelance · organisme de formation commerciale (en cours)",
     figures: [
       "Formations de 2 jours en entreprise : en présentiel chez le client, en visio pour une entreprise ou en inter-entreprises",
-      "Coaching individuel sur 6 semaines : kick-off, 12 séances de 45 minutes, un livrable par semaine",
+      "Coaching individuel de commerciaux et de dirigeants, sur leurs vrais deals",
       "Thèmes animés : IA au service de la performance commerciale, relation client, account management (9 thèmes possibles)",
       "Programmes conçus à mon nom, adaptés à l'outil de l'équipe : Copilot, ChatGPT, Gemini, Claude",
     ],
   },
   {
-    company: "Les Négociales 2026",
+    company: "Les Négociales 2026 et 2027",
     role: "Coach pour Euridis Paris · plus grand concours de négociation francophone",
     figures: [
-      "Coach principal des étudiants d'Euridis Paris : 40h de coaching, près de 50 étudiants préparés",
+      "Coach des étudiants d'Euridis Paris : 22 séances, 44 heures de coaching, une vingtaine d'étudiants coachés sur 55 inscrits",
       "Juré de notation aux qualifications, puis acheteur et juré professionnel en finale nationale à Nancy",
       "Méthode des 3C (Comprendre, Creuser, Clore) et règle 70/30",
     ],
@@ -184,7 +184,7 @@ const TESTIMONIALS = [
       "Un intervenant qui transforme la pédagogie en véritable levier de performance.",
     name: "Christelle Roy",
     role: "MBA Ingénieur d'Affaires, Euridis",
-    chiffres: "9 classes, ~225 étudiants, 14,2/20 de moyenne.",
+    chiffres: "Une douzaine de promos, environ 350 étudiants, 14,3/20 de moyenne.",
   },
   {
     quote:
@@ -309,7 +309,7 @@ export default function Home() {
             <HeroStat value="+5M€" label="de CA piloté ou accompagné par an, sur 10 ans" accent />
             <HeroStat value="500" label="deals signés" />
             <HeroStat value="500" label="étudiants et pros formés par an" />
-            <HeroStat value="250 calls" label="cold & warm par semaine" />
+            <HeroStat value="100 calls" label="cold & warm par semaine" />
           </div>
         </div>
       </section>
@@ -564,15 +564,15 @@ export default function Home() {
                   href="/alternance"
                   className="inline-flex items-center gap-2 text-ink px-6 py-3.5 rounded-full text-sm font-medium border hairline hover:bg-accent-tint transition"
                 >
-                  Écoles : je place aussi des alternants
+                  Écoles : je présente aussi des alternants
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>
             <div className="md:col-span-6 grid grid-cols-2 gap-px bg-border border hairline rounded-2xl overflow-hidden">
               <Stat value="500" caption="étudiants et pros formés par an." />
-              <Stat value="14,2/20" caption="de moyenne sur mes interventions (9 classes, ~225 étudiants)." />
-              <Stat value="40h" caption="de coaching Les Négociales 2026 pour Euridis Paris (~50 étudiants), juré et acheteur en finale." />
+              <Stat value="14,3/20" caption="de moyenne sur mes interventions (une douzaine de promos, environ 350 étudiants)." />
+              <Stat value="44h" caption="de coaching Les Négociales pour Euridis Paris (22 séances, 2026 et 2027), juré et acheteur en finale." />
               <Stat value="100%" caption="terrain : cours, ateliers, business games et jurys, jamais de théorie hors-sol." />
             </div>
           </div>

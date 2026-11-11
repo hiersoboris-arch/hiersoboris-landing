@@ -70,7 +70,7 @@ const EXPERIENCES = [
     period: "Oct. 2025 → en cours",
     context: "École de commerce spécialisée vente",
     points: [
-      "9 classes accompagnées, ~225 étudiants, 14,2/20 de moyenne sur les interventions.",
+      "Une douzaine de promos d'une trentaine d'étudiants, environ 350 étudiants, 14,3/20 de moyenne sur les interventions.",
       "Prospection & cold calling, social selling, IA copywriting, IA sales automation.",
     ],
   },
@@ -80,7 +80,7 @@ const EXPERIENCES = [
     period: "Juil. 2026 → en cours",
     context: "Organisme de formation commerciale, Paris",
     points: [
-      "Formations de 2 jours en entreprise (présentiel intra, visio intra ou inter-entreprises) et coaching individuel sur 6 semaines (kick-off + 12 séances).",
+      "Formations en entreprise (présentiel intra, visio intra ou inter-entreprises) et coaching individuel de commerciaux et de dirigeants.",
       "Thèmes animés : l'IA au service de la performance commerciale, la relation client au quotidien, l'account management (9 thèmes possibles).",
       "Pédagogie terrain : cas concrets adaptés aux cibles des participants, mises en situation réelles, débrief individuel.",
       "Posture commerciale : découverte, qualification, closing, gestion des objections et ancrage des acquis après la session.",
@@ -120,11 +120,11 @@ const EXPERIENCES = [
     ],
   },
   {
-    company: "Les Négociales 2026",
+    company: "Les Négociales 2026 et 2027",
     role: "Coach principal pour Euridis Paris, juré et acheteur en finale",
     period: "2026",
     context: "Plus grand concours de négociation commerciale francophone",
-    points: ["40h de coaching, près de 50 étudiants accompagnés."],
+    points: ["22 séances, 44 heures de coaching, une vingtaine d'étudiants coachés sur 55 inscrits."],
   },
   {
     company: "ValueCo",

@@ -10,6 +10,7 @@ const LINKS = [
   { href: "/#aider", label: "Offres" },
   { href: "/#preuves", label: "Résultats" },
   { href: "/formations", label: "Formations" },
+  { href: "/pitchbase", label: "Pitchbase" },
   { href: "/livres-blancs", label: "Livres blancs" },
   { href: "/alternance", label: "Alternance" },
   { href: "/#contact", label: "Contact" },

@@ -16,12 +16,12 @@
 - Avelor Spirits : Head of Sales freelance (spiritueux premium), mission terminée en juin 2026.
 - WoMa : mission conseil Head of Sales (association, Paris 19e).
 - Euridis Business School et Les Négociales : intervenant et coach.
-- Akimbo : sales coach (organisme de formation commerciale, Paris) : formations de 2 jours en entreprise (présentiel ou visio) et coaching individuel sur 6 semaines.
+- Akimbo : sales coach (organisme de formation commerciale, Paris) : formations en entreprise (présentiel ou visio) et coaching individuel.
 
 ## Résultats clés
 - Sur 10 ans de vente B2B : +5M€ de CA piloté ou accompagné par an.
 - 500 deals signés.
-- 250 cold & warm calls par semaine.
+- Une centaine de cold & warm calls par semaine.
 - 500 étudiants et professionnels formés par an.
 
 ## Ce qu'il fait
@@ -32,17 +32,17 @@
 
 ## Intervenant et formateur
 - Professeur intervenant en école de commerce : vente B2B, prospection et cold calling, social selling, IA appliquée à la vente.
-- Sales coach pour Akimbo, organisme de formation commerciale : formations de 2 jours en entreprise (présentiel intra, visio intra ou inter) et coaching individuel sur 6 semaines.
-- Les Négociales 2026 : coach principal pour Euridis Paris (~50 étudiants, 40h de coaching), juré aux qualifications, acheteur et juré professionnel en finale nationale.
-- 9 classes accompagnées (~225 étudiants), 14,2/20 de moyenne sur les interventions.
+- Sales coach pour Akimbo, organisme de formation commerciale : formations en entreprise (présentiel intra, visio intra ou inter) et coaching individuel.
+- Les Négociales 2026 et 2027 : coach pour Euridis Paris (22 séances, 44 heures de coaching, une vingtaine d'étudiants coachés sur 55 inscrits), juré aux qualifications, acheteur et juré professionnel en finale nationale.
+- Une douzaine de promos d'une trentaine d'étudiants (environ 350 étudiants), 14,3/20 de moyenne sur les interventions.
 - Sujets d'intervention : prospection et cold call, IA et automatisation commerciale, négociation et closing, stratégie commerciale, Sales Ops / RevOps, growth B2B et ABM, entrepreneuriat et IA.
 
 ## Formations (https://hiersoboris.fr/formations)
-- Formation phare, 2 jours (14 h) : L'IA au service de la performance commerciale. Ciblage et scoring de comptes, messages, routines, préparation et compte rendu de rendez-vous, pilotage par les chiffres, suivi client, plan d'action à 30 jours, cadre légal. Adaptée à l'outil de l'équipe : Copilot, ChatGPT, Gemini, Claude.
-- 9 thèmes de formation de 2 jours : IA appliquée à la vente, relation client, account management et grands comptes, prospection, stratégie commerciale, storytelling commercial, professionnalisation de la démarche commerciale, management commercial, webmarketing.
-- Formats : en entreprise en présentiel, en visio (une entreprise ou inter-entreprises), ateliers courts de 1 à 7 heures, coaching individuel sur 6 semaines (kick-off + 12 séances de 45 minutes).
+- Formation phare (format de base 2 jours, extensible) : L'IA au service de la performance commerciale. Ciblage et scoring de comptes, messages, routines, préparation et compte rendu de rendez-vous, pilotage par les chiffres, suivi client, plan d'action à 30 jours, cadre légal. Adaptée à l'outil de l'équipe : Copilot, ChatGPT, Gemini, Claude.
+- Grands thèmes, sur la durée voulue (de 1 à 20 jours) : IA appliquée à la vente, relation client, account management et grands comptes, prospection, stratégie commerciale, storytelling commercial, professionnalisation de la démarche commerciale, management commercial, webmarketing.
+- Formats : en entreprise en présentiel (de 1 à 20 jours, partout en France), en visio (une entreprise ou inter-entreprises), ateliers courts, coaching individuel. Plus de 145 cours et modules prêts, de 60 minutes à la journée entière.
 - Ateliers courts : Le commercial en 1 heure, Les 4 IA du commercial, Claude de A à Z, Un CRM qui se tient à jour tout seul, Le radar commercial, Les cas extrêmement difficiles.
-- Financement : finançable par l'OPCO via des organismes de formation certifiés Qualiopi (certification Qualiopi de Boris en préparation). Déclaration d'activité n° 11 75 74446 75, qui ne vaut pas agrément de l'État.
+- Financement : prise en charge par l'OPCO via des organismes de formation certifiés Qualiopi avec lesquels Boris travaille (Boris n'est pas certifié Qualiopi lui-même).
 
 ## Alternance (placement)
 - Page dédiée : https://hiersoboris.fr/alternance
@@ -64,6 +64,7 @@
 - CV : https://hiersoboris.fr/cv
 - Alternance : https://hiersoboris.fr/alternance
 - Formations : https://hiersoboris.fr/formations
+- Pitchbase, la vision : https://hiersoboris.fr/pitchbase
 - Livres blancs : https://hiersoboris.fr/livres-blancs
 - Diagnostic commercial gratuit (10 questions, score et priorités par email) : https://hiersoboris.fr/diagnostic
 - Art Slash (galerie artistique, archive 2011-2021) : https://hiersoboris.fr/art-slash
