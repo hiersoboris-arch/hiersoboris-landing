@@ -107,6 +107,48 @@ const ECOLE = [
   "Choisir son IA, construire sa stack",
 ];
 
+// Noms autorisés par Boris le 11/11/2026. Clients des formations et coachings
+// en entreprise : JAMAIS nommés (NDA), seulement secteur et taille (sources :
+// études Notion du hub Akimbo, Pappers et rapports publics).
+const NOMMES = [
+  "Euridis Business School",
+  "Exoteach",
+  "WoMa",
+  "ValueCo",
+  "GTG",
+  "Sindup",
+  "Like Ton Job",
+  "Azimuto",
+];
+
+const NDA = [
+  {
+    format: "Formation intra · 2 jours, présentiel",
+    qui: "Études de marché et panels de grande consommation",
+    detail: "Filiale française d'un groupe international, 250 à 499 salariés, siège à La Défense. Équipe commerciale outillée sur Microsoft Copilot.",
+  },
+  {
+    format: "Formation intra · 2 jours",
+    qui: "Intégrateur de logiciels de conception (CAO, BIM)",
+    detail: "Siège à Lyon, 5 agences en France. Une équipe formée à l'IA, de Copilot à Claude.",
+  },
+  {
+    format: "Formation intra · 2 jours, présentiel (à venir)",
+    qui: "Prestataire de paiement en ligne coté en Bourse",
+    detail: "Environ 220 salariés, siège en Île-de-France. Équipe commerciale sur Claude, Gemini et HubSpot, avec un business case pour la direction financière.",
+  },
+  {
+    format: "Coaching individuel · 6 semaines",
+    qui: "Cabinet de conseil et d'intégration CRM",
+    detail: "PME de 6 à 9 salariés, partenaire de haut niveau d'un éditeur de CRM. Réactivation de la base clients et chasse de nouveaux comptes.",
+  },
+  {
+    format: "Coaching individuel · 6 semaines",
+    qui: "Agence digitale web et IA, à Paris",
+    detail: "PME de 6 à 9 salariés. Ciblage par verticale, séquences de prospection et pipeline qui se tient à jour tout seul.",
+  },
+];
+
 function Kicker({ children }: { children: React.ReactNode }) {
   return (
     <div className="kicker text-muted mb-4">
@@ -224,8 +266,8 @@ export default function Formations() {
                 ))}
               </ol>
               <p className="mt-6 text-sm text-muted leading-relaxed">
-                Déjà animée en entreprise dans la grande consommation, l&apos;intégration de
-                logiciels et le paiement en ligne, ainsi qu&apos;en inter-entreprises.
+                Déjà animée en entreprise (études de marché, intégration de logiciels) et en
+                inter-entreprises, bientôt dans le paiement en ligne.
               </p>
             </div>
             <div className="md:col-span-5">
@@ -334,6 +376,36 @@ export default function Formations() {
               <div className="bg-card border hairline rounded-xl px-4 py-3 text-sm text-ink">
                 RGPD &amp; empreinte numérique
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Références */}
+        <section className="border-t hairline grain">
+          <div className="max-w-content mx-auto px-6 py-16 md:py-20">
+            <Kicker>Ils m&apos;ont confié leurs équipes</Kicker>
+            <h2 className="serif text-3xl md:text-4xl leading-tight tracking-tight mb-8">
+              Entreprises, écoles et associations.
+            </h2>
+            <div className="flex flex-wrap gap-3 mb-12">
+              {NOMMES.map((n) => (
+                <span key={n} className="border hairline bg-card rounded-full px-4 py-2 text-sm text-ink">
+                  {n}
+                </span>
+              ))}
+            </div>
+            <p className="text-muted leading-relaxed max-w-2xl mb-6">
+              Mes formations et coachings en entreprise sont sous accord de confidentialité : je ne
+              cite pas le nom de ces clients. Voici qui ils sont.
+            </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {NDA.map((c) => (
+                <article key={c.qui} className="bg-card border hairline rounded-2xl p-6">
+                  <div className="kicker text-accent mb-2">{c.format}</div>
+                  <h3 className="serif text-lg leading-snug">{c.qui}</h3>
+                  <p className="mt-2 text-sm text-muted leading-relaxed">{c.detail}</p>
+                </article>
+              ))}
             </div>
           </div>
         </section>
