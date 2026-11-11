@@ -5,6 +5,7 @@ import { LIVRETS } from "@/lib/livre-blanc";
 import { SITE_URL } from "@/lib/site-url";
 import SiteHeader from "../../SiteHeader";
 import LivreBlancForm from "../../alternance/LivreBlancForm";
+import SiteFooter from "../../SiteFooter";
 
 const LIVRET = LIVRETS["trouve-les-offres"];
 
@@ -154,16 +155,7 @@ export default function TrouveLesOffresLivreBlanc() {
         </section>
       </main>
 
-      <footer className="border-t hairline">
-        <div className="max-w-content mx-auto px-6 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-sm text-muted">
-          <div className="serif">Boris Hierso Alphandéry</div>
-          <div className="flex items-center gap-6">
-            <Link href="/" className="hover:text-ink">Accueil</Link>
-            <Link href="/livres-blancs" className="hover:text-ink">Livres blancs</Link>
-            <Link href="/mentions-legales" className="hover:text-ink">Mentions légales</Link>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </>
   );
 }

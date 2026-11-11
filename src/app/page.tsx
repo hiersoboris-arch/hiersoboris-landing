@@ -7,6 +7,7 @@ import SiteHeader from "./SiteHeader";
 import NewsletterForm from "./NewsletterForm";
 import heroDestruction from "../../public/hero/destruction.jpg";
 import { kickerClass } from "@/lib/kicker";
+import SiteFooter from "./SiteFooter";
 
 function LinkedinIcon({ className }: { className?: string }) {
   return (
@@ -796,39 +797,7 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t hairline">
-        <div className="max-w-content mx-auto px-6 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-sm text-muted">
-          <div className="serif">
-            Boris Hierso Alphandéry · {new Date().getFullYear()}
-          </div>
-          <div className="flex flex-wrap items-center gap-6">
-            <Link href="/cv" className="hover:text-ink">CV</Link>
-            <Link href="/art-slash" className="hover:text-ink">Art Slash</Link>
-            <Link href="/about-ai" className="hover:text-ink">Pour les IA</Link>
-            <Link href="/mentions-legales" className="hover:text-ink">Mentions légales</Link>
-            <Link href="/rgpd" className="hover:text-ink">RGPD</Link>
-            <a
-              href={TOOLSBOX}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-ink inline-flex items-center gap-1.5"
-            >
-              <Image
-                src="/logos/toolsbox.png"
-                alt=""
-                width={14}
-                height={14}
-                className="rounded-[4px]"
-              />
-              Tools Box
-            </a>
-            <a href={LINKEDIN} className="hover:text-ink inline-flex items-center gap-1.5">
-              <LinkedinIcon className="w-3.5 h-3.5" />
-              LinkedIn
-            </a>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </>
   );
 }

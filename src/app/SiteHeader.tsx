@@ -2,18 +2,16 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { ArrowRight, Menu, X } from "lucide-react";
+import { ArrowRight, Menu, Sparkles, X } from "lucide-react";
 import { track } from "@vercel/analytics";
 import { CALENDLY } from "@/lib/contact";
 
+// Résultats, Livres blancs et Contact vivent dans le footer depuis le 11/11/2026.
 const LINKS = [
   { href: "/#aider", label: "Offres" },
-  { href: "/#preuves", label: "Résultats" },
   { href: "/formations", label: "Formations" },
   { href: "/pitchbase", label: "Pitchbase" },
-  { href: "/livres-blancs", label: "Livres blancs" },
   { href: "/alternance", label: "Alternance" },
-  { href: "/#contact", label: "Contact" },
 ];
 
 export default function SiteHeader({ solidFromTop }: { solidFromTop?: boolean }) {
@@ -71,6 +69,17 @@ export default function SiteHeader({ solidFromTop }: { solidFromTop?: boolean })
               {l.label}
             </Link>
           ))}
+          <Link
+            href="/about-ai"
+            className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 border transition ${
+              solid
+                ? "border-bordeaux/40 text-bordeaux hover:bg-bordeaux hover:text-cream"
+                : "border-cream/40 text-cream hover:bg-cream hover:text-ink"
+            }`}
+          >
+            <Sparkles className="w-3.5 h-3.5" />
+            Demande à ton IA
+          </Link>
         </nav>
 
         <div className="flex items-center gap-2">
@@ -110,6 +119,14 @@ export default function SiteHeader({ solidFromTop }: { solidFromTop?: boolean })
                 {l.label}
               </Link>
             ))}
+            <Link
+              href="/about-ai"
+              onClick={() => setOpen(false)}
+              className="serif text-3xl text-bordeaux py-3 border-b hairline inline-flex items-center gap-3"
+            >
+              <Sparkles className="w-6 h-6" />
+              Demande à ton IA
+            </Link>
             <a
               href={CALENDLY}
               onClick={() => {

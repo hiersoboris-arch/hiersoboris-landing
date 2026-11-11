@@ -6,6 +6,7 @@ import { SITE_URL } from "@/lib/site-url";
 import { LINKEDIN } from "@/lib/contact";
 import SiteHeader from "../SiteHeader";
 import NewsletterForm from "../NewsletterForm";
+import SiteFooter from "../SiteFooter";
 
 export const metadata: Metadata = {
   title: "Livres blancs : vente B2B, IA, alternance",
@@ -248,16 +249,7 @@ export default function LivresBlancs() {
         </section>
       </main>
 
-      <footer className="border-t hairline">
-        <div className="max-w-content mx-auto px-6 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-sm text-muted">
-          <div className="serif">Boris Hierso Alphandéry</div>
-          <div className="flex flex-wrap items-center gap-6">
-            <Link href="/" className="hover:text-ink">Accueil</Link>
-            <Link href="/alternance" className="hover:text-ink">Alternance</Link>
-            <Link href="/mentions-legales" className="hover:text-ink">Mentions légales</Link>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </>
   );
 }

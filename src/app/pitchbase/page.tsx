@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { SITE_URL } from "@/lib/site-url";
 import SiteHeader from "../SiteHeader";
+import SiteFooter from "../SiteFooter";
 
 // Source : skill pitchbase (deck de référence du 26/10/2026). Règles : Boris =
 // « cofondateur et Head of Sales », Briac = « cofondateur et CTO ». Jamais
@@ -165,6 +166,7 @@ export default function Pitchbase() {
           </div>
         </section>
       </main>
+      <SiteFooter />
     </>
   );
 }

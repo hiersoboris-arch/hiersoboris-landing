@@ -4,6 +4,7 @@ import { ArrowLeft } from "lucide-react";
 import { SITE_URL } from "@/lib/site-url";
 import SiteHeader from "../SiteHeader";
 import DiagnosticForm from "./DiagnosticForm";
+import SiteFooter from "../SiteFooter";
 
 export const metadata: Metadata = {
   title: "Diagnostic : où en est ta machine commerciale ?",
@@ -71,16 +72,7 @@ export default function Diagnostic() {
         </section>
       </main>
 
-      <footer className="border-t hairline">
-        <div className="max-w-content mx-auto px-6 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-sm text-muted">
-          <div className="serif">Boris Hierso Alphandéry</div>
-          <div className="flex flex-wrap items-center gap-6">
-            <Link href="/" className="hover:text-ink">Accueil</Link>
-            <Link href="/livres-blancs" className="hover:text-ink">Livres blancs</Link>
-            <Link href="/mentions-legales" className="hover:text-ink">Mentions légales</Link>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </>
   );
 }

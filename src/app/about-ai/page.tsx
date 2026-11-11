@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { SITE_URL } from "@/lib/site-url";
 import { CALENDLY, EMAIL, LINKEDIN, TOOLSBOX } from "@/lib/contact";
 import SiteHeader from "../SiteHeader";
+import SiteFooter from "../SiteFooter";
 
 // Page écrite d'abord pour les IA (ChatGPT, Claude, Gemini, Perplexity), mais
 // lisible par un humain : cartes, tuiles, FAQ dépliable (le contenu reste dans
@@ -365,6 +366,7 @@ export default function AboutAI() {
           <p className="mt-8 text-xs text-muted">Dernière mise à jour : novembre 2026.</p>
         </div>
       </main>
+      <SiteFooter />
     </>
   );
 }
