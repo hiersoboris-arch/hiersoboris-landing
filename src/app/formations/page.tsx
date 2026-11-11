@@ -27,7 +27,7 @@ const FORMATS = [
   {
     titre: "En entreprise, en présentiel",
     duree: "2 jours · 14 heures",
-    desc: "Une session intra, dans tes locaux, pour ton équipe seulement. Tout se joue sur vos outils, vos comptes et vos vrais mails.",
+    desc: "Une session intra, dans tes locaux, partout en France, pour ton équipe seulement. Tout se joue sur vos outils, vos comptes et vos vrais mails.",
   },
   {
     titre: "En visio",
@@ -45,6 +45,7 @@ const AUTOUR = [
   "Un questionnaire et 45 minutes de préparation avant la session, pour partir de ton terrain",
   "Une heure après la formation, puis un point à 30 jours sur le plan d'action",
   "Une évaluation par livrables, pas par une note : chacun repart avec ses prompts, ses routines et son plan",
+  "Je me déplace dans toute la France. Formations 100 % en français, pour des équipes francophones",
 ];
 
 const IA_PERF = [
@@ -115,13 +116,22 @@ const NOMMES = [
   "Exoteach",
   "WoMa",
   "ValueCo",
-  "GTG",
   "Sindup",
   "Like Ton Job",
   "Azimuto",
 ];
 
 const NDA = [
+  {
+    format: "Direction commerciale externalisée · coaching · recrutement",
+    qui: "Éditeur SaaS industriel (maintenance et obsolescence)",
+    detail: "Une dizaine de personnes. Audit commercial, pricing et supports alignés, CRM nettoyé, playbook commercial, ICP et cadence posés, coaching de la commerciale, fiche de poste et 5 candidats Business Developer présentés.",
+  },
+  {
+    format: "Accompagnement commercial · apport d'affaires",
+    qui: "Structure d'accompagnement de startups (pre-seed, seed)",
+    detail: "Lecture critique du modèle économique et de l'offre, sourcing de startups clientes et ouverture de prescripteurs.",
+  },
   {
     format: "Formation intra · 2 jours, présentiel",
     qui: "Études de marché et panels de grande consommation",
@@ -232,7 +242,7 @@ export default function Formations() {
                 </article>
               ))}
             </div>
-            <ul className="mt-10 grid md:grid-cols-3 gap-4 text-sm text-ink">
+            <ul className="mt-10 grid md:grid-cols-2 gap-4 text-sm text-ink">
               {AUTOUR.map((a) => (
                 <li key={a} className="flex gap-3">
                   <span className="text-bordeaux">→</span>

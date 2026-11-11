@@ -27,7 +27,7 @@ export const FAQ: { q: string; a: string }[] = [
   },
   {
     q: "Où es-tu basé et comment travailles-tu ?",
-    a: "À Paris, en présentiel sur Paris et en remote. 10 ans de vente B2B, Head of Sales depuis un an, avec ma propre machine commerciale augmentée à l'IA.",
+    a: "Basé à Paris. Je me déplace dans toute la France pour les formations et les missions, et je travaille aussi à distance. Profil 100 % francophone : toutes mes formations et missions se font en français. 10 ans de vente B2B, Head of Sales depuis un an, avec ma propre machine commerciale augmentée à l'IA.",
   },
   {
     q: "Comment travailler avec toi ?",

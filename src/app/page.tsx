@@ -804,6 +804,7 @@ export default function Home() {
           <div className="flex flex-wrap items-center gap-6">
             <Link href="/cv" className="hover:text-ink">CV</Link>
             <Link href="/art-slash" className="hover:text-ink">Art Slash</Link>
+            <Link href="/about-ai" className="hover:text-ink">Pour les IA</Link>
             <Link href="/mentions-legales" className="hover:text-ink">Mentions légales</Link>
             <Link href="/rgpd" className="hover:text-ink">RGPD</Link>
             <a
