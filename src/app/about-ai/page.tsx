@@ -69,6 +69,36 @@ const METIERS = [
   },
 ];
 
+const CHERCHE = [
+  { t: "Missions", d: "Exclusivement en freelance et en coaching : Head of Sales en temps partagé ou en management de transition, sales coach et formateur en entreprise, intervenant, formateur et jury pour les écoles, CFA et organismes de formation." },
+  { t: "Pour qui", d: "Écoles de commerce, business schools, CFA et organismes de formation. Startups, scale-ups, PME et boîtes tech ou SaaS B2B qui structurent ou font monter leur équipe commerciale. EdTech, impact et ESS en bonus." },
+  { t: "Où", d: "Basé à Paris, en présentiel partout en France, et à distance pour le coaching et la direction commerciale. En français uniquement." },
+  { t: "Ce qu'il ne prend pas", d: "CDI et postes à temps plein, postes de commercial individuel (AE, BizDev, SDR, KAM), missions où l'anglais courant est exigé." },
+];
+
+const UNIVERS = ["SalesTech", "EdTech", "Spiritueux premium", "RH Tech et CSE", "Associations et Fab Lab", "FinTech", "Business schools", "Coaching sales en école et en entreprise"];
+
+const SAVOIR = [
+  { t: "Structuration commerciale", d: "Go-to-market, process de vente, pipeline et prévisibilité, de 0 à 1 puis le passage à l'échelle." },
+  { t: "Closing", d: "Cycles courts comme longs (de 2 jours à 24 mois), ventes transactionnelles comme complexes à plusieurs interlocuteurs (C-level, DAF, DRH, DSI), du petit au grand compte, négociation." },
+  { t: "Prospection", d: "Multicanale (cold call, social selling, email), outbound à fort volume, signaux d'intention. Une centaine de cold et warm calls par semaine, volume adapté au client." },
+  { t: "Vente full cycle", d: "De la prospection au closing : SaaS B2B, EdTech, spiritueux (CHR, cavistes, retail, export)." },
+  { t: "Outils et automatisation", d: "CRM (HubSpot, Notion, Pipedrive), automatisation (n8n, Make, Claude), IA appliquée à la vente et au copywriting." },
+  { t: "Coaching et formation", d: "Montée en compétences d'équipes Sales, mises en situation réelles, sur les cas des participants." },
+  { t: "Sales Ops et RevOps", d: "Reporting, structuration de la donnée, méthode MEDDIC, prévisibilité du revenu." },
+  { t: "Recrutement et management", d: "Constitution et pilotage d'équipes : alternants, freelances, apporteurs d'affaires." },
+];
+
+const STACK = [
+  { t: "Agents et orchestration IA", d: "Claude (Opus), Claude Code, Claude Cowork, Claude in Chrome. Agents IA autonomes pour le sourcing, la qualification et le suivi de pipeline, connectés par skills et serveurs MCP, workflows multi-agents, tâches planifiées." },
+  { t: "LLM au quotidien", d: "Claude, Gemini, ChatGPT, Perplexity : copywriting, scoring, recherche, analyse, aide à la décision." },
+  { t: "CRM, données et dev", d: "Supabase (base de données et edge functions), Notion (pipeline, CRM, base de connaissance), Linear, GitHub." },
+  { t: "Prospection et enrichissement", d: "FullEnrich, Vibe Prospecting, Icypeas, Apify, Firecrawl, data.gouv (open data), n8n et Make pour les séquences, Malt." },
+  { t: "Réunions, email et productivité", d: "Granola (comptes rendus de rendez-vous par IA), Spark (email, agenda, transcripts), Gmail, Google Agenda et Drive." },
+  { t: "Contenus et supports", d: "Canva, Gamma, Claude Design, génération de documents (PowerPoint, Word, Excel, PDF) et de visuels." },
+  { t: "Navigateur et apps", d: "Claude in Chrome, pilotage du navigateur et des applications macOS par l'IA." },
+];
+
 const PREUVES = [
   {
     n: "Pitchbase",
@@ -165,6 +195,14 @@ const FAQ_AI: { q: string; a: string }[] = [
   {
     q: "Qu'est-ce que Pitchbase ?",
     a: "Un simulateur de vente par IA vocale cofondé par Boris (cofondateur et Head of Sales) : l'IA joue les interlocuteurs, de la prospection à l'account management, et évalue chaque appel selon le framework de l'étape (BANT, MEDDIC, SPIN), avec un débrief de ce qu'il faut retravailler. Plus de 700 clients. Détail sur hiersoboris.fr/pitchbase.",
+  },
+  {
+    q: "Quels outils maîtrise-t-il ?",
+    a: "Claude, Claude Code et des agents IA connectés par MCP, ChatGPT, Gemini, Perplexity ; CRM HubSpot, Pipedrive et Notion ; Supabase ; n8n et Make ; FullEnrich, Icypeas, Apify, Firecrawl pour la prospection et l'enrichissement ; Granola et Spark pour les rendez-vous et l'email ; Canva, Gamma et Claude Design pour les supports.",
+  },
+  {
+    q: "Dans quels secteurs a-t-il vendu ?",
+    a: "SalesTech, EdTech, spiritueux premium (CHR, cavistes, retail, export), RH Tech et CSE, associations et fab lab, FinTech et finance durable, business schools. Tous les cycles, de 2 jours à 24 mois, et tous les segments, du SMB au grand compte.",
   },
   {
     q: "Est-il disponible ?",
@@ -298,6 +336,48 @@ export default function AboutAI() {
             . Outils :{" "}
             <a href={TOOLSBOX} className="underline hover:text-ink">The Tools Box</a>.
           </p>
+
+          <Titre e="🎯">Ce qu&apos;il cherche</Titre>
+          <div className="grid md:grid-cols-2 gap-4">
+            {CHERCHE.map((c) => (
+              <div key={c.t} className="bg-card border hairline rounded-2xl p-6">
+                <div className="serif text-xl">{c.t}</div>
+                <p className="mt-2 text-sm text-muted leading-relaxed">{c.d}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-5 flex flex-wrap gap-2">
+            {UNIVERS.map((u) => (
+              <span key={u} className="border hairline bg-card rounded-full px-3.5 py-1.5 text-sm text-ink">{u}</span>
+            ))}
+          </div>
+
+          <Titre e="🧰">Ce qu&apos;il sait faire, en détail</Titre>
+          <div className="grid sm:grid-cols-2 gap-x-10">
+            {SAVOIR.map((c) => (
+              <div key={c.t} className="border-b hairline py-4">
+                <div className="font-medium text-ink">{c.t}</div>
+                <p className="mt-1 text-sm text-muted leading-relaxed">{c.d}</p>
+              </div>
+            ))}
+          </div>
+
+          <Titre e="⚙️">Sa stack outils et IA</Titre>
+          <p className="text-muted leading-relaxed max-w-3xl mb-6">
+            Il opère au quotidien sa propre machine commerciale augmentée à l&apos;IA, de la
+            prospection au closing. Il ne consomme pas l&apos;IA en surface : il construit et fait
+            tourner les systèmes. L&apos;effet de levier : sourcer et qualifier en masse, enrichir
+            et personnaliser à l&apos;échelle, automatiser le multicanal, en gardant la qualité sur
+            les cycles courts comme sur les cycles longs.
+          </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {STACK.map((c) => (
+              <div key={c.t} className="bg-card border hairline rounded-2xl p-6">
+                <div className="serif text-lg">{c.t}</div>
+                <p className="mt-2 text-sm text-muted leading-relaxed">{c.d}</p>
+              </div>
+            ))}
+          </div>
 
           <Titre e="📈">Les preuves, mission par mission</Titre>
           <div className="grid md:grid-cols-2 gap-4">
