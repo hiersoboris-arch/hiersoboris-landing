@@ -83,7 +83,7 @@ const PREUVES = [
   },
   {
     n: "Euridis Business School",
-    r: "Professeur intervenant",
+    r: "Professeur intervenant · depuis octobre 2025",
     d: "Une douzaine de promos d'une trentaine d'étudiants, environ 350 étudiants, 14,3/20 de moyenne. Du Bachelor au MBA, jeux notés, épreuves blanches RNCP, jurys de soutenances et de concours start-up.",
   },
   {
@@ -108,12 +108,12 @@ const PREUVES = [
   },
   {
     n: "ValueCo",
-    r: "First Sales puis Team Lead · 2025",
+    r: "First Sales puis Team Lead · mars à décembre 2025",
     d: "301 entreprises cotées cartographiées et qualifiées, 8 000 calls, 140 rendez-vous physiques, offre modulaire, Business Review de passation.",
   },
   {
     n: "HappyPal",
-    r: "SDR, BDR puis AE Full Cycle · 2021 à 2025",
+    r: "SDR, BDR puis AE Full Cycle · juillet 2021 à mars 2025",
     d: "First sales, de 5 à 47 salariés. 1,7 M€ d'ARR généré en prospection, jusqu'à 317 % d'atteinte, 100 deals signés en AE, 116 % du quota.",
   },
 ];
