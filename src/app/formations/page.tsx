@@ -73,12 +73,12 @@ const THEMES = [
 ];
 
 const ATELIERS = [
-  "Le commercial en 1 heure",
-  "Les 4 IA du commercial : par où commencer",
-  "Claude de A à Z : l'IA qui travaille pendant que tu vends",
-  "CRM : un pipeline qui se tient à jour tout seul",
-  "Le radar commercial : savoir qui bouge, et où le croiser",
-  "Les cas extrêmement difficiles",
+  { t: "Le commercial en 1 heure", d: "1 heure", s: "Tout le cycle de vente, pour les non-commerciaux qui vendent sans le dire" },
+  { t: "Les 4 IA du commercial : par où commencer", d: "2 heures", s: "4 tours de 20 minutes de méthode et 10 minutes de jeu, 8 routines à copier" },
+  { t: "Claude de A à Z : l'IA qui travaille pendant que tu vends", d: "1 heure", s: "8 routines prêtes à copier, 2 mises en situation sur ton vrai travail" },
+  { t: "CRM : un pipeline qui se tient à jour tout seul", d: "7 heures", s: "Tu sors avec 5 contacts, 3 affaires et 1 routine dans ton CRM" },
+  { t: "Le radar commercial : savoir qui bouge, et où le croiser", d: "7 heures", s: "Signaux d'achat sur sources publiques : tu sors avec 5 signaux, 3 événements et 1 routine" },
+  { t: "Les cas extrêmement difficiles", d: "1 heure", s: "Clients agressifs, impasses, conflits : les méthodes pour garder la main" },
 ];
 
 const SEANCES = [
@@ -125,7 +125,7 @@ const NDA = [
   {
     format: "Direction commerciale externalisée · coaching · recrutement",
     qui: "Éditeur SaaS industriel (maintenance et obsolescence)",
-    detail: "Une dizaine de personnes. Audit commercial, pricing et supports alignés, CRM nettoyé, playbook commercial, ICP et cadence posés, coaching de la commerciale, fiche de poste et 5 candidats Business Developer présentés.",
+    detail: "Une dizaine de personnes. Audit commercial, pricing et supports alignés, CRM nettoyé, playbook commercial, ICP et cadence posés, coaching de la commerciale, entretiens de recrutement d'alternants Business Developer menés avec les fondateurs, 5 candidats présentés, onboarding et formation terrain des nouvelles recrues.",
   },
   {
     format: "Accompagnement commercial · apport d'affaires",
@@ -135,27 +135,37 @@ const NDA = [
   {
     format: "Formation intra · 2 jours, présentiel",
     qui: "Études de marché et panels de grande consommation",
-    detail: "Filiale française d'un groupe international, 250 à 499 salariés, siège à La Défense. Équipe commerciale outillée sur Microsoft Copilot.",
+    detail: "Filiale française d'un groupe international, 250 à 499 salariés, siège à La Défense. 12 commerciaux seniors, sans CRM, sur Microsoft Copilot : programme recalé sur leur configuration réelle, puis note de recommandation à la direction.",
   },
   {
-    format: "Formation intra · 2 jours",
+    format: "Formation intra · 2 jours, visio",
     qui: "Intégrateur de logiciels de conception (CAO, BIM)",
-    detail: "Siège à Lyon, 5 agences en France. Une équipe formée à l'IA, de Copilot à Claude.",
+    detail: "5 implantations en France, siège à Lyon. Point de suivi à une semaine, calculateur de ROI remis à la direction, et une 2e session programmée pour d'autres agences.",
   },
   {
     format: "Formation intra · 2 jours, présentiel (à venir)",
     qui: "Prestataire de paiement en ligne coté en Bourse",
-    detail: "Environ 220 salariés, siège en Île-de-France. Équipe commerciale sur Claude, Gemini et HubSpot, avec un business case pour la direction financière.",
+    detail: "Environ 220 salariés, siège en Île-de-France. Équipe commerciale sur Claude, Gemini, Dust et HubSpot, avec un business case pour la direction financière.",
   },
   {
     format: "Coaching individuel · 6 semaines",
     qui: "Cabinet de conseil et d'intégration CRM",
-    detail: "PME de 6 à 9 salariés, partenaire de haut niveau d'un éditeur de CRM. Réactivation de la base clients et chasse de nouveaux comptes.",
+    detail: "PME de 6 à 9 salariés, partenaire de 2 éditeurs (CRM et service client). Réactivation de la base clients et chasse de nouveaux comptes.",
   },
   {
     format: "Coaching individuel · 6 semaines",
     qui: "Agence digitale web et IA, à Paris",
     detail: "PME de 6 à 9 salariés. Ciblage par verticale, séquences de prospection et pipeline qui se tient à jour tout seul.",
+  },
+  {
+    format: "Coaching individuel · 6 semaines",
+    qui: "Analyste senior en études de marché",
+    detail: "Secteur luxe et beauté, en reconversion vers l'account management.",
+  },
+  {
+    format: "Formations inter-entreprises · 2 jours, visio",
+    qui: "Commerciaux de plusieurs entreprises",
+    detail: "Relation client au quotidien, puis IA au service de la performance commerciale : un programme ajusté au niveau de chacun, du premier pas commercial au compte stratégique.",
   },
 ];
 
@@ -267,6 +277,12 @@ export default function Formations() {
                 pilotage, suivi client. La formation s&apos;adapte à l&apos;outil de l&apos;équipe :
                 Microsoft Copilot (même sans CRM), ChatGPT et Gemini, ou Claude branché au CRM.
               </p>
+              <p className="mt-4 text-muted leading-relaxed">
+                17 ateliers et mises en situation, 12 livrables par participant. Tu viens avec ton
+                compte IA, ton fichier de prospects, un mail resté sans réponse et ton prochain
+                rendez-vous : on travaille dessus. La version 100 % Microsoft 365 tourne sur
+                Outlook, Teams, Excel, Power BI et Power Automate.
+              </p>
               <ol className="mt-8 space-y-3">
                 {IA_PERF.map((c, i) => (
                   <li key={c} className="flex gap-4 border-b hairline pb-3">
@@ -275,6 +291,14 @@ export default function Formations() {
                   </li>
                 ))}
               </ol>
+              <div className="mt-8 bg-card border hairline rounded-2xl p-6">
+                <div className="font-medium text-ink mb-2">Après la formation, pour la direction</div>
+                <p className="text-sm text-muted leading-relaxed">
+                  Un calculateur de retour sur investissement, une checklist sécurité en 23 points
+                  pour connecter une IA au CRM et à la messagerie, une charte IA prête à remplir,
+                  et si besoin une note de recommandation sur l&apos;outillage de l&apos;équipe.
+                </p>
+              </div>
               <p className="mt-6 text-sm text-muted leading-relaxed">
                 Déjà animée en entreprise (études de marché, intégration de logiciels) et en
                 inter-entreprises, bientôt dans le paiement en ligne.
@@ -285,6 +309,11 @@ export default function Formations() {
               <p className="text-muted leading-relaxed mb-6">
                 Même format de 2 jours, sur l&apos;un de ces thèmes. Ceux marqués d&apos;un point
                 bordeaux sont ceux que j&apos;anime le plus souvent.
+              </p>
+              <p className="text-sm text-muted leading-relaxed mb-6">
+                Relation client au quotidien : un plan de relation client au jour 1, un plan de
+                fidélisation à 30 jours au jour 2, 2 cas clients joués en face à face, 7 jeux.
+                J&apos;ai porté le programme de 7 à 14 chapitres.
               </p>
               <ul className="space-y-3">
                 {THEMES.map((t) => (
@@ -309,7 +338,7 @@ export default function Formations() {
           <div className="max-w-content mx-auto px-6 py-16 md:py-20">
             <Kicker>Ateliers courts · 1 à 7 heures</Kicker>
             <h2 className="serif text-3xl md:text-4xl leading-tight tracking-tight mb-4">
-              Un sujet, une demi-journée.
+              Un sujet, d&apos;une heure à une journée.
             </h2>
             <p className="text-muted leading-relaxed max-w-2xl mb-10">
               Pour une équipe qui veut avancer sur un point précis, en ouverture d&apos;un séminaire
@@ -317,8 +346,10 @@ export default function Formations() {
             </p>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
               {ATELIERS.map((a) => (
-                <div key={a} className="bg-card border hairline rounded-2xl p-6 serif text-lg leading-snug">
-                  {a}
+                <div key={a.t} className="bg-card border hairline rounded-2xl p-6">
+                  <div className="kicker text-accent mb-2">{a.d}</div>
+                  <div className="serif text-lg leading-snug">{a.t}</div>
+                  <p className="mt-2 text-sm text-muted leading-relaxed">{a.s}</p>
                 </div>
               ))}
             </div>
@@ -337,6 +368,13 @@ export default function Formations() {
               minutes : 15 minutes de méthode, 10 minutes de quiz et de questions sur ton cas, 20
               minutes de mise en situation ou d&apos;atelier avec ton IA. En direct ou via les
               organismes de formation avec lesquels je travaille.
+            </p>
+            <p className="text-muted leading-relaxed max-w-2xl mb-10 -mt-6">
+              Avant la première séance, tu reçois une étude de ton entreprise et de ton marché.
+              Ensuite, un espace personnel avec tes séances, tes prompts, tes comptes cibles et ta
+              to-do, et des simulations d&apos;appel sur{" "}
+              <a href="https://pitchbase.app" className="underline">Pitchbase</a>. Pour des
+              dirigeants de PME comme pour des professionnels en reconversion vers la vente.
             </p>
             <div className="grid md:grid-cols-2 gap-x-10">
               {SEANCES.map((s, i) => (
@@ -364,7 +402,7 @@ export default function Formations() {
                 Professeur intervenant à Euridis Business School depuis octobre 2025 : 9 classes
                 accompagnées, environ 225 étudiants, 14,2/20 de moyenne sur mes interventions.
                 Coach principal des étudiants d&apos;Euridis Paris pour Les Négociales 2026, juré de
-                soutenances. Chaque cours a son support, ses exercices, son devoir et ses jeux.
+                soutenances. Du Bachelor au MBA : jeux notés, simulations d&apos;appel sur Pitchbase, épreuves blanches de certification RNCP. Aussi des ateliers de prospection pour aider les étudiants à décrocher leur alternance, et des jurys (soutenances, concours start-up).
               </p>
               <Link
                 href="/alternance"
@@ -405,9 +443,14 @@ export default function Formations() {
               ))}
             </div>
             <p className="text-muted leading-relaxed max-w-2xl mb-6">
-              Mes formations et coachings en entreprise sont sous accord de confidentialité : je ne
-              cite pas le nom de ces clients. Voici qui ils sont.
+              Depuis septembre 2026 : 4 formations de 2 jours animées, 2 autres programmées en
+              novembre, 3 coachings individuels en cours. Ces missions sont sous accord de
+              confidentialité : je ne cite pas le nom des clients. Voici qui ils sont.
             </p>
+            <blockquote className="mb-8 border-l-2 border-bordeaux pl-5 serif text-xl text-ink">
+              « C&apos;est factuel, c&apos;est concret. »
+              <span className="block mt-1 text-sm text-muted not-italic font-sans">Participant d&apos;une formation intra</span>
+            </blockquote>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {NDA.map((c) => (
                 <article key={c.qui} className="bg-card border hairline rounded-2xl p-6">

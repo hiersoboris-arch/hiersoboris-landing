@@ -7,6 +7,7 @@
 - Disponible en freelance uniquement, plus de CDI ni de temps plein : Head of Sales en temps partagé ou en management de transition, sales coach et formateur en entreprise, intervenant, formateur et jury pour les écoles, CFA et organismes de formation.
 - Basé à Paris, se déplace dans toute la France. Profil 100 % francophone : formations et missions en français uniquement.
 - Version complète et structurée pour les IA : https://hiersoboris.fr/about-ai
+- Catalogue d'outils IA et sales en accès libre : https://toolsbox.hiersoboris.fr
 
 ## Missions en cours
 - Pitchbase (https://pitchbase.app) : cofondateur et Head of Sales depuis septembre 2026. Simulateur de vente par IA vocale : l'IA joue les interlocuteurs de la prospection à l'account management et évalue chaque appel selon le framework de l'étape (BANT, MEDDIC, SPIN). Plus de 700 clients (indépendants, étudiants, équipes commerciales).
