@@ -29,6 +29,7 @@ const COMPANIES: { name: string; logo: string; url?: string }[] = [
   { name: "HappyPal", logo: "/logos/logo-l-happypal.png", url: "https://www.happypal.fr" },
   { name: "Euridis Business School", logo: "/logos/logo-l-euridis.png", url: "https://www.euridis-ecole.com" },
   { name: "Akimbo", logo: "/logos/logo-l-akimbo.png", url: "https://www.akimbo.eu" },
+  { name: "CCI", logo: "/logos/logo-l-cci.png", url: "https://www.cci.fr" },
   { name: "Les Négociales", logo: "/logos/logo-l-negociales.png", url: "https://www.lesnegociales.com" },
   { name: "ValueCo", logo: "/logos/logo-l-valueco.png", url: "https://www.valuecometrics.com" },
   { name: "WoMa", logo: "/logos/logo-l-woma.png", url: "https://woma.fr" },
