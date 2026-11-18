@@ -21,10 +21,11 @@ export const metadata: Metadata = {
 
 // Source de vérité : hub Notion « Formation Boris H.A » (espaces Pro, Étudiant,
 // Carrière) et hub Akimbo (socle IA Perf Sales, parcours de coaching modèle).
-// Règles : jamais le nom d'un client final ni d'un coaché, jamais de montant,
+// Règles : jamais le nom d'un client final ni d'un coaché, jamais de montant sur la page
+// (exception voulue par Boris le 18/11/2026 : le PDF coaching porte le tarif),
 // jamais « certifié Qualiopi » (pas encore : on passe par des OF certifiés).
 
-const FORMATS = [
+const FORMATS: { titre: string; duree: string; desc: string; pdf?: string }[] = [
   {
     titre: "En entreprise, en présentiel",
     duree: "De 1 à 20 jours",
@@ -39,6 +40,7 @@ const FORMATS = [
     titre: "En coaching individuel",
     duree: "Au rythme de tes deals",
     desc: "En tête-à-tête, pour un commercial, un fondateur ou un indépendant qui vend. Des séances courtes sur ton vrai pipeline, un livrable concret à chaque étape, des simulations d'appel sur Pitchbase. Aussi pour les profils en reconversion vers la vente.",
+    pdf: "/docs/coaching-commercial-boris-hierso-alphandery.pdf",
   },
 ];
 
@@ -234,6 +236,17 @@ export default function Formations() {
                   <div className="kicker text-accent mb-3">{f.duree}</div>
                   <h3 className="serif text-2xl leading-snug">{f.titre}</h3>
                   <p className="mt-3 text-sm text-muted leading-relaxed">{f.desc}</p>
+                  {f.pdf && (
+                    <a
+                      href={f.pdf}
+                      target="_blank"
+                      rel="noopener"
+                      className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-ink hover:text-accent transition"
+                    >
+                      La présentation coaching : formats et tarif (PDF)
+                      <ArrowRight className="w-4 h-4" />
+                    </a>
+                  )}
                 </article>
               ))}
             </div>

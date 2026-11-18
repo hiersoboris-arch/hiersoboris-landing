@@ -58,6 +58,7 @@ const OFFERS = [
     title: "Former & coacher les équipes",
     audience: "Équipes Sales · managers · écoles · commerciaux en solo",
     desc: "Formations en entreprise d'une journée à plusieurs semaines (présentiel ou visio), ateliers courts, coaching individuel, cours en école. IA appliquée à la vente, relation client, prospection, négociation, sur vos cas réels. Finançable par ton OPCO via des organismes certifiés Qualiopi.",
+    link: { label: "La présentation coaching : formats et tarif (PDF)", href: "/docs/coaching-commercial-boris-hierso-alphandery.pdf" },
   },
   {
     title: "Intervenir & prendre la parole",
@@ -832,16 +833,29 @@ function OfferCard({
   title,
   audience,
   desc,
+  link,
 }: {
   title: string;
   audience: string;
   desc: string;
+  link?: { label: string; href: string };
 }) {
   return (
     <article className="lift bg-card border hairline rounded-2xl p-8 md:p-10 hover:border-accent transition">
       <div className={`${kickerClass(audience)} text-accent mb-3`}>{audience}</div>
       <h3 className="serif text-2xl mb-3">{title}</h3>
       <p className="text-muted leading-relaxed">{desc}</p>
+      {link && (
+        <a
+          href={link.href}
+          target="_blank"
+          rel="noopener"
+          className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-ink hover:text-accent transition"
+        >
+          {link.label}
+          <ArrowUpRight className="w-4 h-4" />
+        </a>
+      )}
     </article>
   );
 }
